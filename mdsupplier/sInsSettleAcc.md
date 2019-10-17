@@ -39,36 +39,36 @@
 #### 2.2、请求参数说明  
 参数SYS_HEAD，类型：object  
   
-| 参数 | 必选 | 类型 | 描述 |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CHANNEL_DID | 是 | String | 16字符渠道号，请与平台运营服务中心联系 |  
-| DYNAMIC_KEY | 是 | String | 动态请求密钥，请与平台运营服务中心联系 |  
-| REGISTER_DID      |  是  | String   | 16位注册ID，必须实名 |  
-| ACCOUNT_DID       |  是  | String   | 16位账户ID，必须激活 |  
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CHANNEL_DID | 是 | String | 16 |   | 16字符渠道号，请与平台运营服务中心联系 |  
+| DYNAMIC_KEY | 是 | String | 64 |   | 动态请求密钥，请与平台运营服务中心联系 |  
+| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
+| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
 参数SETTLE_ACCOUNT，类型：Array  
   
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | xxxxx |  
-| USER_CUS_DID |  是  | String   | xxxxx |  
-| USER_ACCOUNT_AID |  是  | String   | xxxxx |  
-| SETTLEMENT_NAME |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| CONTROL_TYPE |  是  | String   | xxxxx |  
-| INDUSTRY_CODE_INFO |  是  | String   | xxxxx |  
-| INDUSTRY_TYPE |  是  | String   | xxxxx |  
-| RESIDENT_YESNO |  是  | String   | xxxxx |  
-| CITY_YESNO |  是  | String   | xxxxx |  
-| ARMY_YESNO |  是  | String   | xxxxx |  
-| TEMPORARY_YESNO |  是  | String   | xxxxx |  
-| PUBLIC_USE_YESNO |  是  | String   | xxxxx |  
-| CONNECT_MODE_TYPE |  是  | String   | xxxxx |  
-| SIGN_CONTRACT_YESNO |  是  | String   | xxxxx |  
-| CONTRACT_NUM |  是  | String   | xxxxx |  
-| CON_DEADLINE_DATE |  是  | Number   | xxxxx |  
-| REMARK_INS |  否  | String   | xxxxx |  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
+| USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
+| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
+| SETTLEMENT_NAME |  是  | String   | 128 | 0 | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
+| CONTROL_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| INDUSTRY_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| INDUSTRY_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| RESIDENT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| CITY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| ARMY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| TEMPORARY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| PUBLIC_USE_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| CONNECT_MODE_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| SIGN_CONTRACT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| CONTRACT_NUM |  是  | String   | 30 | 0 | xxxxx |  
+| CON_DEADLINE_DATE |  是  | Number   | 8 | 0 | xxxxx |  
+| REMARK_INS |  否  | String   | 256 | 0 | xxxxx |  
   
 说明：xxxxx  
   

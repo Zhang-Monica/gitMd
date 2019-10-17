@@ -25,22 +25,22 @@
 #### 2.2、请求参数说明  
 参数SYS_HEAD，类型：object  
   
-| 参数 | 必选 | 类型 | 描述 |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CHANNEL_DID | 是 | String | 16字符渠道号，请与平台运营服务中心联系 |  
-| DYNAMIC_KEY | 是 | String | 动态请求密钥，请与平台运营服务中心联系 |  
-| REGISTER_DID      |  是  | String   | 16位注册ID，可不实名 |  
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CHANNEL_DID | 是 | String | 16 |   | 16字符渠道号，请与平台运营服务中心联系 |  
+| DYNAMIC_KEY | 是 | String | 64 |   | 动态请求密钥，请与平台运营服务中心联系 |  
+| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，可不实名 |  
   
 参数SYS_REGISTER，类型：Array  
   
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CERTIFICATES_INFO |  是  | String   | xxxxx |  
-| CERTIFICATES_TYPE |  是  | String   | xxxxx |  
-| OPERATION_NAME |  是  | String   | xxxxx |  
-| MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
-| EMAIL_INFO |  否  | String   | xxxxx |  
-| VERIFY_CODE |  是  | String   | xxxxx |  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CERTIFICATES_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| CERTIFICATES_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| OPERATION_NAME |  是  | String   | 128 | 0 | xxxxx |  
+| MOBILE_PHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| EMAIL_INFO |  否  | String   | 30 | 0 | xxxxx |  
+| VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
   
 说明：xxxxx  
   

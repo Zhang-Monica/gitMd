@@ -32,29 +32,29 @@
 #### 2.2、请求参数说明  
 参数SYS_HEAD，类型：object  
   
-| 参数 | 必选 | 类型 | 描述 |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CHANNEL_DID | 是 | String | 16字符渠道号，请与平台运营服务中心联系 |  
-| DYNAMIC_KEY | 是 | String | 动态请求密钥，请与平台运营服务中心联系 |  
-| REGISTER_DID      |  是  | String   | 16位注册ID，必须实名 |  
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CHANNEL_DID | 是 | String | 16 |   | 16字符渠道号，请与平台运营服务中心联系 |  
+| DYNAMIC_KEY | 是 | String | 64 |   | 动态请求密钥，请与平台运营服务中心联系 |  
+| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
   
 参数SUP_ACCOUNT，类型：Array  
   
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| ACC_CERT_INFO |  是  | String   | xxxxx |  
-| ACC_CERT_TYPE |  是  | String   | xxxxx |  
-| ACCOUNT_PASSWORD |  是  | String   | xxxxx |  
-| SUPPLIER_NAME |  是  | String   | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| SUPPLIER_TYPE |  是  | String   | xxxxx |  
-| TAX_NUMBER_INFO |  是  | String   | xxxxx |  
-| TELEPHONE_INFO |  是  | String   | xxxxx |  
-| BANK_ACCOUNT_INFO |  是  | String   | xxxxx |  
-| BANK_NAME |  是  | String   | xxxxx |  
-| EMAIL_INFO |  是  | String   | xxxxx |  
-| VERIFY_CODE |  是  | String   | xxxxx |  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| ACC_CERT_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| ACC_CERT_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| ACCOUNT_PASSWORD |  是  | String   | 128 | 0 | xxxxx |  
+| SUPPLIER_NAME |  是  | String   | 256 | 0 | xxxxx |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
+| SUPPLIER_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| TELEPHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| BANK_NAME |  是  | String   | 256 | 0 | xxxxx |  
+| EMAIL_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
   
 说明：xxxxx  
   

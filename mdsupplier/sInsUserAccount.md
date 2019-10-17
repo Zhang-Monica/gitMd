@@ -33,30 +33,30 @@
 #### 2.2、请求参数说明  
 参数SYS_HEAD，类型：object  
   
-| 参数 | 必选 | 类型 | 描述 |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CHANNEL_DID | 是 | String | 16字符渠道号，请与平台运营服务中心联系 |  
-| DYNAMIC_KEY | 是 | String | 动态请求密钥，请与平台运营服务中心联系 |  
-| REGISTER_DID      |  是  | String   | 16位注册ID，必须实名 |  
-| ACCOUNT_DID       |  是  | String   | 16位账户ID，必须激活 |  
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CHANNEL_DID | 是 | String | 16 |   | 16字符渠道号，请与平台运营服务中心联系 |  
+| DYNAMIC_KEY | 是 | String | 64 |   | 动态请求密钥，请与平台运营服务中心联系 |  
+| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
+| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
 参数USER_ACCOUNT，类型：Array  
   
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | xxxxx |  
-| USER_CUS_DID |  是  | String   | xxxxx |  
-| USER_NAME |  是  | String   | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| MAP_NAME |  否  | String   | xxxxx |  
-| X |  否  | Number   | xxxxx |  
-| Y |  否  | Number   | xxxxx |  
-| RESIDENT_YESNO |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| RISK_BALANCE |  否  | Number   | xxxxx |  
-| MARGIN_BALANCE |  否  | Number   | xxxxx |  
-| ADVANCE_LIMIT |  否  | Number   | xxxxx |  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
+| USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
+| USER_NAME |  是  | String   | 256 | 0 | xxxxx |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
+| MAP_NAME |  否  | String   | 128 | 0 | xxxxx |  
+| X |  否  | Number   | 16 | 8 | xxxxx |  
+| Y |  否  | Number   | 16 | 8 | xxxxx |  
+| RESIDENT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| RISK_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
+| MARGIN_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
+| ADVANCE_LIMIT |  否  | Number   | 16 | 2 | xxxxx |  
   
 说明：xxxxx  
   

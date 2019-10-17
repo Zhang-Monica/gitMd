@@ -28,29 +28,29 @@
 #### 2.2、请求参数说明  
 参数SYS_HEAD，类型：object  
   
-| 参数 | 必选 | 类型 | 描述 |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| CHANNEL_DID | 是 | String | 16字符渠道号，请与平台运营服务中心联系 |  
-| DYNAMIC_KEY | 是 | String | 动态请求密钥，请与平台运营服务中心联系 |  
-| REGISTER_DID      |  是  | String   | 16位注册ID，必须实名 |  
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CHANNEL_DID | 是 | String | 16 |   | 16字符渠道号，请与平台运营服务中心联系 |  
+| DYNAMIC_KEY | 是 | String | 64 |   | 动态请求密钥，请与平台运营服务中心联系 |  
+| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
   
 参数INOUT_BINDGRANT，类型：Array  
   
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| BINDCONNECT_TYPE |  是  | String   | xxxxx |  
-| REGISTER_INFO |  是  | String   | xxxxx |  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| BINDCONNECT_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| REGISTER_INFO |  是  | String   | 64 | 0 | xxxxx |  
   
 说明：xxxxx  
 参数SYS_PAGE，类型：object  
   
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| PAGE_NO |  是  | Number   | xxxxx |  
-| PAGE_ROWS |  否  | Number   | xxxxx |  
-| NEXT_YESNO |  是  | String   | xxxxx |  
-| TOTAL |  否  | Number   | xxxxx |  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| PAGE_NO |  是  | Number   | 4 | 0 | xxxxx |  
+| PAGE_ROWS |  否  | Number   | 4 | 0 | xxxxx |  
+| NEXT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| TOTAL |  否  | Number   | 10 | 0 | xxxxx |  
   
 说明：xxxxx  
   
