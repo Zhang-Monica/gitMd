@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cCreateUserAccount)添加用户信息  
-接口描述：xxxxx  
+接口描述：客户添加个人使用信息，如用户名、行政区划、详细地址  
 请求说明：POST https://epeis.com/Service/v1/cCreateUserAccount  
   
 ## 2、服务接口请求参数  
@@ -37,14 +37,14 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_NAME |  是  | String   | 256 | 0 | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
-| MAP_NAME |  否  | String   | 128 | 0 | xxxxx |  
-| X |  否  | Number   | 16 | 8 | xxxxx |  
-| Y |  否  | Number   | 16 | 8 | xxxxx |  
+| USER_NAME |  是  | String   | 256 | 0 | 用户名 |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 用户所在行政区划 |  
+| ADDRESS |  是  | String   | 128 | 0 | 用户所在地实际地址 |  
+| MAP_NAME |  否  | String   | 128 | 0 | 用户所在地实际地图坐标 |  
+| X |  否  | Number   | 16 | 8 | 用户所在地实际地图X坐标 |  
+| Y |  否  | Number   | 16 | 8 | 用户所在地实际地图Y坐标 |  
   
-说明：xxxxx  
+说明：用户信息表  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -66,4 +66,4 @@
   
 参数DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-xxxxxxx  
+cInsUserAcctv1是用于客户本人添加用户信息时使用，接口只返回处理结果代码，错误代码详见ERROR_CODE  

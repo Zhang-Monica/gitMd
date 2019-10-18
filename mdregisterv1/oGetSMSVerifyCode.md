@@ -47,6 +47,9 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
+		"SYS_VERIFY_CODE":	[{
+				"VERIFY_CODE":	""
+			}]
 	}
 }  
 ~~~  
@@ -58,6 +61,14 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数DATA，类型：object 本服务接口无响应数据！  
+参数DATA，类型：object 本服务接口响应数据说明如下：  
+参数SYS_VERIFY_CODE，类型：object  
+  
+
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| VERIFY_CODE |  是  | String   | xxxxx |  
+  
+说明：xxxxx  
 ## 4、服务接口说明  
 xxxxxxx  
