@@ -17,4 +17,19 @@
 | 修改计量点信息 | v1 | [sUpdateMeterPointInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sUpdateMeterPointInformation.md) |  
 | 删除计量点信息 | v1 | [sDeleteMeterPointInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sDeleteMeterPointInformation.md) |  
 | 申请所有权人变更 | v1 | [sApplyProprietorChange.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sApplyProprietorChange.md) |  
+| 根据客户号查询客户账户 | v1 | [sQueryCustomerAccount.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryCustomerAccount.md) |  
+| 查询欠费明细 | v1 | [sQueryDetailsOfArrears.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryDetailsOfArrears.md) |  
+| 登记票据信息 | v1 | [sRegisterNotes.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sRegisterNotes.md) |  
+| 修改票据信息 | v1 | [sUpdateNotes.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sUpdateNotes.md) |  
+| 删除票据信息 | v1 | [sDeleteNotes.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sDeleteNotes.md) |  
+| 查询票据信息 | v1 | [sQueryNotes.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryNotes.md) |  
+| 生成订单 | v1 | [sCreatePaymentOrder.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sCreatePaymentOrder.md) |  
+| 客户充值订单 | v1 | [sCreateDepositOrder.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sCreateDepositOrder.md) |  
+| 订单销账 | v1 | [sWriteOff.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sWriteOff.md) |  
+| 查询用户账单信息 | v1 | [sQueryUserBills.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryUserBills.md) |  
+| 查询用户账单明细信息 | v1 | [sQueryUserBillDetails.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryUserBillDetails.md) |  
+| 查询发票信息 | v1 | [sQueryInvoice.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryInvoice.md) |  
+| 查询发票明细信息 | v1 | [sQueryInvoiceDetails.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryInvoiceDetails.md) |  
+| 打印开票信息 | v1 | [sPrintInvoice.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sPrintInvoice.md) |  
+| 查询开票信息 | v1 | [sQueryPrintedInvoices.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdsupplierv1/sQueryPrintedInvoices.md) |  
   

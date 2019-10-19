@@ -25,4 +25,14 @@
 | 删除结算信息 | v1 | [cDeleteSettleAccount.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cDeleteSettleAccount.md) |  
 | 申请结算户变更 | v1 | [cApplySettleAccountChange.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cApplySettleAccountChange.md) |  
 | 接受结算户变更 | v1 | [cAcceptSettleAccountChange.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cAcceptSettleAccountChange.md) |  
+| 查询欠费总额 | v1 | [cQueryTotalArrears.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cQueryTotalArrears.md) |  
+| 查询欠费明细 | v1 | [cQueryDetailsOfArrears.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cQueryDetailsOfArrears.md) |  
+| 生成缴费订单 | v1 | [cCreatePaymentOrder.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cCreatePaymentOrder.md) |  
+| 客户充值订单 | v1 | [cCreateDepositOrder.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cCreateDepositOrder.md) |  
+| 订单销账 | v1 | [cWriteOff.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cWriteOff.md) |  
+| 查询用户账单信息 | v1 | [cQueryUserBills.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cQueryUserBills.md) |  
+| 查询发票信息 | v1 | [cQueryInvoiceInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cQueryInvoiceInformation.md) |  
+| 查询发票明细信息 | v1 | [cQueryInvoiceDetails.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cQueryInvoiceDetails.md) |  
+| 打印开票信息 | v1 | [cPrintInvoice.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cPrintInvoice.md) |  
+| 查询开票信息 | v1 | [cQueryPrintedInvoices.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdcustomerv1/cQueryPrintedInvoices.md) |  
   

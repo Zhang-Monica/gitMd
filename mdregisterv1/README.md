@@ -20,4 +20,5 @@
 | 查询用户账户 | v1 | [oQueryUserInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdregisterv1/oQueryUserInformation.md) |  
 | 查询客户账户 | v1 | [oQueryCustomerInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdregisterv1/oQueryCustomerInformation.md) |  
 | 查询账户关系 | v1 | [oQueryAccountRelationship.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdregisterv1/oQueryAccountRelationship.md) |  
+| 按多条件查询客户账户 | v1 | [oQueryCustomerAccounts.md](https://github.com/Zhang-Monica/gitMd/blob/master/mdregisterv1/oQueryCustomerAccounts.md) |  
   

@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(oGetSMSVerifyCode)获取动态验证码  
-接口描述：xxxxx  
-请求说明：POST https://epeis.com/Service/v1/oGetSMSVerifyCode  
+服务接口：(cWriteOff)订单销账  
+接口描述：订单销账  
+请求说明：POST https://epeis.com/Service/v1/cWriteOff  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -9,14 +9,17 @@
 {
 	"SYS_HEAD":	{
 		"CHANNEL_DID":	"",
-		"DYNAMIC_KEY":	""
+		"DYNAMIC_KEY":	"",
+		"REGISTER_DID":	"",
+		"ACCOUNT_DID":	""
 	},
-	"INOUT_VERIFYCODE":	[{
-			"OBJECT_INFO":	"",
-			"OBJECT_TYPE":	"",
-			"REGISTER_INFO":	"",
-			"REGISTER_TYPE":	"",
-			"INPUT_YESNO":	""
+	"INOUT_ORDER":	[{
+			"OPERATION_DATE":	0,
+			"SERIAL_DID":	"",
+			"CASH_TRANSFER_TYPE":	"",
+			"ORDER_TYPE":	"",
+			"AGENT_OPERATOR_DID":	"",
+			"AGENT_SID_INFO":	""
 		}]
 }  
 ~~~  
@@ -27,18 +30,21 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
+| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
+| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数INOUT_VERIFYCODE，类型：Array  
+参数INOUT_ORDER，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| OBJECT_INFO |  否  | String   | 64 | 0 | xxxxx |  
-| OBJECT_TYPE |  否  | String   | 2 | 0 | xxxxx |  
-| REGISTER_INFO |  否  | String   | 64 | 0 | xxxxx |  
-| REGISTER_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| INPUT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| OPERATION_DATE |  是  | Number   | 8 | 0 | 订单日期 |  
+| SERIAL_DID |  是  | String   | 16 | 0 | 16位字符，订单业务流水号 |  
+| CASH_TRANSFER_TYPE |  是  | String   | 2 | 0 | 6-第三方支付 |  
+| ORDER_TYPE |  是  | String   | 2 | 0 | 1-聚合支付主扫，2-聚合支付被扫，银行卡等等 |  
+| AGENT_OPERATOR_DID |  是  | String   | 16 | 0 | 代理操作员号 |  
+| AGENT_SID_INFO |  是  | String   | 30 | 0 | 16位字符，代理流水号 |  
   
-说明：xxxxx  
+说明：订单信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -47,10 +53,6 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"SYS_VERIFY_CODE":	[{
-				"REGISTER_INFO":	"",
-				"VERIFY_CODE":	""
-			}]
 	}
 }  
 ~~~  
@@ -62,15 +64,6 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数DATA，类型：object 本服务接口响应数据说明如下：  
-参数SYS_VERIFY_CODE，类型：object  
-  
-
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| REGISTER_INFO |  是  | String   | xxxxx |  
-| VERIFY_CODE |  是  | String   | xxxxx |  
-  
-说明：xxxxx  
+参数DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-xxxxxxx  
+无  
