@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cUpdateSettleAccount)修改结算信息  
-接口描述：xxxxx  
+接口描述：修改结算信息  
 请求说明：POST https://epeis.com/Service/v1/cUpdateSettleAccount  
   
 ## 2、服务接口请求参数  
@@ -35,12 +35,12 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16 | 0 | xxxxx |  
-| SETTLEMENT_NAME |  是  | String   | 128 | 0 | xxxxx |  
-| NETWORK_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
+| SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算账户ID |  
+| SETTLEMENT_NAME |  是  | String   | 128 | 0 | 结算户名称 |  
+| NETWORK_TYPE |  是  | String   | 2 | 0 | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
+| ADDRESS |  是  | String   | 128 | 0 | 结算户详细地址 |  
   
-说明：xxxxx  
+说明：结算信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -62,4 +62,4 @@
   
 参数DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：已通过认证的结算户不能修改地址和管网类型。  

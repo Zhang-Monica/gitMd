@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cQueryCustomerAccount)客户账户信息查询  
-接口描述：xxxxx  
+接口描述：查询客户账户  
 请求说明：POST https://epeis.com/Service/v1/cQueryCustomerAccount  
   
 ## 2、服务接口请求参数  
@@ -30,9 +30,9 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 16 | 0 | 客户账户ID |  
   
-说明：xxxxx  
+说明：客户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -76,23 +76,23 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| CUSTOMER_NAME |  是  | String   | xxxxx |  
-| CUSTOMER_TYPE |  是  | String   | xxxxx |  
-| MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
-| EMAIL_INFO |  是  | String   | xxxxx |  
-| ACC_CERT_INFO |  是  | String   | xxxxx |  
-| ACC_CERT_TYPE |  是  | String   | xxxxx |  
-| VALID_START_DATE |  是  | Number   | xxxxx |  
-| VALID_END_DATE |  是  | Number   | xxxxx |  
-| TAX_NUMBER_INFO |  是  | String   | xxxxx |  
-| TELEPHONE_INFO |  是  | String   | xxxxx |  
-| BANK_ACCOUNT_INFO |  是  | String   | xxxxx |  
-| BANK_NAME |  是  | String   | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 客户账户ID |  
+| ATTESTATION_TYPE |  是  | String   | 客户激活类型：1-未激活；2-审核中；3-已激活 |  
+| CUSTOMER_NAME |  是  | String   | 客户姓名 |  
+| CUSTOMER_TYPE |  是  | String   | 客户类型：1-自然人；2-非自然人 |  
+| MOBILE_PHONE_INFO |  是  | String   | 手机号码 |  
+| EMAIL_INFO |  是  | String   | 邮箱 |  
+| ACC_CERT_INFO |  是  | String   | 账户证件号码 |  
+| ACC_CERT_TYPE |  是  | String   | 账户证件类型：1-身份证；2-统一社会信用代码 |  
+| VALID_START_DATE |  是  | Number   | 证件有效起始日期 |  
+| VALID_END_DATE |  是  | Number   | 证件有效截止日期 |  
+| TAX_NUMBER_INFO |  是  | String   | 纳税识别号 |  
+| TELEPHONE_INFO |  是  | String   | 固定电话 |  
+| BANK_ACCOUNT_INFO |  是  | String   | 开户银行 |  
+| BANK_NAME |  是  | String   | 开户行名称 |  
+| ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
+| ADDRESS |  是  | String   | 详细地址 |  
   
-说明：xxxxx  
+说明：客户信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  

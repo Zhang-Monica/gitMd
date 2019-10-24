@@ -73,8 +73,8 @@
 | USER_CUS_DID |  是  | String   | 用户客户ID |  
 | USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
 | USER_NAME |  是  | String   | 用户姓名 |  
-| ADMIN_CODE_INFO |  是  | String   | 用户所在行政区划 |  
-| ADDRESS |  是  | String   | 用户所在地实际地址 |  
+| ADMIN_CODE_INFO |  是  | String   | 用户使用地址行政区划 |  
+| ADDRESS |  是  | String   | 用户使用地址的详细地址 |  
 | ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：用户信息  

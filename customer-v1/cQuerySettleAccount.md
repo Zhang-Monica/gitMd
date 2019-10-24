@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cQuerySettleAccount)查询结算户  
-接口描述：xxxxx  
+接口描述：查询结算户  
 请求说明：POST https://epeis.com/Service/v1/cQuerySettleAccount  
   
 ## 2、服务接口请求参数  
@@ -32,9 +32,9 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 结算户认证类型：1-未认证；2-审核中；3-已认证 |  
   
-说明：xxxxx  
+说明：客户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -67,12 +67,12 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | xxxxx |  
-| SETTLEMENT_NAME |  是  | String   | xxxxx |  
-| NETWORK_TYPE |  是  | String   | xxxxx |  
-| OWE_BALANCE |  是  | Number   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
+| SETTLEMENT_AID |  是  | String   | 结算账户ID |  
+| SETTLEMENT_NAME |  是  | String   | 结算户姓名 |  
+| NETWORK_TYPE |  是  | String   | 官网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
+| OWE_BALANCE |  是  | Number   | 欠费 |  
+| ADDRESS |  是  | String   | 详细地址 |  
   
-说明：xxxxx  
+说明：结算信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  

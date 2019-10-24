@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cQuerySettleAccountInformation)查询结算信息  
-接口描述：xxxxx  
+接口描述：查询结算信息  
 请求说明：POST https://epeis.com/Service/v1/cQuerySettleAccountInformation  
   
 ## 2、服务接口请求参数  
@@ -33,10 +33,10 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
+| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
-说明：xxxxx  
+说明：结算信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -85,28 +85,28 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | xxxxx |  
-| USER_CUS_DID |  是  | String   | xxxxx |  
-| USER_ACCOUNT_AID |  是  | String   | xxxxx |  
-| SETTLEMENT_AID |  是  | String   | xxxxx |  
-| SETTLEMENT_NAME |  是  | String   | xxxxx |  
-| NETWORK_TYPE |  是  | String   | xxxxx |  
-| OWE_BALANCE |  是  | Number   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| CONTROL_TYPE |  是  | String   | xxxxx |  
-| INDUSTRY_CODE_INFO |  是  | String   | xxxxx |  
-| INDUSTRY_TYPE |  是  | String   | xxxxx |  
-| RESIDENT_YESNO |  是  | String   | xxxxx |  
-| CITY_YESNO |  是  | String   | xxxxx |  
-| ARMY_YESNO |  是  | String   | xxxxx |  
-| TEMPORARY_YESNO |  是  | String   | xxxxx |  
-| PUBLIC_USE_YESNO |  是  | String   | xxxxx |  
-| CONNECT_MODE_TYPE |  是  | String   | xxxxx |  
-| SIGN_CONTRACT_YESNO |  是  | String   | xxxxx |  
-| CONTRACT_NUM |  是  | String   | xxxxx |  
-| CON_DEADLINE_DATE |  是  | Number   | xxxxx |  
-| REMARK_INS |  是  | String   | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 客户账户ID |  
+| USER_CUS_DID |  是  | String   | 使用者客户ID |  
+| USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
+| SETTLEMENT_AID |  是  | String   | 结算账户ID |  
+| SETTLEMENT_NAME |  是  | String   | 结算户姓名 |  
+| NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
+| OWE_BALANCE |  是  | Number   | 欠费 |  
+| ADDRESS |  是  | String   | 详细地址 |  
+| CONTROL_TYPE |  是  | String   | 量控费控类型：1-量控；2-费控 |  
+| INDUSTRY_CODE_INFO |  是  | String   | 行业分类 |  
+| INDUSTRY_TYPE |  是  | String   | 产业分类，分类暂未划分 |  
+| RESIDENT_YESNO |  是  | String   | 是否居民：1-否；2-是 |  
+| CITY_YESNO |  是  | String   | 是否城市：1-否；2-是 |  
+| ARMY_YESNO |  是  | String   | 是否竣工：1-否；2-是 |  
+| TEMPORARY_YESNO |  是  | String   | 是否临时：1-否；2-是 |  
+| PUBLIC_USE_YESNO |  是  | String   | 是否公用：1-否；2-是 |  
+| CONNECT_MODE_TYPE |  是  | String   | 接线类型：1-A相；2-B相；3-C相；4-三相三线；5-三相四线 |  
+| SIGN_CONTRACT_YESNO |  是  | String   | 是否签订合同：1-否；2-是 |  
+| CONTRACT_NUM |  是  | String   | 合同编号 |  
+| CON_DEADLINE_DATE |  是  | Number   | 合同期限 |  
+| REMARK_INS |  是  | String   | 备注 |  
   
-说明：xxxxx  
+说明：结算信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  

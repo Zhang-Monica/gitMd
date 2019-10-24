@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cUpdateCustomerAccount)客户账户信息变更  
-接口描述：xxxxx  
+接口描述：客户账户信息变更  
 请求说明：POST https://epeis.com/Service/v1/cUpdateCustomerAccount  
   
 ## 2、服务接口请求参数  
@@ -40,17 +40,17 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_NAME |  是  | String   | 256 | 0 | xxxxx |  
-| EMAIL_INFO |  是  | String   | 30 | 0 | xxxxx |  
-| VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
-| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | xxxxx |  
-| TELEPHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | xxxxx |  
-| BANK_NAME |  是  | String   | 256 | 0 | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
+| CUSTOMER_NAME |  是  | String   | 256 | 0 | 客户名称 |  
+| EMAIL_INFO |  是  | String   | 30 | 0 | 邮箱 |  
+| VERIFY_CODE |  是  | String   | 20 | 0 | 验证码 |  
+| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | 纳税识别号 |  
+| TELEPHONE_INFO |  是  | String   | 20 | 0 | 固定电话 |  
+| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | 银行账号 |  
+| BANK_NAME |  是  | String   | 256 | 0 | 开户行名称 |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
+| ADDRESS |  是  | String   | 128 | 0 | 详细地址 |  
   
-说明：xxxxx  
+说明：客户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -82,11 +82,11 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| CUSTOMER_NAME |  是  | String   | xxxxx |  
-| CUSTOMER_TYPE |  是  | String   | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 客户账户 |  
+| ATTESTATION_TYPE |  是  | String   | 客户认证类型：1-未认证；2-审核中；3-已认证 |  
+| CUSTOMER_NAME |  是  | String   | 客户名称 |  
+| CUSTOMER_TYPE |  是  | String   | 客户类型：1-自然人；2-非自然人 |  
   
-说明：xxxxx  
+说明：客户信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  

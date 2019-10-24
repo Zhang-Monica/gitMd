@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cUsufructAuthorization)使用授权  
-接口描述：xxxxx  
+接口描述：使用权授权给其他客户  
 请求说明：POST https://epeis.com/Service/v1/cUsufructAuthorization  
   
 ## 2、服务接口请求参数  
@@ -36,17 +36,17 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
-| USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
+| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
+| USER_CUS_DID |  是  | String   | 16 | 0 | 新客户账户 |  
   
-说明：xxxxx  
+说明：用户信息  
 参数SETTLE_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16 | 0 | xxxxx |  
+| SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算账户ID |  
   
-说明：xxxxx  
+说明：结算信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -68,4 +68,4 @@
   
 参数DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：使用权授权时，结算信息支持多条数据操作。  

@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cCreateSettleAccount)添加结算信息  
-接口描述：xxxxx  
+接口描述：添加结算信息  
 请求说明：POST https://epeis.com/Service/v1/cCreateSettleAccount  
   
 ## 2、服务接口请求参数  
@@ -35,12 +35,12 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
-| NETWORK_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| SETTLEMENT_NAME |  否  | String   | 128 | 0 | xxxxx |  
-| ADDRESS |  否  | String   | 128 | 0 | xxxxx |  
+| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
+| NETWORK_TYPE |  是  | String   | 2 | 0 | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
+| SETTLEMENT_NAME |  否  | String   | 128 | 0 | 结算户姓名 |  
+| ADDRESS |  否  | String   | 128 | 0 | 详细地址 |  
   
-说明：xxxxx  
+说明：结算信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -62,4 +62,4 @@
   
 参数DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：结算信息可以批量添加。  

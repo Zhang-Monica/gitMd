@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cResetCustomerPwd)客户密码重置  
-接口描述：xxxxx  
+接口描述：客户密码重置  
 请求说明：POST https://epeis.com/Service/v1/cResetCustomerPwd  
   
 ## 2、服务接口请求参数  
@@ -33,10 +33,10 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ACCOUNT_PASSWORD |  是  | String   | 128 | 0 | xxxxx |  
-| VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
+| ACCOUNT_PASSWORD |  是  | String   | 128 | 0 | 客户密码 |  
+| VERIFY_CODE |  是  | String   | 20 | 0 | 验证码 |  
   
-说明：xxxxx  
+说明：客户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -58,4 +58,4 @@
   
 参数DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  
