@@ -43,6 +43,7 @@
 				"NETWORK_TYPE":	"",
 				"ACCOUNT_MONTH":	0,
 				"RECE_AMOUNT":	0,
+				"LIQ_DAMA_LEVY_DATE":	0,
 				"RECEIPT_LIQ_DAMA":	0
 			}]
 	}
@@ -71,6 +72,7 @@
 | NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
 | RECE_AMOUNT |  是  | Number   | 应缴金额，精确到2位小数点 |  
+| LIQ_DAMA_LEVY_DATE |  是  | Number   | 违约金日期 |  
 | RECEIPT_LIQ_DAMA |  是  | Number   | 应缴违约金，精确到2位小数点 |  
   
 说明：欠费信息  

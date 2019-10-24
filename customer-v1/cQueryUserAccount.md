@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(cQueryUserAccount)查询用户信息  
-接口描述：xxxxx  
+接口描述：查询用户信息  
 请求说明：POST https://epeis.com/Service/v1/cQueryUserAccount  
   
 ## 2、服务接口请求参数  
@@ -32,9 +32,9 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
-说明：xxxxx  
+说明：用户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -69,14 +69,14 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | xxxxx |  
-| USER_CUS_DID |  是  | String   | xxxxx |  
-| USER_ACCOUNT_AID |  是  | String   | xxxxx |  
-| USER_NAME |  是  | String   | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 客户账户ID |  
+| USER_CUS_DID |  是  | String   | 用户客户ID |  
+| USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
+| USER_NAME |  是  | String   | 用户姓名 |  
+| ADMIN_CODE_INFO |  是  | String   | 用户所在行政区划 |  
+| ADDRESS |  是  | String   | 用户所在地实际地址 |  
+| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
-说明：xxxxx  
+说明：用户信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  
