@@ -29,6 +29,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，可不激活 |  
   
+  
 参数CUS_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
@@ -55,6 +56,7 @@
 | CODE | 是 | Number | 响应代码，0为成功 |  
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
+  
   
 参数DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  

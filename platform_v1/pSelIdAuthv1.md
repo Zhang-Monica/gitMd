@@ -13,6 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
+	"SYS_PAGE":	{
+		"PAGE_NO":	1,
+		"PAGE_ROWS":	8
+	},
 	"SYS_REGISTER":	[{
 			"ATTESTATION_TYPE":	""
 		}]
@@ -27,6 +31,11 @@
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
+  
+参数SYS_PAGE，类型：object  
+  
+| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
+| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
 参数SYS_REGISTER，类型：Array  
   
@@ -43,6 +52,12 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
+		"SYS_PAGE":	{
+			"PAGE_NO":	1,
+			"PAGE_ROWS":	8,
+			"NEXT_YESNO":	"2",
+			"TOTAL":	1000
+		},
 		"SYS_REGISTER":	[{
 				"REGISTER_DID":	"",
 				"MOBILE_PHONE_INFO":	"",
@@ -72,6 +87,13 @@
 | CODE | 是 | Number | 响应代码，0为成功 |  
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
+  
+参数SYS_PAGE，类型：object  
+  
+| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页 |  
+| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数 |  
+| NEXT_YESNO    |  是  | String   | 2 | 0 | 是否有下页，1-无，2-有 |  
+| TOTAL         |  是  | Number   | 4 | 0 | 总行数 |  
   
 参数DATA，类型：object 本服务接口响应数据说明如下：  
 参数SYS_REGISTER，类型：object  
