@@ -1,0 +1,34 @@
+  
+| 服务接口名称 | 版本号 | 说明文档链接 |  
+| :----------------- | :-----: | :---------------- |  
+| 商户账户开户 | v1 | [sInsAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sInsAcctv1.md) |  
+| 商户账户信息查询 | v1 | [sSelAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelAcctv1.md) |  
+| 商户账户信息变更 | v1 | [sUpdAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdAcctv1.md) |  
+| 商户密码重置 | v1 | [sUpdPwdv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdPwdv1.md) |  
+| 商户手机号码变更 | v1 | [sUpdPhonev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdPhonev1.md) |  
+| 商户邮箱更换 | v1 | [sUpdMailboxv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdMailboxv1.md) |  
+| 修改用户账户 | v1 | [sUpdUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdUserAcctv1.md) |  
+| 添加用户账户 | v1 | [sInsUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sInsUserAcctv1.md) |  
+| 修改结算户信息 | v1 | [sUpdSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdSettlev1.md) |  
+| 添加结算户信息 | v1 | [sInsSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sInsSettlev1.md) |  
+| 注销结算户信息 | v1 | [sDelSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sDelSettlev1.md) |  
+| 添加计量点信息 | v1 | [sInsMeteragev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sInsMeteragev1.md) |  
+| 查询计量点信息 | v1 | [sSelMeteragev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelMeteragev1.md) |  
+| 修改计量点信息 | v1 | [sUpdMeteragev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdMeteragev1.md) |  
+| 删除计量点信息 | v1 | [sDelMeteragev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sDelMeteragev1.md) |  
+| 申请所有权人变更 | v1 | [sUpdOwnerv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdOwnerv1.md) |  
+| 根据客户号查询客户账户 | v1 | [sSelCusAccv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelCusAccv1.md) |  
+| 查询欠费明细 | v1 | [sSelOwev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelOwev1.md) |  
+| 登记票据信息 | v1 | [sInsBillv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sInsBillv1.md) |  
+| 修改票据信息 | v1 | [sUpdBillv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sUpdBillv1.md) |  
+| 删除票据信息 | v1 | [sDelBillv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sDelBillv1.md) |  
+| 查询票据信息 | v1 | [sSelBillv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelBillv1.md) |  
+| 生成订单 | v1 | [sInsOrderv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sInsOrderv1.md) |  
+| 客户充值订单 | v1 | [sRePaidOrderv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sRePaidOrderv1.md) |  
+| 订单销账 | v1 | [sPayOrderv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sPayOrderv1.md) |  
+| 查询用户账单信息 | v1 | [sSelUserAccv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelUserAccv1.md) |  
+| 查询发票信息 | v1 | [sSelInvoiv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelInvoiv1.md) |  
+| 查询发票明细信息 | v1 | [sSelDeInvoiv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelDeInvoiv1.md) |  
+| 打印开票信息 | v1 | [sPrintInvoiv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sPrintInvoiv1.md) |  
+| 查询开票信息 | v1 | [sSelPriInvoiv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supplierv1/sSelPriInvoiv1.md) |  
+  
