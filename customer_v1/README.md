@@ -13,7 +13,6 @@
 | 查询用户信息 | v1 | [cSelUserAcctDetailsv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelUserAcctDetailsv1.md) |  
 | 修改用户信息 | v1 | [cUpdUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUpdUserAcctv1.md) |  
 | 删除用户账户 | v1 | [cDelUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cDelUserAcctv1.md) |  
-| 查询结算户详细信息 | v1 | [cSelSettleDetailsv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettleDetailsv1.md) |  
 | 使用授权 | v1 | [cUseAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUseAuthv1.md) |  
 | 申请授权 | v1 | [cApplyAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cApplyAuthv1.md) |  
 | 查询结算户 | v1 | [cSelSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettlev1.md) |  
@@ -27,10 +26,12 @@
 | 接受所有权人变更 | v1 | [cNewOwnerv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cNewOwnerv1.md) |  
 | 添加结算信息 | v1 | [cInsSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cInsSettlev1.md) |  
 | 查询结算信息 | v1 | [cSelSettInfov1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettInfov1.md) |  
+| 查询结算户详细信息 | v1 | [cSelSettleDetailsv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettleDetailsv1.md) |  
 | 修改结算信息 | v1 | [cUpdSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUpdSettlev1.md) |  
 | 删除结算信息 | v1 | [cDelSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cDelSettlev1.md) |  
 | 申请结算户变更 | v1 | [cAppSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cAppSettlev1.md) |  
 | 接受结算户变更 | v1 | [cNewSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cNewSettlev1.md) |  
+| 接受结算户变更 | v1 | [cResumeSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cResumeSettlev1.md) |  
 | 查询欠费总额 | v1 | [cSelOweTotv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelOweTotv1.md) |  
 | 查询欠费明细 | v1 | [cSelOweDetv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelOweDetv1.md) |  
 | 生成缴费订单 | v1 | [cInsOrderv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cInsOrderv1.md) |  
