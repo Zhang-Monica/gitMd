@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(cDelUseAuthv1)接受解除使用授权  
-接口描述：接受或拒绝使用权的退回  
-请求说明：POST https://api.epeis.com/customer/v1/cDelUseAuthv1  
+服务接口：(cInsUseAuthv2)接受使用授权  
+接口描述：接受或拒绝申请授权  
+请求说明：POST https://api.epeis.com/customer/v1/cInsUseAuthv2  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -15,6 +15,7 @@
 	},
 	"USER_ACCOUNT":	{
 		"USER_ACCOUNT_AID":	"",
+		"USER_CUS_DID":	"",
 		"ATTESTATION_TYPE":	""
 	}
 }  
@@ -34,6 +35,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
+| USER_CUS_DID |  是  | String   | 16 | 0 | 使用者客户账户ID |  
 | ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
   
 说明：用户信息  

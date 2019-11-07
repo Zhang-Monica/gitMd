@@ -16,7 +16,7 @@
 }  
 ~~~  
 #### 2.2、请求参数说明  
-参数SYS_HEAD，类型：object  
+参数：SYS_HEAD，类型：object  
   
 | 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
@@ -57,8 +57,9 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数DATA，类型：object 本服务接口响应数据说明如下：  
-参数INOUT_ORDER_DETAIL，类型：object  
+参数：DATA，类型：object 本服务接口响应数据说明如下：  
+  
+参数：INOUT_ORDER_DETAIL，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  

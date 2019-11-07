@@ -10,11 +10,16 @@
 | 客户邮箱变更 | v1 | [cUpdMailboxv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUpdMailboxv1.md) |  
 | 添加用户信息 | v1 | [cInsUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cInsUserAcctv1.md) |  
 | 查询用户信息 | v1 | [cSelUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelUserAcctv1.md) |  
+| 查询用户信息 | v1 | [cSelUserAcctDetailsv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelUserAcctDetailsv1.md) |  
 | 修改用户信息 | v1 | [cUpdUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUpdUserAcctv1.md) |  
 | 删除用户账户 | v1 | [cDelUserAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cDelUserAcctv1.md) |  
-| 查询结算户 | v1 | [cSelSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettlev1.md) |  
+| 查询结算户详细信息 | v1 | [cSelSettleDetailsv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettleDetailsv1.md) |  
 | 使用授权 | v1 | [cUseAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUseAuthv1.md) |  
+| 申请授权 | v1 | [cApplyAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cApplyAuthv1.md) |  
+| 查询结算户 | v1 | [cSelSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettlev1.md) |  
+| 查询授权信息 | v1 | [cSelAuthInfov1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelAuthInfov1.md) |  
 | 接受使用授权 | v1 | [cInsUseAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cInsUseAuthv1.md) |  
+| 接受使用授权 | v1 | [cInsUseAuthv2.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cInsUseAuthv2.md) |  
 | 申请解除使用授权 | v1 | [cAppDelAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cAppDelAuthv1.md) |  
 | 户主解除使用授权 | v1 | [cDelAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cDelAuthv1.md) |  
 | 接受解除使用授权 | v1 | [cDelUseAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cDelUseAuthv1.md) |  

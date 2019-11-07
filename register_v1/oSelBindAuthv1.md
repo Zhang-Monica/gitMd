@@ -26,7 +26,7 @@
 }  
 ~~~  
 #### 2.2、请求参数说明  
-参数SYS_HEAD，类型：object  
+参数：SYS_HEAD，类型：object  
   
 | 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
@@ -34,7 +34,7 @@
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
   
-参数INOUT_BINDGRANT，类型：Array  
+参数：INOUT_BINDGRANT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
@@ -43,7 +43,7 @@
 | REGISTER_INFO |  是  | String   | 64 | 0 | xxxxx |  
   
 说明：xxxxx  
-参数SYS_PAGE，类型：object  
+参数：SYS_PAGE，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
@@ -88,8 +88,9 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数DATA，类型：object 本服务接口响应数据说明如下：  
-参数INOUT_BINDGRANT，类型：object  
+参数：DATA，类型：object 本服务接口响应数据说明如下：  
+  
+参数：INOUT_BINDGRANT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
@@ -104,7 +105,7 @@
 | BINDCONNECT_TYPE |  是  | String   | xxxxx |  
   
 说明：xxxxx  
-参数SYS_PAGE，类型：object  
+参数：SYS_PAGE，类型：object  
   
 
 | 参数              | 必选 | 类型     | 描述             |  

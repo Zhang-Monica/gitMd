@@ -19,7 +19,7 @@
 }  
 ~~~  
 #### 2.2、请求参数说明  
-参数SYS_HEAD，类型：object  
+参数：SYS_HEAD，类型：object  
   
 | 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
@@ -28,7 +28,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数USER_ACCOUNT，类型：object  
+参数：USER_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
@@ -53,8 +53,22 @@
 				"ADMIN_CODE_INFO":	"",
 				"ADDRESS":	"",
 				"ATTESTATION_TYPE":	"",
-				"APPLY_YESNO":	"",
-				"BUS_AUTH_TYPE":	""
+				"ACCT_TYPE":	"",
+				"AUTHORIZATION_TYPE":	""
+			}],
+		"INOUT_SETTLE_ACCOUNT":	[{
+				"CUSTOMER_DID":	"",
+				"CUSTOMER_DID_MC":	"",
+				"USER_CUS_DID":	"",
+				"USER_CUS_DID_MC":	"",
+				"USER_ACCOUNT_AID":	"",
+				"SETTLEMENT_AID":	"",
+				"SETTLEMENT_NAME":	"",
+				"NETWORK_TYPE":	"",
+				"ADDRESS":	"",
+				"ATTESTATION_TYPE":	"",
+				"OWE_BALANCE":	0,
+				"AUTHORIZATION_TYPE":	""
 			}]
 	}
 }  
@@ -67,8 +81,9 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数DATA，类型：object 本服务接口响应数据说明如下：  
-参数INOUT_USER_ACCOUNT，类型：object  
+参数：DATA，类型：object 本服务接口响应数据说明如下：  
+  
+参数：INOUT_USER_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
@@ -80,11 +95,30 @@
 | USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
 | USER_NAME |  是  | String   | 用户姓名 |  
 | ADMIN_CODE_INFO |  是  | String   | 用户使用地址行政区划 |  
-| ADDRESS |  是  | String   | 用户使用地址的详细地址 |  
+| ADDRESS |  是  | String   | 用户居住地址的详细地址 |  
 | ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
-| APPLY_YESNO |  是  | String   | 是否有申请：1-否；2-是 |  
-| BUS_AUTH_TYPE |  是  | String   | 业务类型：1-所有权变更；2-申请使用权授权；3-申请解除使用权；4-结算户变更 |  
+| ACCT_TYPE |  是  | String   | 用户账户类型：1-业主；2-非业主用户；3-非业主结算户 |  
+| AUTHORIZATION_TYPE |  是  | String   | 账户授权状态：1-未授权；2-授权中；3-已授权；4-被授权 |  
   
 说明：用户信息  
+参数：INOUT_SETTLE_ACCOUNT，类型：Array  
+  
+
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| CUSTOMER_DID |  是  | String   | 客户账户ID |  
+| CUSTOMER_DID_MC |  是  | String   | 客户账户名称 |  
+| USER_CUS_DID |  是  | String   | 使用者客户ID |  
+| USER_CUS_DID_MC |  是  | String   | 使用者客户名称 |  
+| USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
+| SETTLEMENT_AID |  是  | String   | 结算账户ID |  
+| SETTLEMENT_NAME |  是  | String   | 结算户姓名 |  
+| NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
+| ADDRESS |  是  | String   | 结算户地址 |  
+| ATTESTATION_TYPE |  是  | String   | 结算户认证类型：1-未认证；2-审核中；3-已认证 |  
+| OWE_BALANCE |  是  | Number   | 欠费 |  
+| AUTHORIZATION_TYPE |  是  | String   | 结算户授权状态：1-未授权；2-授权中；3-已授权；4-被授权 |  
+  
+说明：结算信息  
 ## 4、服务接口说明  
 说明：'CUSTOMER_DID'码名转换字段名：'CUSTOMER_DID_MC','USER_CUS_DID'码名转换字段名：'USER_CUS_DID_MC'  

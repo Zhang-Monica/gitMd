@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(cSelSettInfov1)查询结算信息  
-接口描述：查询结算信息  
-请求说明：POST https://api.epeis.com/customer/v1/cSelSettInfov1  
+服务接口：(cSelSettleDetailsv1)查询结算户详细信息  
+接口描述：查询结算户详细信息  
+请求说明：POST https://api.epeis.com/customer/v1/cSelSettleDetailsv1  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,13 +13,8 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SYS_PAGE":	{
-		"PAGE_NO":	1,
-		"PAGE_ROWS":	8
-	},
 	"SETTLE_ACCOUNT":	{
-		"USER_ACCOUNT_AID":	"",
-		"ATTESTATION_TYPE":	""
+		"SETTLEMENT_AID":	""
 	}
 }  
 ~~~  
@@ -33,19 +28,11 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SYS_PAGE，类型：object  
-  
-| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
-| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
-  
 参数：SETTLE_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLEMENT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
   
 说明：结算信息  
   
@@ -56,13 +43,7 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"SYS_PAGE":	{
-			"PAGE_NO":	1,
-			"PAGE_ROWS":	8,
-			"NEXT_YESNO":	"2",
-			"TOTAL":	1000
-		},
-		"SETTLE_ACCOUNT":	[{
+		"INOUT_SETTLE_ACCOUNT":	[{
 				"CUSTOMER_DID":	"",
 				"CUSTOMER_DID_MC":	"",
 				"USER_CUS_DID":	"",
@@ -71,12 +52,15 @@
 				"SETTLEMENT_AID":	"",
 				"SETTLEMENT_NAME":	"",
 				"NETWORK_TYPE":	"",
-				"ADDRESS":	"",
 				"OWE_BALANCE":	0,
-				"ATTESTATION_TYPE":	"",
+				"ADDRESS":	"",
+				"RETAIL_CO_DID":	"",
+				"RETAIL_CO_DID_MC":	"",
+				"PACK_REMARK":	"",
 				"SIGN_CONTRACT_YESNO":	"",
 				"CONTRACT_NUM":	"",
-				"CON_DEADLINE_DATE":	0
+				"CON_DEADLINE_DATE":	0,
+				"REMARK_INS":	""
 			}]
 	}
 }  
@@ -91,16 +75,7 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：SYS_PAGE，类型：object  
-  
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| PAGE_NO       |  是  | Number   | 第几页 |  
-| PAGE_ROWS     |  是  | Number   | 每页行数 |  
-| NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
-| TOTAL         |  是  | Number   | 总行数 |  
-  
-参数：SETTLE_ACCOUNT，类型：Array  
+参数：INOUT_SETTLE_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
@@ -113,13 +88,16 @@
 | SETTLEMENT_AID |  是  | String   | 结算账户ID |  
 | SETTLEMENT_NAME |  是  | String   | 结算户姓名 |  
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
-| ADDRESS |  是  | String   | 结算信息地址 |  
 | OWE_BALANCE |  是  | Number   | 欠费 |  
-| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| ADDRESS |  是  | String   | 详细地址 |  
+| RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
+| RETAIL_CO_DID_MC |  是  | String   | 销售公司名称 |  
+| PACK_REMARK |  是  | String   | 套餐说明 |  
 | SIGN_CONTRACT_YESNO |  是  | String   | 是否签订合同：1-否；2-是 |  
 | CONTRACT_NUM |  是  | String   | 合同编号 |  
 | CON_DEADLINE_DATE |  是  | Number   | 合同期限 |  
+| REMARK_INS |  是  | String   | 备注 |  
   
 说明：结算信息  
 ## 4、服务接口说明  
-说明：'CUSTOMER_DID'码名转换字段名：'CUSTOMER_DID_MC','USER_CUS_DID'码名转换字段名：'USER_CUS_DID_MC'  
+说明：无  
