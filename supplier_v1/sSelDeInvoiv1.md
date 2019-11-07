@@ -34,6 +34,8 @@
   
 参数SYS_PAGE，类型：object  
   
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
@@ -89,10 +91,12 @@
   
 参数SYS_PAGE，类型：object  
   
-| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页 |  
-| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数 |  
-| NEXT_YESNO    |  是  | String   | 2 | 0 | 是否有下页，1-无，2-有 |  
-| TOTAL         |  是  | Number   | 4 | 0 | 总行数 |  
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| PAGE_NO       |  是  | Number   | 第几页 |  
+| PAGE_ROWS     |  是  | Number   | 每页行数 |  
+| NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
+| TOTAL         |  是  | Number   | 总行数 |  
   
 参数DATA，类型：object 本服务接口响应数据说明如下：  
 参数ACC_INVOICE_DETAIL，类型：object  
