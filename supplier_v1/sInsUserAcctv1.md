@@ -13,20 +13,41 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"USER_ACCOUNT":	[{
+	"USER_ACCOUNT":	{
+		"CUSTOMER_DID":	"",
+		"USER_CUS_DID":	"",
+		"USER_NAME":	"",
+		"ADMIN_CODE_INFO":	"",
+		"ADDRESS":	"",
+		"MAP_NAME":	"",
+		"X":	0,
+		"Y":	0,
+		"RESIDENT_YESNO":	"",
+		"ATTESTATION_TYPE":	"",
+		"RISK_BALANCE":	0,
+		"MARGIN_BALANCE":	0,
+		"ADVANCE_LIMIT":	0
+	},
+	"SETTLE_ACCOUNT":	[{
 			"CUSTOMER_DID":	"",
 			"USER_CUS_DID":	"",
-			"USER_NAME":	"",
-			"ADMIN_CODE_INFO":	"",
-			"ADDRESS":	"",
-			"MAP_NAME":	"",
-			"X":	0,
-			"Y":	0,
-			"RESIDENT_YESNO":	"",
+			"USER_ACCOUNT_AID":	"",
+			"SETTLEMENT_NAME":	"",
 			"ATTESTATION_TYPE":	"",
-			"RISK_BALANCE":	0,
-			"MARGIN_BALANCE":	0,
-			"ADVANCE_LIMIT":	0
+			"ADDRESS":	"",
+			"CONTROL_TYPE":	"",
+			"INDUSTRY_CODE_INFO":	"",
+			"INDUSTRY_TYPE":	"",
+			"RESIDENT_YESNO":	"",
+			"CITY_YESNO":	"",
+			"ARMY_YESNO":	"",
+			"TEMPORARY_YESNO":	"",
+			"PUBLIC_USE_YESNO":	"",
+			"CONNECT_MODE_TYPE":	"",
+			"SIGN_CONTRACT_YESNO":	"",
+			"CONTRACT_NUM":	"",
+			"CON_DEADLINE_DATE":	0,
+			"REMARK_INS":	""
 		}]
 }  
 ~~~  
@@ -40,7 +61,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：USER_ACCOUNT，类型：Array  
+参数：USER_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
@@ -57,6 +78,31 @@
 | RISK_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
 | MARGIN_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
 | ADVANCE_LIMIT |  否  | Number   | 16 | 2 | xxxxx |  
+  
+说明：xxxxx  
+参数：SETTLE_ACCOUNT，类型：Array  
+  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
+| USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
+| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
+| SETTLEMENT_NAME |  是  | String   | 128 | 0 | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
+| CONTROL_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| INDUSTRY_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| INDUSTRY_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| RESIDENT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| CITY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| ARMY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| TEMPORARY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| PUBLIC_USE_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| CONNECT_MODE_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| SIGN_CONTRACT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| CONTRACT_NUM |  是  | String   | 30 | 0 | xxxxx |  
+| CON_DEADLINE_DATE |  是  | Number   | 8 | 0 | xxxxx |  
+| REMARK_INS |  否  | String   | 256 | 0 | xxxxx |  
   
 说明：xxxxx  
   

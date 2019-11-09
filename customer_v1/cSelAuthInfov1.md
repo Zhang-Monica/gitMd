@@ -62,6 +62,7 @@
 				"SETTLEMENT_AID":	"",
 				"SETTLEMENT_NAME":	"",
 				"NETWORK_TYPE":	"",
+				"ACCT_TYPE":	"",
 				"BUS_AUTH_TYPE":	""
 			}]
 	}
@@ -105,6 +106,7 @@
 | SETTLEMENT_AID |  是  | String   | 结算账户ID |  
 | SETTLEMENT_NAME |  是  | String   | 结算户姓名 |  
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
+| ACCT_TYPE |  是  | String   | 用户账户类型：1-业主；2-非业主用户；3-非业主结算户 |  
 | BUS_AUTH_TYPE |  是  | String   | 业务类型：1-所有权变更；2-申请使用权；3-解除使用权；4-结算户变更 |  
   
 说明：结算信息  

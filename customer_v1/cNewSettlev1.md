@@ -14,8 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"SETTLE_ACCOUNT":	[{
-			"SETTLEMENT_AID":	"",
-			"USER_CUS_DID":	"",
+			"USER_ACCOUNT_AID":	"",
 			"ATTESTATION_TYPE":	""
 		}]
 }  
@@ -34,8 +33,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算账户ID |  
-| USER_CUS_DID |  是  | String   | 16 | 0 | 使用者客户账户ID |  
+| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 结算账户ID |  
 | ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
   
 说明：结算信息  
@@ -60,4 +58,4 @@
   
 参数：DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：结算信息可批量传入处理。  
+说明：无  

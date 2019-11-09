@@ -47,6 +47,7 @@
 				"CUSTOMER_DID":	"",
 				"CUSTOMER_NAME":	"",
 				"MOBILE_PHONE_INFO":	"",
+				"ACC_CERT_INFO":	"",
 				"ADMIN_CODE_INFO":	"",
 				"ADDRESS":	""
 			}]
@@ -71,6 +72,7 @@
 | CUSTOMER_DID |  是  | String   | 16个字符，客户唯一的账号ID |  
 | CUSTOMER_NAME |  是  | String   | 256个字符，客户名称 |  
 | MOBILE_PHONE_INFO |  是  | String   | 20个字符，手机号码 |  
+| ACC_CERT_INFO |  是  | String   | 20个字符，客户身份证号 |  
 | ADMIN_CODE_INFO |  是  | String   | 20个字符，行政区划统一编码 |  
 | ADDRESS |  是  | String   | 128个字符，详细地址 |  
   
