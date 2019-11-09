@@ -60,7 +60,9 @@
 				"SIGN_CONTRACT_YESNO":	"",
 				"CONTRACT_NUM":	"",
 				"CON_DEADLINE_DATE":	0,
-				"REMARK_INS":	""
+				"REMARK_INS":	"",
+				"ACCT_TYPE":	"",
+				"AUTHORIZATION_TYPE":	""
 			}]
 	}
 }  
@@ -97,6 +99,8 @@
 | CONTRACT_NUM |  是  | String   | 合同编号 |  
 | CON_DEADLINE_DATE |  是  | Number   | 合同期限 |  
 | REMARK_INS |  是  | String   | 备注 |  
+| ACCT_TYPE |  是  | String   | 用户账户类型：1-业主；2-非业主用户；3-非业主结算户 |  
+| AUTHORIZATION_TYPE |  是  | String   | 账户授权状态：1-未授权；2-授权中；3-已授权；4-被授权 |  
   
 说明：结算信息  
 ## 4、服务接口说明  

@@ -43,7 +43,7 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"USER_ACCOUNT":	[{
+		"INOUT_USER_ACCOUNT":	[{
 				"CUSTOMER_DID":	"",
 				"CUSTOMER_DID_MC":	"",
 				"USER_CUS_DID":	"",
@@ -61,7 +61,9 @@
 				"RISK_BALANCE":	0,
 				"MARGIN_BALANCE":	0,
 				"ADVANCE_LIMIT":	0,
-				"ATTESTATION_TYPE":	""
+				"ATTESTATION_TYPE":	"",
+				"ACCT_TYPE":	"",
+				"AUTHORIZATION_TYPE":	""
 			}]
 	}
 }  
@@ -76,7 +78,7 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：USER_ACCOUNT，类型：Array  
+参数：INOUT_USER_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
@@ -99,6 +101,8 @@
 | MARGIN_BALANCE |  是  | Number   | 保证金余额 |  
 | ADVANCE_LIMIT |  是  | Number   | 预付限额 |  
 | ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| ACCT_TYPE |  是  | String   | 用户账户类型：1-业主；2-非业主用户；3-非业主结算户 |  
+| AUTHORIZATION_TYPE |  是  | String   | 账户授权状态：1-未授权；2-授权中；3-已授权；4-被授权 |  
   
 说明：用户信息  
 ## 4、服务接口说明  
