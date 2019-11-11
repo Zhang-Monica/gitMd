@@ -29,9 +29,14 @@
 | 查询结算户详细信息 | v1 | [cSelSettleDetailsv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelSettleDetailsv1.md) |  
 | 修改结算信息 | v1 | [cUpdSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUpdSettlev1.md) |  
 | 删除结算信息 | v1 | [cDelSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cDelSettlev1.md) |  
+| 查看合同 | v1 | [cSelContractv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelContractv1.md) |  
+| 签订合同 | v1 | [cSignContractv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSignContractv1.md) |  
 | 申请结算户变更 | v1 | [cAppSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cAppSettlev1.md) |  
 | 接受结算户变更 | v1 | [cNewSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cNewSettlev1.md) |  
 | 接受结算户变更 | v1 | [cResumeSettlev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cResumeSettlev1.md) |  
+| 申请过户 | v1 | [cAppHouseHoldv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cAppHouseHoldv1.md) |  
+| 查询用户账单信息 | v1 | [cSelHouseHolderAppv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelHouseHolderAppv1.md) |  
+| 处理过户申请 | v1 | [cAlterHouseHoldv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cAlterHouseHoldv1.md) |  
 | 查询欠费总额 | v1 | [cSelOweTotv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelOweTotv1.md) |  
 | 查询欠费明细 | v1 | [cSelOweDetv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelOweDetv1.md) |  
 | 生成缴费订单 | v1 | [cInsOrderv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cInsOrderv1.md) |  

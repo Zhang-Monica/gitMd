@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(cNewOwnerv1)接受所有权人变更  
-接口描述：接受或拒绝所有权人变更  
-请求说明：POST https://api.epeis.com/customer/v1/cNewOwnerv1  
+服务接口：(cSignContractv1)签订合同  
+接口描述：确认结算信息和用户信息后签订合同确认  
+请求说明：POST https://api.epeis.com/customer/v1/cSignContractv1  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,13 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"USER_ACCOUNT":	{
-		"USER_ACCOUNT_AID":	"",
-		"ATTESTATION_TYPE":	""
-	},
-	"SETTLE_ACCOUNT":	[{
-			"SETTLEMENT_AID":	""
-		}]
+	"SETTLE_ACCOUNT":	{
+		"SETTLEMENT_AID":	""
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -32,15 +28,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：USER_ACCOUNT，类型：object  
-  
-| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
-  
-说明：用户信息  
-参数：SETTLE_ACCOUNT，类型：Array  
+参数：SETTLE_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
