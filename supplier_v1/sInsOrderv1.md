@@ -27,8 +27,7 @@
 			"RECE_AMOUNT":	0,
 			"PAID_IN_AMOUNT":	0,
 			"RECEIPT_LIQ_DAMA":	0,
-			"PAID_IN_LIQ_DAMA":	0,
-			"DRAW_ADVANCE_PAY":	0
+			"PAID_IN_LIQ_DAMA":	0
 		}]
 }  
 ~~~  
@@ -64,7 +63,6 @@
 | PAID_IN_AMOUNT |  是  | Number   | 16 | 2 | 实缴金额，精确到2位小数点 |  
 | RECEIPT_LIQ_DAMA |  是  | Number   | 16 | 2 | 应缴违约金，精确到2位小数点 |  
 | PAID_IN_LIQ_DAMA |  是  | Number   | 16 | 2 | 实缴违约金，精确到2位小数点 |  
-| DRAW_ADVANCE_PAY |  是  | Number   | 16 | 2 | 支取预付款，精确到2位小数点 |  
   
 说明：订单明细  
   

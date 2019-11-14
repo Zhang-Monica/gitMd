@@ -46,14 +46,14 @@
 | ACC_CERT_TYPE |  是  | String   | 2 | 0 | 账户证件类型：1-身份证；2-统一社会信用代码 |  
 | ACCOUNT_PASSWORD |  是  | String   | 128 | 0 | 账户密码 |  
 | CUSTOMER_NAME |  是  | String   | 256 | 0 | 客户名称 |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
-| ADDRESS |  是  | String   | 128 | 0 | 身份证地址 |  
+| ADMIN_CODE_INFO |  否  | String   | 20 | 0 | 行政区划 |  
+| ADDRESS |  否  | String   | 128 | 0 | 身份证地址 |  
 | CUSTOMER_TYPE |  是  | String   | 2 | 0 | 客户类型：1-自然人；2-非自然人 |  
-| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | 纳税识别号 |  
-| TELEPHONE_INFO |  是  | String   | 20 | 0 | 固定电话 |  
-| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | 开户银行 |  
-| BANK_NAME |  是  | String   | 256 | 0 | 开户行名称 |  
-| EMAIL_INFO |  是  | String   | 30 | 0 | 邮箱 |  
+| TAX_NUMBER_INFO |  否  | String   | 30 | 0 | 纳税识别号 |  
+| TELEPHONE_INFO |  否  | String   | 20 | 0 | 固定电话 |  
+| BANK_ACCOUNT_INFO |  否  | String   | 30 | 0 | 开户银行 |  
+| BANK_NAME |  否  | String   | 256 | 0 | 开户行名称 |  
+| EMAIL_INFO |  否  | String   | 30 | 0 | 邮箱 |  
 | VERIFY_CODE |  是  | String   | 20 | 0 | 验证码 |  
   
 说明：客户信息  

@@ -43,12 +43,12 @@
 | CUSTOMER_NAME |  是  | String   | 256 | 0 | 客户名称 |  
 | EMAIL_INFO |  是  | String   | 30 | 0 | 邮箱 |  
 | VERIFY_CODE |  是  | String   | 20 | 0 | 验证码 |  
-| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | 纳税识别号 |  
-| TELEPHONE_INFO |  是  | String   | 20 | 0 | 固定电话 |  
-| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | 银行账号 |  
-| BANK_NAME |  是  | String   | 256 | 0 | 开户行名称 |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
-| ADDRESS |  是  | String   | 128 | 0 | 详细地址 |  
+| TAX_NUMBER_INFO |  否  | String   | 30 | 0 | 纳税识别号 |  
+| TELEPHONE_INFO |  否  | String   | 20 | 0 | 固定电话 |  
+| BANK_ACCOUNT_INFO |  否  | String   | 30 | 0 | 银行账号 |  
+| BANK_NAME |  否  | String   | 256 | 0 | 开户行名称 |  
+| ADMIN_CODE_INFO |  否  | String   | 20 | 0 | 行政区划 |  
+| ADDRESS |  否  | String   | 128 | 0 | 详细地址 |  
   
 说明：客户信息  
   

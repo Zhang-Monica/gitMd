@@ -68,6 +68,7 @@
 				"DRAW_BANK_ACC_INFO":	"",
 				"DRAW_BANK_NAME":	"",
 				"CASH_TRANSFER_TYPE":	"",
+				"RECE_BANK_ACC_INFO":	"",
 				"BANK_NAME":	"",
 				"BANK_ACC_NAME":	""
 			}]
@@ -105,6 +106,7 @@
 | DRAW_BANK_ACC_INFO |  是  | String   | 30个字符，出票银行账号 |  
 | DRAW_BANK_NAME |  是  | String   | 128个字符，出票银行名称 |  
 | CASH_TRANSFER_TYPE |  是  | String   | 2-现金支票,3-转账支票,4-汇票,5-承兑汇票 |  
+| RECE_BANK_ACC_INFO |  是  | String   | 收款银行账号 |  
 | BANK_NAME |  是  | String   | 开户行名称 |  
 | BANK_ACC_NAME |  是  | String   | 收付款人名称 |  
   

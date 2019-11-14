@@ -17,7 +17,6 @@
 			"CERTIFICATES_TYPE":	"",
 			"OPERATION_NAME":	"",
 			"MOBILE_PHONE_INFO":	"",
-			"EMAIL_INFO":	"",
 			"VERIFY_CODE":	""
 		}]
 }  
@@ -39,7 +38,6 @@
 | CERTIFICATES_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | OPERATION_NAME |  是  | String   | 128 | 0 | xxxxx |  
 | MOBILE_PHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| EMAIL_INFO |  否  | String   | 30 | 0 | xxxxx |  
 | VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
   
 说明：xxxxx  
