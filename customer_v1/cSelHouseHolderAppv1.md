@@ -1,6 +1,6 @@
 ## 1、接口描述  
-服务接口：(cSelHouseHolderAppv1)查询用户账单信息  
-接口描述：查询用户账单信息  
+服务接口：(cSelHouseHolderAppv1)查询过户申请信息  
+接口描述：查询过户申请信息  
 请求说明：POST https://api.epeis.com/customer/v1/cSelHouseHolderAppv1  
   
 ## 2、服务接口请求参数  
