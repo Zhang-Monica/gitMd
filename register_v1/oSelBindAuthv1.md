@@ -66,6 +66,7 @@
 		"INOUT_BINDGRANT":	[{
 				"REGISTER_DID":	"",
 				"REGISTER_NAME":	"",
+				"ACC_REGI_DID":	"",
 				"ACCOUNT_DID":	"",
 				"ACCOUNT_TYPE":	"",
 				"ACCOUNT_NAME":	"",
@@ -99,6 +100,7 @@
 | :----------------- | :----: | :-------- | :---------------- |  
 | REGISTER_DID |  是  | String   | xxxxx |  
 | REGISTER_NAME |  是  | String   | xxxxx |  
+| ACC_REGI_DID |  是  | String   | xxxxx |  
 | ACCOUNT_DID |  是  | String   | xxxxx |  
 | ACCOUNT_TYPE |  是  | String   | xxxxx |  
 | ACCOUNT_NAME |  是  | String   | xxxxx |  

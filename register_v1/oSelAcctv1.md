@@ -41,7 +41,7 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"INOUT_BINDGRANT":	[{
+		"SYS_REG_CONNECT":	[{
 				"REGISTER_DID":	"",
 				"ATTESTATION_TYPE":	"",
 				"ACCOUNT_DID":	"",
@@ -61,7 +61,7 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：INOUT_BINDGRANT，类型：Array  
+参数：SYS_REG_CONNECT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
