@@ -32,7 +32,7 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | REGISTER_INFO |  是  | String   | 64 | 0 | xxxxx |  
 | REGISTER_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| REGISTER_PASSWORD |  是  | String   | 128 | 0 | xxxxx |  
+| REGISTER_PASSWORD |  否  | String   | 128 | 0 | xxxxx |  
   
 说明：xxxxx  
   

@@ -41,7 +41,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CUSTOMER_NAME |  是  | String   | 256 | 0 | 客户名称 |  
-| EMAIL_INFO |  是  | String   | 30 | 0 | 邮箱 |  
+| EMAIL_INFO |  否  | String   | 30 | 0 | 邮箱 |  
 | VERIFY_CODE |  是  | String   | 20 | 0 | 验证码 |  
 | TAX_NUMBER_INFO |  否  | String   | 30 | 0 | 纳税识别号 |  
 | TELEPHONE_INFO |  否  | String   | 20 | 0 | 固定电话 |  
@@ -90,4 +90,4 @@
   
 说明：客户信息  
 ## 4、服务接口说明  
-说明：无  
+说明：非自然人TAX_NUMBER_INFO、TELEPHONE_INFO、BANK_ACCOUNT_INFO、BANK_NAME必传  

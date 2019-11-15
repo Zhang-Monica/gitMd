@@ -48,6 +48,7 @@
 				"CUSTOMER_TYPE":	"",
 				"MOBILE_PHONE_INFO":	"",
 				"EMAIL_INFO":	"",
+				"ACC_REGI_DID":	"",
 				"ACC_CERT_INFO":	"",
 				"ACC_CERT_TYPE":	"",
 				"VALID_START_DATE":	0,
@@ -83,6 +84,7 @@
 | CUSTOMER_TYPE |  是  | String   | 客户类型：1-自然人；2-非自然人 |  
 | MOBILE_PHONE_INFO |  是  | String   | 手机号码 |  
 | EMAIL_INFO |  是  | String   | 邮箱 |  
+| ACC_REGI_DID |  是  | String   | 账户注册号 |  
 | ACC_CERT_INFO |  是  | String   | 账户证件号码 |  
 | ACC_CERT_TYPE |  是  | String   | 账户证件类型：1-身份证；2-统一社会信用代码 |  
 | VALID_START_DATE |  是  | Number   | 证件有效起始日期 |  
