@@ -2,6 +2,7 @@
 | 服务接口名称 | 版本号 | 说明文档链接 |  
 | :----------------- | :-----: | :---------------- |  
 | 客户账户开户 | v1 | [cInsAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cInsAcctv1.md) |  
+| 绑定客户账户 | v1 | [cBindAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cBindAcctv1.md) |  
 | 客户账户信息查询 | v1 | [cSelAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cSelAcctv1.md) |  
 | 客户账户信息变更 | v1 | [cUpdAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUpdAcctv1.md) |  
 | 客户密码重置 | v1 | [cUpdPwdv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/customer_v1/cUpdPwdv1.md) |  

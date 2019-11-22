@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(cRePaidOrderv1)客户充值订单  
-接口描述：客户充值订单  
-请求说明：POST https://api.epeis.com/customer/v1/cRePaidOrderv1  
+服务接口：(sInsEleAdjustRatiov1)添加电力调比例  
+接口描述：添加电力调比例  
+请求说明：POST https://api.epeis.com/supsysconfig/v1/sInsEleAdjustRatiov1  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -10,12 +10,18 @@
 	"SYS_HEAD":	{
 		"CHANNEL_DID":	"",
 		"DYNAMIC_KEY":	"",
-		"REGISTER_DID":	"",
-		"ACCOUNT_DID":	""
+		"REGISTER_DID":	""
 	},
-	"INOUT_ORDER":	{
-		"CUSTOMER_DID":	"",
-		"DEPOST_ADVANCE_PAY":	0
+	"COM_ADJUST_RAT":	{
+		"RETAIL_CO_DID":	"",
+		"RET_STORES_AID":	"",
+		"FOR_RATE_VALID_TYPE":	"",
+		"FOR_RAT_CALC_VALUE":	0,
+		"CAT_ITEM_MAIN_NUM":	0,
+		"REWARD_PUNISH_TYPE":	"",
+		"ADJUST_RATIO":	0,
+		"STARTUP_DATE":	0,
+		"OUTAGE_DATE":	0
 	}
 }  
 ~~~  
@@ -27,16 +33,22 @@
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
-| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：INOUT_ORDER，类型：object  
+参数：COM_ADJUST_RAT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16 | 0 | 16个字符，客户唯一的账号ID |  
-| DEPOST_ADVANCE_PAY |  是  | Number   | 16 | 2 | 充值金额 |  
+| RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
+| RET_STORES_AID |  是  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
+| FOR_RATE_VALID_TYPE |  是  | String   | 2 | 0 | 1-不考核，2-考核80，3-考核85，4-考核90 |  
+| FOR_RAT_CALC_VALUE |  是  | Number   | 8 | 4 | 力率考核计算值，精确到4位小数点 |  
+| CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
+| REWARD_PUNISH_TYPE |  是  | String   | 2 | 0 | 奖罚类型 |  
+| ADJUST_RATIO |  是  | Number   | 10 | 6 | 调整比例 |  
+| STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
+| OUTAGE_DATE |  是  | Number   | 8 | 0 | 停用日期 |  
   
-说明：充值信息  
+说明：力调比例  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -45,10 +57,6 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"INOUT_ORDER":	[{
-				"OPERATION_DATE":	0,
-				"SERIAL_DID":	""
-			}]
 	}
 }  
 ~~~  
@@ -60,16 +68,6 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数：DATA，类型：object 本服务接口响应数据说明如下：  
-  
-参数：INOUT_ORDER，类型：Array  
-  
-
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| OPERATION_DATE |  是  | Number   | 订单日期 |  
-| SERIAL_DID |  是  | String   | 订单业务流水号 |  
-  
-说明：订单信息  
+参数：DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
 说明：无  

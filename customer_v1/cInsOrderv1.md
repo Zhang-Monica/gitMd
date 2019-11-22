@@ -13,9 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"INOUT_ORDER":	[{
-			"PAID_IN_AMOUNT":	0
-		}],
+	"INOUT_ORDER":	{
+		"PAID_IN_AMOUNT":	0
+	},
 	"INOUT_ORDER_DETAIL":	[{
 			"SETTLEMENT_AID":	"",
 			"CUSTOMER_DID":	"",
@@ -40,7 +40,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：INOUT_ORDER，类型：Array  
+参数：INOUT_ORDER，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
