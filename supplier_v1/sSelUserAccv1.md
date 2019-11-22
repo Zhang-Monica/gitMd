@@ -17,9 +17,12 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"CUS_ACCOUNT":	[{
-			"CUSTOMER_DID":	""
-		}]
+	"ACC_USER_ACCOUNT":	{
+		"CUSTOMER_DID":	"",
+		"CASH_TRANSFER_TYPE":	"",
+		"ORIGINAL_BUS_DATE":	0,
+		"OPERATION_DATE":	0
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -39,13 +42,16 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：CUS_ACCOUNT，类型：Array  
+参数：ACC_USER_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16 | 0 | 6个字符，客户唯一的账号ID |  
+| CUSTOMER_DID |  否  | String   | 16 | 0 | 6个字符，客户唯一的账号ID |  
+| CASH_TRANSFER_TYPE |  否  | String   | 2 | 0 | 1-现金,2-现金支票,3-转账支票,4-汇票,5-承兑汇票,6-第三方支付 |  
+| ORIGINAL_BUS_DATE |  否  | Number   | 8 | 0 | 开始业务日期 |  
+| OPERATION_DATE |  否  | Number   | 8 | 0 | 截止业务日期 |  
   
-说明：客户账户  
+说明：账单信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -61,6 +67,8 @@
 			"TOTAL":	1000
 		},
 		"ACC_USER_ACCOUNT":	[{
+				"CUSTOMER_DID":	"",
+				"CUSTOMER_NAME":	"",
 				"OPERATION_DATE":	0,
 				"SERIAL_DID":	"",
 				"CASH_TRANSFER_TYPE":	"",
@@ -97,6 +105,8 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
+| CUSTOMER_DID |  是  | String   | 客户编号 |  
+| CUSTOMER_NAME |  是  | String   | 客户名称 |  
 | OPERATION_DATE |  是  | Number   | 业务日期 |  
 | SERIAL_DID |  是  | String   | 16位字符，业务流水号 |  
 | CASH_TRANSFER_TYPE |  是  | String   | 1-现金,2-现金支票,3-转账支票,4-汇票,5-承兑汇票,6-第三方支付 |  

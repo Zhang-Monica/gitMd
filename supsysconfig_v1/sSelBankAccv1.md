@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(oSelCusInfov1)按多条件查询客户账户  
-接口描述：按多条件查询客户账户  
-请求说明：POST https://api.epeis.com/register/v1/oSelCusInfov1  
+服务接口：(sSelBankAccv1)查询商户银行账户  
+接口描述：查询商户银行账户  
+请求说明：POST https://api.epeis.com/supsysconfig/v1/sSelBankAccv1  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -10,20 +10,17 @@
 	"SYS_HEAD":	{
 		"CHANNEL_DID":	"",
 		"DYNAMIC_KEY":	"",
-		"REGISTER_DID":	"",
-		"ACCOUNT_DID":	""
+		"REGISTER_DID":	""
 	},
 	"SYS_PAGE":	{
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SYS_REGISTER":	{
-		"MOBILE_PHONE_INFO":	"",
-		"REGISTER_INFO":	"",
-		"REGISTER_TYPE":	"",
-		"CERTIFICATES_INFO":	"",
-		"CERTIFICATES_TYPE":	"",
-		"REGISTER_NAME":	""
+	"SUP_BANK_ACCOUNT":	{
+		"BANK_ACCOUNT_INFO":	"",
+		"BANK_ACC_TYPE":	"",
+		"BANK_ACC_NAME":	"",
+		"BANK_NAME":	""
 	}
 }  
 ~~~  
@@ -35,7 +32,6 @@
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
-| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
 参数：SYS_PAGE，类型：object  
   
@@ -44,18 +40,16 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SYS_REGISTER，类型：object  
+参数：SUP_BANK_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | 手机号码 |  
-| REGISTER_INFO |  否  | String   | 64 | 0 | 注册代码 |  
-| REGISTER_TYPE |  否  | String   | 2 | 0 | 1-手机2-邮箱3-QQ4-支付宝，5-微信 |  
-| CERTIFICATES_INFO |  否  | String   | 20 | 0 | 证件号码 |  
-| CERTIFICATES_TYPE |  否  | String   | 2 | 0 | 1-身份证，2-居住证，3-护照 |  
-| REGISTER_NAME |  否  | String   | 128 | 0 | 128个字符，注册名称 |  
+| BANK_ACCOUNT_INFO |  否  | String   | 30 | 0 | 30个字符，银行账号 |  
+| BANK_ACC_TYPE |  否  | String   | 2 | 0 | 1-基本户,2-存款户 |  
+| BANK_ACC_NAME |  否  | String   | 256 | 0 | 256个字符，收付款人名称 |  
+| BANK_NAME |  否  | String   | 256 | 0 | 256个字符，开户行名称 |  
   
-说明：实名注册账户  
+说明：商户银行账户  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -70,12 +64,12 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"CUS_ACCOUNT":	[{
-				"CUSTOMER_DID":	"",
-				"CUSTOMER_NAME":	"",
-				"MOBILE_PHONE_INFO":	"",
-				"ADMIN_CODE_INFO":	"",
-				"ADDRESS":	""
+		"SUP_BANK_ACCOUNT":	[{
+				"SUPPLIER_DID":	"",
+				"BANK_ACCOUNT_INFO":	"",
+				"BANK_ACC_TYPE":	"",
+				"BANK_ACC_NAME":	"",
+				"BANK_NAME":	""
 			}]
 	}
 }  
@@ -99,17 +93,17 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：CUS_ACCOUNT，类型：Array  
+参数：SUP_BANK_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16个字符，客户唯一的账号ID |  
-| CUSTOMER_NAME |  是  | String   | 256个字符，客户名称 |  
-| MOBILE_PHONE_INFO |  是  | String   | 20个字符，手机号码 |  
-| ADMIN_CODE_INFO |  是  | String   | 20个字符，行政区划统一编码 |  
-| ADDRESS |  是  | String   | 128个字符，详细地址 |  
+| SUPPLIER_DID |  是  | String   | 16个字符，商户ID |  
+| BANK_ACCOUNT_INFO |  是  | String   | 30个字符银行账号 |  
+| BANK_ACC_TYPE |  是  | String   | 1-基本户,2-存款户 |  
+| BANK_ACC_NAME |  是  | String   | 256个字符，收付款人名称 |  
+| BANK_NAME |  是  | String   | 256个字符，开户行名称 |  
   
-说明：客户账户  
+说明：商户银行账户  
 ## 4、服务接口说明  
 说明：无  

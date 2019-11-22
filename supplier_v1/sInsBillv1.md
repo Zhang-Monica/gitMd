@@ -13,21 +13,21 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"ACC_RECEIPT":	[{
-			"BILL_NUM_INFO":	"",
-			"BILL_AMOUNT":	0,
-			"DRAWER":	"",
-			"RECEIPT_DATE":	0,
-			"PROMISE_DATE":	0,
-			"ARRIVAL_DATE":	0,
-			"DRAW_BANK_ACC_INFO":	"",
-			"DRAW_BANK_NAME":	"",
-			"CASH_TRANSFER_TYPE":	"",
-			"RECE_BANK_ACC_INFO":	"",
-			"BANK_NAME":	"",
-			"BANK_ACC_NAME":	"",
-			"REMARK_INS":	""
-		}]
+	"ACC_RECEIPT":	{
+		"BILL_NUM_INFO":	"",
+		"BILL_AMOUNT":	0,
+		"DRAWER":	"",
+		"RECEIPT_DATE":	0,
+		"PROMISE_DATE":	0,
+		"ARRIVAL_DATE":	0,
+		"DRAW_BANK_ACC_INFO":	"",
+		"DRAW_BANK_NAME":	"",
+		"CASH_TRANSFER_TYPE":	"",
+		"RECE_BANK_ACC_INFO":	"",
+		"BANK_NAME":	"",
+		"BANK_ACC_NAME":	"",
+		"REMARK_INS":	""
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -40,7 +40,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：ACC_RECEIPT，类型：Array  
+参数：ACC_RECEIPT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  

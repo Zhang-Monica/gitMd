@@ -13,10 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"INOUT_ORDER":	[{
-			"CUSTOMER_DID":	"",
-			"DEPOST_ADVANCE_PAY":	0
-		}]
+	"INOUT_ORDER":	{
+		"CUSTOMER_DID":	"",
+		"DEPOST_ADVANCE_PAY":	0
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -29,7 +29,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：INOUT_ORDER，类型：Array  
+参数：INOUT_ORDER，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  

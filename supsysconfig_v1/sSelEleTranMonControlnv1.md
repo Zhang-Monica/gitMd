@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(oSelCusInfov1)按多条件查询客户账户  
-接口描述：按多条件查询客户账户  
-请求说明：POST https://api.epeis.com/register/v1/oSelCusInfov1  
+服务接口：(sSelEleTranMonControlnv1)查询电翻转月份信息  
+接口描述：查询电翻转月份信息  
+请求说明：POST https://api.epeis.com/supsysconfig/v1/sSelEleTranMonControlnv1  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -10,20 +10,15 @@
 	"SYS_HEAD":	{
 		"CHANNEL_DID":	"",
 		"DYNAMIC_KEY":	"",
-		"REGISTER_DID":	"",
-		"ACCOUNT_DID":	""
+		"REGISTER_DID":	""
 	},
 	"SYS_PAGE":	{
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SYS_REGISTER":	{
-		"MOBILE_PHONE_INFO":	"",
-		"REGISTER_INFO":	"",
-		"REGISTER_TYPE":	"",
-		"CERTIFICATES_INFO":	"",
-		"CERTIFICATES_TYPE":	"",
-		"REGISTER_NAME":	""
+	"COM_TRAN_CONTROL":	{
+		"NETWORK_CO_DID":	"",
+		"NET_STORES_AID":	""
 	}
 }  
 ~~~  
@@ -35,7 +30,6 @@
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
-| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
 参数：SYS_PAGE，类型：object  
   
@@ -44,18 +38,14 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SYS_REGISTER，类型：object  
+参数：COM_TRAN_CONTROL，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | 手机号码 |  
-| REGISTER_INFO |  否  | String   | 64 | 0 | 注册代码 |  
-| REGISTER_TYPE |  否  | String   | 2 | 0 | 1-手机2-邮箱3-QQ4-支付宝，5-微信 |  
-| CERTIFICATES_INFO |  否  | String   | 20 | 0 | 证件号码 |  
-| CERTIFICATES_TYPE |  否  | String   | 2 | 0 | 1-身份证，2-居住证，3-护照 |  
-| REGISTER_NAME |  否  | String   | 128 | 0 | 128个字符，注册名称 |  
+| NETWORK_CO_DID |  否  | String   | 16 | 0 | 管网公司编码 |  
+| NET_STORES_AID |  否  | String   | 16 | 0 | 管网公司营业网点ID |  
   
-说明：实名注册账户  
+说明：翻转月份信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -70,13 +60,13 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"CUS_ACCOUNT":	[{
-				"CUSTOMER_DID":	"",
-				"CUSTOMER_NAME":	"",
-				"MOBILE_PHONE_INFO":	"",
-				"ADMIN_CODE_INFO":	"",
-				"ADDRESS":	""
-			}]
+		"COM_TRAN_CONTROL":	{
+			"NETWORK_CO_DID":	"",
+			"NET_STORES_AID":	"",
+			"NETWORK_TYPE":	"",
+			"SETTLEMENT_DATE_TYPE":	"",
+			"PAYMENT_DATE_TYPE":	""
+		}
 	}
 }  
 ~~~  
@@ -99,17 +89,17 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：CUS_ACCOUNT，类型：Array  
+参数：COM_TRAN_CONTROL，类型：object  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16个字符，客户唯一的账号ID |  
-| CUSTOMER_NAME |  是  | String   | 256个字符，客户名称 |  
-| MOBILE_PHONE_INFO |  是  | String   | 20个字符，手机号码 |  
-| ADMIN_CODE_INFO |  是  | String   | 20个字符，行政区划统一编码 |  
-| ADDRESS |  是  | String   | 128个字符，详细地址 |  
+| NETWORK_CO_DID |  否  | String   | 管网公司编码 |  
+| NET_STORES_AID |  否  | String   | 管网公司营业网点ID |  
+| NETWORK_TYPE |  否  | String   | 2-电 |  
+| SETTLEMENT_DATE_TYPE |  否  | String   | 结算出账例日 |  
+| PAYMENT_DATE_TYPE |  否  | String   | 结账出账例日 |  
   
-说明：客户账户  
+说明：翻转月份信息  
 ## 4、服务接口说明  
 说明：无  

@@ -17,10 +17,10 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"ACC_INVOICE":	[{
-			"CUSTOMER_DID":	"",
-			"INVOICE_DID":	""
-		}]
+	"ACC_INVOICE":	{
+		"CUSTOMER_DID":	"",
+		"INVOICE_DID":	""
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -40,7 +40,7 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：ACC_INVOICE，类型：Array  
+参数：ACC_INVOICE，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  

@@ -10,6 +10,7 @@
 | 注册实名认证 | v1 | [oInsIdAuthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/register_v1/oInsIdAuthv1.md) |  
 | 查询注册信息 | v1 | [oSelRegisterv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/register_v1/oSelRegisterv1.md) |  
 | 绑定第三方 | v1 | [oBindOtherv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/register_v1/oBindOtherv1.md) |  
+| 第三方绑定注册号 | v1 | [oBindRegisterv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/register_v1/oBindRegisterv1.md) |  
 | 查询账号信息 | v1 | [oSelAcctv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/register_v1/oSelAcctv1.md) |  
 | 绑定关系查询 | v1 | [oSelBindingsv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/register_v1/oSelBindingsv1.md) |  
 | 绑定成员查询 | v1 | [oSelBindMorev1.md](https://github.com/Zhang-Monica/gitMd/blob/master/register_v1/oSelBindMorev1.md) |  
