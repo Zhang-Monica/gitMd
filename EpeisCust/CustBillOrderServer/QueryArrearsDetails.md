@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryArrearsDetails)查询欠费明细  
 接口描述：查询客户欠费明细信息  
-请求说明：POST https://api.epeis.com/CustBillOrderServer/v1/QueryArrearsDetails  
+请求说明：POST https://api.epeis.com/Service/v1/QueryArrearsDetails  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(ApproveCustomerActivation)客户激活申请核定  
+服务接口：(UpdatePlatformPhoneNumber)平台手机号码变更  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com//v1/ApproveCustomerActivation  
+请求说明：POST https://api.epeis.com/Service/v1/UpdatePlatformPhoneNumber  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,12 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"CUS_ACCOUNT":	[{
-			"CUSTOMER_DID":	"",
-			"ATTESTATION_TYPE":	"",
-			"TAX_TYPE":	"",
-			"VALID_START_DATE":	0,
-			"VALID_END_DATE":	0
+	"PLA_ACCOUNT":	[{
+			"MOBILE_PHONE_INFO":	"",
+			"VERIFY_CODE":	""
 		}]
 }  
 ~~~  
@@ -30,17 +27,14 @@
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
-| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
+| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，可不激活 |  
   
-参数：CUS_ACCOUNT，类型：Array  
+参数：PLA_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| TAX_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| VALID_START_DATE |  是  | Number   | 8 | 0 | xxxxx |  
-| VALID_END_DATE |  是  | Number   | 8 | 0 | xxxxx |  
+| MOBILE_PHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
   
 说明：xxxxx  
   

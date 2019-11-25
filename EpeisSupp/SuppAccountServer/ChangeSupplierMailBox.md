@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(ChangeSupplierMailBox)商户邮箱更换  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/SuppAccountServer/v1/ChangeSupplierMailBox  
+请求说明：POST https://api.epeis.com/Service/v1/ChangeSupplierMailBox  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(GetSMSVerifyCode)获取动态验证码  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/CommMsgServer/v1/GetSMSVerifyCode  
+请求说明：POST https://api.epeis.com/Service/v1/GetSMSVerifyCode  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

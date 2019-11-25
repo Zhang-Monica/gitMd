@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryPlatformChannels)平台渠道查询  
+服务接口：(QueryCustomerActivation)客户激活申请查询  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com//v1/QueryPlatformChannels  
+请求说明：POST https://api.epeis.com/Service/v1/QueryCustomerActivation  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,8 +17,8 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SYS_CHANNEL":	[{
-			"TERMINAL_TYPE":	""
+	"CUS_ACCOUNT":	[{
+			"ATTESTATION_TYPE":	""
 		}]
 }  
 ~~~  
@@ -39,11 +39,11 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SYS_CHANNEL，类型：Array  
+参数：CUS_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| TERMINAL_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
   
 说明：xxxxx  
   
@@ -60,13 +60,33 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"SYS_CHANNEL":	[{
-				"CHANNEL_DID":	"",
-				"CHANNEL_NAME":	"",
-				"TERMINAL_TYPE":	"",
-				"DYNAMIC_KEY":	"",
+		"CUS_ACCOUNT":	[{
+				"CERTIFICATES_INFO":	"",
+				"CERTIFICATES_TYPE":	"",
+				"MOBILE_PHONE_INFO":	"",
+				"ATTESTATION_TYPE":	"",
+				"CUSTOMER_DID":	"",
+				"CUSTOMER_NAME":	"",
+				"CUSTOMER_TYPE":	"",
+				"EMAIL_INFO":	"",
+				"OPEN_ACC_DATE":	0,
 				"VALID_START_DATE":	0,
-				"VALID_END_DATE":	0
+				"VALID_END_DATE":	0,
+				"ADMIN_CODE_INFO":	"",
+				"ADDRESS":	"",
+				"TAX_TYPE":	"",
+				"TAX_NUMBER_INFO":	"",
+				"TELEPHONE_INFO":	"",
+				"BANK_ACCOUNT_INFO":	"",
+				"BANK_NAME":	"",
+				"ACC_CERT_INFO":	"",
+				"ACC_CERT_TYPE":	"",
+				"AVAIL_BALANCE":	0,
+				"LOAN_BALANCE":	0,
+				"OPERATION_DID":	"",
+				"STATE_TYPE":	"",
+				"OPERATION_DATE":	0,
+				"OPERATION_TIME":	0
 			}]
 	}
 }  
@@ -90,17 +110,37 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：SYS_CHANNEL，类型：Array  
+参数：CUS_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CHANNEL_DID |  是  | String   | xxxxx |  
-| CHANNEL_NAME |  是  | String   | xxxxx |  
-| TERMINAL_TYPE |  是  | String   | xxxxx |  
-| DYNAMIC_KEY |  是  | String   | xxxxx |  
+| CERTIFICATES_INFO |  是  | String   | xxxxx |  
+| CERTIFICATES_TYPE |  是  | String   | xxxxx |  
+| MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| CUSTOMER_DID |  是  | String   | xxxxx |  
+| CUSTOMER_NAME |  是  | String   | xxxxx |  
+| CUSTOMER_TYPE |  是  | String   | xxxxx |  
+| EMAIL_INFO |  是  | String   | xxxxx |  
+| OPEN_ACC_DATE |  是  | Number   | xxxxx |  
 | VALID_START_DATE |  是  | Number   | xxxxx |  
 | VALID_END_DATE |  是  | Number   | xxxxx |  
+| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
+| ADDRESS |  是  | String   | xxxxx |  
+| TAX_TYPE |  是  | String   | xxxxx |  
+| TAX_NUMBER_INFO |  是  | String   | xxxxx |  
+| TELEPHONE_INFO |  是  | String   | xxxxx |  
+| BANK_ACCOUNT_INFO |  是  | String   | xxxxx |  
+| BANK_NAME |  是  | String   | xxxxx |  
+| ACC_CERT_INFO |  是  | String   | xxxxx |  
+| ACC_CERT_TYPE |  是  | String   | xxxxx |  
+| AVAIL_BALANCE |  是  | Number   | xxxxx |  
+| LOAN_BALANCE |  是  | Number   | xxxxx |  
+| OPERATION_DID |  是  | String   | xxxxx |  
+| STATE_TYPE |  是  | String   | xxxxx |  
+| OPERATION_DATE |  是  | Number   | xxxxx |  
+| OPERATION_TIME |  是  | Number   | xxxxx |  
   
 说明：xxxxx  
 ## 4、服务接口说明  

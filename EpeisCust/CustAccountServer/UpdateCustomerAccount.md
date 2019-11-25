@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(UpdateCustomerAccount)客户账户信息变更  
 接口描述：客户账户信息变更  
-请求说明：POST https://api.epeis.com/CustAccountServer/v1/UpdateCustomerAccount  
+请求说明：POST https://api.epeis.com/Service/v1/UpdateCustomerAccount  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

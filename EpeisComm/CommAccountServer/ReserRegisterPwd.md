@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(ReserRegisterPwd)注册密码重置  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/CommAccountServer/v1/ReserRegisterPwd  
+请求说明：POST https://api.epeis.com/Service/v1/ReserRegisterPwd  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

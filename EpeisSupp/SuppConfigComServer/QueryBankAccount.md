@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryBankAccount)查询商户银行账户  
 接口描述：查询商户银行账户  
-请求说明：POST https://api.epeis.com/SuppConfigComServer/v1/QueryBankAccount  
+请求说明：POST https://api.epeis.com/Service/v1/QueryBankAccount  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

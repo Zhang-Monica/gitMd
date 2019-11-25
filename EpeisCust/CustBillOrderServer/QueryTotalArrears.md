@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryTotalArrears)查询欠费总额  
 接口描述：客户查询欠费总额  
-请求说明：POST https://api.epeis.com/CustBillOrderServer/v1/QueryTotalArrears  
+请求说明：POST https://api.epeis.com/Service/v1/QueryTotalArrears  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

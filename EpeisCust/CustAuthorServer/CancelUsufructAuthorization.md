@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(CancelUsufructAuthorization)户主解除使用授权  
 接口描述：户主解除他人的使用权  
-请求说明：POST https://api.epeis.com/CustAuthorServer/v1/CancelUsufructAuthorization  
+请求说明：POST https://api.epeis.com/Service/v1/CancelUsufructAuthorization  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

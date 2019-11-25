@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(DeleteEleAdjustRatio)删除电力调比例  
 接口描述：删除电力调比例  
-请求说明：POST https://api.epeis.com/SuppConfigEServer/v1/DeleteEleAdjustRatio  
+请求说明：POST https://api.epeis.com/Service/v1/DeleteEleAdjustRatio  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

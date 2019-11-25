@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(AddChannelServices)渠道服务添加  
+服务接口：(UpdatePlatformAccountInformation)平台账户信息变更  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com//v1/AddChannelServices  
+请求说明：POST https://api.epeis.com/Service/v1/UpdatePlatformAccountInformation  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,9 +13,23 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SYS_CHA_SERVICE":	[{
-			"CHANNEL_DID":	"",
-			"SERVICE_NAME_INFO":	""
+	"PLA_ACCOUNT":	[{
+			"CERTIFICATES_INFO":	"",
+			"CERTIFICATES_TYPE":	"",
+			"PLATFORM_NAME":	"",
+			"PLATFORM_TYPE":	"",
+			"EMAIL_INFO":	"",
+			"ACC_CERT_INFO":	"",
+			"ACC_CERT_TYPE":	"",
+			"VALID_START_DATE":	0,
+			"VALID_END_DATE":	0,
+			"TAX_TYPE":	"",
+			"TAX_NUMBER_INFO":	"",
+			"TELEPHONE_INFO":	"",
+			"BANK_ACCOUNT_INFO":	"",
+			"BANK_NAME":	"",
+			"ADMIN_CODE_INFO":	"",
+			"ADDRESS":	""
 		}]
 }  
 ~~~  
@@ -29,12 +43,26 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SYS_CHA_SERVICE，类型：Array  
+参数：PLA_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CHANNEL_DID |  是  | String   | 16 | 0 | xxxxx |  
-| SERVICE_NAME_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| CERTIFICATES_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| CERTIFICATES_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| PLATFORM_NAME |  是  | String   | 128 | 0 | xxxxx |  
+| PLATFORM_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| EMAIL_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| ACC_CERT_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| ACC_CERT_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| VALID_START_DATE |  是  | Number   | 8 | 0 | xxxxx |  
+| VALID_END_DATE |  是  | Number   | 8 | 0 | xxxxx |  
+| TAX_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| TELEPHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| BANK_NAME |  是  | String   | 256 | 0 | xxxxx |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
+| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
   
 说明：xxxxx  
   

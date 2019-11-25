@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(AcceptSettleAccountChange)接受结算户变更  
 接口描述：接受或者拒绝结算户变更  
-请求说明：POST https://api.epeis.com/CustAuthorServer/v1/AcceptSettleAccountChange  
+请求说明：POST https://api.epeis.com/Service/v1/AcceptSettleAccountChange  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

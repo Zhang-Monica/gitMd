@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryUserAuthorInformation)查询授权信息  
 接口描述：查询用户授权和结算变更信息  
-请求说明：POST https://api.epeis.com/CustAuthorServer/v1/QueryUserAuthorInformation  
+请求说明：POST https://api.epeis.com/Service/v1/QueryUserAuthorInformation  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

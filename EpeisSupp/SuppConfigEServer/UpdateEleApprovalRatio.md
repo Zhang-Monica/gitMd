@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(UpdateEleApprovalRatio)修改电核定最大需量调节比例  
 接口描述：修改电核定最大需量调节比例  
-请求说明：POST https://api.epeis.com/SuppConfigEServer/v1/UpdateEleApprovalRatio  
+请求说明：POST https://api.epeis.com/Service/v1/UpdateEleApprovalRatio  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

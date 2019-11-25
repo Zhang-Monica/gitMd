@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryInvoiceDetailsSupplier)查询发票明细信息  
 接口描述：查询发票明细信息  
-请求说明：POST https://api.epeis.com/SuppInvoiceServer/v1/QueryInvoiceDetailsSupplier  
+请求说明：POST https://api.epeis.com/Service/v1/QueryInvoiceDetailsSupplier  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryUserSettleDetailsy)查询结算户详细信息  
 接口描述：查询结算户详细信息  
-请求说明：POST https://api.epeis.com/CustSettleServer/v1/QueryUserSettleDetailsy  
+请求说明：POST https://api.epeis.com/Service/v1/QueryUserSettleDetailsy  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

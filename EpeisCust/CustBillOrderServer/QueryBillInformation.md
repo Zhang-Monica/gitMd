@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryBillInformation)查询结算信息  
 接口描述：查询结算信息  
-请求说明：POST https://api.epeis.com/CustBillOrderServer/v1/QueryBillInformation  
+请求说明：POST https://api.epeis.com/Service/v1/QueryBillInformation  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

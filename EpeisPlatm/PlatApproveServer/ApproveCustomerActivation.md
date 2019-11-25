@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(ActiveIdAuthentication)注册实名申请核定  
+服务接口：(ApproveCustomerActivation)客户激活申请核定  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com//v1/ActiveIdAuthentication  
+请求说明：POST https://api.epeis.com/Service/v1/ApproveCustomerActivation  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,9 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SYS_REGISTER":	[{
-			"REGISTER_DID":	"",
+	"CUS_ACCOUNT":	[{
+			"CUSTOMER_DID":	"",
 			"ATTESTATION_TYPE":	"",
+			"TAX_TYPE":	"",
 			"VALID_START_DATE":	0,
 			"VALID_END_DATE":	0
 		}]
@@ -31,12 +32,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SYS_REGISTER，类型：Array  
+参数：CUS_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| REGISTER_DID |  是  | String   | 16 | 0 | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
 | ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| TAX_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | VALID_START_DATE |  是  | Number   | 8 | 0 | xxxxx |  
 | VALID_END_DATE |  是  | Number   | 8 | 0 | xxxxx |  
   

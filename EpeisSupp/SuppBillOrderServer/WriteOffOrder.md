@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(WriteOffOrder)订单销账  
 接口描述：订单销账  
-请求说明：POST https://api.epeis.com/SuppBillOrderServer/v1/WriteOffOrder  
+请求说明：POST https://api.epeis.com/Service/v1/WriteOffOrder  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

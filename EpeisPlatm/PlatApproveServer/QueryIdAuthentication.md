@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryChannelServices)渠道服务查询  
+服务接口：(QueryIdAuthentication)注册实名申请查询  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com//v1/QueryChannelServices  
+请求说明：POST https://api.epeis.com/Service/v1/QueryIdAuthentication  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,8 +17,8 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SYS_CHANNEL":	[{
-			"CHANNEL_DID":	""
+	"SYS_REGISTER":	[{
+			"ATTESTATION_TYPE":	""
 		}]
 }  
 ~~~  
@@ -39,11 +39,11 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SYS_CHANNEL，类型：Array  
+参数：SYS_REGISTER，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CHANNEL_DID |  是  | String   | 16 | 0 | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
   
 说明：xxxxx  
   
@@ -60,13 +60,24 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"SYS_CHA_SERVICE":	[{
-				"CHANNEL_DID":	"",
-				"SERVICE_NAME_INFO":	"",
-				"SERVICE_TYPE":	"",
-				"REG_ATTESTATION_TYPE":	"",
-				"ACC_ATTESTATION_TYPE":	"",
-				"REG_ACC_CONNECT_TYPE":	""
+		"SYS_REGISTER":	[{
+				"REGISTER_DID":	"",
+				"MOBILE_PHONE_INFO":	"",
+				"OPERATION_NAME":	"",
+				"EMAIL_INFO":	"",
+				"REGISTER_TYPE":	"",
+				"ATTESTATION_TYPE":	"",
+				"CERTIFICATES_INFO":	"",
+				"CERTIFICATES_TYPE":	"",
+				"REGISTER_NAME":	"",
+				"SEX_TYPE":	"",
+				"OPEN_ACC_DATE":	0,
+				"VALID_START_DATE":	0,
+				"VALID_END_DATE":	0,
+				"OPERATION_DID":	"",
+				"STATE_TYPE":	"",
+				"OPERATION_DATE":	0,
+				"OPERATION_TIME":	0
 			}]
 	}
 }  
@@ -90,17 +101,28 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：SYS_CHA_SERVICE，类型：Array  
+参数：SYS_REGISTER，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CHANNEL_DID |  是  | String   | xxxxx |  
-| SERVICE_NAME_INFO |  是  | String   | xxxxx |  
-| SERVICE_TYPE |  是  | String   | xxxxx |  
-| REG_ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| ACC_ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| REG_ACC_CONNECT_TYPE |  是  | String   | xxxxx |  
+| REGISTER_DID |  是  | String   | xxxxx |  
+| MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
+| OPERATION_NAME |  是  | String   | xxxxx |  
+| EMAIL_INFO |  是  | String   | xxxxx |  
+| REGISTER_TYPE |  是  | String   | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| CERTIFICATES_INFO |  是  | String   | xxxxx |  
+| CERTIFICATES_TYPE |  是  | String   | xxxxx |  
+| REGISTER_NAME |  是  | String   | xxxxx |  
+| SEX_TYPE |  是  | String   | xxxxx |  
+| OPEN_ACC_DATE |  是  | Number   | xxxxx |  
+| VALID_START_DATE |  是  | Number   | xxxxx |  
+| VALID_END_DATE |  是  | Number   | xxxxx |  
+| OPERATION_DID |  是  | String   | xxxxx |  
+| STATE_TYPE |  是  | String   | xxxxx |  
+| OPERATION_DATE |  是  | Number   | xxxxx |  
+| OPERATION_TIME |  是  | Number   | xxxxx |  
   
 说明：xxxxx  
 ## 4、服务接口说明  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(UsufructAuthorization)使用授权  
 接口描述：使用权授权给其他客户  
-请求说明：POST https://api.epeis.com/CustAuthorServer/v1/UsufructAuthorization  
+请求说明：POST https://api.epeis.com/Service/v1/UsufructAuthorization  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(ApproveSupplierActivation)商户激活申请核定  
+服务接口：(MaintenanceOfPlatformChannels)平台渠道维护  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com//v1/ApproveSupplierActivation  
+请求说明：POST https://api.epeis.com/Service/v1/MaintenanceOfPlatformChannels  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,12 +13,14 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SUP_ACCOUNT":	[{
-			"SUPPLIER_DID":	"",
-			"ATTESTATION_TYPE":	"",
-			"TAX_TYPE":	"",
+	"SYS_CHANNEL":	[{
+			"CHANNEL_DID":	"",
+			"CHANNEL_NAME":	"",
+			"TERMINAL_TYPE":	"",
+			"DYNAMIC_KEY":	"",
 			"VALID_START_DATE":	0,
-			"VALID_END_DATE":	0
+			"VALID_END_DATE":	0,
+			"OPERATION_TYPE":	""
 		}]
 }  
 ~~~  
@@ -32,15 +34,17 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SUP_ACCOUNT，类型：Array  
+参数：SYS_CHANNEL，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SUPPLIER_DID |  是  | String   | 16 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| TAX_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| CHANNEL_DID |  是  | String   | 16 | 0 | xxxxx |  
+| CHANNEL_NAME |  是  | String   | 128 | 0 | xxxxx |  
+| TERMINAL_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| DYNAMIC_KEY |  是  | String   | 64 | 0 | xxxxx |  
 | VALID_START_DATE |  是  | Number   | 8 | 0 | xxxxx |  
 | VALID_END_DATE |  是  | Number   | 8 | 0 | xxxxx |  
+| OPERATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
   
 说明：xxxxx  
   
