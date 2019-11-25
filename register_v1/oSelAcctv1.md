@@ -45,6 +45,7 @@
 				"REGISTER_DID":	"",
 				"ATTESTATION_TYPE":	"",
 				"ACCOUNT_DID":	"",
+				"ACCOUNT_NAME":	"",
 				"ACCOUNT_TYPE":	"",
 				"ACC_REGI_DID":	"",
 				"MOBILE_PHONE_INFO":	"",
@@ -71,6 +72,7 @@
 | REGISTER_DID |  是  | String   | 注册ID |  
 | ATTESTATION_TYPE |  是  | String   | 认证类型：1-未认证；2-审核中；3-已认证 |  
 | ACCOUNT_DID |  是  | String   | 绑定的账户号 |  
+| ACCOUNT_NAME |  是  | String   | 绑定的账户名 |  
 | ACCOUNT_TYPE |  是  | String   | 市场主体账户类型:1-商户；2-客户；3-平台 |  
 | ACC_REGI_DID |  是  | String   | 账户注册ID |  
 | MOBILE_PHONE_INFO |  是  | String   | 开户手机号 |  

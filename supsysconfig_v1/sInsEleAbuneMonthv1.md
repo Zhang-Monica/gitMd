@@ -1,6 +1,6 @@
 ## 1、接口描述  
-服务接口：(sInsEleAbuneMonthv1)���ӵ�ֿ��·�  
-接口描述：���ӵ�ֿ��·�  
+服务接口：(sInsEleAbuneMonthv1)添加电分枯月份  
+接口描述：添加电分枯月份  
 请求说明：POST https://api.epeis.com/supsysconfig/v1/sInsEleAbuneMonthv1  
   
 ## 2、服务接口请求参数  
@@ -34,13 +34,13 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  是  | String   | 16 | 0 | 16���ַ������۹�˾���� |  
-| RET_STORES_AID |  是  | String   | 16 | 0 | 16���ַ������۹�˾Ӫҵ����ID |  
-| NETWORK_TYPE |  是  | String   | 2 | 0 | 2-�� |  
-| ABUNDANCE_TYPE |  是  | String   | 2 | 0 | 1-���ڣ�2-ƽ�ڣ�3-���� |  
-| ABUNDANCE_MONTH |  是  | Number   | 6 | 0 | �ֿ��·� |  
+| RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
+| RET_STORES_AID |  是  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
+| NETWORK_TYPE |  是  | String   | 2 | 0 | 2-电 |  
+| ABUNDANCE_TYPE |  是  | String   | 2 | 0 | 1-丰期，2-平期，3-枯期 |  
+| ABUNDANCE_MONTH |  是  | Number   | 6 | 0 | 分枯月份 |  
   
-说明：�ֿ��·�  
+说明：分枯月份  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -62,4 +62,4 @@
   
 参数：DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：��  
+说明：无  

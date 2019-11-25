@@ -5,9 +5,9 @@
 | 查询商户银行账户 | v1 | [sSelBankAccv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sSelBankAccv1.md) |  
 | 修改商户银行账户 | v1 | [sUpdBankAccv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sUpdBankAccv1.md) |  
 | 删除商户银行账户 | v1 | [sDelBankAccv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sDelBankAccv1.md) |  
-| ���ӵ�ֿ��·� | v1 | [sInsEleAbuneMonthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sInsEleAbuneMonthv1.md) |  
-| ��ѯ��ֿ��·� | v1 | [sSelEleAbuneMonthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sSelEleAbuneMonthv1.md) |  
-| ɾ����ֿ��·� | v1 | [sDelEleAbuneMonthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sDelEleAbuneMonthv1.md) |  
+| 添加电分枯月份 | v1 | [sInsEleAbuneMonthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sInsEleAbuneMonthv1.md) |  
+| 查询电分枯月份 | v1 | [sSelEleAbuneMonthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sSelEleAbuneMonthv1.md) |  
+| 删除电分枯月份 | v1 | [sDelEleAbuneMonthv1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sDelEleAbuneMonthv1.md) |  
 | 添加电力调比例 | v1 | [sInsEleAdjustRatiov1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sInsEleAdjustRatiov1.md) |  
 | 查询电力调比例 | v1 | [sSelEleAdjustRatiov1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sSelEleAdjustRatiov1.md) |  
 | 修改电力调比例 | v1 | [sUpdEleAdjustRatiov1.md](https://github.com/Zhang-Monica/gitMd/blob/master/supsysconfig_v1/sUpdEleAdjustRatiov1.md) |  

@@ -1,6 +1,6 @@
 ## 1、接口描述  
-服务接口：(sSelEleAbuneMonthv1)��ѯ��ֿ��·�  
-接口描述：��ѯ��ֿ��·�  
+服务接口：(sSelEleAbuneMonthv1)查询电分枯月份  
+接口描述：查询电分枯月份  
 请求说明：POST https://api.epeis.com/supsysconfig/v1/sSelEleAbuneMonthv1  
   
 ## 2、服务接口请求参数  
@@ -43,11 +43,11 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  否  | String   | 16 | 0 | 16���ַ������۹�˾���� |  
-| RET_STORES_AID |  否  | String   | 16 | 0 | 16���ַ������۹�˾Ӫҵ����ID |  
-| ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 1-���ڣ�2-ƽ�ڣ�3-���� |  
+| RETAIL_CO_DID |  否  | String   | 16 | 0 | 16个字符，销售公司编码 |  
+| RET_STORES_AID |  否  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
+| ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 1-丰期，2-平期，3-枯期 |  
   
-说明：�ֿ��·�  
+说明：分枯月份  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -96,12 +96,12 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| RETAIL_CO_DID |  否  | String   | 16���ַ������۹�˾���� |  
-| RET_STORES_AID |  否  | String   | 16���ַ������۹�˾Ӫҵ����ID |  
-| NETWORK_TYPE |  否  | String   | 2-�� |  
-| ABUNDANCE_TYPE |  否  | String   | 1-���ڣ�2-ƽ�ڣ�3-���� |  
-| ABUNDANCE_MONTH |  否  | Number   | �ֿ��·� |  
+| RETAIL_CO_DID |  否  | String   | 16个字符，销售公司编码 |  
+| RET_STORES_AID |  否  | String   | 16个字符，销售公司营业网点ID |  
+| NETWORK_TYPE |  否  | String   | 2-电 |  
+| ABUNDANCE_TYPE |  否  | String   | 1-丰期，2-平期，3-枯期 |  
+| ABUNDANCE_MONTH |  否  | Number   | 分枯月份 |  
   
-说明：�ֿ��·�  
+说明：分枯月份  
 ## 4、服务接口说明  
-说明：��  
+说明：无  

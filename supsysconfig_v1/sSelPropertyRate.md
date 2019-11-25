@@ -18,11 +18,7 @@
 	},
 	"COM_PROPERTY_RAT":	{
 		"RETAIL_CO_DID":	"",
-		"RET_STORES_AID":	"",
-		"STOP_EMPTY_YESNO":	"",
-		"ADJUST_RATIO":	0,
-		"STARTUP_DATE":	0,
-		"OUTAGE_DATE":	0
+		"RET_STORES_AID":	""
 	}
 }  
 ~~~  
@@ -46,12 +42,8 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  是  | String   | 16 | 0 | 销售公司编码 |  
-| RET_STORES_AID |  是  | String   | 16 | 0 | 销售公司营业网点ID |  
-| STOP_EMPTY_YESNO |  是  | String   | 2 | 0 | 是否停/空：1-否2-是 |  
-| ADJUST_RATIO |  是  | Number   | 10 | 6 | 调整比例 |  
-| STARTUP_DATE |  否  | Number   | 8 | 0 | 启用日期 |  
-| OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
+| RETAIL_CO_DID |  否  | String   | 16 | 0 | 销售公司编码 |  
+| RET_STORES_AID |  否  | String   | 16 | 0 | 销售公司营业网点ID |  
   
 说明：物业计费比例  
   
