@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryBindAuthorization)授权关系查询  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/Service/v1/QueryBindAuthorization  
+请求说明：POST https://api.epeis.com/Service/v1/QueryBindAuthorization/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

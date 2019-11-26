@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(CreateCustomerAccount)客户账户开户  
 接口描述：创建客户账户  
-请求说明：POST https://api.epeis.com/Service/v1/CreateCustomerAccount  
+请求说明：POST https://api.epeis.com/Service/v1/CreateCustomerAccount/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

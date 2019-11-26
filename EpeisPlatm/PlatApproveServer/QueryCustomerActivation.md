@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryCustomerActivation)客户激活申请查询  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/Service/v1/QueryCustomerActivation  
+请求说明：POST https://api.epeis.com/Service/v1/QueryCustomerActivation/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

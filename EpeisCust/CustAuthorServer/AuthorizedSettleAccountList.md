@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(AuthorizedSettleAccountList)查询结算信息  
 接口描述：查询被授权结算信息  
-请求说明：POST https://api.epeis.com/Service/v1/AuthorizedSettleAccountList  
+请求说明：POST https://api.epeis.com/Service/v1/AuthorizedSettleAccountList/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

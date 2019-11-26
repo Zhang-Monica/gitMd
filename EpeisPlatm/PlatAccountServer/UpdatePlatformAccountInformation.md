@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(UpdatePlatformAccountInformation)平台账户信息变更  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/Service/v1/UpdatePlatformAccountInformation  
+请求说明：POST https://api.epeis.com/Service/v1/UpdatePlatformAccountInformation/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(ApplyUserProprietorChange)申请所有权人变更  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/Service/v1/ApplyUserProprietorChange  
+请求说明：POST https://api.epeis.com/Service/v1/ApplyUserProprietorChange/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(AcceptAuthorization)接受使用授权  
 接口描述：接受或拒绝他人授权的使用权  
-请求说明：POST https://api.epeis.com/Service/v1/AcceptAuthorization  
+请求说明：POST https://api.epeis.com/Service/v1/AcceptAuthorization/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

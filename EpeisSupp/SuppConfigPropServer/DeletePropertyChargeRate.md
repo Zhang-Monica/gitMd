@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(DeletePropertyChargeRate)删除物业计费比例  
 接口描述：删除物业计费比例  
-请求说明：POST https://api.epeis.com/Service/v1/DeletePropertyChargeRate  
+请求说明：POST https://api.epeis.com/Service/v1/DeletePropertyChargeRate/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

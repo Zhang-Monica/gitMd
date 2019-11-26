@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryInquiryDetails)查询欠费明细  
 接口描述：商户查询欠费明细信息  
-请求说明：POST https://api.epeis.com/Service/v1/QueryInquiryDetails  
+请求说明：POST https://api.epeis.com/Service/v1/QueryInquiryDetails/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

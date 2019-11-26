@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(BindCustomerAccount)绑定客户账户  
 接口描述：绑定客户账户号  
-请求说明：POST https://api.epeis.com/Service/v1/BindCustomerAccount  
+请求说明：POST https://api.epeis.com/Service/v1/BindCustomerAccount/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

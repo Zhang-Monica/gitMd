@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(SignContract)签订合同  
 接口描述：确认结算信息和用户信息后签订合同确认  
-请求说明：POST https://api.epeis.com/Service/v1/SignContract  
+请求说明：POST https://api.epeis.com/Service/v1/SignContract/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

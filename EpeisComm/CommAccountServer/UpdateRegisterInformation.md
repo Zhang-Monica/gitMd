@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(UpdateRegisterInformation)注册信息变更  
 接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/Service/v1/UpdateRegisterInformation  
+请求说明：POST https://api.epeis.com/Service/v1/UpdateRegisterInformation/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  

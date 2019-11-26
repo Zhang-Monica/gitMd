@@ -1,7 +1,7 @@
 ## 1、接口描述  
 服务接口：(QueryPrintInvoiceCustomer)查询开票信息  
 接口描述：查询开票信息  
-请求说明：POST https://api.epeis.com/Service/v1/QueryPrintInvoiceCustomer  
+请求说明：POST https://api.epeis.com/Service/v1/QueryPrintInvoiceCustomer/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
