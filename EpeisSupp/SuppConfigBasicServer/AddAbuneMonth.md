@@ -13,13 +13,13 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_ABUN_MON":	{
-		"RETAIL_CO_DID":	"",
-		"RET_STORES_AID":	"",
-		"NETWORK_TYPE":	"",
-		"ABUNDANCE_TYPE":	"",
-		"ABUNDANCE_MONTH":	0
-	}
+	"COM_ABUN_MON":	[{
+			"RETAIL_CO_DID":	"",
+			"RET_STORES_AID":	"",
+			"NETWORK_TYPE":	"",
+			"ABUNDANCE_TYPE":	"",
+			"ABUNDANCE_MONTH":	0
+		}]
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -32,7 +32,7 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_ABUN_MON，类型：object  
+参数：COM_ABUN_MON，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  

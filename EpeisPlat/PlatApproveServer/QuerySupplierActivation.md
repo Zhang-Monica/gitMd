@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryHeatYear)查询采暖季年份信息  
-接口描述：查询采暖季年份信息  
-请求说明：POST https://api.epeis.com/Service/v1/QueryHeatYear/  
+服务接口：(QuerySupplierActivation)商户激活申请查询  
+接口描述：xxxxx  
+请求说明：POST https://api.epeis.com/Service/v1/QuerySupplierActivation/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,12 +17,9 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"COM_HEAT_YEAR":	{
-		"NETWORK_CO_DID":	"",
-		"NET_STORES_AID":	"",
-		"HEAT_YEAR":	0,
-		"CHARGE_RULE_TYPE":	""
-	}
+	"SUP_ACCOUNT":	[{
+			"ATTESTATION_TYPE":	""
+		}]
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -42,16 +39,13 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：COM_HEAT_YEAR，类型：object  
+参数：SUP_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| NETWORK_CO_DID |  否  | String   | 16 | 0 | 管网公司编码 |  
-| NET_STORES_AID |  否  | String   | 16 | 0 | 管网公司营业网点ID |  
-| HEAT_YEAR |  否  | Number   | 6 | 0 | 采暖季年份 |  
-| CHARGE_RULE_TYPE |  否  | String   | 2 | 0 | 1-不计,2-计整月,3-计半月,4-按天数计 |  
+| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
   
-说明：采暖季年份信息  
+说明：xxxxx  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -66,16 +60,34 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"COM_HEAT_YEAR":	{
-			"NETWORK_CO_DID":	"",
-			"NET_STORES_AID":	"",
-			"HEAT_YEAR":	0,
-			"CHARGE_RULE_TYPE":	"",
-			"ADVANCE_DAYS":	0,
-			"POSTPONE_DAYS":	0,
-			"STARTUP_DATE":	0,
-			"OUTAGE_DATE":	0
-		}
+		"SUP_ACCOUNT":	[{
+				"CERTIFICATES_INFO":	"",
+				"CERTIFICATES_TYPE":	"",
+				"MOBILE_PHONE_INFO":	"",
+				"ATTESTATION_TYPE":	"",
+				"SUPPLIER_DID":	"",
+				"SUPPLIER_NAME":	"",
+				"SUPPLIER_TYPE":	"",
+				"EMAIL_INFO":	"",
+				"OPEN_ACC_DATE":	0,
+				"VALID_START_DATE":	0,
+				"VALID_END_DATE":	0,
+				"ADMIN_CODE_INFO":	"",
+				"ADDRESS":	"",
+				"TAX_TYPE":	"",
+				"TAX_NUMBER_INFO":	"",
+				"TELEPHONE_INFO":	"",
+				"BANK_ACCOUNT_INFO":	"",
+				"BANK_NAME":	"",
+				"ACC_CERT_INFO":	"",
+				"ACC_CERT_TYPE":	"",
+				"AVAIL_BALANCE":	0,
+				"OWE_BALANCE":	0,
+				"OPERATION_DID":	"",
+				"STATE_TYPE":	"",
+				"OPERATION_DATE":	0,
+				"OPERATION_TIME":	0
+			}]
 	}
 }  
 ~~~  
@@ -98,20 +110,38 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：COM_HEAT_YEAR，类型：object  
+参数：SUP_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| NETWORK_CO_DID |  否  | String   | 管网公司编码 |  
-| NET_STORES_AID |  否  | String   | 管网公司营业网点ID |  
-| HEAT_YEAR |  否  | Number   | 采暖季年份 |  
-| CHARGE_RULE_TYPE |  否  | String   | 1-不计,2-计整月,3-计半月,4-按天数计 |  
-| ADVANCE_DAYS |  否  | Number   | 提前天数 |  
-| POSTPONE_DAYS |  否  | Number   | 延后天数 |  
-| STARTUP_DATE |  否  | Number   | 启用日期 |  
-| OUTAGE_DATE |  否  | Number   | 停用日期 |  
+| CERTIFICATES_INFO |  是  | String   | xxxxx |  
+| CERTIFICATES_TYPE |  是  | String   | xxxxx |  
+| MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
+| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| SUPPLIER_DID |  是  | String   | xxxxx |  
+| SUPPLIER_NAME |  是  | String   | xxxxx |  
+| SUPPLIER_TYPE |  是  | String   | xxxxx |  
+| EMAIL_INFO |  是  | String   | xxxxx |  
+| OPEN_ACC_DATE |  是  | Number   | xxxxx |  
+| VALID_START_DATE |  是  | Number   | xxxxx |  
+| VALID_END_DATE |  是  | Number   | xxxxx |  
+| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
+| ADDRESS |  是  | String   | xxxxx |  
+| TAX_TYPE |  是  | String   | xxxxx |  
+| TAX_NUMBER_INFO |  是  | String   | xxxxx |  
+| TELEPHONE_INFO |  是  | String   | xxxxx |  
+| BANK_ACCOUNT_INFO |  是  | String   | xxxxx |  
+| BANK_NAME |  是  | String   | xxxxx |  
+| ACC_CERT_INFO |  是  | String   | xxxxx |  
+| ACC_CERT_TYPE |  是  | String   | xxxxx |  
+| AVAIL_BALANCE |  是  | Number   | xxxxx |  
+| OWE_BALANCE |  是  | Number   | xxxxx |  
+| OPERATION_DID |  是  | String   | xxxxx |  
+| STATE_TYPE |  是  | String   | xxxxx |  
+| OPERATION_DATE |  是  | Number   | xxxxx |  
+| OPERATION_TIME |  是  | Number   | xxxxx |  
   
-说明：采暖季年份信息  
+说明：xxxxx  
 ## 4、服务接口说明  
-说明：无  
+说明：xxxxxxx  

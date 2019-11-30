@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(GeneratePayOrderCust)生成缴费订单  
-接口描述：生成缴费订单  
-请求说明：POST https://api.epeis.com/Service/v1/GeneratePayOrderCust/  
+服务接口：(QueryChannelServices)渠道服务查询  
+接口描述：xxxxx  
+请求说明：POST https://api.epeis.com/Service/v1/QueryChannelServices/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,15 +13,12 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"INOUT_ORDER":	{
-		"PAID_IN_AMOUNT":	0
+	"SYS_PAGE":	{
+		"PAGE_NO":	1,
+		"PAGE_ROWS":	8
 	},
-	"INOUT_ORDER_DETAIL":	[{
-			"USER_ACCOUNT_AID":	"",
-			"ADDRESS":	"",
-			"NETWORK_TYPE":	"",
-			"ACCOUNT_MONTH":	0,
-			"CALC_FEE":	0
+	"SYS_CHANNEL":	[{
+			"CHANNEL_DID":	""
 		}]
 }  
 ~~~  
@@ -35,24 +32,20 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：INOUT_ORDER，类型：object  
+参数：SYS_PAGE，类型：object  
+  
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
+| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
+  
+参数：SYS_CHANNEL，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| PAID_IN_AMOUNT |  是  | Number   | 16 | 2 | 实缴总计 |  
+| CHANNEL_DID |  是  | String   | 16 | 0 | xxxxx |  
   
-说明：订单信息  
-参数：INOUT_ORDER_DETAIL，类型：Array  
-  
-| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 16个字符，用户账号唯一ID |  
-| ADDRESS |  是  | String   | 128 | 0 | 128个字符，详细地址 |  
-| NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| ACCOUNT_MONTH |  是  | Number   | 6 | 0 | 账务月份 |  
-| CALC_FEE |  是  | Number   | 16 | 2 | 应缴总金额，精确到2位小数点 |  
-  
-说明：订单明细  
+说明：xxxxx  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -61,9 +54,19 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"INOUT_ORDER":	[{
-				"OPERATION_DATE":	0,
-				"SERIAL_DID":	""
+		"SYS_PAGE":	{
+			"PAGE_NO":	1,
+			"PAGE_ROWS":	8,
+			"NEXT_YESNO":	"2",
+			"TOTAL":	1000
+		},
+		"SYS_CHA_SERVICE":	[{
+				"CHANNEL_DID":	"",
+				"SERVICE_NAME_INFO":	"",
+				"SERVICE_TYPE":	"",
+				"REG_ATTESTATION_TYPE":	"",
+				"ACC_ATTESTATION_TYPE":	"",
+				"REG_ACC_CONNECT_TYPE":	""
 			}]
 	}
 }  
@@ -78,14 +81,27 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：INOUT_ORDER，类型：Array  
+参数：SYS_PAGE，类型：object  
+  
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| PAGE_NO       |  是  | Number   | 第几页 |  
+| PAGE_ROWS     |  是  | Number   | 每页行数 |  
+| NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
+| TOTAL         |  是  | Number   | 总行数 |  
+  
+参数：SYS_CHA_SERVICE，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| OPERATION_DATE |  是  | Number   | 订单日期 |  
-| SERIAL_DID |  是  | String   | 订单业务流水号 |  
+| CHANNEL_DID |  是  | String   | xxxxx |  
+| SERVICE_NAME_INFO |  是  | String   | xxxxx |  
+| SERVICE_TYPE |  是  | String   | xxxxx |  
+| REG_ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| ACC_ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| REG_ACC_CONNECT_TYPE |  是  | String   | xxxxx |  
   
-说明：订单信息  
+说明：xxxxx  
 ## 4、服务接口说明  
-说明：无  
+说明：xxxxxxx  

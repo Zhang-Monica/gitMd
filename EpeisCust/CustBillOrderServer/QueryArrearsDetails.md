@@ -34,17 +34,11 @@
 	"MESSAGE":	"",
 	"DATA":	{
 		"INOUT_ORDER_DETAIL":	[{
-				"SETTLEMENT_AID":	"",
-				"SETTLEMENT_NAME":	"",
-				"CUSTOMER_DID":	"",
-				"CUSTOMER_NAME":	"",
-				"USER_CUS_DID":	"",
-				"USER_NAME":	"",
+				"USER_ACCOUNT_AID":	"",
+				"ADDRESS":	"",
 				"NETWORK_TYPE":	"",
 				"ACCOUNT_MONTH":	0,
-				"RECE_AMOUNT":	0,
-				"LIQ_DAMA_LEVY_DATE":	0,
-				"RECEIPT_LIQ_DAMA":	0
+				"CALC_FEE":	0
 			}]
 	}
 }  
@@ -64,17 +58,11 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16个字符，结算户唯一ID |  
-| SETTLEMENT_NAME |  是  | String   | 128个字符，结算户名称 |  
-| CUSTOMER_DID |  是  | String   | 16个字符，客户唯一的账号ID |  
-| CUSTOMER_NAME |  是  | String   | 256个字符，客户名称 |  
-| USER_CUS_DID |  是  | String   | 16个字符，用户唯一的账号ID |  
-| USER_NAME |  是  | String   | 用户名称 |  
+| USER_ACCOUNT_AID |  是  | String   | 16个字符，用户账号唯一ID |  
+| ADDRESS |  是  | String   | 128个字符，详细地址 |  
 | NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
-| RECE_AMOUNT |  是  | Number   | 应缴金额，精确到2位小数点 |  
-| LIQ_DAMA_LEVY_DATE |  是  | Number   | 违约金日期 |  
-| RECEIPT_LIQ_DAMA |  是  | Number   | 应缴违约金，精确到2位小数点 |  
+| CALC_FEE |  是  | Number   | 应缴总金额，精确到2位小数点 |  
   
 说明：欠费信息  
 ## 4、服务接口说明  

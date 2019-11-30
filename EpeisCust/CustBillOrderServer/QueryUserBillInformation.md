@@ -16,6 +16,9 @@
 	"SYS_PAGE":	{
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
+	},
+	"ACC_INVOICE":	{
+		"USER_ACCOUNT_AID":	""
 	}
 }  
 ~~~  
@@ -36,6 +39,13 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
+参数：ACC_INVOICE，类型：object  
+  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 16个字符,用户地址唯一ID |  
+  
+说明：账单信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -50,15 +60,11 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"ACC_USER_ACCOUNT":	[{
-				"OPERATION_DATE":	0,
-				"SERIAL_DID":	"",
-				"CASH_TRANSFER_TYPE":	"",
-				"PAID_IN_AMOUNT":	0,
-				"PAID_IN_LIQ_DAMA":	0,
-				"DRAW_ADVANCE_PAY":	0,
-				"DEPOST_ADVANCE_PAY":	0,
-				"BUSINESS_TYPE":	""
+		"ACC_INVOICE":	[{
+				"USER_ACCOUNT_AID":	"",
+				"NETWORK_TYPE":	"",
+				"ACCOUNT_MONTH":	0,
+				"TAX_EXCLUDE_AMOUNT":	0
 			}]
 	}
 }  
@@ -82,19 +88,15 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：ACC_USER_ACCOUNT，类型：Array  
+参数：ACC_INVOICE，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| OPERATION_DATE |  是  | Number   | 业务日期 |  
-| SERIAL_DID |  是  | String   | 16位字符，业务流水号 |  
-| CASH_TRANSFER_TYPE |  是  | String   | 1-现金,2-现金支票,3-转账支票,4-汇票,5-承兑汇票,6-第三方支付 |  
-| PAID_IN_AMOUNT |  是  | Number   | 实缴金额，精确到2位小数点 |  
-| PAID_IN_LIQ_DAMA |  是  | Number   | 实缴违约金，精确到2位小数点 |  
-| DRAW_ADVANCE_PAY |  是  | Number   | 支取预付款，精确到2位小数点 |  
-| DEPOST_ADVANCE_PAY |  是  | Number   | 存入预付款，精确到2位小数点 |  
-| BUSINESS_TYPE |  是  | String   | 1-应收，2-销账,3-支取，4-存入，5-抹账，6-冲正，7-已冲正 |  
+| USER_ACCOUNT_AID |  是  | String   | 用户地址唯一ID |  
+| NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
+| ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
+| TAX_EXCLUDE_AMOUNT |  是  | Number   | 账单金额，精确到2位小数点 |  
   
 说明：账单信息  
 ## 4、服务接口说明  

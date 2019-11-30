@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(WriteOffCustomerOrder)订单销账  
-接口描述：订单销账  
-请求说明：POST https://api.epeis.com/Service/v1/WriteOffCustomerOrder/  
+服务接口：(QueryUserAddress)查询用户地址  
+接口描述：查询用户地址  
+请求说明：POST https://api.epeis.com/Service/v1/QueryUserAddress/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -12,15 +12,7 @@
 		"DYNAMIC_KEY":	"",
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
-	},
-	"INOUT_ORDER":	[{
-			"OPERATION_DATE":	0,
-			"SERIAL_DID":	"",
-			"CASH_TRANSFER_TYPE":	"",
-			"ORDER_TYPE":	"",
-			"AGENT_OPERATOR_DID":	"",
-			"AGENT_SID_INFO":	""
-		}]
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -33,18 +25,6 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：INOUT_ORDER，类型：Array  
-  
-| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| OPERATION_DATE |  是  | Number   | 8 | 0 | 订单日期 |  
-| SERIAL_DID |  是  | String   | 16 | 0 | 16位字符，订单业务流水号 |  
-| CASH_TRANSFER_TYPE |  是  | String   | 2 | 0 | 6-第三方支付 |  
-| ORDER_TYPE |  是  | String   | 2 | 0 | 1-微信,2-支付宝 |  
-| AGENT_OPERATOR_DID |  是  | String   | 16 | 0 | 代理操作员号 |  
-| AGENT_SID_INFO |  是  | String   | 30 | 0 | 16位字符，代理流水号 |  
-  
-说明：订单信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -53,6 +33,10 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
+		"USER_ACCOUNT":	[{
+				"USER_ACCOUNT_AID":	"",
+				"ADDRESS":	""
+			}]
 	}
 }  
 ~~~  
@@ -64,6 +48,16 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数：DATA，类型：object 本服务接口无响应数据！  
+参数：DATA，类型：object 本服务接口响应数据说明如下：  
+  
+参数：USER_ACCOUNT，类型：Array  
+  
+
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| USER_ACCOUNT_AID |  是  | String   | 16个字符，用户账号唯一ID |  
+| ADDRESS |  是  | String   | 128个字符，详细地址 |  
+  
+说明：用户账户  
 ## 4、服务接口说明  
 说明：无  

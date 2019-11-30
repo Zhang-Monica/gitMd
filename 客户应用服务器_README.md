@@ -7,4 +7,5 @@
 | 客户过户应用服务 | v1 | [CustHouseServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustHouseServer_README.md) |  
 | 查缴订单应用服务 | v1 | [CustBillOrderServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustBillOrderServer_README.md) |  
 | 发票信息应用服务 | v1 | [CustInvoiceServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustInvoiceServer_README.md) |  
+| 快速缴费应用服务 | v1 | [CustFastPayServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustFastPayServer_README.md) |  
   
