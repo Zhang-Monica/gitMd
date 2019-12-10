@@ -10,4 +10,5 @@
 | 商户基础系统配置应用服务 | v1 | [SuppConfigBasicServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigBasicServer_README.md) |  
 | 商户月份系统配置应用服务 | v1 | [SuppConfigMonServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigMonServer_README.md) |  
 | 商户采暖物业系统配置 | v1 | [SuppConfigHeatPropServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigHeatPropServer_README.md) |  
+| 商户计费套餐 | v1 | [SuppComPackServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComPackServer_README.md) |  
   

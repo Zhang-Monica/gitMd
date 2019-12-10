@@ -8,4 +8,5 @@
 | 查缴订单应用服务 | v1 | [CustBillOrderServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustBillOrderServer_README.md) |  
 | 发票信息应用服务 | v1 | [CustInvoiceServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustInvoiceServer_README.md) |  
 | 快速缴费应用服务 | v1 | [CustFastPayServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustFastPayServer_README.md) |  
+| 客户自助抄表 | v1 | [CusComMeterServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CusComMeterServer_README.md) |  
   

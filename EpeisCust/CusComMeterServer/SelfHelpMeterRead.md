@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryPrintInvoiceCustomer)查询开票信息  
-接口描述：查询开票信息  
-请求说明：POST https://api.epeis.com/Service/v1/QueryPrintInvoiceCustomer/  
+服务接口：(SelfHelpMeterRead)客户自助抄表  
+接口描述：客户自助抄表  
+请求说明：POST https://api.epeis.com/Service/v1/SelfHelpMeterRead/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,9 +13,13 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"ACC_INVOICE_PRINT":	{
-		"INVOICE_DID":	""
-	}
+	"COM_METER_INFO_TMP":	[{
+			"SETTLEMENT_AID":	"",
+			"DEVICE_DID":	"",
+			"READINGS_TYPE":	"",
+			"ENERGY_FLOW_TYPE":	"",
+			"THE_METER_READ":	0
+		}]
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -28,13 +32,17 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：ACC_INVOICE_PRINT，类型：object  
+参数：COM_METER_INFO_TMP，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| INVOICE_DID |  是  | String   | 16 | 0 | 16位字符，发票唯一的ID |  
+| SETTLEMENT_AID |  是  | String   | 16 | 0 | 16个字符，结算编号 |  
+| DEVICE_DID |  是  | String   | 16 | 0 | 装置ID |  
+| READINGS_TYPE |  是  | String   | 2 | 0 | 1-常，2-尖峰，3-峰，4-平，5-谷，6-低谷，7-无功，8-需量 |  
+| ENERGY_FLOW_TYPE |  是  | String   | 2 | 0 | 1-正向，2-反向 |  
+| THE_METER_READ |  是  | Number   | 16 | 6 | 本次表底 |  
   
-说明：客户账户  
+说明：表底信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -43,15 +51,6 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"ACC_INVOICE_PRINT":	[{
-				"INVOICE_DID":	"",
-				"INVOICE_NUMBER":	"",
-				"INVOICE_NUM_INFO":	"",
-				"INVOICE_TYPE":	"",
-				"URL":	"",
-				"NETWORK_TYPE":	"",
-				"ACCOUNT_MONTH":	0
-			}]
 	}
 }  
 ~~~  
@@ -63,21 +62,6 @@
 | MESSAGE | 是 | String | 响应信息 |  
 | DATA | 是 | Object | 响应数据 |  
   
-参数：DATA，类型：object 本服务接口响应数据说明如下：  
-  
-参数：ACC_INVOICE_PRINT，类型：Array  
-  
-
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| INVOICE_DID |  是  | String   | 16位字符，发票唯一的ID |  
-| INVOICE_NUMBER |  是  | String   | 20个字符，发票号码 |  
-| INVOICE_NUM_INFO |  是  | String   | 20个字符，发票代码 |  
-| INVOICE_TYPE |  是  | String   | 1-普通机打发票，2-普通电子发票，3-增值税机打发票，4-增值税电子发票 |  
-| URL |  是  | String   | 128个字符，URL地址 |  
-| NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
-  
-说明：开票信息  
+参数：DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
 说明：无  

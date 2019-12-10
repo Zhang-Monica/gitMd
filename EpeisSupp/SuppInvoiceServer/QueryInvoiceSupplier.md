@@ -17,9 +17,9 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"ACC_INVOICE":	{
+	"INOUT_ACC_INVOICE":	{
 		"CUSTOMER_DID":	"",
-		"INVOICE_DID":	""
+		"INPUT_YESNO":	""
 	}
 }  
 ~~~  
@@ -40,12 +40,12 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：ACC_INVOICE，类型：object  
+参数：INOUT_ACC_INVOICE，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CUSTOMER_DID |  否  | String   | 16 | 0 | 16个字符，客户唯一的账号ID |  
-| INVOICE_DID |  否  | String   | 16 | 0 | 16位字符，发票唯一的ID |  
+| INPUT_YESNO |  是  | String   | 2 | 0 | 是否已开票：1-否，2-是 |  
   
 说明：发票信息  
   
@@ -65,12 +65,6 @@
 		"ACC_INVOICE":	[{
 				"INVOICE_DID":	"",
 				"SUPPLIER_NAME":	"",
-				"ADMIN_CODE_INFO":	"",
-				"ADDRESS":	"",
-				"TAX_NUMBER_INFO":	"",
-				"TELEPHONE_INFO":	"",
-				"BANK_ACCOUNT_INFO":	"",
-				"BANK_NAME":	"",
 				"CUSTOMER_DID":	"",
 				"CUSTOMER_NAME":	"",
 				"CADMIN_CODE_INFO":	"",
@@ -81,8 +75,7 @@
 				"CBANK_NAME":	"",
 				"NETWORK_TYPE":	"",
 				"ACCOUNT_MONTH":	0,
-				"TAX_EXCLUDE_AMOUNT":	0,
-				"TAX_INCLUDE_AMOUNT":	0
+				"TAX_EXCLUDE_AMOUNT":	0
 			}]
 	}
 }  
@@ -113,12 +106,6 @@
 | :----------------- | :----: | :-------- | :---------------- |  
 | INVOICE_DID |  是  | String   | 16位字符，发票唯一的ID |  
 | SUPPLIER_NAME |  是  | String   | 256个字符,供应商名称 |  
-| ADMIN_CODE_INFO |  是  | String   | 20个字符，行政区划统一编码 |  
-| ADDRESS |  是  | String   | 128个字符，详细地址 |  
-| TAX_NUMBER_INFO |  是  | String   | 30个字符，纳税识别号 |  
-| TELEPHONE_INFO |  是  | String   | 20个字符，固定电话 |  
-| BANK_ACCOUNT_INFO |  是  | String   | 30个字符，银行账号 |  
-| BANK_NAME |  是  | String   | 256个字符，开户行名称 |  
 | CUSTOMER_DID |  是  | String   | 16个字符，客户唯一的账号ID |  
 | CUSTOMER_NAME |  是  | String   | 256个字符，客户名称 |  
 | CADMIN_CODE_INFO |  是  | String   | 20个字符，行政区划统一编码 |  
@@ -130,7 +117,6 @@
 | NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
 | TAX_EXCLUDE_AMOUNT |  是  | Number   | 不含税金额，精确到2位小数点 |  
-| TAX_INCLUDE_AMOUNT |  是  | Number   | 含税金额，精确到2位小数点 |  
   
 说明：发票信息  
 ## 4、服务接口说明  
