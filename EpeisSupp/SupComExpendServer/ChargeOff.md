@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(DeleteComChargePack)启用或停用计费套餐  
-接口描述：删除计费套餐  
-请求说明：POST https://api.epeis.com/Service/v1/DeleteComChargePack/  
+服务接口：(ChargeOff)应收出账  
+接口描述：应收出账  
+请求说明：POST https://api.epeis.com/Service/v1/ChargeOff/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,10 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_PACK":	{
-		"CHARGE_PACK_DID":	"",
-		"STATE_TYPE":	""
-	}
+	"COM_USER_METER":	[{
+			"SETTLEMENT_AID":	""
+		}]
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -29,14 +28,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_PACK，类型：object  
+参数：COM_USER_METER，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
-| STATE_TYPE |  是  | String   | 2 | 0 | 1-启用，2-停用 |  
+| SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
   
-说明：计费套餐  
+说明：用户帐单计量点明细  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

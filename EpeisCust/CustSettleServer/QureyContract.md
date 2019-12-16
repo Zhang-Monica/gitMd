@@ -77,7 +77,6 @@
 			"ENERGY_LOAD":	0,
 			"ACCOUNT_ITEM_INFO":	"",
 			"AGREE_PRICE_YESNO":	"",
-			"PROTOCOL_DID":	"",
 			"SETTLEMENT_DATE_TYPE":	"",
 			"MAIN_PACK_DID":	"",
 			"TEMP_PACK_DID":	"",
@@ -169,7 +168,6 @@
 | ENERGY_LOAD |  否  | Number   | 用能负荷 |  
 | ACCOUNT_ITEM_INFO |  否  | String   | 会计科目编码 |  
 | AGREE_PRICE_YESNO |  否  | String   | 是否协议价：1-否；2-是 |  
-| PROTOCOL_DID |  否  | String   | 协议编号 |  
 | SETTLEMENT_DATE_TYPE |  否  | String   | 结算出账例日 |  
 | MAIN_PACK_DID |  否  | String   | 主套餐号 |  
 | TEMP_PACK_DID |  否  | String   | 临时套餐号 |  

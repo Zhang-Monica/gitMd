@@ -29,7 +29,6 @@
 			"ENERGY_LOAD":	0,
 			"ACCOUNT_ITEM_INFO":	"",
 			"AGREE_PRICE_YESNO":	"",
-			"PROTOCOL_DID":	"",
 			"STOP_EMPTY_YESNO":	"",
 			"OUTAGE_VACANCY_DATE":	0,
 			"RESUPPLY_DATE":	0,
@@ -89,7 +88,6 @@
 | ENERGY_LOAD |  是  | Number   | 14 | 2 | xxxxx |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | xxxxx |  
 | AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| PROTOCOL_DID |  是  | String   | 16 | 0 | xxxxx |  
 | STOP_EMPTY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
 | OUTAGE_VACANCY_DATE |  是  | Number   | 8 | 0 | xxxxx |  
 | RESUPPLY_DATE |  是  | Number   | 8 | 0 | xxxxx |  

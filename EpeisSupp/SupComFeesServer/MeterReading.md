@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(DeleteComChargePack)启用或停用计费套餐  
-接口描述：删除计费套餐  
-请求说明：POST https://api.epeis.com/Service/v1/DeleteComChargePack/  
+服务接口：(MeterReading)抄表信息录入  
+接口描述：抄表信息录入  
+请求说明：POST https://api.epeis.com/Service/v1/MeterReading/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,10 +13,12 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_PACK":	{
-		"CHARGE_PACK_DID":	"",
-		"STATE_TYPE":	""
-	}
+	"COM_METER_INFO":	[{
+			"DEVICE_DID":	"",
+			"ENERGY_FLOW_TYPE":	"",
+			"READINGS_TYPE":	"",
+			"THE_METER_READ":	0
+		}]
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -29,14 +31,16 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_PACK，类型：object  
+参数：COM_METER_INFO，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
-| STATE_TYPE |  是  | String   | 2 | 0 | 1-启用，2-停用 |  
+| DEVICE_DID |  是  | String   | 16 | 0 | 结算户ID |  
+| ENERGY_FLOW_TYPE |  是  | String   | 2 | 0 | 能量流向 |  
+| READINGS_TYPE |  是  | String   | 2 | 0 | 示数类型 |  
+| THE_METER_READ |  是  | Number   | 16 | 6 | 本次表底 |  
   
-说明：计费套餐  
+说明：核算表底资料  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
