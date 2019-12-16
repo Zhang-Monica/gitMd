@@ -18,7 +18,6 @@
 			"READ_PERIOD_TYPE":	"",
 			"BUSINESS_HALL_AID":	"",
 			"BOOK_NAME":	"",
-			"ADMIN_CODE_INFO":	"",
 			"MANAGER_DID":	"",
 			"METER_READER_DID":	""
 		}]
@@ -42,7 +41,6 @@
 | READ_PERIOD_TYPE |  是  | String   | 2 | 0 | 抄表周期类型 |  
 | BUSINESS_HALL_AID |  是  | String   | 16 | 0 | 商户营业网点ID |  
 | BOOK_NAME |  是  | String   | 128 | 0 | 抄表区段名称 |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
 | MANAGER_DID |  是  | String   | 16 | 0 | 经理 |  
 | METER_READER_DID |  是  | String   | 16 | 0 | 抄表员 |  
   
