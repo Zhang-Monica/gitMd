@@ -17,14 +17,14 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"INOUT_SETTLE_ACCOUNT":	[{
-			"CERTIFICATES_INFO":	"",
-			"MOBILE_PHONE_INFO":	"",
-			"ACC_CERT_INFO":	"",
-			"CUSTOMER_NAME":	"",
-			"ADDRESS":	"",
-			"NETWORK_TYPE":	""
-		}]
+	"INOUT_SETTLE_ACCOUNT":	{
+		"CERTIFICATES_INFO":	"",
+		"MOBILE_PHONE_INFO":	"",
+		"ACC_CERT_INFO":	"",
+		"CUSTOMER_NAME":	"",
+		"ADDRESS":	"",
+		"NETWORK_TYPE":	""
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -44,7 +44,7 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：INOUT_SETTLE_ACCOUNT，类型：Array  
+参数：INOUT_SETTLE_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
