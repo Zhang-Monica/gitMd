@@ -14,7 +14,8 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_USER_METER":	[{
-			"SETTLEMENT_AID":	""
+			"SETTLEMENT_AID":	"",
+			"NORMAL_RETRO_TYPE":	""
 		}]
 }  
 ~~~  
@@ -33,6 +34,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
+| NORMAL_RETRO_TYPE |  是  | String   | 2 | 0 | 正常追补类型 |  
   
 说明：用户帐单计量点明细  
   

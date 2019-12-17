@@ -60,38 +60,15 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"COM_METER_INFO":	[{
+		"COM_METERAGE":	[{
 				"SETTLEMENT_AID":	"",
-				"DEVICE_DID":	"",
-				"DEVICE_FACTORY_INFO":	"",
-				"METER_INSTALL_LOCATE":	"",
-				"DEVICE_TYPE":	"",
-				"METER_BIT":	0,
-				"ENERGY_FLOW_TYPE":	"",
-				"READINGS_TYPE":	"",
-				"LAST_METER_READ_DATE":	0,
-				"LAST_METER_READ_TIME":	0,
-				"LAST_METER_READ":	0,
-				"ACCU_AVG_METER_CONS":	0,
-				"ACCU_AVG_REDUCE_CONS":	0,
-				"ACCU_AVG_CHARGE_CONS":	0,
-				"THE_METER_READ_DATE":	0,
-				"THE_METER_READ_TIME":	0,
-				"THE_METER_READ":	0,
-				"THE_METER_CONS":	0,
-				"THE_REDUCE_CONS":	0,
-				"THE_CHARGE_CONS":	0,
-				"OLD_METER_CONS":	0,
-				"ADDED_CONS":	0,
-				"METER_MARGIN":	0,
-				"METER_READ_CHAN_TYPE":	"",
 				"NORMAL_RETRO_TYPE":	"",
-				"METER_READ_ORDER":	0,
-				"CHARGE_METER_RATE":	0,
-				"TURN_UPSIDE_TYPE":	"",
-				"URL":	"",
-				"THE_ACCOUNT_DATE":	0,
-				"THE_ACCOUNT_TIME":	0
+				"CUSTOMER_DID":	"",
+				"METER_YESNO":	"",
+				"MAIN_PACK_DID":	"",
+				"STOP_EMPTY_YESNO":	"",
+				"FIXED_CHARGE":	0,
+				"FIXED_FEE":	0
 			}]
 	}
 }  
@@ -115,43 +92,20 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：COM_METER_INFO，类型：Array  
+参数：COM_METERAGE，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 结算户ID |  
-| DEVICE_DID |  是  | String   | 装置ID |  
-| DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  
-| METER_INSTALL_LOCATE |  是  | String   | 表具安装位置 |  
-| DEVICE_TYPE |  是  | String   | 装置类型 |  
-| METER_BIT |  是  | Number   | 表码位数 |  
-| ENERGY_FLOW_TYPE |  是  | String   | 能量流向 |  
-| READINGS_TYPE |  是  | String   | 示数类型 |  
-| LAST_METER_READ_DATE |  是  | Number   | 上次抄表日期 |  
-| LAST_METER_READ_TIME |  是  | Number   | 上次抄表时间 |  
-| LAST_METER_READ |  是  | Number   | 上次表底 |  
-| ACCU_AVG_METER_CONS |  是  | Number   | 累计日均表计用量 |  
-| ACCU_AVG_REDUCE_CONS |  是  | Number   | 累计日均套减用量 |  
-| ACCU_AVG_CHARGE_CONS |  是  | Number   | 累计日均计费用量 |  
-| THE_METER_READ_DATE |  是  | Number   | 本次抄表日期 |  
-| THE_METER_READ_TIME |  是  | Number   | 本次抄表时间 |  
-| THE_METER_READ |  是  | Number   | 本次表底 |  
-| THE_METER_CONS |  是  | Number   | 本次表计用量 |  
-| THE_REDUCE_CONS |  是  | Number   | 本次套减用量 |  
-| THE_CHARGE_CONS |  是  | Number   | 本次计费用量 |  
-| OLD_METER_CONS |  是  | Number   | 旧表用量 |  
-| ADDED_CONS |  是  | Number   | 追加用量 |  
-| METER_MARGIN |  是  | Number   | 表计余量 |  
-| METER_READ_CHAN_TYPE |  是  | String   | 抄表渠道 |  
-| NORMAL_RETRO_TYPE |  是  | String   | 正常/追补 |  
-| METER_READ_ORDER |  是  | Number   | 抄表序号 |  
-| CHARGE_METER_RATE |  是  | Number   | 计费表计倍率 |  
-| TURN_UPSIDE_TYPE |  是  | String   | 倒走翻转类型 |  
-| URL |  是  | String   | URL链接 |  
-| THE_ACCOUNT_DATE |  是  | Number   | 本次核算日期 |  
-| THE_ACCOUNT_TIME |  是  | Number   | 本次核算时间 |  
+| SETTLEMENT_AID |  是  | String   | 16个字符,结算户编号 |  
+| NORMAL_RETRO_TYPE |  是  | String   | 周期性类型:1-周期,2-非周期 |  
+| CUSTOMER_DID |  是  | String   | 16个字符，客户编号 |  
+| METER_YESNO |  是  | String   | 是否有表：1-否，2-是 |  
+| MAIN_PACK_DID |  是  | String   | 主套餐号 |  
+| STOP_EMPTY_YESNO |  是  | String   | 是否停/空：1-否，2-是 |  
+| FIXED_CHARGE |  是  | Number   | 计费固定量 |  
+| FIXED_FEE |  是  | Number   | 计费固定费 |  
   
-说明：表底资料信息  
+说明：计量点信息  
 ## 4、服务接口说明  
 说明：无  
