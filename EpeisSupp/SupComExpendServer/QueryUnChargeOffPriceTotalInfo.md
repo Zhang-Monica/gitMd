@@ -74,7 +74,6 @@
 				"AGREE_PRICE_YESNO":	"",
 				"LADDER_TYPE":	"",
 				"LADDER_LEVEL_TYPE":	"",
-				"ASSESS_FOR_RAT_YESNO":	"",
 				"FOR_RATE_VALID_TYPE":	"",
 				"RESIDENT_YESNO":	"",
 				"ACCOUNT_ITEM_INFO":	"",
@@ -128,7 +127,6 @@
 | AGREE_PRICE_YESNO |  是  | String   | 是否协议价 |  
 | LADDER_TYPE |  是  | String   | 阶梯类型 |  
 | LADDER_LEVEL_TYPE |  是  | String   | 阶梯级次类型 |  
-| ASSESS_FOR_RAT_YESNO |  是  | String   | 是否考核力率 |  
 | FOR_RATE_VALID_TYPE |  是  | String   | 力率考核类型 |  
 | RESIDENT_YESNO |  是  | String   | 是否居民 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 会计科目编码 |  

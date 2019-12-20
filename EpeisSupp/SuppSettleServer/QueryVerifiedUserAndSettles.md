@@ -135,7 +135,6 @@
 				"ABUND_WITHER_YESNO":	"",
 				"TIME_FEES_TYPE":	"",
 				"LADDER_TYPE":	"",
-				"LADDER_LEVEL_TYPE":	"",
 				"HEAT_CHARGE_TYPE":	"",
 				"GARB_CHAEGE_TYPE":	"",
 				"FIXED_CHARGE":	0,
@@ -260,7 +259,6 @@
 | ABUND_WITHER_YESNO |  是  | String   | 是否丰枯 |  
 | TIME_FEES_TYPE |  是  | String   | 分时计费类型 |  
 | LADDER_TYPE |  是  | String   | 阶梯类型 |  
-| LADDER_LEVEL_TYPE |  是  | String   | 阶梯级次类型 |  
 | HEAT_CHARGE_TYPE |  是  | String   | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  是  | String   | 垃圾计费类型 |  
 | FIXED_CHARGE |  是  | Number   | 计费固定量 |  

@@ -14,7 +14,6 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_METER_INFO_TMP":	[{
-			"SETTLEMENT_AID":	"",
 			"DEVICE_DID":	"",
 			"READINGS_TYPE":	"",
 			"ENERGY_FLOW_TYPE":	"",
@@ -36,7 +35,6 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16 | 0 | 16个字符，结算编号 |  
 | DEVICE_DID |  是  | String   | 16 | 0 | 装置ID |  
 | READINGS_TYPE |  是  | String   | 2 | 0 | 1-常，2-尖峰，3-峰，4-平，5-谷，6-低谷，7-无功，8-需量 |  
 | ENERGY_FLOW_TYPE |  是  | String   | 2 | 0 | 1-正向，2-反向 |  

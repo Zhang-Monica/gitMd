@@ -94,7 +94,6 @@
 				"ABUND_WITHER_YESNO":	"",
 				"TIME_FEES_TYPE":	"",
 				"LADDER_TYPE":	"",
-				"LADDER_LEVEL_TYPE":	"",
 				"FIXED_CHARGE":	0,
 				"FIXED_FEE":	0,
 				"DIVI_FIXED_CHARGE":	0,
@@ -166,7 +165,6 @@
 | ABUND_WITHER_YESNO |  是  | String   | xxxxx |  
 | TIME_FEES_TYPE |  是  | String   | xxxxx |  
 | LADDER_TYPE |  是  | String   | xxxxx |  
-| LADDER_LEVEL_TYPE |  是  | String   | xxxxx |  
 | FIXED_CHARGE |  是  | Number   | xxxxx |  
 | FIXED_FEE |  是  | Number   | xxxxx |  
 | DIVI_FIXED_CHARGE |  是  | Number   | xxxxx |  

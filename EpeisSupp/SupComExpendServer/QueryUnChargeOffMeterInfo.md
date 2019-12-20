@@ -14,7 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_USER_METER":	{
-		"SETTLEMENT_AID":	""
+		"DEVICE_DID":	""
 	}
 }  
 ~~~  
@@ -32,7 +32,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
+| DEVICE_DID |  是  | String   | 16 | 0 | 装置ID |  
   
 说明：用户帐单计量点明细  
   
@@ -44,7 +44,6 @@
 	"MESSAGE":	"",
 	"DATA":	{
 		"COM_METER_INFO":	[{
-				"SETTLEMENT_AID":	"",
 				"DEVICE_DID":	"",
 				"DEVICE_FACTORY_INFO":	"",
 				"METER_INSTALL_LOCATE":	"",
@@ -94,7 +93,6 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 结算户ID |  
 | DEVICE_DID |  是  | String   | 装置ID |  
 | DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  
 | METER_INSTALL_LOCATE |  是  | String   | 表具安装位置 |  

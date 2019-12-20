@@ -19,8 +19,7 @@
 	},
 	"COM_METERAGE":	{
 		"BOOK_AID":	"",
-		"SETTLEMENT_AID":	"",
-		"NORMAL_RETRO_TYPE":	""
+		"DEVICE_DID":	""
 	}
 }  
 ~~~  
@@ -46,8 +45,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | BOOK_AID |  是  | String   | 16 | 0 | 抄表区段编号 |  
-| SETTLEMENT_AID |  否  | String   | 16 | 0 | 16个字符,结算户编号 |  
-| NORMAL_RETRO_TYPE |  否  | String   | 2 | 0 | 周期性类型:1-周期,2-非周期 |  
+| DEVICE_DID |  否  | String   | 16 | 0 | 16个字符，装置编号 |  
   
 说明：计量点信息  
   
@@ -65,7 +63,6 @@
 			"TOTAL":	1000
 		},
 		"COM_METER_INFO":	[{
-				"SETTLEMENT_AID":	"",
 				"NORMAL_RETRO_TYPE":	"",
 				"DEVICE_DID":	"",
 				"DEVICE_FACTORY_INFO":	"",
@@ -119,7 +116,6 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 结算户ID |  
 | NORMAL_RETRO_TYPE |  是  | String   | 周期性类型:1-周期,2-非周期 |  
 | DEVICE_DID |  是  | String   | 16个字符，装置编号 |  
 | DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  

@@ -90,7 +90,6 @@
 			"ABUND_WITHER_YESNO":	"",
 			"TIME_FEES_TYPE":	"",
 			"LADDER_TYPE":	"",
-			"LADDER_LEVEL_TYPE":	"",
 			"FIXED_CHARGE":	0,
 			"FIXED_FEE":	0,
 			"DIVI_FIXED_CHARGE":	0,
@@ -181,7 +180,6 @@
 | ABUND_WITHER_YESNO |  否  | String   | 是否丰枯：1-否；2-是 |  
 | TIME_FEES_TYPE |  否  | String   | 分时计费类型：1-不分时；2-2分时；3-3分时；4-4分时；5-5分时 |  
 | LADDER_TYPE |  否  | String   | 阶梯类型：1-年阶梯；2-月阶梯 |  
-| LADDER_LEVEL_TYPE |  否  | String   | 阶梯名称类型：1-无阶梯；2-二阶梯；3-三阶梯；4-四阶梯；5-五阶梯 |  
 | FIXED_CHARGE |  否  | Number   | 计费固定量 |  
 | FIXED_FEE |  否  | Number   | 计费固定费 |  
 | DIVI_FIXED_CHARGE |  否  | Number   | 分摊用量 |  

@@ -60,7 +60,6 @@
 				"AGREE_PRICE_YESNO":	"",
 				"TIME_FEES_TYPE":	"",
 				"LADDER_TYPE":	"",
-				"LADDER_LEVEL_TYPE":	"",
 				"CHARGE_POPULATION":	0,
 				"STARTUP_DATE":	0,
 				"OUTAGE_DATE":	0
@@ -95,7 +94,6 @@
 				"ABUND_WITHER_YESNO":	"",
 				"TIME_FEES_TYPE":	"",
 				"LADDER_TYPE":	"",
-				"LADDER_LEVEL_TYPE":	"",
 				"HEAT_CHARGE_TYPE":	"",
 				"GARB_CHAEGE_TYPE":	"",
 				"METER_TOTAL_CONS":	0,
@@ -162,7 +160,6 @@
 | AGREE_PRICE_YESNO |  是  | String   | 是否协议价：1-否，2-是 |  
 | TIME_FEES_TYPE |  是  | String   | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | LADDER_TYPE |  是  | String   | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
-| LADDER_LEVEL_TYPE |  是  | String   | 阶梯级次：1-第一阶梯，2-第二阶梯，3-第三阶梯，4-第四阶梯，5-第五阶梯 |  
 | CHARGE_POPULATION |  是  | Number   | 计费人口数 |  
 | STARTUP_DATE |  是  | Number   | 启用日期 |  
 | OUTAGE_DATE |  是  | Number   | 停用日期 |  
@@ -202,7 +199,6 @@
 | ABUND_WITHER_YESNO |  是  | String   | 是否丰枯：1-否，2-是 |  
 | TIME_FEES_TYPE |  是  | String   | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | LADDER_TYPE |  是  | String   | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
-| LADDER_LEVEL_TYPE |  是  | String   | 阶梯级次：1-第一阶梯，2-第二阶梯，3-第三阶梯，4-第四阶梯，5-第五阶梯 |  
 | HEAT_CHARGE_TYPE |  是  | String   | 暖气计费类型：1-不计费，2-面积计费，3-热量计费，4-面积和热量 |  
 | GARB_CHAEGE_TYPE |  是  | String   | 垃圾计费类型：1-按人口，2-按面积 |  
 | METER_TOTAL_CONS |  是  | Number   | 计费表计总用量 |  

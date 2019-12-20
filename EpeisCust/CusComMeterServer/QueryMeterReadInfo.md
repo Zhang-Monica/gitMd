@@ -44,7 +44,6 @@
 	"MESSAGE":	"",
 	"DATA":	{
 		"COM_METER_INFO_TMP":	[{
-				"SETTLEMENT_AID":	"",
 				"DEVICE_DID":	"",
 				"METER_BIT":	0,
 				"READINGS_TYPE":	"",
@@ -74,7 +73,6 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16个字符，结算编号 |  
 | DEVICE_DID |  是  | String   | 装置ID |  
 | METER_BIT |  是  | Number   | 表码位数 |  
 | READINGS_TYPE |  是  | String   | 1-常，2-尖峰，3-峰，4-平，5-谷，6-低谷，7-无功，8-需量 |  
