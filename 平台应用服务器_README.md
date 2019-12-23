@@ -4,4 +4,5 @@
 | 平台账户应用服务 | v1 | [PlatAccountServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatAccountServer_README.md) |  
 | 渠道服务应用服务 | v1 | [PlatChannelServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatChannelServer_README.md) |  
 | 实名激活核定应用服务 | v1 | [PlatApproveServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatApproveServer_README.md) |  
+| 数据初始化 | v1 | [PlatDataInitServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatDataInitServer_README.md) |  
   
