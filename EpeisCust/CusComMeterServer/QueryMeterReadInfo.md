@@ -43,7 +43,9 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"COM_METER_INFO_TMP":	[{
+		"INOUT_COM_METER_INFO":	[{
+				"USER_ACCOUNT_AID":	"",
+				"NETWORK_CO_DID":	"",
 				"DEVICE_DID":	"",
 				"METER_BIT":	0,
 				"READINGS_TYPE":	"",
@@ -68,11 +70,13 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：COM_METER_INFO_TMP，类型：Array  
+参数：INOUT_COM_METER_INFO，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
+| USER_ACCOUNT_AID |  是  | String   | 16个字符，用户账号唯一ID |  
+| NETWORK_CO_DID |  是  | String   | 16个字符，管网公司编码 |  
 | DEVICE_DID |  是  | String   | 装置ID |  
 | METER_BIT |  是  | Number   | 表码位数 |  
 | READINGS_TYPE |  是  | String   | 1-常，2-尖峰，3-峰，4-平，5-谷，6-低谷，7-无功，8-需量 |  

@@ -11,6 +11,7 @@
 | 商户月份系统配置应用服务 | v1 | [SuppConfigMonServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigMonServer_README.md) |  
 | 商户采暖物业系统配置 | v1 | [SuppConfigHeatPropServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigHeatPropServer_README.md) |  
 | 商户计费套餐 | v1 | [SuppComPackServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComPackServer_README.md) |  
+| 商户基础档案 | v1 | [SupBasicFileServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicFileServer_README.md) |  
 | 商户抄表核算 | v1 | [SupComFeesServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComFeesServer_README.md) |  
 | 商户出账 | v1 | [SupComExpendServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComExpendServer_README.md) |  
 | 商户抄表本维护 | v1 | [SupBookServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBookServer_README.md) |  

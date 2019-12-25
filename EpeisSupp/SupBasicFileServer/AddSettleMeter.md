@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(SelfHelpMeterRead)客户自助抄表  
-接口描述：客户自助抄表  
-请求说明：POST https://api.epeis.com/Service/v1/SelfHelpMeterRead/  
+服务接口：(AddSettleMeter)增加结算计量仪表  
+接口描述：增加结算计量仪表  
+请求说明：POST https://api.epeis.com/Service/v1/AddSettleMeter/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,13 +13,17 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"INOUT_COM_METER_INFO":	[{
-			"USER_ACCOUNT_AID":	"",
-			"NETWORK_CO_DID":	"",
+	"SETTLE_METER":	[{
 			"DEVICE_DID":	"",
-			"READINGS_TYPE":	"",
-			"ENERGY_FLOW_TYPE":	"",
-			"THE_METER_READ":	0
+			"DEVICE_FACTORY_INFO":	"",
+			"METER_INSTALL_LOCATE":	"",
+			"DEVICE_TYPE":	"",
+			"METER_BIT":	0,
+			"METER_READ_CHAN_TYPE":	"",
+			"REMOTE_COPY_YESNO":	"",
+			"METER_READ_ORDER":	0,
+			"CHARGE_METER_RATE":	0,
+			"QUANTITY_UNIT_TYPE":	""
 		}]
 }  
 ~~~  
@@ -33,18 +37,22 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：INOUT_COM_METER_INFO，类型：Array  
+参数：SETTLE_METER，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 16个字符，用户账号唯一ID |  
-| NETWORK_CO_DID |  是  | String   | 16 | 0 | 16个字符，管网公司编码 |  
 | DEVICE_DID |  是  | String   | 16 | 0 | 装置ID |  
-| READINGS_TYPE |  是  | String   | 2 | 0 | 1-常，2-尖峰，3-峰，4-平，5-谷，6-低谷，7-无功，8-需量 |  
-| ENERGY_FLOW_TYPE |  是  | String   | 2 | 0 | 1-正向，2-反向 |  
-| THE_METER_READ |  是  | Number   | 16 | 6 | 本次表底 |  
+| DEVICE_FACTORY_INFO |  是  | String   | 30 | 0 | 装置的出厂号 |  
+| METER_INSTALL_LOCATE |  是  | String   | 128 | 0 | 表具安装位置 |  
+| DEVICE_TYPE |  是  | String   | 2 | 0 | 装置类型 |  
+| METER_BIT |  是  | Number   | 4 | 0 | 表码位数 |  
+| METER_READ_CHAN_TYPE |  是  | String   | 2 | 0 | 抄表渠道 |  
+| REMOTE_COPY_YESNO |  是  | String   | 2 | 0 | 是否远抄 |  
+| METER_READ_ORDER |  是  | Number   | 4 | 0 | 抄表序号 |  
+| CHARGE_METER_RATE |  否  | Number   | 12 | 2 | 计费表计倍率 |  
+| QUANTITY_UNIT_TYPE |  否  | String   | 2 | 0 | 量值单位类型 |  
   
-说明：表底信息  
+说明：结算计量仪表  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
