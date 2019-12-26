@@ -13,6 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
+	"SYS_PAGE":	{
+		"PAGE_NO":	1,
+		"PAGE_ROWS":	8
+	},
 	"REAL_ESTATE":	{
 		"REAL_ESTATE_AID":	"",
 		"USER_NAME":	"",
@@ -30,6 +34,13 @@
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
+  
+参数：SYS_PAGE，类型：object  
+  
+| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
+| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
 参数：REAL_ESTATE，类型：object  
   
@@ -49,6 +60,12 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
+		"SYS_PAGE":	{
+			"PAGE_NO":	1,
+			"PAGE_ROWS":	8,
+			"NEXT_YESNO":	"2",
+			"TOTAL":	1000
+		},
 		"SETTLE_REAL_ESTATE":	[{
 				"REAL_ESTATE_AID":	"",
 				"TOTAL_FLOOR_NUM":	0,
@@ -69,6 +86,15 @@
 | DATA | 是 | Object | 响应数据 |  
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
+  
+参数：SYS_PAGE，类型：object  
+  
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| PAGE_NO       |  是  | Number   | 第几页 |  
+| PAGE_ROWS     |  是  | Number   | 每页行数 |  
+| NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
+| TOTAL         |  是  | Number   | 总行数 |  
   
 参数：SETTLE_REAL_ESTATE，类型：Array  
   

@@ -14,8 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_CLASS_PROJECT":	[{
-			"RETAIL_CO_DID":	"",
-			"ADMIN_CODE_INFO":	""
+			"RETAIL_CO_DID":	""
 		}]
 }  
 ~~~  
@@ -34,7 +33,6 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | RETAIL_CO_DID |  是  | String   | 16 | 0 | 销售公司编码 |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
   
 说明：分类项目  
   
