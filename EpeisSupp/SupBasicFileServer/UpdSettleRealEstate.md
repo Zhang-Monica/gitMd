@@ -38,11 +38,11 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | REAL_ESTATE_AID |  是  | String   | 16 | 0 | 不动产ID |  
-| TOTAL_FLOOR_NUM |  是  | Number   | 4 | 0 | 总楼层数 |  
-| LAYER_NUM |  是  | Number   | 4 | 0 | 所在层数 |  
-| STOREY_HEIGHT |  是  | Number   | 14 | 2 | 层高 |  
-| BUILDING_AREA |  是  | Number   | 14 | 2 | 房屋建筑面积 |  
-| COVER_AREA |  是  | Number   | 14 | 2 | 房屋套内面积 |  
+| TOTAL_FLOOR_NUM |  否  | Number   | 4 | 0 | 总楼层数 |  
+| LAYER_NUM |  否  | Number   | 4 | 0 | 所在层数 |  
+| STOREY_HEIGHT |  否  | Number   | 14 | 2 | 层高 |  
+| BUILDING_AREA |  否  | Number   | 14 | 2 | 房屋建筑面积 |  
+| COVER_AREA |  否  | Number   | 14 | 2 | 房屋套内面积 |  
   
 说明：不动产面积信息  
   

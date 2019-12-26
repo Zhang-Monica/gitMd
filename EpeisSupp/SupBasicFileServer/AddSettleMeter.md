@@ -14,7 +14,6 @@
 		"ACCOUNT_DID":	""
 	},
 	"SETTLE_METER":	[{
-			"DEVICE_DID":	"",
 			"DEVICE_FACTORY_INFO":	"",
 			"METER_INSTALL_LOCATE":	"",
 			"DEVICE_TYPE":	"",
@@ -41,7 +40,6 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| DEVICE_DID |  是  | String   | 16 | 0 | 装置ID |  
 | DEVICE_FACTORY_INFO |  是  | String   | 30 | 0 | 装置的出厂号 |  
 | METER_INSTALL_LOCATE |  是  | String   | 128 | 0 | 表具安装位置 |  
 | DEVICE_TYPE |  是  | String   | 2 | 0 | 装置类型 |  
@@ -49,7 +47,7 @@
 | METER_READ_CHAN_TYPE |  是  | String   | 2 | 0 | 抄表渠道 |  
 | REMOTE_COPY_YESNO |  是  | String   | 2 | 0 | 是否远抄 |  
 | METER_READ_ORDER |  是  | Number   | 4 | 0 | 抄表序号 |  
-| CHARGE_METER_RATE |  否  | Number   | 12 | 2 | 计费表计倍率 |  
+| CHARGE_METER_RATE |  是  | Number   | 12 | 2 | 计费表计倍率 |  
 | QUANTITY_UNIT_TYPE |  否  | String   | 2 | 0 | 量值单位类型 |  
   
 说明：结算计量仪表  

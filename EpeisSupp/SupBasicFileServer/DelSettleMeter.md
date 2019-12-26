@@ -1,6 +1,6 @@
 ## 1、接口描述  
-服务接口：(DelSettleMeter)删除不动产信息  
-接口描述：删除不动产信息  
+服务接口：(DelSettleMeter)删除结算计量仪表  
+接口描述：删除结算计量仪表  
 请求说明：POST https://api.epeis.com/Service/v1/DelSettleMeter/  
   
 ## 2、服务接口请求参数  
@@ -13,8 +13,8 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SETTLE_REAL_ESTATE":	{
-		"REAL_ESTATE_AID":	""
+	"SETTLE_METER":	{
+		"DEVICE_DID":	""
 	}
 }  
 ~~~  
@@ -28,13 +28,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SETTLE_REAL_ESTATE，类型：object  
+参数：SETTLE_METER，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| REAL_ESTATE_AID |  是  | String   | 16 | 0 | 不动产ID |  
+| DEVICE_DID |  是  | String   | 16 | 0 | 装置ID |  
   
-说明：不动产信息  
+说明：结算计量仪表  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

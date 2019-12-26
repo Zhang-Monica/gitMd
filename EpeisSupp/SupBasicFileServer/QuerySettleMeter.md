@@ -67,13 +67,13 @@
 		"SETTLE_METER":	[{
 				"DEVICE_DID":	"",
 				"DEVICE_FACTORY_INFO":	"",
-				"METER_INSTALL_LOCATE":	"",
 				"DEVICE_TYPE":	"",
+				"CHARGE_METER_RATE":	0,
+				"METER_INSTALL_LOCATE":	"",
 				"METER_BIT":	0,
 				"METER_READ_CHAN_TYPE":	"",
 				"REMOTE_COPY_YESNO":	"",
 				"METER_READ_ORDER":	0,
-				"CHARGE_METER_RATE":	0,
 				"QUANTITY_UNIT_TYPE":	""
 			}]
 	}
@@ -105,13 +105,13 @@
 | :----------------- | :----: | :-------- | :---------------- |  
 | DEVICE_DID |  是  | String   | 装置ID |  
 | DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  
-| METER_INSTALL_LOCATE |  是  | String   | 表具安装位置 |  
 | DEVICE_TYPE |  是  | String   | 装置类型 |  
+| CHARGE_METER_RATE |  是  | Number   | 计费表计倍率 |  
+| METER_INSTALL_LOCATE |  是  | String   | 表具安装位置 |  
 | METER_BIT |  是  | Number   | 表码位数 |  
 | METER_READ_CHAN_TYPE |  是  | String   | 抄表渠道 |  
 | REMOTE_COPY_YESNO |  是  | String   | 是否远抄 |  
 | METER_READ_ORDER |  是  | Number   | 抄表序号 |  
-| CHARGE_METER_RATE |  是  | Number   | 计费表计倍率 |  
 | QUANTITY_UNIT_TYPE |  是  | String   | 量值单位类型 |  
   
 说明：修改结算计量仪表  

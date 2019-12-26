@@ -1,6 +1,6 @@
 ## 1、接口描述  
-服务接口：(AddSettleRealEstate)增加不动产面积信息  
-接口描述：增加不动产面积信息  
+服务接口：(AddSettleRealEstate)增加结算不动产面积信息  
+接口描述：增加结算不动产面积信息  
 请求说明：POST https://api.epeis.com/Service/v1/AddSettleRealEstate/  
   
 ## 2、服务接口请求参数  
@@ -44,7 +44,7 @@
 | BUILDING_AREA |  是  | Number   | 14 | 2 | 房屋建筑面积 |  
 | COVER_AREA |  是  | Number   | 14 | 2 | 房屋套内面积 |  
   
-说明：不动产信息  
+说明：结算不动产面积  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
