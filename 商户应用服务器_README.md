@@ -15,6 +15,7 @@
 | 商户抄表核算 | v1 | [SupComFeesServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComFeesServer_README.md) |  
 | 商户出账 | v1 | [SupComExpendServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComExpendServer_README.md) |  
 | 商户抄表本维护 | v1 | [SupBookServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBookServer_README.md) |  
+| 商户营业网点维护 | v1 | [SupStoresServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupStoresServer_README.md) |  
 | 商户公共代码 | v1 | [SupCommServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupCommServer_README.md) |  
 | 用户结算户计量点维护 | v1 | [SupVerifyServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupVerifyServer_README.md) |  
   

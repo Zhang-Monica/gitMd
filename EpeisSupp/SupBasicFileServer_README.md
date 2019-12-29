@@ -9,4 +9,5 @@
 | 查询结算计量仪表 | v1 | [QuerySettleMeter.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicFileServer/QuerySettleMeter.md) |  
 | 修改结算计量仪表 | v1 | [UpdSettleMeter.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicFileServer/UpdSettleMeter.md) |  
 | 删除结算计量仪表 | v1 | [DelSettleMeter.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicFileServer/DelSettleMeter.md) |  
+| 查询不动产面积信息 | v1 | [QuerySupSettleRealEstate.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicFileServer/QuerySupSettleRealEstate.md) |  
   

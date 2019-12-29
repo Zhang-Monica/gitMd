@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QuerySettleMeter)查询结算计量仪表  
-接口描述：查询结算计量仪表  
-请求说明：POST https://api.epeis.com/Service/v1/QuerySettleMeter/  
+服务接口：(QuerySupSettleRealEstate)查询不动产面积信息  
+接口描述：查询不动产面积信息  
+请求说明：POST https://api.epeis.com/Service/v1/QuerySupSettleRealEstate/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,10 +13,8 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SUP_DEVICE":	{
-		"DEVICE_FACTORY_INFO":	"",
-		"DEVICE_NAME":	"",
-		"DEVICE_TYPE":	""
+	"USER_ACCOUNT":	{
+		"USER_NAME":	""
 	},
 	"SYS_PAGE":	{
 		"PAGE_NO":	0,
@@ -34,15 +32,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SUP_DEVICE，类型：object  
+参数：USER_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| DEVICE_FACTORY_INFO |  否  | String   | 30 | 0 | 装置的出厂号 |  
-| DEVICE_NAME |  否  | String   | 128 | 0 | 装置名称 |  
-| DEVICE_TYPE |  否  | String   | 2 | 0 | 装置类型 |  
+| USER_NAME |  否  | String   | 256 | 0 | 用户名称 |  
   
-说明：商户装置设备  
+说明：用户账号信息  
 参数：SYS_PAGE，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
@@ -59,17 +55,16 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"SETTLE_METER":	[{
-				"DEVICE_DID":	"",
-				"DEVICE_FACTORY_INFO":	"",
-				"DEVICE_TYPE":	"",
-				"CHARGE_METER_RATE":	0,
-				"METER_INSTALL_LOCATE":	"",
-				"METER_BIT":	0,
-				"METER_READ_CHAN_TYPE":	"",
-				"REMOTE_COPY_YESNO":	"",
-				"METER_READ_ORDER":	0,
-				"QUANTITY_UNIT_TYPE":	""
+		"INOUT_SETTLE_REAL_ESTATE":	[{
+				"REAL_ESTATE_AID":	"",
+				"USER_NAME":	"",
+				"REAL_ESTATE_INFO":	"",
+				"REAL_ESTATE_NAME":	"",
+				"TOTAL_FLOOR_NUM":	0,
+				"LAYER_NUM":	0,
+				"STOREY_HEIGHT":	0,
+				"BUILDING_AREA":	0,
+				"COVER_AREA":	0
 			}]
 	}
 }  
@@ -84,22 +79,21 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：SETTLE_METER，类型：Array  
+参数：INOUT_SETTLE_REAL_ESTATE，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| DEVICE_DID |  是  | String   | 装置ID |  
-| DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  
-| DEVICE_TYPE |  是  | String   | 装置类型 |  
-| CHARGE_METER_RATE |  是  | Number   | 计费表计倍率 |  
-| METER_INSTALL_LOCATE |  是  | String   | 表具安装位置 |  
-| METER_BIT |  是  | Number   | 表码位数 |  
-| METER_READ_CHAN_TYPE |  是  | String   | 抄表渠道 |  
-| REMOTE_COPY_YESNO |  是  | String   | 是否远抄 |  
-| METER_READ_ORDER |  是  | Number   | 抄表序号 |  
-| QUANTITY_UNIT_TYPE |  是  | String   | 量值单位类型 |  
+| REAL_ESTATE_AID |  是  | String   | 不动产ID' |  
+| USER_NAME |  是  | String   | 用户名称 |  
+| REAL_ESTATE_INFO |  是  | String   | 不动产国标编码 |  
+| REAL_ESTATE_NAME |  是  | String   | 不动产名称 |  
+| TOTAL_FLOOR_NUM |  是  | Number   | 总楼层数 |  
+| LAYER_NUM |  是  | Number   | 所在层数 |  
+| STOREY_HEIGHT |  是  | Number   | 层高' |  
+| BUILDING_AREA |  是  | Number   | 房屋建筑面积 |  
+| COVER_AREA |  是  | Number   | 房屋套内面积 |  
   
-说明：修改结算计量仪表  
+说明：不动产面积信息  
 ## 4、服务接口说明  
 说明：无  

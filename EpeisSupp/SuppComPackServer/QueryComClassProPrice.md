@@ -65,8 +65,6 @@
 			"TOTAL":	1000
 		},
 		"COM_PRO_PRICE":	{
-			"NET_STORES_AID":	"",
-			"RET_STORES_AID":	"",
 			"CHARGE_PACK_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
@@ -116,8 +114,6 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| NET_STORES_AID |  否  | String   | 管网公司营业网点ID |  
-| RET_STORES_AID |  否  | String   | 销售公司营业网点ID |  
 | CHARGE_PACK_DID |  否  | String   | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  否  | String   | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  否  | Number   | 分类项目主编号 |  

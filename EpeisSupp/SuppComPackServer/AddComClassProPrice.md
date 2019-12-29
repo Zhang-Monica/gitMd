@@ -14,15 +14,12 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_PRO_PRICE":	[{
-			"NET_STORES_AID":	"",
-			"RET_STORES_AID":	"",
 			"CHARGE_PACK_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
 			"CAT_ITEM_ATTACH_NUM":	0,
 			"CAT_ITEM_PRICE":	0,
 			"PRICE_UNIT_NAME":	"",
-			"ADMIN_CODE_INFO":	"",
 			"NETWORK_TYPE":	"",
 			"PURCHASE_SALE_TYPE":	"",
 			"BASIC_FEES_TYPE":	"",
@@ -54,15 +51,12 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| NET_STORES_AID |  是  | String   | 16 | 0 | 管网公司营业网点ID |  
-| RET_STORES_AID |  是  | String   | 16 | 0 | 销售公司营业网点ID |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
 | CAT_ITEM_ATTACH_NUM |  是  | Number   | 10 | 0 | 分类项目附编号 |  
 | CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
 | PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | PURCHASE_SALE_TYPE |  是  | String   | 2 | 0 | 购售类型 |  
 | BASIC_FEES_TYPE |  否  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
