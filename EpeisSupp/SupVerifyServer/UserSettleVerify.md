@@ -39,10 +39,7 @@
 		"METER_YESNO":	"",
 		"DEVICE_DID":	"",
 		"REAL_ESTATE_AID":	"",
-		"NETWORK_CO_DID":	"",
 		"NET_STORES_AID":	"",
-		"RETAIL_CO_DID":	"",
-		"RET_STORES_AID":	"",
 		"ASSESS_YESNO":	"",
 		"ENERGY_LOAD":	0,
 		"STOP_EMPTY_YESNO":	"",
@@ -96,7 +93,7 @@
 | ARMY_YESNO |  是  | String   | 2 | 0 | 是否军工 |  
 | TEMPORARY_YESNO |  是  | String   | 2 | 0 | 是否临时 |  
 | PUBLIC_USE_YESNO |  是  | String   | 2 | 0 | 是否公用 |  
-| CONNECT_MODE_TYPE |  是  | String   | 2 | 0 | 接线类型 |  
+| CONNECT_MODE_TYPE |  否  | String   | 2 | 0 | 接线类型 |  
 | TALLY_CYCLE |  是  | Number   | 4 | 0 | 点检周期 |  
 | REMARK_INS |  否  | String   | 256 | 0 | 备注说明 |  
 | BUS_CATEG_TYPE |  是  | String   | 2 | 0 | 业务类别 |  
@@ -113,10 +110,7 @@
 | METER_YESNO |  是  | String   | 2 | 0 | 是否有表 |  
 | DEVICE_DID |  否  | String   | 16 | 0 | 装置ID |  
 | REAL_ESTATE_AID |  否  | String   | 16 | 0 | 不动产ID |  
-| NETWORK_CO_DID |  是  | String   | 16 | 0 | 管网公司编码 |  
 | NET_STORES_AID |  是  | String   | 16 | 0 | 管网公司营业网点ID |  
-| RETAIL_CO_DID |  是  | String   | 16 | 0 | 销售公司编码 |  
-| RET_STORES_AID |  是  | String   | 16 | 0 | 销售公司营业网点ID |  
 | ASSESS_YESNO |  是  | String   | 2 | 0 | 是否考核 |  
 | ENERGY_LOAD |  否  | Number   | 14 | 2 | 用能负荷 |  
 | STOP_EMPTY_YESNO |  否  | String   | 2 | 0 | 是否停/空 |  
