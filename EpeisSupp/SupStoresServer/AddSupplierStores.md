@@ -14,7 +14,6 @@
 		"ACCOUNT_DID":	""
 	},
 	"SUP_STORES":	[{
-			"SUPPLIER_DID":	"",
 			"BUSINESS_HALL_NAME":	"",
 			"ADMIN_CODE_INFO":	"",
 			"ADDRESS":	""
@@ -35,7 +34,6 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SUPPLIER_DID |  是  | String   | 16 | 0 | 商户ID |  
 | BUSINESS_HALL_NAME |  是  | String   | 128 | 0 | 营业网点名称 |  
 | ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
 | ADDRESS |  是  | String   | 128 | 0 | ADDRESS |  

@@ -10,6 +10,7 @@
 | 修改结算信息 | v1 | [UpdateSettleAccount.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/UpdateSettleAccount.md) |  
 | 删除结算信息 | v1 | [DeleteSettleAccount.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/DeleteSettleAccount.md) |  
 | 查询结算户详细信息 | v1 | [QueryUserSettleDetailsy.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/QueryUserSettleDetailsy.md) |  
+| 查询结算信息 | v1 | [QueryBillInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/QueryBillInformation.md) |  
 | 查看合同 | v1 | [QureyContract.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/QureyContract.md) |  
 | 签订合同 | v1 | [SignContract.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/SignContract.md) |  
   

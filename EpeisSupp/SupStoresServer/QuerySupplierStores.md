@@ -18,7 +18,8 @@
 		"PAGE_ROWS":	8
 	},
 	"SUP_STORES":	{
-		"SUPPLIER_DID":	""
+		"BUSINESS_HALL_AID":	"",
+		"BUSINESS_HALL_NAME":	""
 	}
 }  
 ~~~  
@@ -43,7 +44,8 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| SUPPLIER_DID |  是  | String   | 16 | 0 | 商户ID |  
+| BUSINESS_HALL_AID |  否  | String   | 16 | 0 | 营业网点ID |  
+| BUSINESS_HALL_NAME |  否  | String   | 128 | 0 | 营业网点名称 |  
   
 说明：商户营业网点  
   

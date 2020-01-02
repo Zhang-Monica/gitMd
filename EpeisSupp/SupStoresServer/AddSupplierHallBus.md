@@ -14,6 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"SUP_STORES_TYPE":	[{
+			"BUSINESS_HALL_AID":	"",
 			"NETWORK_TYPE":	"",
 			"CHAIN_TYPE":	""
 		}]
@@ -33,6 +34,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| BUSINESS_HALL_AID |  是  | String   | 16 | 0 | 营业网点ID |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 服务类型 |  
 | CHAIN_TYPE |  是  | String   | 2 | 0 | 管网业务类型 |  
   
