@@ -1,6 +1,6 @@
 ## 1、接口描述  
-服务接口：(QueryCusInfo)按多条件高值耗材产品信息  
-接口描述：按多条件高值耗材产品信息  
+服务接口：(QueryCusInfo)查询高值耗材产品信息  
+接口描述：多个条件查询高值耗材产品信息  
 请求说明：POST https://api.epeis.com/Service/v1/QueryCusInfo/  
   
 ## 2、服务接口请求参数  
