@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryUnChargeOffInfo)查询待出账数据  
-接口描述：查询待出账数据  
-请求说明：POST https://api.epeis.com/Service/v1/QueryUnChargeOffInfo/  
+服务接口：(QueryCusInfo)按多条件高值耗材产品信息  
+接口描述：按多条件高值耗材产品信息  
+请求说明：POST https://api.epeis.com/Service/v1/QueryCusInfo/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -9,16 +9,17 @@
 {
 	"SYS_HEAD":	{
 		"CHANNEL_DID":	"",
-		"DYNAMIC_KEY":	"",
-		"REGISTER_DID":	"",
-		"ACCOUNT_DID":	""
+		"DYNAMIC_KEY":	""
 	},
 	"SYS_PAGE":	{
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SUP_BOOK":	{
-		"BOOK_AID":	""
+	"HC_BASE_PRODUCT":	{
+		"class_id":	"",
+		"catalog_id":	"",
+		"his_id":	"",
+		"common_name":	""
 	}
 }  
 ~~~  
@@ -29,8 +30,6 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
-| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
-| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
 参数：SYS_PAGE，类型：object  
   
@@ -39,13 +38,16 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SUP_BOOK，类型：object  
+参数：HC_BASE_PRODUCT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BOOK_AID |  否  | String   | 16 | 0 | 抄表区段编号 |  
+| class_id |  是  | String   | 24 | 0 | 分类ID |  
+| catalog_id |  是  | String   | 24 | 0 | 目录ID |  
+| his_id |  否  | String   | 50 | 0 | HIS_ID |  
+| common_name |  否  | String   | 100 | 0 | 通用名称（支持模糊查询） |  
   
-说明：商户抄表本  
+说明：高值耗材产品信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -60,17 +62,16 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"COM_USER_METER":	[{
-				"CUSTOMER_DID":	"",
-				"USER_CUS_DID":	"",
-				"USER_ACCOUNT_AID":	"",
-				"SETTLEMENT_AID":	"",
-				"DEVICE_DID":	"",
-				"NORMAL_RETRO_TYPE":	"",
-				"NETWORK_TYPE":	"",
-				"RECE_UNPAID_AMOUNT":	0,
-				"THE_ACCOUNT_DATE":	0,
-				"THE_ACCOUNT_TIME":	0
+		"HC_BASE_PRODUCT":	[{
+				"class_id":	"",
+				"catalog_id":	"",
+				"his_id":	"",
+				"manu_name":	"",
+				"product_name":	"",
+				"common_name":	"",
+				"brand":	"",
+				"spec":	"",
+				"model":	""
 			}]
 	}
 }  
@@ -94,22 +95,21 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：COM_USER_METER，类型：Array  
+参数：HC_BASE_PRODUCT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 客户编号 |  
-| USER_CUS_DID |  是  | String   | 用户内部ID |  
-| USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
-| SETTLEMENT_AID |  是  | String   | 结算户ID |  
-| DEVICE_DID |  是  | String   | 装置ID |  
-| NORMAL_RETRO_TYPE |  是  | String   | 正常/追补 |  
-| NETWORK_TYPE |  是  | String   | 管网类型 |  
-| RECE_UNPAID_AMOUNT |  是  | Number   | 应收未出账金额 |  
-| THE_ACCOUNT_DATE |  是  | Number   | 本次核算日期 |  
-| THE_ACCOUNT_TIME |  是  | Number   | 本次核算时间 |  
+| class_id |  是  | String   | 分类ID |  
+| catalog_id |  是  | String   | 目录ID |  
+| his_id |  是  | String   | HIS_ID |  
+| manu_name |  是  | String   | 生产企业名称 |  
+| product_name |  是  | String   | 产品名称 |  
+| common_name |  是  | String   | 通用名称 |  
+| brand |  是  | String   | 品牌 |  
+| spec |  是  | String   | 规格 |  
+| model |  是  | String   | 型号 |  
   
-说明：用户帐单计量点明细  
+说明：高值耗材产品信息  
 ## 4、服务接口说明  
 说明：无  

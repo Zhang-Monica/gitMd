@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryUnChargeOffInfo)查询待出账数据  
-接口描述：查询待出账数据  
-请求说明：POST https://api.epeis.com/Service/v1/QueryUnChargeOffInfo/  
+服务接口：(QueryDetailRollingAccount)查询轧账明细信息  
+接口描述：查询轧账明细信息  
+请求说明：POST https://api.epeis.com/Service/v1/QueryDetailRollingAccount/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,8 +17,9 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SUP_BOOK":	{
-		"BOOK_AID":	""
+	"ACC_USER_ACCOUNT":	{
+		"CASH_TRANSFER_TYPE":	"",
+		"BILL_DID":	""
 	}
 }  
 ~~~  
@@ -39,13 +40,14 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SUP_BOOK，类型：object  
+参数：ACC_USER_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BOOK_AID |  否  | String   | 16 | 0 | 抄表区段编号 |  
+| CASH_TRANSFER_TYPE |  否  | String   | 2 | 0 | 缴费方式:1-现金,2-现金支票,3-转账支票,4-汇票,5-承兑汇票,6-第三方支付 |  
+| BILL_DID |  否  | String   | 16 | 0 | 16个字符，票据序号 |  
   
-说明：商户抄表本  
+说明：轧账明细信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -60,17 +62,19 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"COM_USER_METER":	[{
+		"ACC_USER_ACCOUNT":	[{
+				"OPERATION_DATE":	0,
+				"SERIAL_DID":	"",
 				"CUSTOMER_DID":	"",
-				"USER_CUS_DID":	"",
-				"USER_ACCOUNT_AID":	"",
-				"SETTLEMENT_AID":	"",
-				"DEVICE_DID":	"",
-				"NORMAL_RETRO_TYPE":	"",
-				"NETWORK_TYPE":	"",
-				"RECE_UNPAID_AMOUNT":	0,
-				"THE_ACCOUNT_DATE":	0,
-				"THE_ACCOUNT_TIME":	0
+				"CASH_TRANSFER_TYPE":	"",
+				"BILL_DID":	"",
+				"BILL_NUM_INFO":	"",
+				"PAID_IN_AMOUNT":	0,
+				"DRAW_ADVANCE_PAY":	0,
+				"DEPOST_ADVANCE_PAY":	0,
+				"PAID_IN_LIQ_DAMA":	0,
+				"BUSINESS_TYPE":	"",
+				"BUSINESS_STATE_TYPE":	""
 			}]
 	}
 }  
@@ -94,22 +98,24 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：COM_USER_METER，类型：Array  
+参数：ACC_USER_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 客户编号 |  
-| USER_CUS_DID |  是  | String   | 用户内部ID |  
-| USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
-| SETTLEMENT_AID |  是  | String   | 结算户ID |  
-| DEVICE_DID |  是  | String   | 装置ID |  
-| NORMAL_RETRO_TYPE |  是  | String   | 正常/追补 |  
-| NETWORK_TYPE |  是  | String   | 管网类型 |  
-| RECE_UNPAID_AMOUNT |  是  | Number   | 应收未出账金额 |  
-| THE_ACCOUNT_DATE |  是  | Number   | 本次核算日期 |  
-| THE_ACCOUNT_TIME |  是  | Number   | 本次核算时间 |  
+| OPERATION_DATE |  是  | Number   | 交易日期 |  
+| SERIAL_DID |  是  | String   | 16个字符，交易流水号 |  
+| CUSTOMER_DID |  是  | String   | 16个字符，客户编号 |  
+| CASH_TRANSFER_TYPE |  是  | String   | 缴费方式:1-现金,2-现金支票,3-转账支票,4-汇票,5-承兑汇票,6-第三方支付 |  
+| BILL_DID |  是  | String   | 16个字符，票据序号 |  
+| BILL_NUM_INFO |  是  | String   | 30个字符，票据号码 |  
+| PAID_IN_AMOUNT |  是  | Number   | 实收金额，精确到2位小数点 |  
+| DRAW_ADVANCE_PAY |  是  | Number   | 支取预付金额，精确到2位小数点 |  
+| DEPOST_ADVANCE_PAY |  是  | Number   | 存入预付金额，精确到2位小数点 |  
+| PAID_IN_LIQ_DAMA |  是  | Number   | 实收违约金，精确到2位小数点 |  
+| BUSINESS_TYPE |  是  | String   | 业务类型 |  
+| BUSINESS_STATE_TYPE |  是  | String   | 业务状态类型 |  
   
-说明：用户帐单计量点明细  
+说明：轧账明细信息  
 ## 4、服务接口说明  
 说明：无  

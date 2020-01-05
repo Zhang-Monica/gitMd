@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(AddSettleMeter)增加结算计量仪表  
-接口描述：增加结算计量仪表  
-请求说明：POST https://api.epeis.com/Service/v1/AddSettleMeter/  
+服务接口：(RollingAccount)轧账  
+接口描述：轧账  
+请求说明：POST https://api.epeis.com/Service/v1/RollingAccount/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,17 +13,16 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SETTLE_METER":	[{
-			"BUSINESS_HALL_AID":	"",
-			"DEVICE_FACTORY_INFO":	"",
-			"METER_INSTALL_LOCATE":	"",
-			"DEVICE_TYPE":	"",
-			"METER_BIT":	0,
-			"METER_READ_CHAN_TYPE":	"",
-			"REMOTE_COPY_YESNO":	"",
-			"METER_READ_ORDER":	0,
-			"CHARGE_METER_RATE":	0,
-			"QUANTITY_UNIT_TYPE":	""
+	"ACC_RECEIPT":	[{
+			"CASH_TRANSFER_TYPE":	"",
+			"BILL_DID":	"",
+			"BILL_AMOUNT":	0,
+			"DRAWER":	"",
+			"DRAW_BANK_ACC_INFO":	"",
+			"DRAW_BANK_NAME":	"",
+			"RECE_BANK_ACC_INFO":	"",
+			"BANK_NAME":	"",
+			"BANK_ACC_NAME":	""
 		}]
 }  
 ~~~  
@@ -37,22 +36,21 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SETTLE_METER，类型：Array  
+参数：ACC_RECEIPT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BUSINESS_HALL_AID |  是  | String   | 16 | 0 | 营业网点 |  
-| DEVICE_FACTORY_INFO |  是  | String   | 30 | 0 | 装置的出厂号 |  
-| METER_INSTALL_LOCATE |  是  | String   | 128 | 0 | 表具安装位置 |  
-| DEVICE_TYPE |  是  | String   | 2 | 0 | 装置类型 |  
-| METER_BIT |  是  | Number   | 4 | 0 | 表码位数 |  
-| METER_READ_CHAN_TYPE |  是  | String   | 2 | 0 | 抄表渠道 |  
-| REMOTE_COPY_YESNO |  是  | String   | 2 | 0 | 是否远抄 |  
-| METER_READ_ORDER |  是  | Number   | 4 | 0 | 抄表序号 |  
-| CHARGE_METER_RATE |  是  | Number   | 12 | 2 | 计费表计倍率 |  
-| QUANTITY_UNIT_TYPE |  否  | String   | 2 | 0 | 量值单位类型 |  
+| CASH_TRANSFER_TYPE |  是  | String   | 2 | 0 | 缴费方式:1-现金,2-现金支票,3-转账支票,4-汇票,5-承兑汇票,6-第三方支付 |  
+| BILL_DID |  否  | String   | 16 | 0 | 16个字符，票据序号，当缴费方式为2,3,4,5时必须 |  
+| BILL_AMOUNT |  是  | Number   | 14 | 2 | 汇总金额，精确到2位小数点 |  
+| DRAWER |  否  | String   | 256 | 0 | 256个字符，出票人 |  
+| DRAW_BANK_ACC_INFO |  否  | String   | 30 | 0 | 30个字符，出票银行账号 |  
+| DRAW_BANK_NAME |  否  | String   | 128 | 0 | 128个字符，出票银行名称 |  
+| RECE_BANK_ACC_INFO |  否  | String   | 30 | 0 | 收款银行账号，当缴费方式为1时必须 |  
+| BANK_NAME |  否  | String   | 256 | 0 | 开户行名称，当缴费方式为1时必须 |  
+| BANK_ACC_NAME |  否  | String   | 256 | 0 | 收付款人名称，当缴费方式为1时必须 |  
   
-说明：结算计量仪表  
+说明：轧账信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

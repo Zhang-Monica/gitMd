@@ -2,6 +2,7 @@
 | 服务名称 | 版本号 | 说明文档链接 |  
 | :----------------- | :-----: | :---------------- |  
 | 商户账户应用服务 | v1 | [SuppAccountServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppAccountServer_README.md) |  
+| 商户轧账结账应用服务 | v1 | [SuppRolSetAccServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppRolSetAccServer_README.md) |  
 | 用户结算户应用服务 | v1 | [SuppSettleServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer_README.md) |  
 | 计量点应用服务 | v1 | [SuppMeterPointServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppMeterPointServer_README.md) |  
 | 查缴订单应用服务 | v1 | [SuppBillOrderServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppBillOrderServer_README.md) |  

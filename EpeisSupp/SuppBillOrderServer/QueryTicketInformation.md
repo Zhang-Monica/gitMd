@@ -18,7 +18,9 @@
 		"PAGE_ROWS":	8
 	},
 	"ACC_RECEIPT":	{
-		"BILL_NUM_INFO":	""
+		"BILL_NUM_INFO":	"",
+		"CASH_TRANSFER_TYPE":	"",
+		"BILL_DID":	""
 	}
 }  
 ~~~  
@@ -43,7 +45,9 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BILL_NUM_INFO |  是  | String   | 30 | 0 | 30个字符，票据号码 |  
+| BILL_NUM_INFO |  否  | String   | 30 | 0 | 30个字符，票据号码 |  
+| CASH_TRANSFER_TYPE |  否  | String   | 2 | 0 | 2-现金支票,3-转账支票,4-汇票,5-承兑汇票 |  
+| BILL_DID |  否  | String   | 16 | 0 | 16个字符，票据序号唯一标识 |  
   
 说明：票据信息  
   

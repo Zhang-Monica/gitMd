@@ -53,7 +53,7 @@
 | TELEPHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
 | BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | xxxxx |  
 | BANK_NAME |  是  | String   | 256 | 0 | xxxxx |  
-| EMAIL_INFO |  是  | String   | 30 | 0 | xxxxx |  
+| EMAIL_INFO |  否  | String   | 30 | 0 | xxxxx |  
 | VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
   
 说明：xxxxx  

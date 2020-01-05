@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryPrintInvoiceCustomer)查询开票信息  
-接口描述：查询开票信息  
-请求说明：POST https://api.epeis.com/Service/v1/QueryPrintInvoiceCustomer/  
+服务接口：(QueryRollingAccount)查询待轧账信息  
+接口描述：查询待轧账信息  
+请求说明：POST https://api.epeis.com/Service/v1/QueryRollingAccount/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -12,10 +12,6 @@
 		"DYNAMIC_KEY":	"",
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
-	},
-	"ACC_INVOICE_PRINT":	{
-		"INVOICE_DID":	"",
-		"ACCOUNT_MONTH":	0
 	}
 }  
 ~~~  
@@ -29,14 +25,6 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：ACC_INVOICE_PRINT，类型：object  
-  
-| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| INVOICE_DID |  是  | String   | 16 | 0 | 16位字符，发票唯一的ID |  
-| ACCOUNT_MONTH |  是  | Number   | 6 | 0 | 账务月份 |  
-  
-说明：客户账户  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -45,14 +33,17 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"ACC_INVOICE_PRINT":	[{
-				"INVOICE_DID":	"",
-				"INVOICE_NUMBER":	"",
-				"INVOICE_NUM_INFO":	"",
-				"INVOICE_TYPE":	"",
-				"URL":	"",
-				"NETWORK_TYPE":	"",
-				"ACCOUNT_MONTH":	0
+		"ACC_RECEIPT":	[{
+				"CASH_TRANSFER_TYPE":	"",
+				"BILL_DID":	"",
+				"BILL_NUM_INFO":	"",
+				"BILL_AMOUNT":	0,
+				"DRAWER":	"",
+				"DRAW_BANK_ACC_INFO":	"",
+				"DRAW_BANK_NAME":	"",
+				"RECE_BANK_ACC_INFO":	"",
+				"BANK_NAME":	"",
+				"BANK_ACC_NAME":	""
 			}]
 	}
 }  
@@ -67,19 +58,22 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：ACC_INVOICE_PRINT，类型：Array  
+参数：ACC_RECEIPT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| INVOICE_DID |  是  | String   | 16位字符，发票唯一的ID |  
-| INVOICE_NUMBER |  是  | String   | 20个字符，发票号码 |  
-| INVOICE_NUM_INFO |  是  | String   | 20个字符，发票代码 |  
-| INVOICE_TYPE |  是  | String   | 1-普通机打发票，2-普通电子发票，3-增值税机打发票，4-增值税电子发票 |  
-| URL |  是  | String   | 128个字符，URL地址 |  
-| NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
+| CASH_TRANSFER_TYPE |  是  | String   | 缴费方式:1-现金,2-现金支票,3-转账支票,4-汇票,5-承兑汇票,6-第三方支付 |  
+| BILL_DID |  是  | String   | 16个字符，票据序号 |  
+| BILL_NUM_INFO |  是  | String   | 30个字符，票据号码 |  
+| BILL_AMOUNT |  是  | Number   | 汇总金额，精确到2位小数点 |  
+| DRAWER |  是  | String   | 256个字符，出票人 |  
+| DRAW_BANK_ACC_INFO |  是  | String   | 30个字符，出票银行账号 |  
+| DRAW_BANK_NAME |  是  | String   | 128个字符，出票银行名称 |  
+| RECE_BANK_ACC_INFO |  是  | String   | 收款银行账号 |  
+| BANK_NAME |  是  | String   | 开户行名称 |  
+| BANK_ACC_NAME |  是  | String   | 收付款人名称 |  
   
-说明：开票信息  
+说明：轧账信息  
 ## 4、服务接口说明  
 说明：无  

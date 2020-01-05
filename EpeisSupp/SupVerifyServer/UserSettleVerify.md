@@ -38,7 +38,6 @@
 		"NETWORK_TYPE":	"",
 		"METER_YESNO":	"",
 		"DEVICE_DID":	"",
-		"REAL_ESTATE_AID":	"",
 		"NET_STORES_AID":	"",
 		"ASSESS_YESNO":	"",
 		"ENERGY_LOAD":	0,
@@ -60,8 +59,8 @@
 		"AREA_DIVID_RATIO":	0,
 		"DIVI_FIXED_CHARGE":	0,
 		"DIVI_FIXED_FEE":	0,
-		"FLOOR_NUM":	0,
-		"FLOOR_HEIGHT":	0,
+		"CHARGE_AREA_FACTOR":	0,
+		"ACTUAL_AREA":	0,
 		"CHARGE_HOUSEHOLDS":	0,
 		"BUS_CATEG_TYPE":	""
 	}
@@ -109,11 +108,10 @@
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 管网类型 |  
 | METER_YESNO |  是  | String   | 2 | 0 | 是否有表 |  
 | DEVICE_DID |  否  | String   | 16 | 0 | 装置ID |  
-| REAL_ESTATE_AID |  否  | String   | 16 | 0 | 不动产ID |  
 | NET_STORES_AID |  是  | String   | 16 | 0 | 管网公司营业网点ID |  
 | ASSESS_YESNO |  是  | String   | 2 | 0 | 是否考核 |  
 | ENERGY_LOAD |  否  | Number   | 14 | 2 | 用能负荷 |  
-| STOP_EMPTY_YESNO |  否  | String   | 2 | 0 | 是否停/空 |  
+| STOP_EMPTY_YESNO |  是  | String   | 2 | 0 | 是否停/空 |  
 | OUTAGE_VACANCY_DATE |  否  | Number   | 8 | 0 | 停供/空置日期 |  
 | RESUPPLY_DATE |  否  | Number   | 8 | 0 | 复供日期 |  
 | MAIN_PACK_DID |  是  | String   | 16 | 0 | 主套餐号 |  
@@ -131,8 +129,8 @@
 | AREA_DIVID_RATIO |  否  | Number   | 8 | 4 | 分割比例 |  
 | DIVI_FIXED_CHARGE |  否  | Number   | 14 | 2 | 分割用量 |  
 | DIVI_FIXED_FEE |  否  | Number   | 14 | 2 | 分割费用 |  
-| FLOOR_NUM |  否  | Number   | 4 | 0 | 所在楼层层数 |  
-| FLOOR_HEIGHT |  否  | Number   | 5 | 2 | 所在楼层层高 |  
+| CHARGE_AREA_FACTOR |  否  | Number   | 8 | 4 | 计费面积系数 |  
+| ACTUAL_AREA |  否  | Number   | 14 | 2 | 计费实有面积 |  
 | CHARGE_HOUSEHOLDS |  否  | Number   | 4 | 0 | 计费户数 |  
 | BUS_CATEG_TYPE |  是  | String   | 2 | 0 | 业务类别 |  
   
