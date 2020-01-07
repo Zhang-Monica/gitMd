@@ -62,6 +62,7 @@
 		},
 		"COM_METERAGE":	[{
 				"SETTLEMENT_AID":	"",
+				"DEVICE_DID":	"",
 				"NORMAL_RETRO_TYPE":	"",
 				"CUSTOMER_DID":	"",
 				"METER_YESNO":	"",
@@ -98,6 +99,7 @@
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
 | SETTLEMENT_AID |  是  | String   | 16个字符,结算户编号 |  
+| DEVICE_DID |  是  | String   | 装置ID |  
 | NORMAL_RETRO_TYPE |  是  | String   | 周期性类型:1-周期,2-非周期 |  
 | CUSTOMER_DID |  是  | String   | 16个字符，客户编号 |  
 | METER_YESNO |  是  | String   | 是否有表：1-否，2-是 |  
