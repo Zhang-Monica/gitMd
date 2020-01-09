@@ -50,7 +50,7 @@
 		"ACC_INVOICE":	[{
 				"USER_ACCOUNT_AID":	"",
 				"ACCOUNT_MONTH":	0,
-				"TAX_EXCLUDE_AMOUNT":	0
+				"TAX_INCLUDE_AMOUNT":	0
 			}]
 	}
 }  
@@ -72,7 +72,7 @@
 | :----------------- | :----: | :-------- | :---------------- |  
 | USER_ACCOUNT_AID |  是  | String   | 用户地址唯一ID |  
 | ACCOUNT_MONTH |  是  | Number   | 月账单当前账务月前6月 |  
-| TAX_EXCLUDE_AMOUNT |  是  | Number   | 账单金额，精确到2位小数点 |  
+| TAX_INCLUDE_AMOUNT |  是  | Number   | 账单金额，精确到2位小数点 |  
   
 说明：账单信息  
 ## 4、服务接口说明  

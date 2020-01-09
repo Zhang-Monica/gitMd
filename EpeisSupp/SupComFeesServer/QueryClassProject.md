@@ -64,7 +64,8 @@
 			"NETWORK_TYPE":	"",
 			"CAT_ITEM_NUM":	0,
 			"CAT_ITEM_NAME":	"",
-			"ATTACH_YESNO":	""
+			"ATTACH_YESNO":	"",
+			"PROJECT_TYPE":	""
 		}
 	}
 }  
@@ -97,6 +98,7 @@
 | CAT_ITEM_NUM |  否  | Number   | 分类项目编号 |  
 | CAT_ITEM_NAME |  否  | String   | 分类项目名称 |  
 | ATTACH_YESNO |  否  | String   | 是否附加 |  
+| PROJECT_TYPE |  否  | String   | 项目类型 |  
   
 说明：分类项目  
 ## 4、服务接口说明  

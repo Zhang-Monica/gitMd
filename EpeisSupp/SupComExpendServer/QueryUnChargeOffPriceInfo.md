@@ -1,6 +1,6 @@
 ## 1、接口描述  
-服务接口：(QueryUnChargeOffPriceInfo)查询待出账表底信息  
-接口描述：查询待出账表底信息  
+服务接口：(QueryUnChargeOffPriceInfo)查询量价费信息  
+接口描述：查询量价费信息  
 请求说明：POST https://api.epeis.com/Service/v1/QueryUnChargeOffPriceInfo/  
   
 ## 2、服务接口请求参数  
@@ -49,6 +49,7 @@
 				"NETWORK_TYPE":	"",
 				"STOP_EMPTY_YESNO":	"",
 				"BUS_CATEG_TYPE":	"",
+				"CHARGE_PACK_DID":	"",
 				"BASIC_FEES_TYPE":	"",
 				"ABUND_WITHER_YESNO":	"",
 				"ABUNDANCE_TYPE":	"",
@@ -93,6 +94,7 @@
 | NETWORK_TYPE |  是  | String   | 管网类型 |  
 | STOP_EMPTY_YESNO |  是  | String   | 是否停/空 |  
 | BUS_CATEG_TYPE |  是  | String   | 业务类别 |  
+| CHARGE_PACK_DID |  是  | String   | 套餐号 |  
 | BASIC_FEES_TYPE |  是  | String   | 基本费计费类型 |  
 | ABUND_WITHER_YESNO |  是  | String   | 是否丰枯 |  
 | ABUNDANCE_TYPE |  是  | String   | 丰枯类型 |  

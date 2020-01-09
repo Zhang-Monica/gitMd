@@ -16,12 +16,9 @@
 	"SETTLE_METER":	[{
 			"BUSINESS_HALL_AID":	"",
 			"DEVICE_FACTORY_INFO":	"",
-			"METER_INSTALL_LOCATE":	"",
+			"NETWORK_TYPE":	"",
 			"DEVICE_TYPE":	"",
 			"METER_BIT":	0,
-			"METER_READ_CHAN_TYPE":	"",
-			"REMOTE_COPY_YESNO":	"",
-			"METER_READ_ORDER":	0,
 			"CHARGE_METER_RATE":	0,
 			"QUANTITY_UNIT_TYPE":	""
 		}]
@@ -43,12 +40,9 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | BUSINESS_HALL_AID |  是  | String   | 16 | 0 | 营业网点 |  
 | DEVICE_FACTORY_INFO |  是  | String   | 30 | 0 | 装置的出厂号 |  
-| METER_INSTALL_LOCATE |  是  | String   | 128 | 0 | 表具安装位置 |  
-| DEVICE_TYPE |  是  | String   | 2 | 0 | 装置类型 |  
+| NETWORK_TYPE |  是  | String   | 2 | 0 | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
+| DEVICE_TYPE |  是  | String   | 2 | 0 | 装置类型：1-热水表；2-冷水表；3-燃气表；4-流量计；5-电能表；6-热量表；7-电压互感器；8-电流互感器 |  
 | METER_BIT |  是  | Number   | 4 | 0 | 表码位数 |  
-| METER_READ_CHAN_TYPE |  是  | String   | 2 | 0 | 抄表渠道 |  
-| REMOTE_COPY_YESNO |  是  | String   | 2 | 0 | 是否远抄 |  
-| METER_READ_ORDER |  是  | Number   | 4 | 0 | 抄表序号 |  
 | CHARGE_METER_RATE |  是  | Number   | 12 | 2 | 计费表计倍率 |  
 | QUANTITY_UNIT_TYPE |  否  | String   | 2 | 0 | 量值单位类型 |  
   

@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(DelSettleMeter)删除结算计量仪表  
-接口描述：删除结算计量仪表  
+接口描述：未安装时可删除结算计量仪表  
 请求说明：POST https://api.epeis.com/Service/v1/DelSettleMeter/  
   
 ## 2、服务接口请求参数  

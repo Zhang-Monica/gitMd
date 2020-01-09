@@ -65,7 +65,7 @@
 				"CBANK_NAME":	"",
 				"NETWORK_TYPE":	"",
 				"ACCOUNT_MONTH":	0,
-				"TAX_EXCLUDE_AMOUNT":	0
+				"TAX_INCLUDE_AMOUNT":	0
 			}],
 		"ACC_INVOICE_DETAIL":	[{
 				"INVOICE_DID":	"",
@@ -122,7 +122,7 @@
 | CBANK_NAME |  是  | String   | 256个字符，客户开户行名称 |  
 | NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
-| TAX_EXCLUDE_AMOUNT |  是  | Number   | 不含税金额，精确到2位小数点 |  
+| TAX_INCLUDE_AMOUNT |  是  | Number   | 含税金额，精确到2位小数点 |  
   
 说明：发票信息  
 参数：ACC_INVOICE_DETAIL，类型：Array  

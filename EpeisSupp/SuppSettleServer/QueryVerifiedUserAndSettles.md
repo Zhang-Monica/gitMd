@@ -19,6 +19,10 @@
 		"ACC_CERT_INFO":	"",
 		"CUSTOMER_NAME":	"",
 		"ADDRESS":	""
+	},
+	"SYS_PAGE":	{
+		"PAGE_NO":	0,
+		"PAGE_ROWS":	0
 	}
 }  
 ~~~  
@@ -41,6 +45,14 @@
 | ACC_CERT_INFO |  否  | String   | 20 | 0 | 账户证件号码 |  
 | CUSTOMER_NAME |  否  | String   | 256 | 0 | 客户名称 |  
 | ADDRESS |  否  | String   | 128 | 0 | 用户地址 |  
+  
+说明：客户账户  
+参数：SYS_PAGE，类型：object  
+  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| PAGE_NO |  是  | Number   | 4 | 0 | 第几页，必须大于'0' |  
+| PAGE_ROWS |  是  | Number   | 4 | 0 | 每页行数，必须大于'0' |  
   
 说明：客户账户  
   

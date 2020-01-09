@@ -79,6 +79,8 @@
 				"AGREE_PRICE_YESNO":	"",
 				"TIME_FEES_TYPE":	"",
 				"LADDER_TYPE":	"",
+				"LADDER_NUM_TYPE":	"",
+				"EXIST_PRICE_YESNO":	"",
 				"CHARGE_POPULATION":	0,
 				"STARTUP_DATE":	0,
 				"OUTAGE_DATE":	0
@@ -124,6 +126,8 @@
 | AGREE_PRICE_YESNO |  是  | String   | 是否协议价：1-否，2-是 |  
 | TIME_FEES_TYPE |  是  | String   | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | LADDER_TYPE |  是  | String   | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| LADDER_NUM_TYPE |  是  | String   | 阶梯数：1-1阶，2-2阶，3-3阶，4-4阶，5-5阶 |  
+| EXIST_PRICE_YESNO |  是  | String   | 是否存在单价：1-否，2-是 |  
 | CHARGE_POPULATION |  是  | Number   | 计费人口数 |  
 | STARTUP_DATE |  是  | Number   | 启用日期 |  
 | OUTAGE_DATE |  是  | Number   | 停用日期 |  

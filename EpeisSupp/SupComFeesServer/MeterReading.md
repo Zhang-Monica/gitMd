@@ -15,9 +15,11 @@
 	},
 	"COM_METER_INFO":	[{
 			"DEVICE_DID":	"",
+			"NORMAL_RETRO_TYPE":	"",
 			"ENERGY_FLOW_TYPE":	"",
 			"READINGS_TYPE":	"",
-			"THE_METER_READ":	0
+			"THE_METER_READ":	0,
+			"TURN_UPSIDE_TYPE":	""
 		}]
 }  
 ~~~  
@@ -35,10 +37,12 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| DEVICE_DID |  是  | String   | 16 | 0 | 结算户ID |  
+| DEVICE_DID |  是  | String   | 16 | 0 | 装置ID |  
+| NORMAL_RETRO_TYPE |  是  | String   | 2 | 0 | 正常/追补 |  
 | ENERGY_FLOW_TYPE |  是  | String   | 2 | 0 | 能量流向 |  
 | READINGS_TYPE |  是  | String   | 2 | 0 | 示数类型 |  
 | THE_METER_READ |  是  | Number   | 16 | 6 | 本次表底 |  
+| TURN_UPSIDE_TYPE |  是  | String   | 2 | 0 | 倒走/翻转 |  
   
 说明：核算表底资料  
   

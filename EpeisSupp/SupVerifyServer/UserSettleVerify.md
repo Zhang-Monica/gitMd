@@ -63,6 +63,11 @@
 		"ACTUAL_AREA":	0,
 		"CHARGE_HOUSEHOLDS":	0,
 		"BUS_CATEG_TYPE":	""
+	},
+	"SETTLE_METER":	{
+		"METER_READ_CHAN_TYPE":	"",
+		"REMOTE_COPY_YESNO":	"",
+		"METER_READ_ORDER":	0
 	}
 }  
 ~~~  
@@ -135,6 +140,15 @@
 | BUS_CATEG_TYPE |  是  | String   | 2 | 0 | 业务类别 |  
   
 说明：结算计量点  
+参数：SETTLE_METER，类型：object  
+  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| METER_READ_CHAN_TYPE |  是  | String   | 2 | 0 | 抄表渠道 |  
+| REMOTE_COPY_YESNO |  是  | String   | 2 | 0 | 是否远抄 |  
+| METER_READ_ORDER |  否  | Number   | 4 | 0 | 抄表序号 |  
+  
+说明：结算计量仪表  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

@@ -27,6 +27,7 @@
 		"AGREE_PRICE_YESNO":	"",
 		"TIME_FEES_TYPE":	"",
 		"LADDER_TYPE":	"",
+		"LADDER_NUM_TYPE":	"",
 		"CHARGE_POPULATION":	0
 	}
 }  
@@ -58,6 +59,7 @@
 | AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
 | TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数：1-1阶，2-2阶，3-3阶，4-4阶，5-5阶 |  
 | CHARGE_POPULATION |  否  | Number   | 4 | 0 | 计费人口数 |  
   
 说明：计费套餐  
