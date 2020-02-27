@@ -3,6 +3,8 @@
 | :----------------- | :-----: | :---------------- |  
 | 商户账户应用服务 | v1 | [SuppAccountServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppAccountServer_README.md) |  
 | 商户轧账结账应用服务 | v1 | [SuppRolSetAccServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppRolSetAccServer_README.md) |  
+| 商户差错处理应用服务 | v1 | [SuppAccErrHandlerServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppAccErrHandlerServer_README.md) |  
+| 商户退补及异常处理应用服务 | v1 | [SuppComRepairServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComRepairServer_README.md) |  
 | 用户结算户应用服务 | v1 | [SuppSettleServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer_README.md) |  
 | 计量点应用服务 | v1 | [SuppMeterPointServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppMeterPointServer_README.md) |  
 | 查缴订单应用服务 | v1 | [SuppBillOrderServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppBillOrderServer_README.md) |  
@@ -13,6 +15,8 @@
 | 商户采暖物业系统配置 | v1 | [SuppConfigHeatPropServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigHeatPropServer_README.md) |  
 | 商户计费套餐 | v1 | [SuppComPackServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComPackServer_README.md) |  
 | 商户基础档案 | v1 | [SupBasicFileServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicFileServer_README.md) |  
+| 商户基础查询 | v1 | [SupBasicInfoServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicInfoServer_README.md) |  
+| 商户统计报表 | v1 | [supReportServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/supReportServer_README.md) |  
 | 商户抄表核算 | v1 | [SupComFeesServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComFeesServer_README.md) |  
 | 商户出账 | v1 | [SupComExpendServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComExpendServer_README.md) |  
 | 商户抄表本维护 | v1 | [SupBookServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBookServer_README.md) |  

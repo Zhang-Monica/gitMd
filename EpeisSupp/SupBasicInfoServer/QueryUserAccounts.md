@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QuerySupplierActivation)商户激活申请查询  
-接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/Service/v1/QuerySupplierActivation/  
+服务接口：(QueryUserAccounts)查询商户用户明细  
+接口描述：查询商户用户明细  
+请求说明：POST https://api.epeis.com/Service/v1/QueryUserAccounts/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,9 +17,11 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SUP_ACCOUNT":	[{
-			"ATTESTATION_TYPE":	""
-		}]
+	"USER_ACCOUNT":	{
+		"ADDRESS":	"",
+		"RESIDENT_YESNO":	"",
+		"ATTESTATION_TYPE":	""
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -39,13 +41,15 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SUP_ACCOUNT，类型：Array  
+参数：USER_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| ADDRESS |  否  | String   | 128 | 0 | 用户地址 |  
+| RESIDENT_YESNO |  否  | String   | 2 | 0 | 1-否，2-是 |  
+| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
-说明：xxxxx  
+说明：客户账户  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -60,34 +64,26 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"SUP_ACCOUNT":	[{
-				"CERTIFICATES_INFO":	"",
-				"CERTIFICATES_TYPE":	"",
-				"MOBILE_PHONE_INFO":	"",
-				"ATTESTATION_TYPE":	"",
-				"ACC_REGI_DID":	"",
-				"SUPPLIER_DID":	"",
-				"SUPPLIER_NAME":	"",
-				"SUPPLIER_TYPE":	"",
-				"EMAIL_INFO":	"",
-				"OPEN_ACC_DATE":	0,
-				"VALID_START_DATE":	0,
-				"VALID_END_DATE":	0,
+		"USER_ACCOUNT":	[{
+				"CUSTOMER_DID":	"",
+				"USER_CUS_DID":	"",
+				"USER_ACCOUNT_AID":	"",
+				"USER_NAME":	"",
+				"REAL_ESTATE_AID":	"",
+				"RESIDENT_YESNO":	"",
 				"ADMIN_CODE_INFO":	"",
 				"ADDRESS":	"",
-				"TAX_TYPE":	"",
-				"TAX_NUMBER_INFO":	"",
-				"TELEPHONE_INFO":	"",
-				"BANK_ACCOUNT_INFO":	"",
-				"BANK_NAME":	"",
-				"ACC_CERT_INFO":	"",
-				"ACC_CERT_TYPE":	"",
-				"AVAIL_BALANCE":	0,
+				"MAP_NAME":	"",
+				"X":	0,
+				"Y":	0,
 				"OWE_BALANCE":	0,
+				"RISK_BALANCE":	0,
+				"MARGIN_BALANCE":	0,
+				"ADVANCE_LIMIT":	0,
+				"BUSI_PROC_DID":	"",
+				"BUS_CATEG_TYPE":	"",
 				"OPERATION_DID":	"",
-				"STATE_TYPE":	"",
-				"OPERATION_DATE":	0,
-				"OPERATION_TIME":	0
+				"ATTESTATION_TYPE":	""
 			}]
 	}
 }  
@@ -111,39 +107,31 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：SUP_ACCOUNT，类型：Array  
+参数：USER_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CERTIFICATES_INFO |  是  | String   | xxxxx |  
-| CERTIFICATES_TYPE |  是  | String   | xxxxx |  
-| MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| ACC_REGI_DID |  是  | String   | xxxxx |  
-| SUPPLIER_DID |  是  | String   | xxxxx |  
-| SUPPLIER_NAME |  是  | String   | xxxxx |  
-| SUPPLIER_TYPE |  是  | String   | xxxxx |  
-| EMAIL_INFO |  是  | String   | xxxxx |  
-| OPEN_ACC_DATE |  是  | Number   | xxxxx |  
-| VALID_START_DATE |  是  | Number   | xxxxx |  
-| VALID_END_DATE |  是  | Number   | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| TAX_TYPE |  是  | String   | xxxxx |  
-| TAX_NUMBER_INFO |  是  | String   | xxxxx |  
-| TELEPHONE_INFO |  是  | String   | xxxxx |  
-| BANK_ACCOUNT_INFO |  是  | String   | xxxxx |  
-| BANK_NAME |  是  | String   | xxxxx |  
-| ACC_CERT_INFO |  是  | String   | xxxxx |  
-| ACC_CERT_TYPE |  是  | String   | xxxxx |  
-| AVAIL_BALANCE |  是  | Number   | xxxxx |  
-| OWE_BALANCE |  是  | Number   | xxxxx |  
-| OPERATION_DID |  是  | String   | xxxxx |  
-| STATE_TYPE |  是  | String   | xxxxx |  
-| OPERATION_DATE |  是  | Number   | xxxxx |  
-| OPERATION_TIME |  是  | Number   | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 客户账户ID |  
+| USER_CUS_DID |  是  | String   | 用户内部ID |  
+| USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
+| USER_NAME |  是  | String   | 用户名称 |  
+| REAL_ESTATE_AID |  是  | String   | 不动产ID |  
+| RESIDENT_YESNO |  是  | String   | 是否居民 |  
+| ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
+| ADDRESS |  是  | String   | 详细地址 |  
+| MAP_NAME |  是  | String   | 地图坐标名称 |  
+| X |  是  | Number   | X坐标 |  
+| Y |  是  | Number   | Y坐标 |  
+| OWE_BALANCE |  是  | Number   | 欠费余额 |  
+| RISK_BALANCE |  是  | Number   | 风险金余额 |  
+| MARGIN_BALANCE |  是  | Number   | 保证金余额 |  
+| ADVANCE_LIMIT |  是  | Number   | 预付限额 |  
+| BUSI_PROC_DID |  是  | String   | 业务办理编码 |  
+| BUS_CATEG_TYPE |  是  | String   | 业务类别 |  
+| OPERATION_DID |  是  | String   | 操作ID |  
+| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
-说明：xxxxx  
+说明：用户信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  

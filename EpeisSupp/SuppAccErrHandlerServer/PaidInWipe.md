@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(SettleAccount)结账  
-接口描述：结账  
-请求说明：POST https://api.epeis.com/Service/v1/SettleAccount/  
+服务接口：(PaidInWipe)实收抹账  
+接口描述：实收抹账  
+请求说明：POST https://api.epeis.com/Service/v1/PaidInWipe/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,9 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"ACC_RECEIPT":	[{
-			"BILL_DID":	"",
-			"BILL_AMOUNT":	0
+	"ACC_USER_ACCOUNT":	[{
+			"OPERATION_DATE":	0,
+			"SERIAL_DID":	""
 		}]
 }  
 ~~~  
@@ -29,14 +29,14 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：ACC_RECEIPT，类型：Array  
+参数：ACC_USER_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BILL_DID |  是  | String   | 16 | 0 | 16个字符，票据序号 |  
-| BILL_AMOUNT |  是  | Number   | 14 | 2 | 汇总金额，精确到2位小数点 |  
+| OPERATION_DATE |  是  | Number   | 8 | 0 | 业务日期 |  
+| SERIAL_DID |  是  | String   | 16 | 0 | 16位字符，业务流水号 |  
   
-说明：结账信息  
+说明：用户账单信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

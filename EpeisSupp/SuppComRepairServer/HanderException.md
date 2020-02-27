@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(SettleAccount)结账  
-接口描述：结账  
-请求说明：POST https://api.epeis.com/Service/v1/SettleAccount/  
+服务接口：(HanderException)异常处理  
+接口描述：异常处理  
+请求说明：POST https://api.epeis.com/Service/v1/HanderException/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,9 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"ACC_RECEIPT":	[{
-			"BILL_DID":	"",
-			"BILL_AMOUNT":	0
+	"COM_METERAGE":	[{
+			"SETTLEMENT_AID":	"",
+			"NORMAL_RETRO_TYPE":	""
 		}]
 }  
 ~~~  
@@ -29,14 +29,14 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：ACC_RECEIPT，类型：Array  
+参数：COM_METERAGE，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BILL_DID |  是  | String   | 16 | 0 | 16个字符，票据序号 |  
-| BILL_AMOUNT |  是  | Number   | 14 | 2 | 汇总金额，精确到2位小数点 |  
+| SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
+| NORMAL_RETRO_TYPE |  是  | String   | 2 | 0 | 正常追补类型 |  
   
-说明：结账信息  
+说明：计量点信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
