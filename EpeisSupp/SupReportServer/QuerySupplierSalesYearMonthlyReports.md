@@ -55,10 +55,6 @@
 				"WATER_PAIDIN_FEE":	0,
 				"WATER_OWE_FEE":	0,
 				"WATER_RECOVER_RATE":	0,
-				"CWATER_CALC_FEE":	0,
-				"CWATER_PAIDIN_FEE":	0,
-				"CWATER_OWE_FEE":	0,
-				"CWATER_RECOVER_RATE":	0,
 				"GAS_CALC_FEE":	0,
 				"GAS_PAIDIN_FEE":	0,
 				"GAS_OWE_FEE":	0,
@@ -89,9 +85,6 @@
 				"YWATER_LASTYEAR_OWE":	0,
 				"YWATER_TWOYEAR_OWE":	0,
 				"YWATER_THREEYEAR_OWE":	0,
-				"YCWATER_LASTYEAR_OWE":	0,
-				"YCWATER_TWOYEAR_OWE":	0,
-				"YCWATER_THREEYEAR_OWE":	0,
 				"YGAS_LASTYEAR_OWE":	0,
 				"YGAS_TWOYEAR_OWE":	0,
 				"YGAS_THREEYEAR_OWE":	0,
@@ -137,10 +130,6 @@
 | WATER_PAIDIN_FEE |  是  | Number   | 水实收金额 |  
 | WATER_OWE_FEE |  是  | Number   | 水欠费金额 |  
 | WATER_RECOVER_RATE |  是  | Number   | 水回收率 |  
-| CWATER_CALC_FEE |  是  | Number   | 冷水应收金额 |  
-| CWATER_PAIDIN_FEE |  是  | Number   | 冷水实收金额 |  
-| CWATER_OWE_FEE |  是  | Number   | 冷水欠费金额 |  
-| CWATER_RECOVER_RATE |  是  | Number   | 冷水回收率 |  
 | GAS_CALC_FEE |  是  | Number   | 燃气应收金额 |  
 | GAS_PAIDIN_FEE |  是  | Number   | 燃气实收金额 |  
 | GAS_OWE_FEE |  是  | Number   | 燃气欠费金额 |  
@@ -176,9 +165,6 @@
 | YWATER_LASTYEAR_OWE |  是  | Number   | 水上年欠费金额 |  
 | YWATER_TWOYEAR_OWE |  是  | Number   | 水两到三年欠费金额 |  
 | YWATER_THREEYEAR_OWE |  是  | Number   | 水三年以上欠费金额 |  
-| YCWATER_LASTYEAR_OWE |  是  | Number   | 冷水上年欠费金额 |  
-| YCWATER_TWOYEAR_OWE |  是  | Number   | 冷水两到三年欠费金额 |  
-| YCWATER_THREEYEAR_OWE |  是  | Number   | 冷水三年以上欠费金额 |  
 | YGAS_LASTYEAR_OWE |  是  | Number   | 燃气上年欠费金额 |  
 | YGAS_TWOYEAR_OWE |  是  | Number   | 燃气两到三年欠费金额 |  
 | YGAS_THREEYEAR_OWE |  是  | Number   | 燃气三年以上欠费金额 |  

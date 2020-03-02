@@ -16,7 +16,7 @@
 | 商户计费套餐 | v1 | [SuppComPackServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComPackServer_README.md) |  
 | 商户基础档案 | v1 | [SupBasicFileServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicFileServer_README.md) |  
 | 商户基础查询 | v1 | [SupBasicInfoServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBasicInfoServer_README.md) |  
-| 商户统计报表 | v1 | [supReportServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/supReportServer_README.md) |  
+| 商户统计报表 | v1 | [SupReportServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupReportServer_README.md) |  
 | 商户抄表核算 | v1 | [SupComFeesServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComFeesServer_README.md) |  
 | 商户出账 | v1 | [SupComExpendServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComExpendServer_README.md) |  
 | 商户抄表本维护 | v1 | [SupBookServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBookServer_README.md) |  

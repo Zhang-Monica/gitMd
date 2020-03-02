@@ -16,6 +16,10 @@
 	"SYS_PAGE":	{
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
+	},
+	"SUP_STORES":	{
+		"ADDRESS":	"",
+		"BUSINESS_HALL_NAME":	""
 	}
 }  
 ~~~  
@@ -36,6 +40,14 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
+参数：SUP_STORES，类型：object  
+  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| ADDRESS |  否  | String   | 128 | 0 | 详细地址 |  
+| BUSINESS_HALL_NAME |  否  | String   | 128 | 0 | 营业网点名称 |  
+  
+说明：商户营业网点  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -88,7 +100,7 @@
 | BUSINESS_HALL_AID |  是  | String   | 营业网点ID |  
 | BUSINESS_HALL_NAME |  是  | String   | 营业网点名称 |  
 | ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
-| ADDRESS |  是  | String   | ADDRESS |  
+| ADDRESS |  是  | String   | 详细地址 |  
   
 说明：商户营业网点  
 ## 4、服务接口说明  
