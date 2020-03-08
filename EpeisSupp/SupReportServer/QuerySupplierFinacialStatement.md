@@ -12,6 +12,10 @@
 		"DYNAMIC_KEY":	"",
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
+	},
+	"ACC_DAY_STATEMENT":	{
+		"NETWORK_TYPE":	"",
+		"RET_STORES_AID":	""
 	}
 }  
 ~~~  
@@ -25,6 +29,14 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
+参数：ACC_DAY_STATEMENT，类型：object  
+  
+| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
+| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| NETWORK_TYPE |  否  | String   | 2 | 0 | 服务类型 |  
+| RET_STORES_AID |  是  | String   | 16 | 0 | 营业网点ID |  
+  
+说明：日结单  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -39,26 +51,11 @@
 				"NETWORK_TYPE":	"",
 				"ACCOUNT_ITEM_INFO":	"",
 				"CAT_ITEM_NUM":	0,
-				"DRAW_UNBOUND_AMT":	0,
-				"DRAW_UNTIED_AMT":	0,
 				"PAID_IN_UNBOUND_AMT":	0,
-				"PAID_IN_UNTIED_AMT":	0,
-				"DEPOSIT_UNBOUND_AMT":	0,
-				"DEPOSIT_UNTIED_AMT":	0,
 				"RECE_UNBOUND_AMT":	0,
-				"RECE_UNTIED_AMT":	0,
+				"PRE_DEBIT_BALANCE":	0,
+				"THE_DEBIT_BALANCE":	0,
 				"ROLL_ACCOUNT_DATE":	0
-			}],
-		"ACC_VOLPRICE_OWE":	[{
-				"NETWORK_CO_DID":	"",
-				"NET_STORES_AID":	"",
-				"RETAIL_CO_DID":	"",
-				"RET_STORES_AID":	"",
-				"NETWORK_TYPE":	"",
-				"ACCOUNT_ITEM_INFO":	"",
-				"CAT_ITEM_NUM":	0,
-				"ACCU_PAID_IN_FEE":	0,
-				"CALC_FEE":	0
 			}]
 	}
 }  
@@ -83,32 +80,12 @@
 | NETWORK_TYPE |  是  | String   | 服务类型 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 会计科目编码 |  
 | CAT_ITEM_NUM |  是  | Number   | 分类项目编号 |  
-| DRAW_UNBOUND_AMT |  是  | Number   | 支取已扎未结金额 |  
-| DRAW_UNTIED_AMT |  是  | Number   | 支取未扎金额 |  
 | PAID_IN_UNBOUND_AMT |  是  | Number   | 实收已扎未结金额 |  
-| PAID_IN_UNTIED_AMT |  是  | Number   | 实收未扎金额 |  
-| DEPOSIT_UNBOUND_AMT |  是  | Number   | 存入已扎未结金额 |  
-| DEPOSIT_UNTIED_AMT |  是  | Number   | 存入未扎金额 |  
 | RECE_UNBOUND_AMT |  是  | Number   | 应收已扎未结金额 |  
-| RECE_UNTIED_AMT |  是  | Number   | 应收未扎金额 |  
+| PRE_DEBIT_BALANCE |  是  | Number   | 上期借方金额--欠费余额 |  
+| THE_DEBIT_BALANCE |  是  | Number   | 本期借方金额--账务应收账款余额 |  
 | ROLL_ACCOUNT_DATE |  是  | Number   | 轧帐日期 |  
   
 说明：财务对账表  
-参数：ACC_VOLPRICE_OWE，类型：Array  
-  
-
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| NETWORK_CO_DID |  是  | String   | 管网公司编码 |  
-| NET_STORES_AID |  是  | String   | 管网公司营业网点ID |  
-| RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
-| RET_STORES_AID |  是  | String   | 销售公司营业网点ID |  
-| NETWORK_TYPE |  是  | String   | 服务类型 |  
-| ACCOUNT_ITEM_INFO |  是  | String   | 会计科目编码 |  
-| CAT_ITEM_NUM |  是  | Number   | 分类项目编号 |  
-| ACCU_PAID_IN_FEE |  是  | Number   | 预付余额 |  
-| CALC_FEE |  是  | Number   | 欠费余额 |  
-  
-说明：量价费欠费明细  
 ## 4、服务接口说明  
 说明：无  

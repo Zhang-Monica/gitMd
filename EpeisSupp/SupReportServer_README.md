@@ -6,4 +6,5 @@
 | 查询收款明细 | v1 | [QuerySupplierReceiptDetails.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupReportServer/QuerySupplierReceiptDetails.md) |  
 | 查询商户销售回收月报 | v1 | [QuerySupplierSalesMonthlyReport.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupReportServer/QuerySupplierSalesMonthlyReport.md) |  
 | 查询商户当年月度回收报表 | v1 | [QuerySupplierSalesYearMonthlyReports.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupReportServer/QuerySupplierSalesYearMonthlyReports.md) |  
+| 查询财务对账明细 | v1 | [QuerySupplierFinacialStatementDetails.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupReportServer/QuerySupplierFinacialStatementDetails.md) |  
   

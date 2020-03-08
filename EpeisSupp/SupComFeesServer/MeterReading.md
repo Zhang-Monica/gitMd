@@ -42,7 +42,7 @@
 | ENERGY_FLOW_TYPE |  是  | String   | 2 | 0 | 能量流向 |  
 | READINGS_TYPE |  是  | String   | 2 | 0 | 示数类型 |  
 | THE_METER_READ |  是  | Number   | 16 | 6 | 本次表底 |  
-| TURN_UPSIDE_TYPE |  是  | String   | 2 | 0 | 倒走/翻转 |  
+| TURN_UPSIDE_TYPE |  否  | String   | 2 | 0 | 倒走/翻转 |  
   
 说明：核算表底资料  
   

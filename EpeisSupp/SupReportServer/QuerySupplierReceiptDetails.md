@@ -13,8 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"ACC_VOLUME_PRICE":	{
-		"RET_STORES_AID":	""
+	"ACC_USER_METER":	{
+		"ACCOUNT_MONTH":	0,
+		"RET_STORES_AID":	"",
+		"NETWORK_TYPE":	""
 	}
 }  
 ~~~  
@@ -28,13 +30,15 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：ACC_VOLUME_PRICE，类型：object  
+参数：ACC_USER_METER，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| ACCOUNT_MONTH |  是  | Number   | 6 | 0 | 账务月份 |  
 | RET_STORES_AID |  否  | String   | 16 | 0 | 营业网点ID |  
+| NETWORK_TYPE |  否  | String   | 2 | 0 | 服务类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
   
-说明：账务量价费汇总  
+说明：用户账单计量点明细  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -43,70 +47,29 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"INOUT_YEAR_MON_REPORT":	[{
+		"INOUT_ACC_USER_METER":	[{
+				"NETWORK_CO_DID":	"",
+				"NET_STORES_AID":	"",
 				"RETAIL_CO_DID":	"",
 				"RET_STORES_AID":	"",
+				"SETTLEMENT_AID":	"",
+				"ADMIN_CODE_INFO":	"",
+				"CUSTOMER_DID":	"",
+				"USER_CUS_DID":	"",
+				"USER_ACCOUNT_AID":	"",
+				"CASH_TRANSFER_TYPE":	"",
+				"NETWORK_TYPE":	"",
 				"ACCOUNT_MONTH":	0,
-				"ELE_CALC_FEE":	0,
-				"ELE_PAIDIN_FEE":	0,
-				"ELE_OWE_FEE":	0,
-				"ELE_RECOVER_RATE":	0,
-				"WATER_CALC_FEE":	0,
-				"WATER_PAIDIN_FEE":	0,
-				"WATER_OWE_FEE":	0,
-				"WATER_RECOVER_RATE":	0,
-				"CWATER_CALC_FEE":	0,
-				"CWATER_PAIDIN_FEE":	0,
-				"CWATER_OWE_FEE":	0,
-				"CWATER_RECOVER_RATE":	0,
-				"GAS_CALC_FEE":	0,
-				"GAS_PAIDIN_FEE":	0,
-				"GAS_OWE_FEE":	0,
-				"GAS_RECOVER_RATE":	0,
-				"HEAT_CALC_FEE":	0,
-				"HEAT_PAIDIN_FEE":	0,
-				"HEAT_OWE_FEE":	0,
-				"HEAT_RECOVER_RATE":	0,
-				"COLD_CALC_FEE":	0,
-				"COLD_PAIDIN_FEE":	0,
-				"COLD_OWE_FEE":	0,
-				"COLD_RECOVER_RATE":	0,
-				"RENT_CALC_FEE":	0,
-				"RENT_PAIDIN_FEE":	0,
-				"RENT_OWE_FEE":	0,
-				"RENT_RECOVER_RATE":	0,
-				"PROPERTY_CALC_FEE":	0,
-				"PROPERTY_PAIDIN_FEE":	0,
-				"PROPERTY_OWE_FEE":	0,
-				"PROPERTY_RECOVER_RATE":	0
-			}],
-		"INOUT_YEAR_OWE_REPORT":	[{
-				"RETAIL_CO_DID":	"",
-				"RET_STORES_AID":	"",
-				"YELE_LASTYEAR_OWE":	0,
-				"YELE_TWOYEAR_OWE":	0,
-				"YELE_THREEYEAR_OWE":	0,
-				"YWATER_LASTYEAR_OWE":	0,
-				"YWATER_TWOYEAR_OWE":	0,
-				"YWATER_THREEYEAR_OWE":	0,
-				"YCWATER_LASTYEAR_OWE":	0,
-				"YCWATER_TWOYEAR_OWE":	0,
-				"YCWATER_THREEYEAR_OWE":	0,
-				"YGAS_LASTYEAR_OWE":	0,
-				"YGAS_TWOYEAR_OWE":	0,
-				"YGAS_THREEYEAR_OWE":	0,
-				"YHEAT_LASTYEAR_OWE":	0,
-				"YHEAT_TWOYEAR_OWE":	0,
-				"YHEAT_THREEYEAR_OWE":	0,
-				"YCOLD_LASTYEAR_OWE":	0,
-				"YCOLD_TWOYEAR_OWE":	0,
-				"YCOLD_THREEYEAR_OWE":	0,
-				"YRENT_LASTYEAR_OWE":	0,
-				"YRENT_TWOYEAR_OWE":	0,
-				"YRENT_THREEYEAR_OWE":	0,
-				"YPROPERTY_LASTYEAR_OWE":	0,
-				"YPROPERTY_TWOYEAR_OWE":	0,
-				"YPROPERTY_THREEYEAR_OWE":	0
+				"PAID_IN_AMOUNT":	0,
+				"PAID_IN_LIQ_DAMA":	0,
+				"DEPOST_ADVANCE_PAY":	0,
+				"BUSINESS_TYPE":	"",
+				"BUSINESS_STATE_TYPE":	"",
+				"BUS_OPERATOR_DID":	"",
+				"OPERATION_DATE":	0,
+				"SERIAL_DID":	"",
+				"DETAIL_SERIAL_DID":	"",
+				"LIST_BUSINESS_SID":	""
 			}]
 	}
 }  
@@ -121,80 +84,34 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：INOUT_YEAR_MON_REPORT，类型：Array  
+参数：INOUT_ACC_USER_METER，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
+| NETWORK_CO_DID |  是  | String   | 管网公司编码 |  
+| NET_STORES_AID |  是  | String   | 管网公司营业网点ID |  
 | RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
 | RET_STORES_AID |  是  | String   | 销售公司营业网点ID |  
+| SETTLEMENT_AID |  是  | String   | 结算户ID |  
+| ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
+| CUSTOMER_DID |  是  | String   | 客户编号 |  
+| USER_CUS_DID |  是  | String   | 用户内部ID |  
+| USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
+| CASH_TRANSFER_TYPE |  是  | String   | 现金转账类型 |  
+| NETWORK_TYPE |  是  | String   | 服务类型 |  
 | ACCOUNT_MONTH |  是  | Number   | 帐务月份 |  
-| ELE_CALC_FEE |  是  | Number   | 电应收金额 |  
-| ELE_PAIDIN_FEE |  是  | Number   | 电实收金额 |  
-| ELE_OWE_FEE |  是  | Number   | 电欠费金额 |  
-| ELE_RECOVER_RATE |  是  | Number   | 电回收率 |  
-| WATER_CALC_FEE |  是  | Number   | 水应收金额 |  
-| WATER_PAIDIN_FEE |  是  | Number   | 水实收金额 |  
-| WATER_OWE_FEE |  是  | Number   | 水欠费金额 |  
-| WATER_RECOVER_RATE |  是  | Number   | 水回收率 |  
-| CWATER_CALC_FEE |  是  | Number   | 冷水应收金额 |  
-| CWATER_PAIDIN_FEE |  是  | Number   | 冷水实收金额 |  
-| CWATER_OWE_FEE |  是  | Number   | 冷水欠费金额 |  
-| CWATER_RECOVER_RATE |  是  | Number   | 冷水回收率 |  
-| GAS_CALC_FEE |  是  | Number   | 燃气应收金额 |  
-| GAS_PAIDIN_FEE |  是  | Number   | 燃气实收金额 |  
-| GAS_OWE_FEE |  是  | Number   | 燃气欠费金额 |  
-| GAS_RECOVER_RATE |  是  | Number   | 燃气回收率 |  
-| HEAT_CALC_FEE |  是  | Number   | 供热应收金额 |  
-| HEAT_PAIDIN_FEE |  是  | Number   | 供热实收金额 |  
-| HEAT_OWE_FEE |  是  | Number   | 供热欠费金额 |  
-| HEAT_RECOVER_RATE |  是  | Number   | 供热回收率 |  
-| COLD_CALC_FEE |  是  | Number   | 供冷应收金额 |  
-| COLD_PAIDIN_FEE |  是  | Number   | 供冷实收金额 |  
-| COLD_OWE_FEE |  是  | Number   | 供冷欠费金额 |  
-| COLD_RECOVER_RATE |  是  | Number   | 供冷回收率 |  
-| RENT_CALC_FEE |  是  | Number   | 租赁应收金额 |  
-| RENT_PAIDIN_FEE |  是  | Number   | 租赁实收金额 |  
-| RENT_OWE_FEE |  是  | Number   | 租赁欠费金额 |  
-| RENT_RECOVER_RATE |  是  | Number   | 租赁回收率 |  
-| PROPERTY_CALC_FEE |  是  | Number   | 物业应收金额 |  
-| PROPERTY_PAIDIN_FEE |  是  | Number   | 物业实收金额 |  
-| PROPERTY_OWE_FEE |  是  | Number   | 物业欠费金额 |  
-| PROPERTY_RECOVER_RATE |  是  | Number   | 物业回收率 |  
+| PAID_IN_AMOUNT |  是  | Number   | 实收金额 |  
+| PAID_IN_LIQ_DAMA |  是  | Number   | 实收违约金 |  
+| DEPOST_ADVANCE_PAY |  是  | Number   | 存入预付款 |  
+| BUSINESS_TYPE |  是  | String   | 账务业务类型 |  
+| BUSINESS_STATE_TYPE |  是  | String   | 账务业务状态类型 |  
+| BUS_OPERATOR_DID |  是  | String   | 业务操作员号 |  
+| OPERATION_DATE |  是  | Number   | 操作日期 |  
+| SERIAL_DID |  是  | String   | 业务流水号 |  
+| DETAIL_SERIAL_DID |  是  | String   | 账单明细业务流水号 |  
+| LIST_BUSINESS_SID |  是  | String   | 清单业务流水号 |  
   
-说明：当年月度回收报表  
-参数：INOUT_YEAR_OWE_REPORT，类型：Array  
-  
-
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
-| RET_STORES_AID |  是  | String   | 销售公司营业网点ID |  
-| YELE_LASTYEAR_OWE |  是  | Number   | 电上年欠费金额 |  
-| YELE_TWOYEAR_OWE |  是  | Number   | 电两到三年欠费金额 |  
-| YELE_THREEYEAR_OWE |  是  | Number   | 电三年以上欠费金额 |  
-| YWATER_LASTYEAR_OWE |  是  | Number   | 水上年欠费金额 |  
-| YWATER_TWOYEAR_OWE |  是  | Number   | 水两到三年欠费金额 |  
-| YWATER_THREEYEAR_OWE |  是  | Number   | 水三年以上欠费金额 |  
-| YCWATER_LASTYEAR_OWE |  是  | Number   | 冷水上年欠费金额 |  
-| YCWATER_TWOYEAR_OWE |  是  | Number   | 冷水两到三年欠费金额 |  
-| YCWATER_THREEYEAR_OWE |  是  | Number   | 冷水三年以上欠费金额 |  
-| YGAS_LASTYEAR_OWE |  是  | Number   | 燃气上年欠费金额 |  
-| YGAS_TWOYEAR_OWE |  是  | Number   | 燃气两到三年欠费金额 |  
-| YGAS_THREEYEAR_OWE |  是  | Number   | 燃气三年以上欠费金额 |  
-| YHEAT_LASTYEAR_OWE |  是  | Number   | 供热上年欠费金额 |  
-| YHEAT_TWOYEAR_OWE |  是  | Number   | 供热两到三年欠费金额 |  
-| YHEAT_THREEYEAR_OWE |  是  | Number   | 供热三年以上欠费金额 |  
-| YCOLD_LASTYEAR_OWE |  是  | Number   | 供冷上年欠费金额 |  
-| YCOLD_TWOYEAR_OWE |  是  | Number   | 供冷两到三年欠费金额 |  
-| YCOLD_THREEYEAR_OWE |  是  | Number   | 供冷三年以上欠费金额 |  
-| YRENT_LASTYEAR_OWE |  是  | Number   | 租赁上年欠费金额 |  
-| YRENT_TWOYEAR_OWE |  是  | Number   | 租赁两到三年欠费金额 |  
-| YRENT_THREEYEAR_OWE |  是  | Number   | 租赁三年以上欠费金额 |  
-| YPROPERTY_LASTYEAR_OWE |  是  | Number   | 物业上年欠费金额 |  
-| YPROPERTY_TWOYEAR_OWE |  是  | Number   | 物业两到三年欠费金额 |  
-| YPROPERTY_THREEYEAR_OWE |  是  | Number   | 物业三年以上欠费金额 |  
-  
-说明：销售/回收月报  
+说明：用户账单计量点明细  
 ## 4、服务接口说明  
 说明：无  
