@@ -15,7 +15,7 @@
 	},
 	"ACC_DAY_STATEMENT":	{
 		"NETWORK_TYPE":	"",
-		"RET_STORES_AID":	""
+		"ACCOUNT_MONTH":	0
 	}
 }  
 ~~~  
@@ -34,7 +34,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | NETWORK_TYPE |  否  | String   | 2 | 0 | 服务类型 |  
-| RET_STORES_AID |  是  | String   | 16 | 0 | 营业网点ID |  
+| ACCOUNT_MONTH |  是  | Number   | 6 | 0 | 账务月份 |  
   
 说明：日结单  
   

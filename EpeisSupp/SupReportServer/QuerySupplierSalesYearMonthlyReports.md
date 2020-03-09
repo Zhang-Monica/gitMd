@@ -76,30 +76,69 @@
 				"PROPERTY_OWE_FEE":	0,
 				"PROPERTY_RECOVER_RATE":	0
 			}],
+		"INOUT_YEAR_TOT_REPORT":	[{
+				"RETAIL_CO_DID":	"",
+				"RET_STORES_AID":	"",
+				"ELE_CALC_FEE":	0,
+				"ELE_PAIDIN_FEE":	0,
+				"ELE_OWE_FEE":	0,
+				"ELE_RECOVER_RATE":	0,
+				"WATER_CALC_FEE":	0,
+				"WATER_PAIDIN_FEE":	0,
+				"WATER_OWE_FEE":	0,
+				"WATER_RECOVER_RATE":	0,
+				"GAS_CALC_FEE":	0,
+				"GAS_PAIDIN_FEE":	0,
+				"GAS_OWE_FEE":	0,
+				"GAS_RECOVER_RATE":	0,
+				"HEAT_CALC_FEE":	0,
+				"HEAT_PAIDIN_FEE":	0,
+				"HEAT_OWE_FEE":	0,
+				"HEAT_RECOVER_RATE":	0,
+				"COLD_CALC_FEE":	0,
+				"COLD_PAIDIN_FEE":	0,
+				"COLD_OWE_FEE":	0,
+				"COLD_RECOVER_RATE":	0,
+				"RENT_CALC_FEE":	0,
+				"RENT_PAIDIN_FEE":	0,
+				"RENT_OWE_FEE":	0,
+				"RENT_RECOVER_RATE":	0,
+				"PROPERTY_CALC_FEE":	0,
+				"PROPERTY_PAIDIN_FEE":	0,
+				"PROPERTY_OWE_FEE":	0,
+				"PROPERTY_RECOVER_RATE":	0
+			}],
 		"INOUT_YEAR_OWE_REPORT":	[{
 				"RETAIL_CO_DID":	"",
 				"RET_STORES_AID":	"",
 				"YELE_LASTYEAR_OWE":	0,
 				"YELE_TWOYEAR_OWE":	0,
 				"YELE_THREEYEAR_OWE":	0,
+				"YELE_TOTALYEAR_OWE":	0,
 				"YWATER_LASTYEAR_OWE":	0,
 				"YWATER_TWOYEAR_OWE":	0,
 				"YWATER_THREEYEAR_OWE":	0,
+				"YWATER_TOTALYEAR_OWE":	0,
 				"YGAS_LASTYEAR_OWE":	0,
 				"YGAS_TWOYEAR_OWE":	0,
 				"YGAS_THREEYEAR_OWE":	0,
+				"YGAS_TOTALYEAR_OWE":	0,
 				"YHEAT_LASTYEAR_OWE":	0,
 				"YHEAT_TWOYEAR_OWE":	0,
 				"YHEAT_THREEYEAR_OWE":	0,
+				"YHEAT_TOTALYEAR_OWE":	0,
 				"YCOLD_LASTYEAR_OWE":	0,
 				"YCOLD_TWOYEAR_OWE":	0,
 				"YCOLD_THREEYEAR_OWE":	0,
+				"YCOLD_TOTALYEAR_OWE":	0,
 				"YRENT_LASTYEAR_OWE":	0,
 				"YRENT_TWOYEAR_OWE":	0,
 				"YRENT_THREEYEAR_OWE":	0,
+				"YRENT_TOTALYEAR_OWE":	0,
 				"YPROPERTY_LASTYEAR_OWE":	0,
 				"YPROPERTY_TWOYEAR_OWE":	0,
-				"YPROPERTY_THREEYEAR_OWE":	0
+				"YPROPERTY_THREEYEAR_OWE":	0,
+				"YPROPERTY_TOTALYEAR_OWE":	0
 			}]
 	}
 }  
@@ -152,6 +191,43 @@
 | PROPERTY_RECOVER_RATE |  是  | Number   | 物业回收率 |  
   
 说明：当年月度回收报表  
+参数：INOUT_YEAR_TOT_REPORT，类型：Array  
+  
+
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
+| RET_STORES_AID |  是  | String   | 销售公司营业网点ID |  
+| ELE_CALC_FEE |  是  | Number   | 电应收金额 |  
+| ELE_PAIDIN_FEE |  是  | Number   | 电实收金额 |  
+| ELE_OWE_FEE |  是  | Number   | 电欠费金额 |  
+| ELE_RECOVER_RATE |  是  | Number   | 电回收率 |  
+| WATER_CALC_FEE |  是  | Number   | 水应收金额 |  
+| WATER_PAIDIN_FEE |  是  | Number   | 水实收金额 |  
+| WATER_OWE_FEE |  是  | Number   | 水欠费金额 |  
+| WATER_RECOVER_RATE |  是  | Number   | 水回收率 |  
+| GAS_CALC_FEE |  是  | Number   | 燃气应收金额 |  
+| GAS_PAIDIN_FEE |  是  | Number   | 燃气实收金额 |  
+| GAS_OWE_FEE |  是  | Number   | 燃气欠费金额 |  
+| GAS_RECOVER_RATE |  是  | Number   | 燃气回收率 |  
+| HEAT_CALC_FEE |  是  | Number   | 供热应收金额 |  
+| HEAT_PAIDIN_FEE |  是  | Number   | 供热实收金额 |  
+| HEAT_OWE_FEE |  是  | Number   | 供热欠费金额 |  
+| HEAT_RECOVER_RATE |  是  | Number   | 供热回收率 |  
+| COLD_CALC_FEE |  是  | Number   | 供冷应收金额 |  
+| COLD_PAIDIN_FEE |  是  | Number   | 供冷实收金额 |  
+| COLD_OWE_FEE |  是  | Number   | 供冷欠费金额 |  
+| COLD_RECOVER_RATE |  是  | Number   | 供冷回收率 |  
+| RENT_CALC_FEE |  是  | Number   | 租赁应收金额 |  
+| RENT_PAIDIN_FEE |  是  | Number   | 租赁实收金额 |  
+| RENT_OWE_FEE |  是  | Number   | 租赁欠费金额 |  
+| RENT_RECOVER_RATE |  是  | Number   | 租赁回收率 |  
+| PROPERTY_CALC_FEE |  是  | Number   | 物业应收金额 |  
+| PROPERTY_PAIDIN_FEE |  是  | Number   | 物业实收金额 |  
+| PROPERTY_OWE_FEE |  是  | Number   | 物业欠费金额 |  
+| PROPERTY_RECOVER_RATE |  是  | Number   | 物业回收率 |  
+  
+说明：当年月度回收报表月度合计  
 参数：INOUT_YEAR_OWE_REPORT，类型：Array  
   
 
@@ -162,24 +238,31 @@
 | YELE_LASTYEAR_OWE |  是  | Number   | 电上年欠费金额 |  
 | YELE_TWOYEAR_OWE |  是  | Number   | 电两到三年欠费金额 |  
 | YELE_THREEYEAR_OWE |  是  | Number   | 电三年以上欠费金额 |  
+| YELE_TOTALYEAR_OWE |  是  | Number   | 电合计欠费金额 |  
 | YWATER_LASTYEAR_OWE |  是  | Number   | 水上年欠费金额 |  
 | YWATER_TWOYEAR_OWE |  是  | Number   | 水两到三年欠费金额 |  
 | YWATER_THREEYEAR_OWE |  是  | Number   | 水三年以上欠费金额 |  
+| YWATER_TOTALYEAR_OWE |  是  | Number   | 水合计欠费金额 |  
 | YGAS_LASTYEAR_OWE |  是  | Number   | 燃气上年欠费金额 |  
 | YGAS_TWOYEAR_OWE |  是  | Number   | 燃气两到三年欠费金额 |  
 | YGAS_THREEYEAR_OWE |  是  | Number   | 燃气三年以上欠费金额 |  
+| YGAS_TOTALYEAR_OWE |  是  | Number   | 燃气合计欠费金额 |  
 | YHEAT_LASTYEAR_OWE |  是  | Number   | 供热上年欠费金额 |  
 | YHEAT_TWOYEAR_OWE |  是  | Number   | 供热两到三年欠费金额 |  
 | YHEAT_THREEYEAR_OWE |  是  | Number   | 供热三年以上欠费金额 |  
+| YHEAT_TOTALYEAR_OWE |  是  | Number   | 供热合计欠费金额 |  
 | YCOLD_LASTYEAR_OWE |  是  | Number   | 供冷上年欠费金额 |  
 | YCOLD_TWOYEAR_OWE |  是  | Number   | 供冷两到三年欠费金额 |  
 | YCOLD_THREEYEAR_OWE |  是  | Number   | 供冷三年以上欠费金额 |  
+| YCOLD_TOTALYEAR_OWE |  是  | Number   | 供冷合计欠费金额 |  
 | YRENT_LASTYEAR_OWE |  是  | Number   | 租赁上年欠费金额 |  
 | YRENT_TWOYEAR_OWE |  是  | Number   | 租赁两到三年欠费金额 |  
 | YRENT_THREEYEAR_OWE |  是  | Number   | 租赁三年以上欠费金额 |  
+| YRENT_TOTALYEAR_OWE |  是  | Number   | 租赁合计欠费金额 |  
 | YPROPERTY_LASTYEAR_OWE |  是  | Number   | 物业上年欠费金额 |  
 | YPROPERTY_TWOYEAR_OWE |  是  | Number   | 物业两到三年欠费金额 |  
 | YPROPERTY_THREEYEAR_OWE |  是  | Number   | 物业三年以上欠费金额 |  
+| YPROPERTY_TOTALYEAR_OWE |  是  | Number   | 物业合计欠费金额 |  
   
 说明：销售/回收月报  
 ## 4、服务接口说明  
