@@ -13,8 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"ACC_USER_METER":	{
-		"ACCOUNT_MONTH":	0,
+	"INOUT_ACC_USER_METER":	{
+		"ROLL_ACCOUNT_DATE":	0,
+		"OPERATION_DATE":	0,
 		"RET_STORES_AID":	"",
 		"NETWORK_TYPE":	""
 	}
@@ -30,11 +31,12 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：ACC_USER_METER，类型：object  
+参数：INOUT_ACC_USER_METER，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ACCOUNT_MONTH |  是  | Number   | 6 | 0 | 账务月份 |  
+| ROLL_ACCOUNT_DATE |  是  | Number   | 8 | 0 | 业务发生日期起始日期 |  
+| OPERATION_DATE |  是  | Number   | 8 | 0 | 业务发生日期截止日期 |  
 | RET_STORES_AID |  否  | String   | 16 | 0 | 营业网点ID |  
 | NETWORK_TYPE |  否  | String   | 2 | 0 | 服务类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
   
@@ -58,13 +60,33 @@
 				"USER_CUS_DID":	"",
 				"USER_ACCOUNT_AID":	"",
 				"CASH_TRANSFER_TYPE":	"",
+				"BILL_DID":	"",
+				"BILL_NUM_INFO":	"",
+				"BILL_AMOUNT":	0,
+				"DRAWER":	"",
+				"RECEIPT_DATE":	0,
+				"PROMISE_DATE":	0,
+				"ARRIVAL_DATE":	0,
+				"BILL_STATE_TYPE":	"",
+				"DRAW_BANK_ACC_INFO":	"",
+				"DRAW_BANK_NAME":	"",
+				"RECE_BANK_ACC_INFO":	"",
+				"BANK_NAME":	"",
+				"BANK_ACC_NAME":	"",
 				"NETWORK_TYPE":	"",
 				"ACCOUNT_MONTH":	0,
+				"SETTLE_ACCOUNT_MONTH":	0,
 				"PAID_IN_AMOUNT":	0,
-				"PAID_IN_LIQ_DAMA":	0,
 				"DEPOST_ADVANCE_PAY":	0,
+				"PAID_IN_LIQ_DAMA":	0,
 				"BUSINESS_TYPE":	"",
 				"BUSINESS_STATE_TYPE":	"",
+				"ROLL_OPERATOR_DID":	"",
+				"ROLL_ACCOUNT_DATE":	0,
+				"ROLL_ACCOUNT_TIME":	0,
+				"SETTLE_OPERATOR_DID":	"",
+				"SETTLE_ACCOUNT_DATE":	0,
+				"SETTLE_ACCOUNT_TIME":	0,
 				"BUS_OPERATOR_DID":	"",
 				"OPERATION_DATE":	0,
 				"SERIAL_DID":	"",
@@ -99,13 +121,33 @@
 | USER_CUS_DID |  是  | String   | 用户内部ID |  
 | USER_ACCOUNT_AID |  是  | String   | 用户账户ID |  
 | CASH_TRANSFER_TYPE |  是  | String   | 现金转账类型 |  
+| BILL_DID |  是  | String   | 票据序号 |  
+| BILL_NUM_INFO |  是  | String   | 票据号码 |  
+| BILL_AMOUNT |  是  | Number   | 票据金额 |  
+| DRAWER |  是  | String   | 出票人 |  
+| RECEIPT_DATE |  是  | Number   | 接票日期 |  
+| PROMISE_DATE |  是  | Number   | 承兑日期 |  
+| ARRIVAL_DATE |  是  | Number   | 到达日期 |  
+| BILL_STATE_TYPE |  是  | String   | 票据状态类型 |  
+| DRAW_BANK_ACC_INFO |  是  | String   | 出票银行账号-针对票据缴费 |  
+| DRAW_BANK_NAME |  是  | String   | 出票银行名称 |  
+| RECE_BANK_ACC_INFO |  是  | String   | 收款银行账号-针对POS机缴费、银行托收、现金进账等 |  
+| BANK_NAME |  是  | String   | 开户行名称 |  
+| BANK_ACC_NAME |  是  | String   | 收付款人名称 |  
 | NETWORK_TYPE |  是  | String   | 服务类型 |  
 | ACCOUNT_MONTH |  是  | Number   | 帐务月份 |  
+| SETTLE_ACCOUNT_MONTH |  是  | Number   | 结账月份 |  
 | PAID_IN_AMOUNT |  是  | Number   | 实收金额 |  
-| PAID_IN_LIQ_DAMA |  是  | Number   | 实收违约金 |  
 | DEPOST_ADVANCE_PAY |  是  | Number   | 存入预付款 |  
+| PAID_IN_LIQ_DAMA |  是  | Number   | 实收违约金 |  
 | BUSINESS_TYPE |  是  | String   | 账务业务类型 |  
 | BUSINESS_STATE_TYPE |  是  | String   | 账务业务状态类型 |  
+| ROLL_OPERATOR_DID |  是  | String   | 轧账操作员号 |  
+| ROLL_ACCOUNT_DATE |  是  | Number   | 轧帐日期 |  
+| ROLL_ACCOUNT_TIME |  是  | Number   | 轧账时间 |  
+| SETTLE_OPERATOR_DID |  是  | String   | 结账操作员号 |  
+| SETTLE_ACCOUNT_DATE |  是  | Number   | 结账日期 |  
+| SETTLE_ACCOUNT_TIME |  是  | Number   | 结账时间 |  
 | BUS_OPERATOR_DID |  是  | String   | 业务操作员号 |  
 | OPERATION_DATE |  是  | Number   | 操作日期 |  
 | SERIAL_DID |  是  | String   | 业务流水号 |  
