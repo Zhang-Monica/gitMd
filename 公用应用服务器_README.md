@@ -6,4 +6,5 @@
 | 账户信息应用服务 | v1 | [CommAccountServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisComm/CommAccountServer_README.md) |  
 | 账户绑定授权应用服务 | v1 | [CommBindServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisComm/CommBindServer_README.md) |  
 | 公共代码应用服务 | v1 | [CommCODEServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisComm/CommCODEServer_README.md) |  
+| 公用查询服务 | v1 | [CommSearchServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisComm/CommSearchServer_README.md) |  
   

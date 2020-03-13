@@ -6,4 +6,5 @@
 | 实名激活核定应用服务 | v1 | [PlatApproveServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatApproveServer_README.md) |  
 | 数据初始化 | v1 | [PlatDataInitServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatDataInitServer_README.md) |  
 | 渠道及渠道服务权限 | v1 | [PlatChannelServiceServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatChannelServiceServer_README.md) |  
+| 平台公共查询 | v1 | [PlatSearchServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatSearchServer_README.md) |  
   

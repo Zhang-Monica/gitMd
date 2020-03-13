@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QuerySupplierActivation)商户激活申请查询  
-接口描述：xxxxx  
-请求说明：POST https://api.epeis.com/Service/v1/QuerySupplierActivation/  
+服务接口：(QueryPlatformRegisters)查询平台操作员  
+接口描述：查询平台工作人员的注册信息  
+请求说明：POST https://api.epeis.com/Service/v1/QueryPlatformRegisters/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,10 +17,10 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SUP_ACCOUNT":	[{
-			"ATTESTATION_TYPE":	"",
-			"SUPPLIER_NAME":	""
-		}]
+	"SYS_REGISTER":	{
+		"MOBILE_PHONE_INFO":	"",
+		"OPERATION_NAME":	""
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -40,14 +40,14 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SUP_ACCOUNT，类型：Array  
+参数：SYS_REGISTER，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
-| SUPPLIER_NAME |  否  | String   | 256 | 0 | 商户姓名 |  
+| MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | 手机号码(支持模糊查询) |  
+| OPERATION_NAME |  否  | String   | 128 | 0 | 操作员名称(支持模糊查询) |  
   
-说明：xxxxx  
+说明：注册账户  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -62,34 +62,13 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"SUP_ACCOUNT":	[{
-				"CERTIFICATES_INFO":	"",
-				"CERTIFICATES_TYPE":	"",
+		"SYS_REGISTER":	[{
+				"REGISTER_DID":	"",
 				"MOBILE_PHONE_INFO":	"",
-				"ATTESTATION_TYPE":	"",
-				"ACC_REGI_DID":	"",
-				"SUPPLIER_DID":	"",
-				"SUPPLIER_NAME":	"",
-				"SUPPLIER_TYPE":	"",
-				"EMAIL_INFO":	"",
-				"OPEN_ACC_DATE":	0,
-				"VALID_START_DATE":	0,
-				"VALID_END_DATE":	0,
-				"ADMIN_CODE_INFO":	"",
-				"ADDRESS":	"",
-				"TAX_TYPE":	"",
-				"TAX_NUMBER_INFO":	"",
-				"TELEPHONE_INFO":	"",
-				"BANK_ACCOUNT_INFO":	"",
-				"BANK_NAME":	"",
-				"ACC_CERT_INFO":	"",
-				"ACC_CERT_TYPE":	"",
-				"AVAIL_BALANCE":	0,
-				"OWE_BALANCE":	0,
-				"OPERATION_DID":	"",
-				"STATE_TYPE":	"",
-				"OPERATION_DATE":	0,
-				"OPERATION_TIME":	0
+				"OPERATION_NAME":	"",
+				"REGISTER_NAME":	"",
+				"SEX_TYPE":	"",
+				"ATTESTATION_TYPE":	""
 			}]
 	}
 }  
@@ -113,39 +92,18 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：SUP_ACCOUNT，类型：Array  
+参数：SYS_REGISTER，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CERTIFICATES_INFO |  是  | String   | xxxxx |  
-| CERTIFICATES_TYPE |  是  | String   | xxxxx |  
-| MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| ACC_REGI_DID |  是  | String   | xxxxx |  
-| SUPPLIER_DID |  是  | String   | xxxxx |  
-| SUPPLIER_NAME |  是  | String   | xxxxx |  
-| SUPPLIER_TYPE |  是  | String   | xxxxx |  
-| EMAIL_INFO |  是  | String   | xxxxx |  
-| OPEN_ACC_DATE |  是  | Number   | xxxxx |  
-| VALID_START_DATE |  是  | Number   | xxxxx |  
-| VALID_END_DATE |  是  | Number   | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| TAX_TYPE |  是  | String   | xxxxx |  
-| TAX_NUMBER_INFO |  是  | String   | xxxxx |  
-| TELEPHONE_INFO |  是  | String   | xxxxx |  
-| BANK_ACCOUNT_INFO |  是  | String   | xxxxx |  
-| BANK_NAME |  是  | String   | xxxxx |  
-| ACC_CERT_INFO |  是  | String   | xxxxx |  
-| ACC_CERT_TYPE |  是  | String   | xxxxx |  
-| AVAIL_BALANCE |  是  | Number   | xxxxx |  
-| OWE_BALANCE |  是  | Number   | xxxxx |  
-| OPERATION_DID |  是  | String   | xxxxx |  
-| STATE_TYPE |  是  | String   | xxxxx |  
-| OPERATION_DATE |  是  | Number   | xxxxx |  
-| OPERATION_TIME |  是  | Number   | xxxxx |  
+| REGISTER_DID |  是  | String   | 注册ID |  
+| MOBILE_PHONE_INFO |  是  | String   | 手机号码 |  
+| OPERATION_NAME |  是  | String   | 操作员名称 |  
+| REGISTER_NAME |  是  | String   | 注册名称 |  
+| SEX_TYPE |  是  | String   | 性别 |  
+| ATTESTATION_TYPE |  是  | String   | 认证类型 |  
   
-说明：xxxxx  
+说明：注册账户  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  

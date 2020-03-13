@@ -14,6 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_PACK":	{
+		"RETAIL_CO_DID":	"",
 		"CHARGE_PACK_TYPE":	"",
 		"CHARGE_PACK_NAME":	"",
 		"PACK_REMARK":	"",
@@ -45,6 +46,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| RETAIL_CO_DID |  否  | String   | 16 | 0 | 销售公司编码 |  
 | CHARGE_PACK_TYPE |  是  | String   | 2 | 0 | 1-经济套餐，2-特惠套餐，3-低保套餐 |  
 | CHARGE_PACK_NAME |  是  | String   | 64 | 0 | 套餐名称 |  
 | PACK_REMARK |  否  | String   | 1024 | 0 | 套餐备注说明 |  

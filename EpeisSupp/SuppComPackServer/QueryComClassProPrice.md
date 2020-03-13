@@ -18,6 +18,7 @@
 		"PAGE_ROWS":	8
 	},
 	"COM_PRO_PRICE":	{
+		"RETAIL_CO_DID":	"",
 		"CHARGE_PACK_DID":	"",
 		"ACCOUNT_ITEM_INFO":	"",
 		"NETWORK_TYPE":	""
@@ -45,6 +46,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| RETAIL_CO_DID |  否  | String   | 16 | 0 | 销售公司编码 |  
 | CHARGE_PACK_DID |  否  | String   | 16 | 0 | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  否  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  否  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
@@ -65,6 +67,7 @@
 			"TOTAL":	1000
 		},
 		"COM_PRO_PRICE":	{
+			"RETAIL_CO_DID":	"",
 			"CHARGE_PACK_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
@@ -114,6 +117,7 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
+| RETAIL_CO_DID |  否  | String   | 销售公司编码 |  
 | CHARGE_PACK_DID |  否  | String   | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  否  | String   | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  否  | Number   | 分类项目主编号 |  
