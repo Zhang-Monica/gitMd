@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryComChargePack)查询计费套餐  
+服务接口：(QueryComChargePackPla)查询计费套餐  
 接口描述：查询计费套餐  
-请求说明：POST https://api.epeis.com/Service/v1/QueryComChargePack/  
+请求说明：POST https://api.epeis.com/Service/v1/QueryComChargePackPla/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -18,6 +18,7 @@
 		"PAGE_ROWS":	8
 	},
 	"COM_PACK":	{
+		"RETAIL_CO_DID":	"",
 		"CHARGE_PACK_DID":	"",
 		"CHARGE_PACK_TYPE":	"",
 		"NETWORK_TYPE":	""
@@ -45,6 +46,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| RETAIL_CO_DID |  是  | String   | 16 | 0 | 销售公司编码 |  
 | CHARGE_PACK_DID |  否  | String   | 16 | 0 | 计费套餐号 |  
 | CHARGE_PACK_TYPE |  否  | String   | 2 | 0 | 1-经济套餐，2-特惠套餐，3-低保套餐 |  
 | NETWORK_TYPE |  否  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
@@ -65,6 +67,7 @@
 			"TOTAL":	1000
 		},
 		"COM_PACK":	[{
+				"RETAIL_CO_DID":	"",
 				"CHARGE_PACK_DID":	"",
 				"CHARGE_PACK_TYPE":	"",
 				"CHARGE_PACK_NAME":	"",
@@ -112,6 +115,7 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
+| RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
 | CHARGE_PACK_DID |  是  | String   | 计费套餐号 |  
 | CHARGE_PACK_TYPE |  是  | String   | 1-经济套餐，2-特惠套餐，3-低保套餐 |  
 | CHARGE_PACK_NAME |  是  | String   | 套餐名称 |  

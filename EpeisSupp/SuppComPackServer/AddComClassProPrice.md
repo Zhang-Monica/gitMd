@@ -14,7 +14,6 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_PRO_PRICE":	[{
-			"RETAIL_CO_DID":	"",
 			"CHARGE_PACK_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
@@ -52,7 +51,6 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  否  | String   | 16 | 0 | 销售公司编码 |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  

@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryComChargePack)查询计费套餐  
-接口描述：查询计费套餐  
-请求说明：POST https://api.epeis.com/Service/v1/QueryComChargePack/  
+服务接口：(QueryComClassProPricePla)查询分类项目单价  
+接口描述：查询分类项目单价  
+请求说明：POST https://api.epeis.com/Service/v1/QueryComClassProPricePla/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,9 +17,10 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"COM_PACK":	{
+	"COM_PRO_PRICE":	{
+		"RETAIL_CO_DID":	"",
 		"CHARGE_PACK_DID":	"",
-		"CHARGE_PACK_TYPE":	"",
+		"ACCOUNT_ITEM_INFO":	"",
 		"NETWORK_TYPE":	""
 	}
 }  
@@ -41,15 +42,16 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：COM_PACK，类型：object  
+参数：COM_PRO_PRICE，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| RETAIL_CO_DID |  是  | String   | 16 | 0 | 销售公司编码 |  
 | CHARGE_PACK_DID |  否  | String   | 16 | 0 | 计费套餐号 |  
-| CHARGE_PACK_TYPE |  否  | String   | 2 | 0 | 1-经济套餐，2-特惠套餐，3-低保套餐 |  
+| ACCOUNT_ITEM_INFO |  否  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  否  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
   
-说明：计费套餐  
+说明：分类项目单价  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -64,27 +66,30 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"COM_PACK":	[{
-				"CHARGE_PACK_DID":	"",
-				"CHARGE_PACK_TYPE":	"",
-				"CHARGE_PACK_NAME":	"",
-				"PACK_REMARK":	"",
-				"ACCOUNT_ITEM_INFO":	"",
-				"NETWORK_TYPE":	"",
-				"PURCHASE_SALE_TYPE":	"",
-				"BASIC_FEES_TYPE":	"",
-				"RESIDENT_YESNO":	"",
-				"COMP_DEVIATION_YESNO":	"",
-				"ABUND_WITHER_YESNO":	"",
-				"AGREE_PRICE_YESNO":	"",
-				"TIME_FEES_TYPE":	"",
-				"LADDER_TYPE":	"",
-				"LADDER_NUM_TYPE":	"",
-				"EXIST_PRICE_YESNO":	"",
-				"CHARGE_POPULATION":	0,
-				"STARTUP_DATE":	0,
-				"OUTAGE_DATE":	0
-			}]
+		"COM_PRO_PRICE":	{
+			"RETAIL_CO_DID":	"",
+			"CHARGE_PACK_DID":	"",
+			"ACCOUNT_ITEM_INFO":	"",
+			"CAT_ITEM_MAIN_NUM":	0,
+			"CAT_ITEM_ATTACH_NUM":	0,
+			"CAT_ITEM_PRICE":	0,
+			"PRICE_UNIT_NAME":	"",
+			"ADMIN_CODE_INFO":	"",
+			"NETWORK_TYPE":	"",
+			"PURCHASE_SALE_TYPE":	"",
+			"BASIC_FEES_TYPE":	"",
+			"RESIDENT_YESNO":	"",
+			"AGREE_PRICE_YESNO":	"",
+			"ABUNDANCE_TYPE":	"",
+			"TIME_FEES_TYPE":	"",
+			"TIME_SHARING_TYPE":	"",
+			"LADDER_TYPE":	"",
+			"LADDER_LEVEL_TYPE":	"",
+			"LADDER_UPPER_LIMIT":	0,
+			"LADDER_LOWER_LIMIT":	0,
+			"STARTUP_DATE":	0,
+			"OUTAGE_DATE":	0
+		}
 	}
 }  
 ~~~  
@@ -107,31 +112,34 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：COM_PACK，类型：Array  
+参数：COM_PRO_PRICE，类型：object  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CHARGE_PACK_DID |  是  | String   | 计费套餐号 |  
-| CHARGE_PACK_TYPE |  是  | String   | 1-经济套餐，2-特惠套餐，3-低保套餐 |  
-| CHARGE_PACK_NAME |  是  | String   | 套餐名称 |  
-| PACK_REMARK |  是  | String   | 套餐备注说明 |  
-| ACCOUNT_ITEM_INFO |  是  | String   | 会计科目编码 |  
-| NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| PURCHASE_SALE_TYPE |  是  | String   | 1-直供,2-购入,3-趸售 |  
-| BASIC_FEES_TYPE |  是  | String   | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
-| RESIDENT_YESNO |  是  | String   | 是否居民：1-否，2-是 |  
-| COMP_DEVIATION_YESNO |  是  | String   | 是否计算核定偏差：1-否，2-是 |  
-| ABUND_WITHER_YESNO |  是  | String   | 是否分枯：1-否，2-是 |  
-| AGREE_PRICE_YESNO |  是  | String   | 是否协议价：1-否，2-是 |  
-| TIME_FEES_TYPE |  是  | String   | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
-| LADDER_TYPE |  是  | String   | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
-| LADDER_NUM_TYPE |  是  | String   | 阶梯数：1-1阶，2-2阶，3-3阶，4-4阶，5-5阶 |  
-| EXIST_PRICE_YESNO |  是  | String   | 是否存在单价：1-否，2-是 |  
-| CHARGE_POPULATION |  是  | Number   | 计费人口数 |  
-| STARTUP_DATE |  是  | Number   | 启用日期 |  
-| OUTAGE_DATE |  是  | Number   | 停用日期 |  
+| RETAIL_CO_DID |  否  | String   | 销售公司编码 |  
+| CHARGE_PACK_DID |  否  | String   | 计费套餐号 |  
+| ACCOUNT_ITEM_INFO |  否  | String   | 会计科目编码 |  
+| CAT_ITEM_MAIN_NUM |  否  | Number   | 分类项目主编号 |  
+| CAT_ITEM_ATTACH_NUM |  否  | Number   | 分类项目附编号 |  
+| CAT_ITEM_PRICE |  否  | Number   | 分类项目单价 |  
+| PRICE_UNIT_NAME |  否  | String   | 价格单位名称 |  
+| ADMIN_CODE_INFO |  否  | String   | 行政区划 |  
+| NETWORK_TYPE |  否  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
+| PURCHASE_SALE_TYPE |  否  | String   | 购售类型 |  
+| BASIC_FEES_TYPE |  否  | String   | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
+| RESIDENT_YESNO |  否  | String   | 是否居民：1-否，2-是 |  
+| AGREE_PRICE_YESNO |  否  | String   | 是否协议价：1-否，2-是 |  
+| ABUNDANCE_TYPE |  否  | String   | 丰枯类型 |  
+| TIME_FEES_TYPE |  否  | String   | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
+| TIME_SHARING_TYPE |  否  | String   | 分时时段类型：1-不分段,2-峰,3-平,4-谷,5-尖峰,6-低谷 |  
+| LADDER_TYPE |  否  | String   | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| LADDER_LEVEL_TYPE |  否  | String   | 阶梯级次：1-一阶梯，2-二阶梯，3-三阶梯，4-四阶梯，5-五阶梯 |  
+| LADDER_UPPER_LIMIT |  否  | Number   | 阶梯上限值 |  
+| LADDER_LOWER_LIMIT |  否  | Number   | 阶梯下限值 |  
+| STARTUP_DATE |  否  | Number   | 启用日期 |  
+| OUTAGE_DATE |  否  | Number   | 停用日期 |  
   
-说明：计费套餐  
+说明：分类项目单价  
 ## 4、服务接口说明  
 说明：无  

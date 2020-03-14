@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(UpdateComClassProPrice)修改分类项目单价  
-接口描述：修改分类项目单价  
-请求说明：POST https://api.epeis.com/Service/v1/UpdateComClassProPrice/  
+服务接口：(CancleComClassProPricePla)删除或停用分类项目单价  
+接口描述：删除或停用分类项目单价  
+请求说明：POST https://api.epeis.com/Service/v1/CancleComClassProPricePla/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -14,12 +14,11 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_PRO_PRICE":	[{
+			"RETAIL_CO_DID":	"",
 			"CHARGE_PACK_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
 			"CAT_ITEM_ATTACH_NUM":	0,
-			"CAT_ITEM_PRICE":	0,
-			"PRICE_UNIT_NAME":	"",
 			"NETWORK_TYPE":	"",
 			"PURCHASE_SALE_TYPE":	"",
 			"BASIC_FEES_TYPE":	"",
@@ -30,10 +29,7 @@
 			"TIME_SHARING_TYPE":	"",
 			"LADDER_TYPE":	"",
 			"LADDER_LEVEL_TYPE":	"",
-			"LADDER_UPPER_LIMIT":	0,
-			"LADDER_LOWER_LIMIT":	0,
-			"STARTUP_DATE":	0,
-			"OUTAGE_DATE":	0
+			"STARTUP_DATE":	0
 		}]
 }  
 ~~~  
@@ -51,26 +47,22 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| RETAIL_CO_DID |  是  | String   | 16 | 0 | 销售公司编码 |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
 | CAT_ITEM_ATTACH_NUM |  是  | Number   | 10 | 0 | 分类项目附编号 |  
-| CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
-| PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | PURCHASE_SALE_TYPE |  是  | String   | 2 | 0 | 购售类型 |  
-| BASIC_FEES_TYPE |  否  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
+| BASIC_FEES_TYPE |  是  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
 | RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民：1-否，2-是 |  
 | AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
 | ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
 | TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型：1-不分段,2-峰,3-平,4-谷,5-尖峰,6-低谷 |  
 | LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
-| LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次：1-一阶梯，2-二阶梯，3-三阶梯，4-四阶梯，5-五阶梯 |  
-| LADDER_UPPER_LIMIT |  否  | Number   | 10 | 0 | 阶梯上限值 |  
-| LADDER_LOWER_LIMIT |  否  | Number   | 10 | 0 | 阶梯下限值 |  
+| LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次：1-无阶梯，2-二阶梯，3-三阶梯，4-四阶梯，5-五阶梯 |  
 | STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
-| OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
   
 说明：分类项目单价  
   

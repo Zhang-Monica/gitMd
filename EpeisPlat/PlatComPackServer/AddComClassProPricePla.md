@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(UpdateComClassProPrice)修改分类项目单价  
-接口描述：修改分类项目单价  
-请求说明：POST https://api.epeis.com/Service/v1/UpdateComClassProPrice/  
+服务接口：(AddComClassProPricePla)添加分类项目单价  
+接口描述：添加分类项目单价  
+请求说明：POST https://api.epeis.com/Service/v1/AddComClassProPricePla/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -14,6 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_PRO_PRICE":	[{
+			"RETAIL_CO_DID":	"",
 			"CHARGE_PACK_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
@@ -51,6 +52,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| RETAIL_CO_DID |  是  | String   | 16 | 0 | 销售公司编码 |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  

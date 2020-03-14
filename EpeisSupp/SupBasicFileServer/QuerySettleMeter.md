@@ -65,6 +65,7 @@
 	"DATA":	{
 		"INOUT_SETTLE_METER":	[{
 				"DEVICE_DID":	"",
+				"BUSINESS_HALL_AID":	"",
 				"DEVICE_FACTORY_INFO":	"",
 				"NETWORK_TYPE":	"",
 				"DEVICE_TYPE":	"",
@@ -96,6 +97,7 @@
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
 | DEVICE_DID |  是  | String   | 装置ID |  
+| BUSINESS_HALL_AID |  是  | String   | 商户营业网点ID |  
 | DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | DEVICE_TYPE |  是  | String   | 装置类型：1-热水表；2-冷水表；3-燃气表；4-流量计；5-电能表；6-热量表；7-电压互感器；8-电流互感器 |  
@@ -108,6 +110,6 @@
 | QUANTITY_UNIT_TYPE |  是  | String   | 量值单位类型 |  
 | INSTALL_TYPE |  是  | String   | 安装类型：1-未安装；2-已安装；3-运行中 |  
   
-说明：修改结算计量仪表  
+说明：查询结算计量仪表  
 ## 4、服务接口说明  
 说明：无  
