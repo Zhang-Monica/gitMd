@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(PlatQuerySupplierStores)查询营业网点  
-接口描述：查询营业网点  
-请求说明：POST https://api.epeis.com/Service/v1/PlatQuerySupplierStores/  
+服务接口：(PlatQueryBankAccount)查询商户银行账户  
+接口描述：查询商户银行账户  
+请求说明：POST https://api.epeis.com/Service/v1/PlatQueryBankAccount/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,9 +17,11 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"SUP_STORES":	{
-		"BUSINESS_HALL_AID":	"",
-		"BUSINESS_HALL_NAME":	""
+	"SUP_BANK_ACCOUNT":	{
+		"BANK_ACCOUNT_INFO":	"",
+		"BANK_ACC_TYPE":	"",
+		"BANK_ACC_NAME":	"",
+		"BANK_NAME":	""
 	}
 }  
 ~~~  
@@ -40,14 +42,16 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：SUP_STORES，类型：object  
+参数：SUP_BANK_ACCOUNT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BUSINESS_HALL_AID |  否  | String   | 16 | 0 | 营业网点ID |  
-| BUSINESS_HALL_NAME |  否  | String   | 128 | 0 | 营业网点名称 |  
+| BANK_ACCOUNT_INFO |  否  | String   | 30 | 0 | 30个字符，银行账号 |  
+| BANK_ACC_TYPE |  否  | String   | 2 | 0 | 1-基本户,2-存款户 |  
+| BANK_ACC_NAME |  否  | String   | 256 | 0 | 256个字符，收付款人名称 |  
+| BANK_NAME |  否  | String   | 256 | 0 | 256个字符，开户行名称 |  
   
-说明：商户营业网点  
+说明：商户银行账户  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -62,12 +66,12 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"SUP_STORES":	[{
+		"SUP_BANK_ACCOUNT":	[{
 				"SUPPLIER_DID":	"",
-				"BUSINESS_HALL_AID":	"",
-				"BUSINESS_HALL_NAME":	"",
-				"ADMIN_CODE_INFO":	"",
-				"ADDRESS":	""
+				"BANK_ACCOUNT_INFO":	"",
+				"BANK_ACC_TYPE":	"",
+				"BANK_ACC_NAME":	"",
+				"BANK_NAME":	""
 			}]
 	}
 }  
@@ -91,17 +95,17 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：SUP_STORES，类型：Array  
+参数：SUP_BANK_ACCOUNT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SUPPLIER_DID |  是  | String   | 商户ID |  
-| BUSINESS_HALL_AID |  是  | String   | 营业网点ID |  
-| BUSINESS_HALL_NAME |  是  | String   | 营业网点名称 |  
-| ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
-| ADDRESS |  是  | String   | ADDRESS |  
+| SUPPLIER_DID |  是  | String   | 16个字符，商户ID |  
+| BANK_ACCOUNT_INFO |  是  | String   | 30个字符银行账号 |  
+| BANK_ACC_TYPE |  是  | String   | 1-基本户,2-存款户 |  
+| BANK_ACC_NAME |  是  | String   | 256个字符，收付款人名称 |  
+| BANK_NAME |  是  | String   | 256个字符，开户行名称 |  
   
-说明：商户营业网点  
+说明：商户银行账户  
 ## 4、服务接口说明  
 说明：无  

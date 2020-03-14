@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryComMeterage)查询计费计量点信息  
-接口描述：查询计费计量点信息  
-请求说明：POST https://api.epeis.com/Service/v1/QueryComMeterage/  
+服务接口：(PlatQuerySupplierBook)查询抄表区段  
+接口描述：查询抄表区段  
+请求说明：POST https://api.epeis.com/Service/v1/PlatQuerySupplierBook/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,11 +17,14 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"COM_METERAGE":	{
-		"CUSTOMER_DID":	"",
-		"USER_ACCOUNT_AID":	"",
-		"BOOK_AID":	"",
-		"METER_YESNO":	""
+	"SUP_BOOK":	{
+		"OPERATION_DID":	"",
+		"NETWORK_TYPE":	"",
+		"READ_PERIOD_TYPE":	"",
+		"BUSINESS_HALL_AID":	"",
+		"BOOK_NAME":	"",
+		"ADMIN_CODE_INFO":	"",
+		"METER_READER_DID":	""
 	}
 }  
 ~~~  
@@ -42,16 +45,19 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：COM_METERAGE，类型：object  
+参数：SUP_BOOK，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  否  | String   | 16 | 0 | 16个字符，客户编号 |  
-| USER_ACCOUNT_AID |  否  | String   | 16 | 0 | 16个字符，用户账户ID |  
-| BOOK_AID |  否  | String   | 16 | 0 | 16个字符，区段编号 |  
-| METER_YESNO |  否  | String   | 2 | 0 | 是否有表：1-否，2-是 |  
+| OPERATION_DID |  是  | String   | 16 | 0 | 商户ID |  
+| NETWORK_TYPE |  否  | String   | 2 | 0 | 管网类型 |  
+| READ_PERIOD_TYPE |  否  | String   | 2 | 0 | 抄表周期类型 |  
+| BUSINESS_HALL_AID |  否  | String   | 16 | 0 | 商户营业网点ID |  
+| BOOK_NAME |  否  | String   | 128 | 0 | 抄表区段名称 |  
+| ADMIN_CODE_INFO |  否  | String   | 20 | 0 | 行政区划 |  
+| METER_READER_DID |  否  | String   | 16 | 0 | 抄表员 |  
   
-说明：计量点信息  
+说明：商户抄表本  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -66,24 +72,15 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"COM_METERAGE":	[{
-				"SETTLEMENT_AID":	"",
-				"ADDRESS":	"",
-				"DEVICE_DID":	"",
-				"NORMAL_RETRO_TYPE":	"",
-				"NETWORK_TYPE":	"",
+		"SUP_BOOK":	[{
 				"BOOK_AID":	"",
-				"CUSTOMER_DID":	"",
-				"USER_CUS_DID":	"",
-				"USER_ACCOUNT_AID":	"",
-				"METER_YESNO":	"",
-				"MAIN_PACK_DID":	"",
-				"STOP_EMPTY_YESNO":	"",
-				"BASIC_FEES_TYPE":	"",
-				"METER_DEMAND_RATE":	0,
-				"ABUND_WITHER_YESNO":	"",
-				"TIME_FEES_TYPE":	"",
-				"LADDER_TYPE":	""
+				"NETWORK_TYPE":	"",
+				"READ_PERIOD_TYPE":	"",
+				"BUSINESS_HALL_AID":	"",
+				"BOOK_NAME":	"",
+				"ADMIN_CODE_INFO":	"",
+				"MANAGER_DID":	"",
+				"METER_READER_DID":	""
 			}]
 	}
 }  
@@ -107,29 +104,20 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：COM_METERAGE，类型：Array  
+参数：SUP_BOOK，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16个字符,结算户编号 |  
-| ADDRESS |  是  | String   | 128个字符，详细地址 |  
-| DEVICE_DID |  是  | String   | 装置ID |  
-| NORMAL_RETRO_TYPE |  是  | String   | 周期性类型:1-周期,2-非周期 |  
-| NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| BOOK_AID |  是  | String   | 16个字符，区段编号 |  
-| CUSTOMER_DID |  是  | String   | 16个字符，客户编号 |  
-| USER_CUS_DID |  是  | String   | 16个字符，用户内部ID |  
-| USER_ACCOUNT_AID |  是  | String   | 16个字符，用户账户ID |  
-| METER_YESNO |  是  | String   | 是否有表：1-否，2-是 |  
-| MAIN_PACK_DID |  是  | String   | 主套餐号 |  
-| STOP_EMPTY_YESNO |  是  | String   | 是否停/空：1-否，2-是 |  
-| BASIC_FEES_TYPE |  是  | String   | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
-| METER_DEMAND_RATE |  是  | Number   | 计费表计需量倍率 |  
-| ABUND_WITHER_YESNO |  是  | String   | 是否丰枯：1-否，2-是 |  
-| TIME_FEES_TYPE |  是  | String   | 分时计费类型：1-不分时，2-2分时,3-3分时,4-4分时,5-5分时 |  
-| LADDER_TYPE |  是  | String   | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| BOOK_AID |  是  | String   | 抄表区段编号 |  
+| NETWORK_TYPE |  是  | String   | 管网类型 |  
+| READ_PERIOD_TYPE |  是  | String   | 抄表周期类型 |  
+| BUSINESS_HALL_AID |  是  | String   | 商户营业网点ID |  
+| BOOK_NAME |  是  | String   | 抄表区段名称 |  
+| ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
+| MANAGER_DID |  是  | String   | 经理 |  
+| METER_READER_DID |  是  | String   | 抄表员 |  
   
-说明：计量点信息  
+说明：商户抄表本  
 ## 4、服务接口说明  
 说明：无  
