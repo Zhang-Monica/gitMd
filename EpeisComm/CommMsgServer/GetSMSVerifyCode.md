@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(GetSMSVerifyCode)获取动态验证码  
-接口描述：xxxxx  
+接口描述：根据不同的情况调用获取验证码  
 请求说明：POST https://api.epeis.com/Service/v1/GetSMSVerifyCode/  
   
 ## 2、服务接口请求参数  
@@ -32,11 +32,11 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| OBJECT_INFO |  否  | String   | 64 | 0 | xxxxx |  
-| OBJECT_TYPE |  否  | String   | 2 | 0 | xxxxx |  
-| REGISTER_INFO |  否  | String   | 64 | 0 | xxxxx |  
-| REGISTER_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| INPUT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
+| OBJECT_INFO |  否  | String   | 64 | 0 | INPUT_YESNO传1时必传，根据OBJECT_TYPE传入该类型的账户ID |  
+| OBJECT_TYPE |  否  | String   | 2 | 0 | INPUT_YESNO传1时必传，账户注册类型：1-商户账户；2-客户账户；3-平台账户；4-注册账户；5-渠道账户 |  
+| REGISTER_INFO |  否  | String   | 64 | 0 | INPUT_YESNO传2是必传，输入预留手机、邮箱等 |  
+| REGISTER_TYPE |  是  | String   | 2 | 0 | 注册类型：1-手机；2-邮箱；3-QQ；4-支付宝；5-微信 |  
+| INPUT_YESNO |  是  | String   | 2 | 0 | 是否直接输入手机、邮箱等：1-否；2-是 |  
   
 说明：xxxxx  
   
@@ -69,9 +69,9 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| REGISTER_INFO |  是  | String   | xxxxx |  
-| VERIFY_CODE |  是  | String   | xxxxx |  
+| REGISTER_INFO |  是  | String   | 获取验证码的手机、邮箱等 |  
+| VERIFY_CODE |  是  | String   | 验证码 |  
   
-说明：xxxxx  
+说明：验证码信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：有账户ID时传入OBJECT_INFO、OBJECT_TYPE获取验证码，没有账户ID时直接传入手机号、邮箱等获取验证码  

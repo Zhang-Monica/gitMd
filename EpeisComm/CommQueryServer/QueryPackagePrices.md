@@ -95,7 +95,7 @@
 | NETWORK_CO_DID |  是  | String   | 管网公司编码 |  
 | RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 会计科目编码 |  
-| RETAIL_VOLTAGE_GRADE_TYPE |  是  | String   | 配送等级范围 |  
+| RETAIL_VOLTAGE_GRADE_TYPE |  是  | String   | 零售等级范围 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 分类项目主编号 |  
 | CAT_ITEM_ATTACH_NUM |  是  | Number   | 分类项目附编号 |  
 | CAT_ITEM_NAME |  是  | String   | 分类项目名称 |  

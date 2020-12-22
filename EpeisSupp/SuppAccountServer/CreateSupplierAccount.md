@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(CreateSupplierAccount)商户账户开户  
-接口描述：xxxxx  
+接口描述：商户账户开户  
 请求说明：POST https://api.epeis.com/Service/v1/CreateSupplierAccount/  
   
 ## 2、服务接口请求参数  
@@ -21,6 +21,7 @@
 			"ADDRESS":	"",
 			"SUPPLIER_TYPE":	"",
 			"TAX_NUMBER_INFO":	"",
+			"LEVY_TYPE":	"",
 			"TELEPHONE_INFO":	"",
 			"BANK_ACCOUNT_INFO":	"",
 			"BANK_NAME":	"",
@@ -42,21 +43,22 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ACC_CERT_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| ACC_CERT_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| ACCOUNT_PASSWORD |  是  | String   | 128 | 0 | xxxxx |  
-| SUPPLIER_NAME |  是  | String   | 256 | 0 | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
-| SUPPLIER_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | xxxxx |  
-| TELEPHONE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | xxxxx |  
-| BANK_NAME |  是  | String   | 256 | 0 | xxxxx |  
-| EMAIL_INFO |  否  | String   | 30 | 0 | xxxxx |  
-| VERIFY_CODE |  是  | String   | 20 | 0 | xxxxx |  
+| ACC_CERT_INFO |  是  | String   | 20 | 0 | 账户证件号码 |  
+| ACC_CERT_TYPE |  是  | String   | 2 | 0 | 账户证件类型:1-身份证；2-统一社会信用代码 |  
+| ACCOUNT_PASSWORD |  是  | String   | 128 | 0 | 账户密码 |  
+| SUPPLIER_NAME |  是  | String   | 256 | 0 | 商户名称 |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
+| ADDRESS |  是  | String   | 128 | 0 | 详细地址 |  
+| SUPPLIER_TYPE |  是  | String   | 2 | 0 | 商户账户类型:1-自然人；2-非自然人 |  
+| TAX_NUMBER_INFO |  是  | String   | 30 | 0 | 纳税识别号 |  
+| LEVY_TYPE |  否  | String   | 2 | 0 | 征收类型:1-正常；2-简易征收；3-免税 |  
+| TELEPHONE_INFO |  是  | String   | 20 | 0 | 固定电话 |  
+| BANK_ACCOUNT_INFO |  是  | String   | 30 | 0 | 银行账号 |  
+| BANK_NAME |  是  | String   | 256 | 0 | 开户行名称 |  
+| EMAIL_INFO |  否  | String   | 30 | 0 | 邮箱 |  
+| VERIFY_CODE |  是  | String   | 20 | 0 | 验证码 |  
   
-说明：xxxxx  
+说明：商户账户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -88,10 +90,10 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SUPPLIER_DID |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
-| SUPPLIER_NAME |  是  | String   | xxxxx |  
+| SUPPLIER_DID |  是  | String   | 商户ID |  
+| ATTESTATION_TYPE |  是  | String   | 认证类型:1-未认证；2-审核中；3-已认证 |  
+| SUPPLIER_NAME |  是  | String   | 商户名称 |  
   
-说明：xxxxx  
+说明：商户账户  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：无  
