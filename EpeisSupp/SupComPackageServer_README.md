@@ -2,6 +2,7 @@
 | 服务接口名称 | 版本号 | 说明文档链接 |  
 | :----------------- | :-----: | :---------------- |  
 | 管网公司删除计费套餐 | v1 | [CancelComPackage.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComPackageServer/CancelComPackage.md) |  
+| 管网公司查询审核套餐 | v1 | [QueryCheckComPackage.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComPackageServer/QueryCheckComPackage.md) |  
 | 管网公司审核套餐配送价 | v1 | [CheckComPackage.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComPackageServer/CheckComPackage.md) |  
 | 管网公司删除套餐营业网点 | v1 | [DeleteComPackStores.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComPackageServer/DeleteComPackStores.md) |  
 | 管网公司新增套餐营业网点 | v1 | [AddComPackStores.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComPackageServer/AddComPackStores.md) |  

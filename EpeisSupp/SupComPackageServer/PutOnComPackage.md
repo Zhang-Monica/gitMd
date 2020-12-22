@@ -14,7 +14,9 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_PACK":	[{
-			"CHARGE_PACK_DID":	""
+			"CHARGE_PACK_DID":	"",
+			"STARTUP_DATE":	0,
+			"OUTAGE_DATE":	0
 		}]
 }  
 ~~~  
@@ -33,6 +35,8 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
+| STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
+| OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
   
 说明：计费套餐  
   

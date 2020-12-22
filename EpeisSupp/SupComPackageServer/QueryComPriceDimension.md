@@ -17,9 +17,10 @@
 		"ACCOUNT_ITEM_INFO":	"",
 		"NETWORK_TYPE":	"",
 		"BASIC_FEES_TYPE":	"",
-		"ABUNDANCE_TYPE":	"",
+		"ABUND_WITHER_YESNO":	"",
 		"TIME_FEES_TYPE":	"",
 		"LADDER_TYPE":	"",
+		"LADDER_NUM_TYPE":	"",
 		"RETAIL_VOLTAGE_GRADE_TYPE":	""
 	}
 }  
@@ -41,9 +42,10 @@
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | BASIC_FEES_TYPE |  否  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费,传非0值查询基本费维度 |  
-| ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型,传非0值查询丰枯维度 |  
+| ABUND_WITHER_YESNO |  否  | String   | 2 | 0 | 是否丰枯,传非0值查询丰枯维度 |  
 | TIME_FEES_TYPE |  否  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时,传非0值查询分时维度 |  
 | LADDER_TYPE |  否  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯,传非0值查询阶梯维度 |  
+| LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数量：2-2阶梯，3-3阶梯，4-4阶梯，5-5阶梯,传非0值查询阶梯数量维度 |  
 | RETAIL_VOLTAGE_GRADE_TYPE |  否  | String   | 2 | 0 | 零售等级范围,传非0值查询配送等级维度 |  
   
 说明：计费套餐  
@@ -57,9 +59,10 @@
 	"DATA":	{
 		"COM_PRO_PRICE":	[{
 				"BASIC_FEES_TYPE":	"",
-				"ABUNDANCE_TYPE":	"",
+				"ABUND_WITHER_YESNO":	"",
 				"TIME_FEES_TYPE":	"",
 				"LADDER_TYPE":	"",
+				"LADDER_NUM_TYPE":	"",
 				"RETAIL_VOLTAGE_GRADE_TYPE":	""
 			}]
 	}
@@ -81,9 +84,10 @@
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
 | BASIC_FEES_TYPE |  是  | String   | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
-| ABUNDANCE_TYPE |  是  | String   | 丰枯类型 |  
+| ABUND_WITHER_YESNO |  是  | String   | 是否丰枯 |  
 | TIME_FEES_TYPE |  是  | String   | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | LADDER_TYPE |  是  | String   | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| LADDER_NUM_TYPE |  是  | String   | 阶梯数量：2-2阶梯，3-3阶梯，4-4阶梯，5-5阶梯,传非0值查询阶梯数量维度 |  
 | RETAIL_VOLTAGE_GRADE_TYPE |  是  | String   | 零售等级范围 |  
   
 说明：计费套餐  

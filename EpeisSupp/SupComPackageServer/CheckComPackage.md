@@ -15,11 +15,12 @@
 	},
 	"COM_PACK":	{
 		"CHARGE_PACK_DID":	"",
+		"CHARGE_PACK_TYPE":	"",
 		"PACK_REMARK":	"",
-		"BASIC_FEES_TYPE":	"",
 		"POWERRANGE_YESNO":	"",
 		"POWER_RANGE_TYPE":	"",
-		"DIST_LEVEL_RANGE_TYPE":	""
+		"DIST_LEVEL_RANGE_TYPE":	"",
+		"STATE_TYPE":	""
 	}
 }  
 ~~~  
@@ -38,11 +39,12 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
+| CHARGE_PACK_TYPE |  是  | String   | 2 | 0 | 套餐类型 |  
 | PACK_REMARK |  是  | String   | 1024 | 0 | 套餐备注说明 |  
-| BASIC_FEES_TYPE |  否  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
 | POWERRANGE_YESNO |  否  | String   | 2 | 0 | 是否分功率计价 |  
 | POWER_RANGE_TYPE |  否  | String   | 2 | 0 | 功率范围 |  
 | DIST_LEVEL_RANGE_TYPE |  否  | String   | 2 | 0 | 配送等级范围 |  
+| STATE_TYPE |  是  | String   | 2 | 0 | 是否通过，1-通过，2-不通过 |  
   
 说明：计费套餐  
   
