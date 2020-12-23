@@ -63,7 +63,7 @@
 | POWERRANGE_YESNO |  是  | String   | 2 | 0 | 是否分功率计价 |  
 | POWER_RANGE_TYPE |  否  | String   | 2 | 0 | 功率范围 |  
 | DELIVERY_FEE_TYPE |  是  | String   | 2 | 0 | 配送单价计费类型：1-单一制;2-两部制 |  
-| DIST_LEVEL_RANGE_TYPE |  否  | String   | 2 | 0 | 配送等级范围，非基本价必传 |  
+| DIST_LEVEL_RANGE_TYPE |  是  | String   | 2 | 0 | 配送等级范围 |  
 | TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型 |  
 | TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型 |  
 | LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型 |  

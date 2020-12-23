@@ -13,10 +13,6 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SYS_PAGE":	{
-		"PAGE_NO":	1,
-		"PAGE_ROWS":	8
-	},
 	"COM_PRO_PRICE":	{
 		"ACCOUNT_ITEM_INFO":	"",
 		"NETWORK_TYPE":	""
@@ -32,13 +28,6 @@
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
-  
-参数：SYS_PAGE，类型：object  
-  
-| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
-| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
 参数：COM_PRO_PRICE，类型：object  
   
@@ -56,16 +45,11 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"SYS_PAGE":	{
-			"PAGE_NO":	1,
-			"PAGE_ROWS":	8,
-			"NEXT_YESNO":	"2",
-			"TOTAL":	1000
-		},
-		"COM_PRO_PRICE":	{
+		"INOUT_COM_PRO_PRICE":	{
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
 			"CAT_ITEM_ATTACH_NUM":	0,
+			"CAT_ITEM_NAME":	"",
 			"CAT_ITEM_PRICE":	0,
 			"PRICE_UNIT_NAME":	"",
 			"ADMIN_CODE_INFO":	"",
@@ -89,16 +73,7 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：SYS_PAGE，类型：object  
-  
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| PAGE_NO       |  是  | Number   | 第几页 |  
-| PAGE_ROWS     |  是  | Number   | 每页行数 |  
-| NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
-| TOTAL         |  是  | Number   | 总行数 |  
-  
-参数：COM_PRO_PRICE，类型：object  
+参数：INOUT_COM_PRO_PRICE，类型：object  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
@@ -106,6 +81,7 @@
 | ACCOUNT_ITEM_INFO |  否  | String   | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  否  | Number   | 分类项目主编号 |  
 | CAT_ITEM_ATTACH_NUM |  否  | Number   | 分类项目附编号 |  
+| CAT_ITEM_NAME |  否  | String   | 分类项目名称 |  
 | CAT_ITEM_PRICE |  否  | Number   | 分类项目单价 |  
 | PRICE_UNIT_NAME |  否  | String   | 价格单位名称 |  
 | ADMIN_CODE_INFO |  否  | String   | 行政区划 |  
