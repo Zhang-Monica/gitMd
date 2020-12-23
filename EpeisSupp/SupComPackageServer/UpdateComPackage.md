@@ -15,8 +15,6 @@
 	},
 	"COM_PACK":	[{
 			"CHARGE_PACK_DID":	"",
-			"NET_STORES_AID":	"",
-			"RET_STORES_AID":	"",
 			"CHARGE_PACK_TYPE":	"",
 			"CHARGE_PACK_NAME":	"",
 			"PACK_REMARK":	"",
@@ -59,14 +57,12 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
-| NET_STORES_AID |  是  | String   | 16 | 0 | 管网公司营业网点ID |  
-| RET_STORES_AID |  是  | String   | 16 | 0 | 销售公司营业网点ID |  
 | CHARGE_PACK_TYPE |  是  | String   | 2 | 0 | 1-保底价，2-低保价，3-市场价 |  
 | CHARGE_PACK_NAME |  是  | String   | 64 | 0 | 套餐名称 |  
 | PACK_REMARK |  是  | String   | 1024 | 0 | 套餐备注说明 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| BASIC_FEES_TYPE |  否  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
+| BASIC_FEES_TYPE |  是  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
 | RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民：1-否，2-是 |  
 | COMP_DEVIATION_YESNO |  是  | String   | 2 | 0 | 是否计算核定偏差：1-否，2-是 |  
 | ABUND_WITHER_YESNO |  是  | String   | 2 | 0 | 是否分枯：1-否，2-是 |  
@@ -108,4 +104,4 @@
   
 参数：DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：套餐上架后，可以调整启停日期  
+说明：套餐送审前允许编辑属性；套餐上架后，只可以调整启停日期  
