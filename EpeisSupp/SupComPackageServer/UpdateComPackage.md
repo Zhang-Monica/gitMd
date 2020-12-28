@@ -66,7 +66,7 @@
 | RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民：1-否，2-是 |  
 | COMP_DEVIATION_YESNO |  是  | String   | 2 | 0 | 是否计算核定偏差：1-否，2-是 |  
 | ABUND_WITHER_YESNO |  是  | String   | 2 | 0 | 是否分枯：1-否，2-是 |  
-| AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
+| AGREE_PRICE_YESNO |  否  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
 | HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  
 | TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型：1-不分时,2-2分时,3-3分时,4-4分时,5-5分时 |  
