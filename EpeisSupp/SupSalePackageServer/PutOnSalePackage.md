@@ -17,12 +17,7 @@
 		"CHARGE_PACK_DID":	"",
 		"STARTUP_DATE":	0,
 		"OUTAGE_DATE":	0
-	},
-	"COM_SALES_PACK_TMPMONTH":	[{
-			"CHARGE_PACK_DID":	"",
-			"TMP_MONTHS":	0,
-			"TMP_MONTHS_NAME":	""
-		}]
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -41,18 +36,9 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
-| OUTAGE_DATE |  是  | Number   | 8 | 0 | 停用日期 |  
+| OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
   
 说明：计费套餐  
-参数：COM_SALES_PACK_TMPMONTH，类型：Array  
-  
-| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
-| TMP_MONTHS |  是  | Number   | 4 | 0 | 临时月数 |  
-| TMP_MONTHS_NAME |  是  | String   | 64 | 0 | 临时月数名称 |  
-  
-说明：零售套餐临时月数  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
