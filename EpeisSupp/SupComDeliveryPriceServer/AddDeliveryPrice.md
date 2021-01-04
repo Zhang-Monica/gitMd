@@ -16,7 +16,6 @@
 	"COM_DELIVERY_PRICE":	[{
 			"NETWORK_CO_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
-			"ADMIN_CODE_INFO":	"",
 			"NETWORK_TYPE":	"",
 			"DELIVERY_PRICE_TYPE":	"",
 			"LOSS_RATE":	0,
@@ -56,17 +55,16 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | NETWORK_CO_DID |  是  | String   | 16 | 0 | 管网公司编码 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | DELIVERY_PRICE_TYPE |  是  | String   | 2 | 0 | 配送单价类型：1-保底;2-市场 |  
 | LOSS_RATE |  否  | Number   | 12 | 2 | 线损率 |  
-| POWERRANGE_YESNO |  是  | String   | 2 | 0 | 是否分功率计价 |  
+| POWERRANGE_YESNO |  是  | String   | 2 | 0 | 是否分功率计价；不分功率或者没有功率默认为否 |  
 | POWER_RANGE_TYPE |  否  | String   | 2 | 0 | 功率范围 |  
 | DELIVERY_FEE_TYPE |  是  | String   | 2 | 0 | 配送单价计费类型：1-单一制;2-两部制 |  
 | DIST_LEVEL_RANGE_TYPE |  是  | String   | 2 | 0 | 配送等级范围 |  
-| TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型 |  
+| TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型；不分时或者没有分时默认为不分时 |  
 | TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型 |  
-| LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型 |  
+| LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型；无阶梯或者没有阶梯默认为无阶梯 |  
 | LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数量类型 |  
 | LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次类型 |  
 | LADDER_UPPER_LIMIT |  否  | Number   | 10 | 0 | 阶梯上限值 |  
