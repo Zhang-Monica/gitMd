@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(AddMainPrice)增加分类项目单价主价  
-接口描述：增加分类项目单价主价  
-请求说明：POST https://api.epeis.com/Service/v1/AddMainPrice/  
+服务接口：(UpdateDeliveryPrice)修改管网公司配送价  
+接口描述：修改管网公司配送价  
+请求说明：POST https://api.epeis.com/Service/v1/UpdateDeliveryPrice/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,21 +13,16 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_PRO_PRICE":	[{
+	"COM_DELIVERY_PRICE":	[{
 			"ACCOUNT_ITEM_INFO":	"",
-			"CAT_ITEM_MAIN_NUM":	0,
-			"CAT_ITEM_ATTACH_NUM":	0,
-			"CAT_ITEM_PRICE":	0,
-			"PRICE_UNIT_NAME":	"",
+			"ADMIN_CODE_INFO":	"",
 			"NETWORK_TYPE":	"",
-			"PURCHASE_SALE_TYPE":	"",
-			"RETAIL_VOLTAGE_GRADE_TYPE":	"",
-			"PROPERTY_LEVEL_TYPE":	"",
-			"HEAT_CHARGE_TYPE":	"",
-			"GARB_CHAEGE_TYPE":	"",
-			"AGREE_PRICE_YESNO":	"",
-			"ABUND_WITHER_YESNO":	"",
-			"ABUNDANCE_TYPE":	"",
+			"DELIVERY_PRICE_TYPE":	"",
+			"LOSS_RATE":	0,
+			"POWERRANGE_YESNO":	"",
+			"POWER_RANGE_TYPE":	"",
+			"DELIVERY_FEE_TYPE":	"",
+			"DIST_LEVEL_RANGE_TYPE":	"",
 			"TIME_FEES_TYPE":	"",
 			"TIME_SHARING_TYPE":	"",
 			"LADDER_TYPE":	"",
@@ -35,8 +30,12 @@
 			"LADDER_LEVEL_TYPE":	"",
 			"LADDER_UPPER_LIMIT":	0,
 			"LADDER_LOWER_LIMIT":	0,
+			"CAT_ITEM_PRICE":	0,
+			"PRICE_UNIT_NAME":	"",
 			"STARTUP_DATE":	0,
-			"OUTAGE_DATE":	0
+			"OUTAGE_DATE":	0,
+			"AGREE_PRICE_YESNO":	"",
+			"ABUNDANCE_TYPE":	""
 		}]
 }  
 ~~~  
@@ -50,35 +49,34 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_PRO_PRICE，类型：Array  
+参数：COM_DELIVERY_PRICE，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
-| CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
-| CAT_ITEM_ATTACH_NUM |  是  | Number   | 10 | 0 | 分类项目附编号 |  
-| CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
-| PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| PURCHASE_SALE_TYPE |  是  | String   | 2 | 0 | 购售类型 |  
-| RETAIL_VOLTAGE_GRADE_TYPE |  是  | String   | 2 | 0 | 零售等级范围 |  
-| PROPERTY_LEVEL_TYPE |  否  | String   | 2 | 0 | 物业服务等级 |  
-| HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
-| GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  
-| AGREE_PRICE_YESNO |  否  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
-| ABUND_WITHER_YESNO |  否  | String   | 2 | 0 | 是否丰枯 |  
-| ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
-| TIME_FEES_TYPE |  否  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
-| TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型：1-不分段,2-峰,3-平,4-谷,5-尖峰,6-低谷 |  
-| LADDER_TYPE |  否  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
-| LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数量 |  
-| LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次：1-一阶梯，2-二阶梯，3-三阶梯，4-四阶梯，5-五阶梯 |  
+| DELIVERY_PRICE_TYPE |  是  | String   | 2 | 0 | 配送单价类型：1-保底;2-市场 |  
+| LOSS_RATE |  否  | Number   | 12 | 2 | 线损率 |  
+| POWERRANGE_YESNO |  是  | String   | 2 | 0 | 是否分功率计价 |  
+| POWER_RANGE_TYPE |  否  | String   | 2 | 0 | 功率范围 |  
+| DELIVERY_FEE_TYPE |  是  | String   | 2 | 0 | 配送单价计费类型：1-单一制;2-两部制 |  
+| DIST_LEVEL_RANGE_TYPE |  是  | String   | 2 | 0 | 配送等级范围 |  
+| TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型 |  
+| TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型 |  
+| LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型 |  
+| LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数量类型 |  
+| LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次类型 |  
 | LADDER_UPPER_LIMIT |  否  | Number   | 10 | 0 | 阶梯上限值 |  
 | LADDER_LOWER_LIMIT |  否  | Number   | 10 | 0 | 阶梯下限值 |  
+| CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
+| PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
 | STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
-| OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
+| OUTAGE_DATE |  是  | Number   | 8 | 0 | 截止日期 |  
+| AGREE_PRICE_YESNO |  否  | String   | 2 | 0 | 是否协议价 |  
+| ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
   
-说明：分类项目单价  
+说明：配送单价  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

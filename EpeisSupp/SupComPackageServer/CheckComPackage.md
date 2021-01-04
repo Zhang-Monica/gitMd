@@ -40,7 +40,7 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | CHARGE_PACK_TYPE |  是  | String   | 2 | 0 | 套餐类型 |  
-| PACK_REMARK |  是  | String   | 1024 | 0 | 套餐备注说明 |  
+| PACK_REMARK |  否  | String   | 1024 | 0 | 套餐备注说明 |  
 | POWERRANGE_YESNO |  否  | String   | 2 | 0 | 是否分功率计价 |  
 | POWER_RANGE_TYPE |  否  | String   | 2 | 0 | 功率范围 |  
 | DIST_LEVEL_RANGE_TYPE |  否  | String   | 2 | 0 | 配送等级范围 |  

@@ -13,6 +13,7 @@
 | 商户基础系统配置应用服务 | v1 | [SuppConfigBasicServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigBasicServer_README.md) |  
 | 商户月份系统配置应用服务 | v1 | [SuppConfigMonServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigMonServer_README.md) |  
 | 商户采暖物业系统配置 | v1 | [SuppConfigHeatPropServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigHeatPropServer_README.md) |  
+| 商户配送单价维护 | v1 | [SupComDeliveryPriceServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComDeliveryPriceServer_README.md) |  
 | 商户分类项目单价维护 | v1 | [SuppComProPriceServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComProPriceServer_README.md) |  
 | 管网公司保底套餐 | v1 | [SupComPackageServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupComPackageServer_README.md) |  
 | 销售公司零售套餐 | v1 | [SupSalePackageServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupSalePackageServer_README.md) |  
