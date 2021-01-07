@@ -25,7 +25,6 @@
 			"PROPERTY_LEVEL_TYPE":	"",
 			"HEAT_CHARGE_TYPE":	"",
 			"GARB_CHAEGE_TYPE":	"",
-			"RESIDENT_YESNO":	"",
 			"AGREE_PRICE_YESNO":	"",
 			"ABUND_WITHER_YESNO":	"",
 			"ABUNDANCE_TYPE":	"",
@@ -58,7 +57,7 @@
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
 | CAT_ITEM_ATTACH_NUM |  是  | Number   | 10 | 0 | 分类项目附编号 |  
-| CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
+| CAT_ITEM_PRICE |  否  | Number   | 14 | 6 | 分类项目单价,改启用日期时不用传 |  
 | PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | PURCHASE_SALE_TYPE |  是  | String   | 2 | 0 | 购售类型 |  
@@ -66,18 +65,17 @@
 | PROPERTY_LEVEL_TYPE |  否  | String   | 2 | 0 | 物业服务等级 |  
 | HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  
-| RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民：1-否，2-是 |  
 | AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
-| ABUND_WITHER_YESNO |  否  | String   | 2 | 0 | 是否丰枯 |  
+| ABUND_WITHER_YESNO |  是  | String   | 2 | 0 | 是否丰枯 |  
 | ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
-| TIME_FEES_TYPE |  否  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
+| TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型：1-不分段,2-峰,3-平,4-谷,5-尖峰,6-低谷 |  
-| LADDER_TYPE |  否  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
 | LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数量 |  
 | LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次：1-一阶梯，2-二阶梯，3-三阶梯，4-四阶梯，5-五阶梯 |  
 | LADDER_UPPER_LIMIT |  否  | Number   | 10 | 0 | 阶梯上限值 |  
 | LADDER_LOWER_LIMIT |  否  | Number   | 10 | 0 | 阶梯下限值 |  
-| STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
+| STARTUP_DATE |  否  | Number   | 8 | 0 | 启用日期，不改启用日期时不用传 |  
 | OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
   
 说明：分类项目单价  

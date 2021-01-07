@@ -1,6 +1,9 @@
   
 | 服务接口名称 | 版本号 | 说明文档链接 |  
 | :----------------- | :-----: | :---------------- |  
+| 调整分类项目单价附加价 | v1 | [AdjustAttachPrice.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComProPriceServer/AdjustAttachPrice.md) |  
+| 调整分类项目单价基本费单价 | v1 | [AdjustBasicFeePrice.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComProPriceServer/AdjustBasicFeePrice.md) |  
+| 调整分类项目单价主价 | v1 | [AdjustMainPrice.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComProPriceServer/AdjustMainPrice.md) |  
 | 增加分类项目单价主价 | v1 | [AddMainPrice.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComProPriceServer/AddMainPrice.md) |  
 | 修改分类项目单价主价 | v1 | [UpdateMainPrice.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComProPriceServer/UpdateMainPrice.md) |  
 | 删除分类项目单价主价 | v1 | [DeleteMainPricek.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComProPriceServer/DeleteMainPricek.md) |  

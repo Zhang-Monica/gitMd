@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(MaintainAttachPrice)维护分类项目单价附加价  
-接口描述：维护分类项目单价附加价  
-请求说明：POST https://api.epeis.com/Service/v1/MaintainAttachPrice/  
+服务接口：(AdjustAttachPrice)调整分类项目单价附加价  
+接口描述：调整分类项目单价附加价  
+请求说明：POST https://api.epeis.com/Service/v1/AdjustAttachPrice/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -22,8 +22,7 @@
 			"NETWORK_TYPE":	"",
 			"PURCHASE_SALE_TYPE":	"",
 			"STARTUP_DATE":	0,
-			"OUTAGE_DATE":	0,
-			"OPERATION_TYPE":	""
+			"OUTAGE_DATE":	0
 		}]
 }  
 ~~~  
@@ -44,13 +43,12 @@
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
 | CAT_ITEM_ATTACH_NUM |  是  | Number   | 10 | 0 | 分类项目附编号 |  
-| CAT_ITEM_PRICE |  否  | Number   | 14 | 6 | 分类项目单价,修改时不改价不传 |  
+| CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
 | PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | PURCHASE_SALE_TYPE |  是  | String   | 2 | 0 | 购售类型 |  
-| STARTUP_DATE |  否  | Number   | 8 | 0 | 启用日期,只修改价格时不传 |  
+| STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
 | OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
-| OPERATION_TYPE |  是  | String   | 2 | 0 | 1-新增；2-删除；3-变更 |  
   
 说明：分类项目单价  
   

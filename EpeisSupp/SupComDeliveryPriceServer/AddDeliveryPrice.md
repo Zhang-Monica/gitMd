@@ -14,7 +14,6 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_DELIVERY_PRICE":	[{
-			"NETWORK_CO_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"NETWORK_TYPE":	"",
 			"DELIVERY_PRICE_TYPE":	"",
@@ -53,7 +52,6 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| NETWORK_CO_DID |  是  | String   | 16 | 0 | 管网公司编码 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | DELIVERY_PRICE_TYPE |  是  | String   | 2 | 0 | 配送单价类型：1-保底;2-市场 |  

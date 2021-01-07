@@ -22,7 +22,6 @@
 			"NETWORK_TYPE":	"",
 			"BASIC_FEES_TYPE":	"",
 			"PURCHASE_SALE_TYPE":	"",
-			"RESIDENT_YESNO":	"",
 			"STARTUP_DATE":	0,
 			"OUTAGE_DATE":	0,
 			"OPERATION_TYPE":	""
@@ -46,13 +45,12 @@
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
 | CAT_ITEM_ATTACH_NUM |  是  | Number   | 10 | 0 | 分类项目附编号 |  
-| CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
+| CAT_ITEM_PRICE |  否  | Number   | 14 | 6 | 分类项目单价,修改时不改价不传 |  
 | PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
 | BASIC_FEES_TYPE |  是  | String   | 2 | 0 | 1-不计费，2-容量计费，3-需量计费 |  
 | PURCHASE_SALE_TYPE |  是  | String   | 2 | 0 | 购售类型 |  
-| RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民：1-否，2-是 |  
-| STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
+| STARTUP_DATE |  否  | Number   | 8 | 0 | 启用日期,只修改价格时不传 |  
 | OUTAGE_DATE |  否  | Number   | 8 | 0 | 停用日期 |  
 | OPERATION_TYPE |  是  | String   | 2 | 0 | 1-新增；2-删除；3-变更 |  
   
