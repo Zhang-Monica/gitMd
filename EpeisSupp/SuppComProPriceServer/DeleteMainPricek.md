@@ -24,8 +24,6 @@
 			"PROPERTY_LEVEL_TYPE":	"",
 			"HEAT_CHARGE_TYPE":	"",
 			"GARB_CHAEGE_TYPE":	"",
-			"RESIDENT_YESNO":	"",
-			"AGREE_PRICE_YESNO":	"",
 			"ABUND_WITHER_YESNO":	"",
 			"ABUNDANCE_TYPE":	"",
 			"TIME_FEES_TYPE":	"",
@@ -61,13 +59,11 @@
 | PROPERTY_LEVEL_TYPE |  否  | String   | 2 | 0 | 物业服务等级 |  
 | HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  
-| RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民：1-否，2-是 |  
-| AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
-| ABUND_WITHER_YESNO |  否  | String   | 2 | 0 | 是否丰枯 |  
+| ABUND_WITHER_YESNO |  是  | String   | 2 | 0 | 是否丰枯 |  
 | ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
-| TIME_FEES_TYPE |  否  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
+| TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
 | TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型：1-不分段,2-峰,3-平,4-谷,5-尖峰,6-低谷 |  
-| LADDER_TYPE |  否  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| LADDER_TYPE |  是  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
 | LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数量 |  
 | LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次：1-无阶梯，2-二阶梯，3-三阶梯，4-四阶梯，5-五阶梯 |  
 | STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  

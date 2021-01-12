@@ -25,7 +25,6 @@
 			"PROPERTY_LEVEL_TYPE":	"",
 			"HEAT_CHARGE_TYPE":	"",
 			"GARB_CHAEGE_TYPE":	"",
-			"AGREE_PRICE_YESNO":	"",
 			"ABUND_WITHER_YESNO":	"",
 			"ABUNDANCE_TYPE":	"",
 			"TIME_FEES_TYPE":	"",
@@ -65,7 +64,6 @@
 | PROPERTY_LEVEL_TYPE |  否  | String   | 2 | 0 | 物业服务等级 |  
 | HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  
-| AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
 | ABUND_WITHER_YESNO |  是  | String   | 2 | 0 | 是否丰枯 |  
 | ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
 | TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  

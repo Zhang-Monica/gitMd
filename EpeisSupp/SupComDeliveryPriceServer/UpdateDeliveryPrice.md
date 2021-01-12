@@ -34,7 +34,6 @@
 			"PRICE_UNIT_NAME":	"",
 			"STARTUP_DATE":	0,
 			"OUTAGE_DATE":	0,
-			"AGREE_PRICE_YESNO":	"",
 			"ABUNDANCE_TYPE":	""
 		}]
 }  
@@ -72,8 +71,7 @@
 | CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
 | PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
 | STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
-| OUTAGE_DATE |  是  | Number   | 8 | 0 | 截止日期 |  
-| AGREE_PRICE_YESNO |  否  | String   | 2 | 0 | 是否协议价 |  
+| OUTAGE_DATE |  否  | Number   | 8 | 0 | 截止日期 |  
 | ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
   
 说明：配送单价  

@@ -13,13 +13,17 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SYS_PAGE":	{
-		"PAGE_NO":	1,
-		"PAGE_ROWS":	8
-	},
 	"COM_PRO_PRICE":	{
 		"ACCOUNT_ITEM_INFO":	"",
-		"NETWORK_TYPE":	""
+		"NETWORK_TYPE":	"",
+		"ABUND_WITHER_YESNO":	"",
+		"ABUNDANCE_TYPE":	"",
+		"TIME_FEES_TYPE":	"",
+		"TIME_SHARING_TYPE":	"",
+		"LADDER_TYPE":	"",
+		"LADDER_LEVEL_TYPE":	"",
+		"LADDER_NUM_TYPE":	"",
+		"STARTUP_DATE":	0
 	}
 }  
 ~~~  
@@ -33,19 +37,20 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SYS_PAGE，类型：object  
-  
-| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
-| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
-  
 参数：COM_PRO_PRICE，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | ACCOUNT_ITEM_INFO |  否  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  否  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
+| ABUND_WITHER_YESNO |  否  | String   | 2 | 0 | 是否丰枯 |  
+| ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
+| TIME_FEES_TYPE |  否  | String   | 2 | 0 | 分时计费类型：1-不分时，2-2分时，3-3分时,4-4分时，5-5分时 |  
+| TIME_SHARING_TYPE |  否  | String   | 2 | 0 | 分时时段类型：1-不分段,2-峰,3-平,4-谷,5-尖峰,6-低谷 |  
+| LADDER_TYPE |  否  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
+| LADDER_LEVEL_TYPE |  否  | String   | 2 | 0 | 阶梯级次：1-一阶梯，2-二阶梯，3-三阶梯，4-四阶梯，5-五阶梯 |  
+| LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数量 |  
+| STARTUP_DATE |  否  | Number   | 8 | 0 | 启用日期 |  
   
 说明：分类项目单价  
   
@@ -56,12 +61,6 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"SYS_PAGE":	{
-			"PAGE_NO":	1,
-			"PAGE_ROWS":	8,
-			"NEXT_YESNO":	"2",
-			"TOTAL":	1000
-		},
 		"COM_PRO_PRICE":	{
 			"ACCOUNT_ITEM_INFO":	"",
 			"CAT_ITEM_MAIN_NUM":	0,
@@ -102,15 +101,6 @@
 | DATA | 是 | Object | 响应数据 |  
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
-  
-参数：SYS_PAGE，类型：object  
-  
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| PAGE_NO       |  是  | Number   | 第几页 |  
-| PAGE_ROWS     |  是  | Number   | 每页行数 |  
-| NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
-| TOTAL         |  是  | Number   | 总行数 |  
   
 参数：COM_PRO_PRICE，类型：object  
   

@@ -16,7 +16,6 @@
 	"SUP_STORES":	[{
 			"SUPPLIER_DID":	"",
 			"BUSINESS_HALL_NAME":	"",
-			"ADMIN_CODE_INFO":	"",
 			"ADDRESS":	""
 		}],
 	"SUP_STORES_TYPE":	[{
@@ -40,7 +39,6 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | SUPPLIER_DID |  是  | String   | 16 | 0 | 商户名称 |  
 | BUSINESS_HALL_NAME |  是  | String   | 128 | 0 | 营业网点名称 |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
 | ADDRESS |  是  | String   | 128 | 0 | ADDRESS |  
   
 说明：商户营业网点  
