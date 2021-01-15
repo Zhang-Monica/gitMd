@@ -20,7 +20,6 @@
 		"PACK_REMARK":	"",
 		"ACCOUNT_ITEM_INFO":	"",
 		"NETWORK_TYPE":	"",
-		"RESIDENT_YESNO":	"",
 		"COMP_DEVIATION_YESNO":	"",
 		"ABUND_WITHER_YESNO":	"",
 		"AGREE_PRICE_YESNO":	"",
@@ -61,9 +60,8 @@
 | PACK_REMARK |  是  | String   | 1024 | 0 | 套餐备注说明 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
-| RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民：1-否，2-是 |  
 | COMP_DEVIATION_YESNO |  是  | String   | 2 | 0 | 是否计算核定偏差：1-否，2-是 |  
-| ABUND_WITHER_YESNO |  是  | String   | 2 | 0 | 是否分枯：1-否，2-是 |  
+| ABUND_WITHER_YESNO |  否  | String   | 2 | 0 | 是否分枯：1-否，2-是 |  
 | AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
 | HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  

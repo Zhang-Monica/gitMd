@@ -15,6 +15,7 @@
 	},
 	"COM_SALES_PACK":	{
 		"NETWORK_CO_DID":	"",
+		"RET_STORES_AID":	"",
 		"CHARGE_PACK_DID":	"",
 		"CHARGE_PACK_NAME":	"",
 		"PACK_REMARK":	"",
@@ -58,6 +59,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | NETWORK_CO_DID |  是  | String   | 16 | 0 | 管网公司编码 |  
+| RET_STORES_AID |  是  | String   | 16 | 0 | 销售公司营业网点ID |  
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | CHARGE_PACK_NAME |  是  | String   | 64 | 0 | 套餐名称 |  
 | PACK_REMARK |  是  | String   | 1024 | 0 | 套餐备注说明 |  

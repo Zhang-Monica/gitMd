@@ -69,7 +69,8 @@
 				"STARTUP_DATE":	0,
 				"OUTAGE_DATE":	0,
 				"AGREE_PRICE_YESNO":	"",
-				"ABUNDANCE_TYPE":	""
+				"ABUNDANCE_TYPE":	"",
+				"STATE_TYPE":	""
 			}]
 	}
 }  
@@ -113,6 +114,7 @@
 | OUTAGE_DATE |  是  | Number   | 截止日期 |  
 | AGREE_PRICE_YESNO |  是  | String   | 是否协议价 |  
 | ABUNDANCE_TYPE |  是  | String   | 丰枯类型 |  
+| STATE_TYPE |  是  | String   | 状态类型 |  
   
 说明：配送单价  
 ## 4、服务接口说明  

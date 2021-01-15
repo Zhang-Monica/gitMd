@@ -52,7 +52,7 @@
 | AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价 |  
 | CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
 | PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
-| ABUNDANCE_TYPE |  是  | String   | 2 | 0 | 丰枯类型 |  
+| ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  
 | HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  
 | TIME_FEES_TYPE |  是  | String   | 2 | 0 | 分时计费类型：1-不分时,2-2分时,3-3分时,4-4分时,5-5分时 |  

@@ -69,6 +69,7 @@
 		"COM_SALES_PACK":	[{
 				"NETWORK_CO_DID":	"",
 				"RETAIL_CO_DID":	"",
+				"RET_STORES_AID":	"",
 				"CHARGE_PACK_DID":	"",
 				"CHARGE_PACK_TYPE":	"",
 				"CHARGE_PACK_NAME":	"",
@@ -127,6 +128,7 @@
 | :----------------- | :----: | :-------- | :---------------- |  
 | NETWORK_CO_DID |  是  | String   | 管网公司编码 |  
 | RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
+| RET_STORES_AID |  是  | String   | 销售公司营业网点ID |  
 | CHARGE_PACK_DID |  是  | String   | 计费套餐号 |  
 | CHARGE_PACK_TYPE |  是  | String   | 1-保底价，2-低保价，3-市场价 |  
 | CHARGE_PACK_NAME |  是  | String   | 套餐名称 |  
