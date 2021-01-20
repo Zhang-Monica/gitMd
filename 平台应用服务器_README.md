@@ -17,6 +17,7 @@
 | 平台商户配送单价维护 | v1 | [PlatSupDeliveryServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatSupDeliveryServer_README.md) |  
 | 平台管网节点维护 | v1 | [PlatNetNodeServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatNetNodeServer_README.md) |  
 | 平台轧账结账应用服务 | v1 | [PlatRolSetAccServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatRolSetAccServer_README.md) |  
+| 平台账务资金清分服务 | v1 | [PlatPoolClearingServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatPoolClearingServer_README.md) |  
 | 平台线程1 | v1 | [PlatTheadSysServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatTheadSysServer_README.md) |  
 | 平台线程 | v1 | [PlatTheadServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/PlatTheadServer_README.md) |  
 | 数据迁移 | v1 | [platDataTransfer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisPlat/platDataTransfer_README.md) |  

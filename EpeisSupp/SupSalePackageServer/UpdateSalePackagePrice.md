@@ -17,6 +17,7 @@
 			"CHARGE_PACK_DID":	"",
 			"ACCOUNT_ITEM_INFO":	"",
 			"NETWORK_TYPE":	"",
+			"AGREE_PRICE_YESNO":	"",
 			"CAT_ITEM_PRICE":	0,
 			"PRICE_UNIT_NAME":	"",
 			"ABUNDANCE_TYPE":	"",
@@ -48,6 +49,7 @@
 | CHARGE_PACK_DID |  是  | String   | 16 | 0 | 计费套餐号 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
+| AGREE_PRICE_YESNO |  是  | String   | 2 | 0 | 是否协议价 |  
 | CAT_ITEM_PRICE |  是  | Number   | 14 | 6 | 分类项目单价 |  
 | PRICE_UNIT_NAME |  否  | String   | 64 | 0 | 价格单位名称 |  
 | ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 丰枯类型 |  

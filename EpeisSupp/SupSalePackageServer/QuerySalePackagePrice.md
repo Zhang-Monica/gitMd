@@ -63,7 +63,9 @@
 		"COM_SALES_PRICE":	[{
 				"RETAIL_CO_DID":	"",
 				"CHARGE_PACK_DID":	"",
+				"NETWORK_TYPE":	"",
 				"ACCOUNT_ITEM_INFO":	"",
+				"AGREE_PRICE_YESNO":	"",
 				"CAT_ITEM_PRICE":	0,
 				"PRICE_UNIT_NAME":	"",
 				"HEAT_CHARGE_TYPE":	"",
@@ -107,7 +109,9 @@
 | :----------------- | :----: | :-------- | :---------------- |  
 | RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
 | CHARGE_PACK_DID |  是  | String   | 计费套餐号 |  
+| NETWORK_TYPE |  是  | String   | 管网类型 |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 会计科目编码 |  
+| AGREE_PRICE_YESNO |  是  | String   | 是否协议价：1-否，2-是 |  
 | CAT_ITEM_PRICE |  是  | Number   | 分类项目单价 |  
 | PRICE_UNIT_NAME |  是  | String   | 价格单位名称 |  
 | HEAT_CHARGE_TYPE |  是  | String   | 暖气计费类型 |  
