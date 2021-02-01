@@ -13,9 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_DELIVERY_PRICE":	{
+	"COM_PACK":	{
 		"ACCOUNT_ITEM_INFO":	"",
 		"NETWORK_TYPE":	"",
+		"BASIC_FEES_TYPE":	"",
 		"POWERRANGE_YESNO":	"",
 		"POWER_RANGE_TYPE":	"",
 		"DIST_LEVEL_RANGE_TYPE":	""
@@ -32,12 +33,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_DELIVERY_PRICE，类型：object  
+参数：COM_PACK，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | ACCOUNT_ITEM_INFO |  是  | String   | 64 | 0 | 会计科目编码 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 服务类型 |  
+| BASIC_FEES_TYPE |  是  | String   | 2 | 0 | 基本费计费类型 |  
 | POWERRANGE_YESNO |  否  | String   | 2 | 0 | 是否分功率计价 |  
 | POWER_RANGE_TYPE |  否  | String   | 2 | 0 | 功率范围 |  
 | DIST_LEVEL_RANGE_TYPE |  否  | String   | 2 | 0 | 配送等级范围 |  

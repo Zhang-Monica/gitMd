@@ -27,6 +27,7 @@
 		"AGREE_PRICE_YESNO":	"",
 		"HEAT_CHARGE_TYPE":	"",
 		"GARB_CHAEGE_TYPE":	"",
+		"BASIC_FEES_TYPE":	"",
 		"TIME_FEES_TYPE":	"",
 		"LADDER_TYPE":	"",
 		"LADDER_NUM_TYPE":	"",
@@ -71,6 +72,7 @@
 | AGREE_PRICE_YESNO |  否  | String   | 2 | 0 | 是否协议价：1-否，2-是 |  
 | HEAT_CHARGE_TYPE |  否  | String   | 2 | 0 | 暖气计费类型 |  
 | GARB_CHAEGE_TYPE |  否  | String   | 2 | 0 | 物业计费类型 |  
+| BASIC_FEES_TYPE |  否  | String   | 2 | 0 | 基本费计费类型：1-不计费，2-容量计费，3-需量计费 |  
 | TIME_FEES_TYPE |  否  | String   | 2 | 0 | 分时计费类型：1-不分时,2-2分时,3-3分时,4-4分时,5-5分时 |  
 | LADDER_TYPE |  否  | String   | 2 | 0 | 阶梯类型：1-无阶梯，2-年阶梯，3-月阶梯 |  
 | LADDER_NUM_TYPE |  否  | String   | 2 | 0 | 阶梯数：1-1阶，2-2阶，3-3阶，4-4阶，5-5阶 |  

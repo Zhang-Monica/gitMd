@@ -45,13 +45,13 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"SYS_REGISTER":	{
-			"REGISTER_DID":	"",
-			"ATTESTATION_TYPE":	"",
-			"REGISTER_NAME":	"",
-			"MOBILE_PHONE_INFO":	"",
-			"OPERATION_NAME":	""
-		}
+		"SYS_REGISTER":	[{
+				"REGISTER_DID":	"",
+				"ATTESTATION_TYPE":	"",
+				"REGISTER_NAME":	"",
+				"MOBILE_PHONE_INFO":	"",
+				"OPERATION_NAME":	""
+			}]
 	}
 }  
 ~~~  
@@ -65,16 +65,16 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：SYS_REGISTER，类型：object  
+参数：SYS_REGISTER，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| REGISTER_DID |  否  | String   | 注册ID |  
-| ATTESTATION_TYPE |  否  | String   | 认证类型 |  
-| REGISTER_NAME |  否  | String   | 注册名称 |  
-| MOBILE_PHONE_INFO |  否  | String   | 手机号码 |  
-| OPERATION_NAME |  否  | String   | 操作员名称 |  
+| REGISTER_DID |  是  | String   | 注册ID |  
+| ATTESTATION_TYPE |  是  | String   | 认证类型 |  
+| REGISTER_NAME |  是  | String   | 注册名称 |  
+| MOBILE_PHONE_INFO |  是  | String   | 手机号码 |  
+| OPERATION_NAME |  是  | String   | 操作员名称 |  
   
 说明：公共代码  
 ## 4、服务接口说明  
