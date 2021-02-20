@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(AddAbuneMonth)添加分枯月份  
-接口描述：添加分枯月份  
-请求说明：POST https://api.epeis.com/Service/v1/AddAbuneMonth/  
+服务接口：(PlatCalculateFees)平台费用计算  
+接口描述：平台费用计算  
+请求说明：POST https://api.epeis.com/Service/v1/PlatCalculateFees/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,11 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_ABUN_MON":	[{
-			"RETAIL_CO_DID":	"",
-			"NETWORK_TYPE":	"",
-			"ABUNDANCE_TYPE":	"",
-			"ABUNDANCE_MONTH":	0
+	"COM_METERAGE":	[{
+			"SETTLEMENT_AID":	"",
+			"NORMAL_RETRO_TYPE":	"",
+			"OPERATION_TYPE":	""
 		}]
 }  
 ~~~  
@@ -31,16 +30,15 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_ABUN_MON，类型：Array  
+参数：COM_METERAGE，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
-| NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电 |  
-| ABUNDANCE_TYPE |  是  | String   | 2 | 0 | 1-丰期，2-平期，3-枯期 |  
-| ABUNDANCE_MONTH |  是  | Number   | 6 | 0 | 分枯月份 |  
+| SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
+| NORMAL_RETRO_TYPE |  是  | String   | 2 | 0 | 正常追补类型 |  
+| OPERATION_TYPE |  否  | String   | 2 | 0 | 模拟算费时传入1 |  
   
-说明：分枯月份  
+说明：计量点信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

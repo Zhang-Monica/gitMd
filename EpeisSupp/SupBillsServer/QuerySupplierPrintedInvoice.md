@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryPreCalculatedData)查询待计费数据  
-接口描述：查询待计费数据  
-请求说明：POST https://api.epeis.com/Service/v1/QueryPreCalculatedData/  
+服务接口：(QuerySupplierPrintedInvoice)查询商户开票信息  
+接口描述：查询商户开票信息  
+请求说明：POST https://api.epeis.com/Service/v1/QuerySupplierPrintedInvoice/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -17,9 +17,8 @@
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"COM_METERAGE":	{
-		"BOOK_AID":	"",
-		"SETTLEMENT_AID":	""
+	"ACC_INVOICE_PRINT":	{
+		"INVOICE_DID":	""
 	}
 }  
 ~~~  
@@ -40,14 +39,13 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：COM_METERAGE，类型：object  
+参数：ACC_INVOICE_PRINT，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| BOOK_AID |  是  | String   | 16 | 0 | 抄表区段编号 |  
-| SETTLEMENT_AID |  否  | String   | 16 | 0 | 16个字符,结算户编号 |  
+| INVOICE_DID |  是  | String   | 16 | 0 | 16位字符，发票唯一的ID |  
   
-说明：商户抄表本  
+说明：客户账户  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -62,18 +60,14 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"COM_METERAGE":	[{
-				"SETTLEMENT_AID":	"",
-				"DEVICE_DID":	"",
-				"NORMAL_RETRO_TYPE":	"",
-				"CUSTOMER_DID":	"",
-				"METER_YESNO":	"",
-				"MAIN_PACK_DID":	"",
-				"TEMP_PACK_DID":	"",
-				"TMP_MONTHS":	0,
-				"STOP_EMPTY_YESNO":	"",
-				"FIXED_CHARGE":	0,
-				"FIXED_FEE":	0
+		"ACC_INVOICE_PRINT":	[{
+				"INVOICE_DID":	"",
+				"INVOICE_NUMBER":	"",
+				"INVOICE_NUM_INFO":	"",
+				"INVOICE_TYPE":	"",
+				"URL":	"",
+				"NETWORK_TYPE":	"",
+				"ACCOUNT_MONTH":	0
 			}]
 	}
 }  
@@ -97,23 +91,19 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：COM_METERAGE，类型：Array  
+参数：ACC_INVOICE_PRINT，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| SETTLEMENT_AID |  是  | String   | 16个字符,结算户编号 |  
-| DEVICE_DID |  是  | String   | 装置ID |  
-| NORMAL_RETRO_TYPE |  是  | String   | 周期性类型:1-周期,2-非周期 |  
-| CUSTOMER_DID |  是  | String   | 16个字符，客户编号 |  
-| METER_YESNO |  是  | String   | 是否有表：1-否，2-是 |  
-| MAIN_PACK_DID |  是  | String   | 主套餐号 |  
-| TEMP_PACK_DID |  是  | String   | 临时套餐号 |  
-| TMP_MONTHS |  是  | Number   | 临时月数 |  
-| STOP_EMPTY_YESNO |  是  | String   | 是否停/空：1-否，2-是 |  
-| FIXED_CHARGE |  是  | Number   | 计费固定量 |  
-| FIXED_FEE |  是  | Number   | 计费固定费 |  
+| INVOICE_DID |  是  | String   | 16位字符，发票唯一的ID |  
+| INVOICE_NUMBER |  是  | String   | 20个字符，发票号码 |  
+| INVOICE_NUM_INFO |  是  | String   | 20个字符，发票代码 |  
+| INVOICE_TYPE |  是  | String   | 1-普通机打发票，2-普通电子发票，3-增值税机打发票，4-增值税电子发票 |  
+| URL |  是  | String   | 128个字符，URL地址 |  
+| NETWORK_TYPE |  是  | String   | 1-水，2-电，3-气，4-热，5-冷，6-物业，7-房屋租赁 |  
+| ACCOUNT_MONTH |  是  | Number   | 账务月份 |  
   
-说明：计量点信息  
+说明：开票信息  
 ## 4、服务接口说明  
 说明：无  
