@@ -56,6 +56,9 @@
 				"ADDRESS":	"",
 				"RETAIL_CO_DID":	"",
 				"RETAIL_CO_DID_MC":	"",
+				"MOBILE_PHONE_INFO":	"",
+				"RET_STORES_AID":	"",
+				"MAIN_PACK_DID":	"",
 				"PACK_REMARK":	"",
 				"SIGN_CONTRACT_YESNO":	"",
 				"CONTRACT_NUM":	"",
@@ -63,6 +66,17 @@
 				"REMARK_INS":	"",
 				"ACCT_TYPE":	"",
 				"AUTHORIZATION_TYPE":	""
+			}],
+		"INOUT_COM_METERAGE":	[{
+				"SETTLEMENT_AID":	"",
+				"NORMAL_RETRO_TYPE":	"",
+				"MAIN_PACK_DID":	"",
+				"TEMP_PACK_DID":	"",
+				"PACK_REMARK":	"",
+				"RETAIL_CO_DID":	"",
+				"MOBILE_PHONE_INFO":	"",
+				"RET_STORES_AID":	"",
+				"TMP_MONTHS":	0
 			}]
 	}
 }  
@@ -94,6 +108,9 @@
 | ADDRESS |  是  | String   | 详细地址 |  
 | RETAIL_CO_DID |  是  | String   | 销售公司编码 |  
 | RETAIL_CO_DID_MC |  是  | String   | 销售公司名称 |  
+| MOBILE_PHONE_INFO |  是  | String   | 销售公司手机 |  
+| RET_STORES_AID |  是  | String   | 销售公司营业网点 |  
+| MAIN_PACK_DID |  是  | String   | 主套餐号 |  
 | PACK_REMARK |  是  | String   | 套餐说明 |  
 | SIGN_CONTRACT_YESNO |  是  | String   | 是否签订合同：1-否；2-是 |  
 | CONTRACT_NUM |  是  | String   | 合同编号 |  
@@ -103,5 +120,21 @@
 | AUTHORIZATION_TYPE |  是  | String   | 账户授权状态：1-未授权；2-授权中；3-已授权；4-被授权 |  
   
 说明：结算信息  
+参数：INOUT_COM_METERAGE，类型：Array  
+  
+
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| SETTLEMENT_AID |  是  | String   | 16个字符,结算户编号 |  
+| NORMAL_RETRO_TYPE |  是  | String   | 周期性类型:1-周期,2-非周期,3-临时 |  
+| MAIN_PACK_DID |  是  | String   | 主套餐号 |  
+| TEMP_PACK_DID |  是  | String   | 临时套餐号 |  
+| PACK_REMARK |  是  | String   | 套餐说明 |  
+| RETAIL_CO_DID |  是  | String   | 销售公司编号 |  
+| MOBILE_PHONE_INFO |  是  | String   | 销售公司手机 |  
+| RET_STORES_AID |  是  | String   | 销售公司营业网点 |  
+| TMP_MONTHS |  是  | Number   | 临时月数 |  
+  
+说明：计量点信息  
 ## 4、服务接口说明  
 说明：无  
