@@ -71,6 +71,8 @@
 				"NORMAL_RETRO_TYPE":	"",
 				"NETWORK_TYPE":	"",
 				"RECE_UNPAID_AMOUNT":	0,
+				"RECE_UNPAID_RETAIL_AMOUNT":	0,
+				"RECE_UNPAID_DELIVERY_AMOUNT":	0,
 				"THE_ACCOUNT_DATE":	0,
 				"THE_ACCOUNT_TIME":	0
 			}]
@@ -108,7 +110,9 @@
 | DEVICE_DID |  是  | String   | 装置ID |  
 | NORMAL_RETRO_TYPE |  是  | String   | 正常/追补 |  
 | NETWORK_TYPE |  是  | String   | 管网类型 |  
-| RECE_UNPAID_AMOUNT |  是  | Number   | 应收未出账金额 |  
+| RECE_UNPAID_AMOUNT |  是  | Number   | 应收未出账保底到户金额 |  
+| RECE_UNPAID_RETAIL_AMOUNT |  是  | Number   | 应收未出账零售到户金额 |  
+| RECE_UNPAID_DELIVERY_AMOUNT |  是  | Number   | 应收未出账配送金额 |  
 | THE_ACCOUNT_DATE |  是  | Number   | 本次核算日期 |  
 | THE_ACCOUNT_TIME |  是  | Number   | 本次核算时间 |  
   

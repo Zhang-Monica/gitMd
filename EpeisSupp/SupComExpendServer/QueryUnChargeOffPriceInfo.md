@@ -13,8 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_USER_METER":	{
-		"SETTLEMENT_AID":	""
+	"COM_VOLUME_PRICE_INFO":	{
+		"SETTLEMENT_AID":	"",
+		"CALC_FEE_TYPE":	""
 	}
 }  
 ~~~  
@@ -28,11 +29,12 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_USER_METER，类型：object  
+参数：COM_VOLUME_PRICE_INFO，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
+| CALC_FEE_TYPE |  否  | String   | 2 | 0 | 计算费用类型 |  
   
 说明：用户帐单计量点明细  
   
@@ -68,6 +70,7 @@
 				"THE_CHARGE_CONS":	0,
 				"CHARGE_PRICE":	0,
 				"CALC_FEE":	0,
+				"CALC_FEE_TYPE":	"",
 				"THE_ACCOUNT_DATE":	0,
 				"THE_ACCOUNT_TIME":	0
 			}]
@@ -113,6 +116,7 @@
 | THE_CHARGE_CONS |  是  | Number   | 本次计费用量 |  
 | CHARGE_PRICE |  是  | Number   | 计费单价 |  
 | CALC_FEE |  是  | Number   | 计算费用 |  
+| CALC_FEE_TYPE |  是  | String   | 计算费用类型 |  
 | THE_ACCOUNT_DATE |  是  | Number   | 本次核算日期 |  
 | THE_ACCOUNT_TIME |  是  | Number   | 本次核算时间 |  
   
