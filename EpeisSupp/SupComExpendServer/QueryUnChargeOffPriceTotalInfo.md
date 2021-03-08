@@ -85,6 +85,7 @@
 				"THE_CHARGE_CONS":	0,
 				"CHARGE_PRICE":	0,
 				"CALC_FEE":	0,
+				"CALC_FEE_TYPE":	"",
 				"THE_ACCOUNT_DATE":	0,
 				"THE_ACCOUNT_TIME":	0
 			}]
@@ -139,6 +140,7 @@
 | THE_CHARGE_CONS |  是  | Number   | 本次计费用量 |  
 | CHARGE_PRICE |  是  | Number   | 计费单价 |  
 | CALC_FEE |  是  | Number   | 计算费用 |  
+| CALC_FEE_TYPE |  是  | String   | 计算费用类型 |  
 | THE_ACCOUNT_DATE |  是  | Number   | 本次核算日期 |  
 | THE_ACCOUNT_TIME |  是  | Number   | 本次核算时间 |  
   

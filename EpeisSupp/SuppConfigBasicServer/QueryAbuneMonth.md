@@ -13,13 +13,10 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"SYS_PAGE":	{
-		"PAGE_NO":	1,
-		"PAGE_ROWS":	8
-	},
 	"COM_ABUN_MON":	{
 		"RETAIL_CO_DID":	"",
 		"RET_STORES_AID":	"",
+		"NETWORK_TYPE":	"",
 		"ABUNDANCE_TYPE":	""
 	}
 }  
@@ -34,19 +31,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：SYS_PAGE，类型：object  
-  
-| 参数 | 必选 | 类型 | 长度 | 精度 | 描述 |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
-| PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
-  
 参数：COM_ABUN_MON，类型：object  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  否  | String   | 16 | 0 | 16个字符，销售公司编码 |  
+| RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
 | RET_STORES_AID |  否  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
+| NETWORK_TYPE |  否  | String   | 2 | 0 | 服务类型 |  
 | ABUNDANCE_TYPE |  否  | String   | 2 | 0 | 1-丰期，2-平期，3-枯期 |  
   
 说明：分枯月份  
@@ -58,18 +49,15 @@
 	"CODE":	0,
 	"MESSAGE":	"",
 	"DATA":	{
-		"SYS_PAGE":	{
-			"PAGE_NO":	1,
-			"PAGE_ROWS":	8,
-			"NEXT_YESNO":	"2",
-			"TOTAL":	1000
-		},
-		"COM_ABUN_MON":	{
-			"RETAIL_CO_DID":	"",
-			"RET_STORES_AID":	"",
-			"NETWORK_TYPE":	"",
-			"ABUNDANCE_TYPE":	"",
-			"ABUNDANCE_MONTH":	0
+		"COM_ABUN_MON":	[{
+				"RETAIL_CO_DID":	"",
+				"RET_STORES_AID":	"",
+				"NETWORK_TYPE":	"",
+				"ABUNDANCE_TYPE":	"",
+				"ABUNDANCE_MONTH":	0
+			}],
+		"COM_EXPEND_CONTROL":	{
+			"ACCOUNT_MONTH":	0
 		}
 	}
 }  
@@ -84,26 +72,25 @@
   
 参数：DATA，类型：object 本服务接口响应数据说明如下：  
   
-参数：SYS_PAGE，类型：object  
-  
-| 参数              | 必选 | 类型     | 描述             |  
-| :----------------- | :----: | :-------- | :---------------- |  
-| PAGE_NO       |  是  | Number   | 第几页 |  
-| PAGE_ROWS     |  是  | Number   | 每页行数 |  
-| NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
-| TOTAL         |  是  | Number   | 总行数 |  
-  
-参数：COM_ABUN_MON，类型：object  
+参数：COM_ABUN_MON，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| RETAIL_CO_DID |  否  | String   | 16个字符，销售公司编码 |  
-| RET_STORES_AID |  否  | String   | 16个字符，销售公司营业网点ID |  
-| NETWORK_TYPE |  否  | String   | 1-水，2-电 |  
-| ABUNDANCE_TYPE |  否  | String   | 1-丰期，2-平期，3-枯期 |  
-| ABUNDANCE_MONTH |  否  | Number   | 分枯月份 |  
+| RETAIL_CO_DID |  是  | String   | 16个字符，销售公司编码 |  
+| RET_STORES_AID |  是  | String   | 16个字符，销售公司营业网点ID |  
+| NETWORK_TYPE |  是  | String   | 1-水，2-电 |  
+| ABUNDANCE_TYPE |  是  | String   | 1-丰期，2-平期，3-枯期 |  
+| ABUNDANCE_MONTH |  是  | Number   | 分枯月份 |  
   
 说明：分枯月份  
+参数：COM_EXPEND_CONTROL，类型：object  
+  
+
+| 参数              | 必选 | 类型     | 描述             |  
+| :----------------- | :----: | :-------- | :---------------- |  
+| ACCOUNT_MONTH |  否  | Number   | 账务月份 |  
+  
+说明：出账月份控制信息  
 ## 4、服务接口说明  
 说明：无  

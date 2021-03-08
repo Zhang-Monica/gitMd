@@ -15,6 +15,7 @@
 	},
 	"COM_ABUN_MON":	[{
 			"RETAIL_CO_DID":	"",
+			"RET_STORES_AID":	"",
 			"NETWORK_TYPE":	"",
 			"ABUNDANCE_TYPE":	"",
 			"ABUNDANCE_MONTH":	0
@@ -36,6 +37,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
+| RET_STORES_AID |  是  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电 |  
 | ABUNDANCE_TYPE |  是  | String   | 2 | 0 | 1-丰期，2-平期，3-枯期 |  
 | ABUNDANCE_MONTH |  是  | Number   | 6 | 0 | 分枯月份 |  
