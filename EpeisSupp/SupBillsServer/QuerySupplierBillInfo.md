@@ -79,7 +79,7 @@
 				"TARGET_NAME_INFO":	"",
 				"REMARK_INS":	"",
 				"APPLICATION":	"",
-				"ABSTRACT":	"",
+				"ABSTRACTS":	"",
 				"EXTERNAL_SID_INFO":	"",
 				"BUS_OPERATOR_DID":	""
 			}]
@@ -124,7 +124,7 @@
 | TARGET_NAME_INFO |  是  | String   | 对方名称 |  
 | REMARK_INS |  是  | String   | 备注说明 |  
 | APPLICATION |  是  | String   | 用途 |  
-| ABSTRACT |  是  | String   | 摘要 |  
+| ABSTRACTS |  是  | String   | 摘要 |  
 | EXTERNAL_SID_INFO |  是  | String   | 外部流水号 |  
 | BUS_OPERATOR_DID |  是  | String   | 业务操作员号 |  
   

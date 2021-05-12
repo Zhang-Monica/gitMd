@@ -8,6 +8,7 @@
 | 用户结算户应用服务 | v1 | [SuppSettleServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer_README.md) |  
 | 计量点应用服务 | v1 | [SuppMeterPointServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppMeterPointServer_README.md) |  
 | 查缴订单应用服务 | v1 | [SuppBillOrderServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppBillOrderServer_README.md) |  
+| 欠费管理应用服务 | v1 | [SuppArrearageManageServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppArrearageManageServer_README.md) |  
 | 发票信息应用服务 | v1 | [SuppInvoiceServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppInvoiceServer_README.md) |  
 | 商户账务 | v1 | [SupBillsServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SupBillsServer_README.md) |  
 | 商户公用系统配置应用服务 | v1 | [SuppConfigComServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppConfigComServer_README.md) |  

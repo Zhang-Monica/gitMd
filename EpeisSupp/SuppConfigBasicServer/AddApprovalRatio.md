@@ -16,7 +16,6 @@
 	"COM_APPR_DEMAND":	{
 		"RETAIL_CO_DID":	"",
 		"RET_STORES_AID":	"",
-		"ADMIN_CODE_INFO":	"",
 		"NETWORK_TYPE":	"",
 		"OVER_APPROVAL_RATIO":	0,
 		"APPROVAL_FACTOR":	0
@@ -39,7 +38,6 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
 | RET_STORES_AID |  是  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 20个字符，行政区划 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 2-电 |  
 | OVER_APPROVAL_RATIO |  是  | Number   | 8 | 4 | 超出核定比例，精确到4位小数点 |  
 | APPROVAL_FACTOR |  是  | Number   | 8 | 4 | 核定系数，精确到4位小数点 |  

@@ -14,9 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"COM_LAD_POPUL":	{
-		"RETAIL_CO_DID":	"",
 		"RET_STORES_AID":	"",
-		"ADMIN_CODE_INFO":	"",
 		"NETWORK_TYPE":	"",
 		"POPULATION_BASE":	0,
 		"POPULATION_INCREMENT":	0,
@@ -38,9 +36,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
 | RET_STORES_AID |  是  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 20个字符，行政区划 |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 1-水，2-电，3-气，5-冷 |  
 | POPULATION_BASE |  是  | Number   | 4 | 0 | 人口基数 |  
 | POPULATION_INCREMENT |  是  | Number   | 4 | 0 | 人口增量 |  

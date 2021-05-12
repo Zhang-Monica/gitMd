@@ -13,17 +13,15 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"COM_ADJUST_RAT":	{
-		"RETAIL_CO_DID":	"",
-		"RET_STORES_AID":	"",
-		"FOR_RATE_VALID_TYPE":	"",
-		"FOR_RAT_CALC_VALUE":	0,
-		"CAT_ITEM_MAIN_NUM":	0,
-		"REWARD_PUNISH_TYPE":	"",
-		"ADJUST_RATIO":	0,
-		"STARTUP_DATE":	0,
-		"OUTAGE_DATE":	0
-	}
+	"COM_ADJUST_RAT":	[{
+			"RET_STORES_AID":	"",
+			"FOR_RATE_VALID_TYPE":	"",
+			"FOR_RAT_CALC_VALUE":	0,
+			"REWARD_PUNISH_TYPE":	"",
+			"ADJUST_RATIO":	0,
+			"STARTUP_DATE":	0,
+			"OUTAGE_DATE":	0
+		}]
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -36,15 +34,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：COM_ADJUST_RAT，类型：object  
+参数：COM_ADJUST_RAT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| RETAIL_CO_DID |  是  | String   | 16 | 0 | 16个字符，销售公司编码 |  
 | RET_STORES_AID |  是  | String   | 16 | 0 | 16个字符，销售公司营业网点ID |  
 | FOR_RATE_VALID_TYPE |  是  | String   | 2 | 0 | 1-不考核，2-考核80，3-考核85，4-考核90 |  
 | FOR_RAT_CALC_VALUE |  是  | Number   | 8 | 4 | 力率考核计算值，精确到4位小数点 |  
-| CAT_ITEM_MAIN_NUM |  是  | Number   | 10 | 0 | 分类项目主编号 |  
 | REWARD_PUNISH_TYPE |  是  | String   | 2 | 0 | 奖罚类型 |  
 | ADJUST_RATIO |  是  | Number   | 10 | 6 | 调整比例 |  
 | STARTUP_DATE |  是  | Number   | 8 | 0 | 启用日期 |  
