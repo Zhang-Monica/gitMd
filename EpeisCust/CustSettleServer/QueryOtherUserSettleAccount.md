@@ -62,7 +62,7 @@
 				"USER_NAME":	"",
 				"ADMIN_CODE_INFO":	"",
 				"ADDRESS":	"",
-				"ATTESTATION_TYPE":	""
+				"USER_ATTESTATION_TYPE":	""
 			}],
 		"SETTLE_ACCOUNT":	[{
 				"CUSTOMER_DID":	"",
@@ -102,7 +102,7 @@
 | USER_NAME |  是  | String   | 用户姓名 |  
 | ADMIN_CODE_INFO |  是  | String   | 使用地址行政区划 |  
 | ADDRESS |  是  | String   | 使用地详细地址 |  
-| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；3-已认证 |  
+| USER_ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；3-已认证 |  
   
 说明：用户信息  
 参数：SETTLE_ACCOUNT，类型：Array  

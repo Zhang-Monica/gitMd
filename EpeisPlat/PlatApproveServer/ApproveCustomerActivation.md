@@ -15,7 +15,7 @@
 	},
 	"CUS_ACCOUNT":	[{
 			"CUSTOMER_DID":	"",
-			"ATTESTATION_TYPE":	"",
+			"CUS_ATTESTATION_TYPE":	"",
 			"TAX_TYPE":	"",
 			"VALID_START_DATE":	0,
 			"VALID_END_DATE":	0
@@ -37,7 +37,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| CUS_ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | TAX_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | VALID_START_DATE |  是  | Number   | 8 | 0 | xxxxx |  
 | VALID_END_DATE |  是  | Number   | 8 | 0 | xxxxx |  

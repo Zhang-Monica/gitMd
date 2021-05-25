@@ -19,7 +19,7 @@
 		"NETWORK_TYPE":	"",
 		"DEVICE_TYPE":	"",
 		"METER_BIT":	0,
-		"CHARGE_METER_RATE":	0,
+		"METER_RATE":	0,
 		"QUANTITY_UNIT_TYPE":	""
 	}
 }  
@@ -43,7 +43,7 @@
 | NETWORK_TYPE |  否  | String   | 2 | 0 | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | DEVICE_TYPE |  否  | String   | 2 | 0 | 装置类型：1-热水表；2-冷水表；3-燃气表；4-流量计；5-电能表；6-热量表；7-电压互感器；8-电流互感器 |  
 | METER_BIT |  否  | Number   | 4 | 0 | 表码位数 |  
-| CHARGE_METER_RATE |  否  | Number   | 12 | 2 | 计费表计倍率 |  
+| METER_RATE |  否  | Number   | 12 | 2 | 倍率 |  
 | QUANTITY_UNIT_TYPE |  否  | String   | 2 | 0 | 量值单位类型 |  
   
 说明：结算计量仪表  

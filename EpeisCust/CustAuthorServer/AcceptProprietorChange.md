@@ -15,7 +15,7 @@
 	},
 	"USER_ACCOUNT":	{
 		"USER_ACCOUNT_AID":	"",
-		"ATTESTATION_TYPE":	""
+		"USER_ATTESTATION_TYPE":	""
 	},
 	"SETTLE_ACCOUNT":	[{
 			"SETTLEMENT_AID":	""
@@ -37,7 +37,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
+| USER_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
   
 说明：用户信息  
 参数：SETTLE_ACCOUNT，类型：Array  

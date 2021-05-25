@@ -13,4 +13,6 @@
 | 查询结算信息 | v1 | [QueryBillInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/QueryBillInformation.md) |  
 | 查看合同 | v1 | [QureyContract.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/QureyContract.md) |  
 | 签订合同 | v1 | [SignContract.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/SignContract.md) |  
+| 业务办理申请 | v1 | [ApplyBusiness.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/ApplyBusiness.md) |  
+| 过户申请 | v1 | [ChangeOwner.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisCust/CustSettleServer/ChangeOwner.md) |  
   

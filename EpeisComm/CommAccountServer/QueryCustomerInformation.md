@@ -21,7 +21,7 @@
 			"MOBILE_PHONE_INFO":	"",
 			"ACC_CERT_INFO":	"",
 			"CUSTOMER_NAME":	"",
-			"ATTESTATION_TYPE":	""
+			"CUS_ATTESTATION_TYPE":	""
 		}]
 }  
 ~~~  
@@ -49,7 +49,7 @@
 | MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | xxxxx |  
 | ACC_CERT_INFO |  否  | String   | 20 | 0 | xxxxx |  
 | CUSTOMER_NAME |  否  | String   | 256 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| CUS_ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
   
 说明：xxxxx  
   

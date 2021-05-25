@@ -69,7 +69,7 @@
 	"DATA":	{
 		"SUP_ACCOUNT":	[{
 				"SUPPLIER_DID":	"",
-				"ATTESTATION_TYPE":	"",
+				"SUP_ATTESTATION_TYPE":	"",
 				"SUPPLIER_NAME":	""
 			}]
 	}
@@ -91,7 +91,7 @@
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
 | SUPPLIER_DID |  是  | String   | 商户ID |  
-| ATTESTATION_TYPE |  是  | String   | 认证类型:1-未认证；2-审核中；3-已认证 |  
+| SUP_ATTESTATION_TYPE |  是  | String   | 认证类型:1-未认证；2-审核中；3-已认证 |  
 | SUPPLIER_NAME |  是  | String   | 商户名称 |  
   
 说明：商户账户  

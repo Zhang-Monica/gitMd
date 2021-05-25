@@ -44,7 +44,7 @@
 				"NETWORK_TYPE":	"",
 				"OWE_BALANCE":	0,
 				"ADDRESS":	"",
-				"ATTESTATION_TYPE":	""
+				"SETTLE_ATTESTATION_TYPE":	""
 			}]
 	}
 }  
@@ -74,7 +74,7 @@
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | OWE_BALANCE |  是  | Number   | 欠费 |  
 | ADDRESS |  是  | String   | 结算信息地址 |  
-| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：结算信息  
 ## 4、服务接口说明  

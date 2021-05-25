@@ -16,7 +16,7 @@
 	"USER_ACCOUNT":	{
 		"USER_ACCOUNT_AID":	"",
 		"RESIDENT_YESNO":	"",
-		"ATTESTATION_TYPE":	"",
+		"USER_ATTESTATION_TYPE":	"",
 		"RISK_BALANCE":	0,
 		"MARGIN_BALANCE":	0,
 		"ADVANCE_LIMIT":	0,
@@ -42,7 +42,7 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
 | RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民 |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证；2-审核中；3-已认证 |  
+| USER_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证；2-审核中；3-已认证 |  
 | RISK_BALANCE |  否  | Number   | 16 | 2 | 风险金金额 |  
 | MARGIN_BALANCE |  否  | Number   | 16 | 2 | 保证金金额 |  
 | ADVANCE_LIMIT |  否  | Number   | 16 | 2 | 预付限额 |  

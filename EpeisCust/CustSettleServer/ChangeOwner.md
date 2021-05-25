@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(AcceptCancelAuthorization)接受解除使用授权  
-接口描述：接受或拒绝使用权的退回  
-请求说明：POST https://api.epeis.com/Service/v1/AcceptCancelAuthorization/  
+服务接口：(ChangeOwner)过户申请  
+接口描述：过户申请  
+请求说明：POST https://api.epeis.com/Service/v1/ChangeOwner/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -13,10 +13,9 @@
 		"REGISTER_DID":	"",
 		"ACCOUNT_DID":	""
 	},
-	"USER_ACCOUNT":	{
-		"USER_ACCOUNT_AID":	"",
-		"USER_ATTESTATION_TYPE":	""
-	}
+	"USER_ACCOUNT":	[{
+			"USER_ACCOUNT_AID":	""
+		}]
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -29,14 +28,13 @@
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
 | ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
-参数：USER_ACCOUNT，类型：object  
+参数：USER_ACCOUNT，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
-| USER_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
   
-说明：用户信息  
+说明：结算信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -58,4 +56,4 @@
   
 参数：DATA，类型：object 本服务接口无响应数据！  
 ## 4、服务接口说明  
-说明：无  
+说明：  

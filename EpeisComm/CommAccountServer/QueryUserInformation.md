@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(QueryUserInformation)查询用户账户  
-接口描述：xxxxx  
+接口描述：查询用户账户  
 请求说明：POST https://api.epeis.com/Service/v1/QueryUserInformation/  
   
 ## 2、服务接口请求参数  
@@ -17,11 +17,12 @@
 		"PAGE_ROWS":	8
 	},
 	"CUS_ACCOUNT":	[{
+			"CUSTOMER_DID":	"",
 			"CERTIFICATES_INFO":	"",
 			"MOBILE_PHONE_INFO":	"",
 			"ACC_CERT_INFO":	"",
 			"CUSTOMER_NAME":	"",
-			"ATTESTATION_TYPE":	""
+			"CUS_ATTESTATION_TYPE":	""
 		}]
 }  
 ~~~  
@@ -45,13 +46,14 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CERTIFICATES_INFO |  否  | String   | 20 | 0 | xxxxx |  
-| MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | xxxxx |  
-| ACC_CERT_INFO |  否  | String   | 20 | 0 | xxxxx |  
-| CUSTOMER_NAME |  否  | String   | 256 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| CUSTOMER_DID |  否  | String   | 16 | 0 | 16个字符，客户唯一的账号ID |  
+| CERTIFICATES_INFO |  否  | String   | 20 | 0 | 身份证号 |  
+| MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | 手机号 |  
+| ACC_CERT_INFO |  否  | String   | 20 | 0 | 账户证件号码 |  
+| CUSTOMER_NAME |  否  | String   | 256 | 0 | 客户名 |  
+| CUS_ATTESTATION_TYPE |  否  | String   | 2 | 0 | 客户认证状态 |  
   
-说明：xxxxx  
+说明：客户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -69,11 +71,11 @@
 		"USER_ACCOUNT":	[{
 				"CUSTOMER_DID":	"",
 				"USER_CUS_DID":	"",
-				"USER_ACCOUNT_AID":	"",
 				"USER_NAME":	"",
+				"USER_ACCOUNT_AID":	"",
 				"ADMIN_CODE_INFO":	"",
 				"ADDRESS":	"",
-				"ATTESTATION_TYPE":	""
+				"USER_ATTESTATION_TYPE":	""
 			}]
 	}
 }  
@@ -102,14 +104,14 @@
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | xxxxx |  
-| USER_CUS_DID |  是  | String   | xxxxx |  
-| USER_ACCOUNT_AID |  是  | String   | xxxxx |  
-| USER_NAME |  是  | String   | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | xxxxx |  
-| ADDRESS |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 16个字符，客户唯一的账号ID |  
+| USER_CUS_DID |  是  | String   | 16个字符，使用者唯一的账号ID |  
+| USER_NAME |  是  | String   | 用户名 |  
+| USER_ACCOUNT_AID |  是  | String   | 16个字符，用户账户唯一的账号ID |  
+| ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
+| ADDRESS |  是  | String   | 地址 |  
+| USER_ATTESTATION_TYPE |  是  | String   | 用户认证状态类型 |  
   
-说明：xxxxx  
+说明：用户信息  
 ## 4、服务接口说明  
-说明：xxxxxxx  
+说明：查询账户信息  

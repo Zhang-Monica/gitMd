@@ -14,7 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"USER_ACCOUNT":	{
-		"ATTESTATION_TYPE":	""
+		"USER_ATTESTATION_TYPE":	""
 	}
 }  
 ~~~  
@@ -32,7 +32,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| USER_ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：用户信息  
   

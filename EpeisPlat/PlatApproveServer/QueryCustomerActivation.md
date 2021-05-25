@@ -18,7 +18,7 @@
 		"PAGE_ROWS":	8
 	},
 	"CUS_ACCOUNT":	[{
-			"ATTESTATION_TYPE":	""
+			"CUS_ATTESTATION_TYPE":	""
 		}]
 }  
 ~~~  
@@ -43,7 +43,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| CUS_ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
   
 说明：xxxxx  
   
@@ -64,7 +64,7 @@
 				"CERTIFICATES_INFO":	"",
 				"CERTIFICATES_TYPE":	"",
 				"MOBILE_PHONE_INFO":	"",
-				"ATTESTATION_TYPE":	"",
+				"CUS_ATTESTATION_TYPE":	"",
 				"CUSTOMER_DID":	"",
 				"CUSTOMER_NAME":	"",
 				"CUSTOMER_TYPE":	"",
@@ -118,7 +118,7 @@
 | CERTIFICATES_INFO |  是  | String   | xxxxx |  
 | CERTIFICATES_TYPE |  是  | String   | xxxxx |  
 | MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| CUS_ATTESTATION_TYPE |  是  | String   | xxxxx |  
 | CUSTOMER_DID |  是  | String   | xxxxx |  
 | CUSTOMER_NAME |  是  | String   | xxxxx |  
 | CUSTOMER_TYPE |  是  | String   | xxxxx |  

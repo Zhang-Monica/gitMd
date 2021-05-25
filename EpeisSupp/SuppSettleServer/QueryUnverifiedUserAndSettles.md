@@ -70,7 +70,7 @@
 				"USER_NAME":	"",
 				"ADMIN_CODE_INFO":	"",
 				"ADDRESS":	"",
-				"ATTESTATION_TYPE":	""
+				"USER_ATTESTATION_TYPE":	""
 			}],
 		"SETTLE_ACCOUNT":	[{
 				"CUSTOMER_DID":	"",
@@ -83,10 +83,13 @@
 				"NETWORK_TYPE":	"",
 				"ADDRESS":	"",
 				"OWE_BALANCE":	0,
-				"ATTESTATION_TYPE":	""
+				"SETTLE_ATTESTATION_TYPE":	""
 			}],
 		"SETTLE_METERAGE":	[{
 				"SETTLEMENT_AID":	"",
+				"BUSI_PROC_DID":	"",
+				"BUS_CATEG_TYPE":	"",
+				"BUS_STATE_TYPE":	"",
 				"CHARGE_AREA_FACTOR":	0,
 				"ACTUAL_AREA":	0
 			}]
@@ -114,7 +117,7 @@
 | USER_NAME |  是  | String   | 用户名称 |  
 | ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
 | ADDRESS |  是  | String   | 详细地址 |  
-| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| USER_ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：用户信息  
 参数：SETTLE_ACCOUNT，类型：Array  
@@ -132,7 +135,7 @@
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | ADDRESS |  是  | String   | 结算信息地址 |  
 | OWE_BALANCE |  是  | Number   | 欠费 |  
-| ATTESTATION_TYPE |  是  | String   | 结算户认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  是  | String   | 结算户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：结算信息  
 参数：SETTLE_METERAGE，类型：Array  
@@ -141,6 +144,9 @@
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
 | SETTLEMENT_AID |  是  | String   | 结算户ID |  
+| BUSI_PROC_DID |  是  | String   | 业务办理编码 |  
+| BUS_CATEG_TYPE |  是  | String   | 业务类别 |  
+| BUS_STATE_TYPE |  是  | String   | 业扩状态类型 |  
 | CHARGE_AREA_FACTOR |  是  | Number   | 计费面积系数 |  
 | ACTUAL_AREA |  是  | Number   | 计费实有面积 |  
   

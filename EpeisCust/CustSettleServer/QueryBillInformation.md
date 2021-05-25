@@ -19,7 +19,7 @@
 	},
 	"SETTLE_ACCOUNT":	{
 		"USER_ACCOUNT_AID":	"",
-		"ATTESTATION_TYPE":	""
+		"SETTLE_ATTESTATION_TYPE":	""
 	}
 }  
 ~~~  
@@ -45,7 +45,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：结算信息  
   
@@ -73,7 +73,7 @@
 				"NETWORK_TYPE":	"",
 				"ADDRESS":	"",
 				"OWE_BALANCE":	0,
-				"ATTESTATION_TYPE":	"",
+				"SETTLE_ATTESTATION_TYPE":	"",
 				"SIGN_CONTRACT_YESNO":	"",
 				"CONTRACT_NUM":	"",
 				"CON_DEADLINE_DATE":	0
@@ -115,7 +115,7 @@
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | ADDRESS |  是  | String   | 结算信息地址 |  
 | OWE_BALANCE |  是  | Number   | 欠费 |  
-| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
 | SIGN_CONTRACT_YESNO |  是  | String   | 是否签订合同：1-否；2-是 |  
 | CONTRACT_NUM |  是  | String   | 合同编号 |  
 | CON_DEADLINE_DATE |  是  | Number   | 合同期限 |  

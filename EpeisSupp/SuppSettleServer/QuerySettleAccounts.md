@@ -18,6 +18,7 @@
 		"PAGE_ROWS":	8
 	},
 	"INOUT_SETTLE_ACCOUNT":	{
+		"USER_ACCOUNT_AID":	"",
 		"CERTIFICATES_INFO":	"",
 		"MOBILE_PHONE_INFO":	"",
 		"ACC_CERT_INFO":	"",
@@ -48,6 +49,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
+| USER_ACCOUNT_AID |  否  | String   | 16 | 0 | 用户账户ID |  
 | CERTIFICATES_INFO |  否  | String   | 20 | 0 | 证件号码 |  
 | MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | 手机号码 |  
 | ACC_CERT_INFO |  否  | String   | 20 | 0 | 账户证件号码 |  
@@ -81,7 +83,7 @@
 				"NETWORK_TYPE":	"",
 				"ADDRESS":	"",
 				"OWE_BALANCE":	0,
-				"ATTESTATION_TYPE":	"",
+				"SETTLE_ATTESTATION_TYPE":	"",
 				"CONTROL_TYPE":	"",
 				"SALE_CO_DIMENSION":	"",
 				"INDUSTRY_CODE_INFO":	"",
@@ -139,7 +141,7 @@
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | ADDRESS |  是  | String   | 结算信息地址 |  
 | OWE_BALANCE |  是  | Number   | 欠费 |  
-| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
 | CONTROL_TYPE |  是  | String   | 量控费控类型：1-量控；2-费控 |  
 | SALE_CO_DIMENSION |  是  | String   | 销售公司统计维度 |  
 | INDUSTRY_CODE_INFO |  是  | String   | 行业分类 |  

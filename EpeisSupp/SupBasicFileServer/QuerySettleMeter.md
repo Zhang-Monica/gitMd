@@ -69,7 +69,7 @@
 				"DEVICE_FACTORY_INFO":	"",
 				"NETWORK_TYPE":	"",
 				"DEVICE_TYPE":	"",
-				"CHARGE_METER_RATE":	0,
+				"METER_RATE":	0,
 				"METER_INSTALL_LOCATE":	"",
 				"METER_BIT":	0,
 				"METER_READ_CHAN_TYPE":	"",
@@ -101,7 +101,7 @@
 | DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | DEVICE_TYPE |  是  | String   | 装置类型：1-热水表；2-冷水表；3-燃气表；4-流量计；5-电能表；6-热量表；7-电压互感器；8-电流互感器 |  
-| CHARGE_METER_RATE |  是  | Number   | 计费表计倍率 |  
+| METER_RATE |  是  | Number   | 计费表计倍率 |  
 | METER_INSTALL_LOCATE |  是  | String   | 表具安装位置 |  
 | METER_BIT |  是  | Number   | 表码位数 |  
 | METER_READ_CHAN_TYPE |  是  | String   | 抄表渠道 |  

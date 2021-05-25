@@ -18,7 +18,7 @@
 		"PAGE_ROWS":	8
 	},
 	"SUP_ACCOUNT":	[{
-			"ATTESTATION_TYPE":	"",
+			"SUP_ATTESTATION_TYPE":	"",
 			"SUPPLIER_NAME":	"",
 			"CHAIN_TYPE":	""
 		}]
@@ -45,7 +45,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
+| SUP_ATTESTATION_TYPE |  否  | String   | 2 | 0 | xxxxx |  
 | SUPPLIER_NAME |  否  | String   | 256 | 0 | 商户姓名 |  
 | CHAIN_TYPE |  否  | String   | 2 | 0 | 管网业务类型 |  
   
@@ -68,7 +68,7 @@
 				"CERTIFICATES_INFO":	"",
 				"CERTIFICATES_TYPE":	"",
 				"MOBILE_PHONE_INFO":	"",
-				"ATTESTATION_TYPE":	"",
+				"SUP_ATTESTATION_TYPE":	"",
 				"ACC_REGI_DID":	"",
 				"SUPPLIER_DID":	"",
 				"SUPPLIER_NAME":	"",
@@ -124,7 +124,7 @@
 | CERTIFICATES_INFO |  是  | String   | xxxxx |  
 | CERTIFICATES_TYPE |  是  | String   | xxxxx |  
 | MOBILE_PHONE_INFO |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| SUP_ATTESTATION_TYPE |  是  | String   | xxxxx |  
 | ACC_REGI_DID |  是  | String   | xxxxx |  
 | SUPPLIER_DID |  是  | String   | xxxxx |  
 | SUPPLIER_NAME |  是  | String   | xxxxx |  

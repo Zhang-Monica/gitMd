@@ -14,7 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"CUS_ACCOUNT":	{
-		"ATTESTATION_TYPE":	""
+		"CUS_ATTESTATION_TYPE":	""
 	}
 }  
 ~~~  
@@ -32,7 +32,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
+| CUS_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 是否接受类型：1-拒绝/撤回；3-接受 |  
   
 说明：用户信息  
   

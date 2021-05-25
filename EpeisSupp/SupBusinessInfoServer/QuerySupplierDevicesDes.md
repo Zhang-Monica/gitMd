@@ -77,9 +77,8 @@
 				"DEVICE_FACTORY_INFO":	"",
 				"NETWORK_TYPE":	"",
 				"DEVICE_TYPE":	"",
-				"CHARGE_METER_RATE":	0,
-				"ELE_RATIO_TYPE":	"",
-				"VOLTAGE_RATIO_TYPE":	"",
+				"TRANSFORMER_RATION":	"",
+				"METER_RATE":	0,
 				"INSTALL_TYPE":	""
 			}]
 	}
@@ -115,9 +114,8 @@
 | DEVICE_FACTORY_INFO |  是  | String   | 装置的出厂号 |  
 | NETWORK_TYPE |  是  | String   | 管网类型：1-水；2-电；3-气；4-热；5-冷；6-物业；7-房屋租赁 |  
 | DEVICE_TYPE |  是  | String   | 装置类型：1-热水表；2-冷水表；3-燃气表；4-流量计；5-电能表；6-热量表；7-电压互感器；8-电流互感器 |  
-| CHARGE_METER_RATE |  是  | Number   | 计费表计倍率 |  
-| ELE_RATIO_TYPE |  是  | String   | 电流互感器变比 |  
-| VOLTAGE_RATIO_TYPE |  是  | String   | 电压互感器变比 |  
+| TRANSFORMER_RATION |  是  | String   | 互感器变比 |  
+| METER_RATE |  是  | Number   | 倍率 |  
 | INSTALL_TYPE |  是  | String   | 安装类型：1-未安装；2-已安装；3-运行中 |  
   
 说明：商户装置设备  

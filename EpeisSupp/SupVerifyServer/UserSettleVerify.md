@@ -16,7 +16,7 @@
 	"SETTLE_ACCOUNT":	{
 		"SETTLEMENT_AID":	"",
 		"SETTLEMENT_NAME":	"",
-		"ATTESTATION_TYPE":	"",
+		"SETTLE_ATTESTATION_TYPE":	"",
 		"ADDRESS":	"",
 		"CONTROL_TYPE":	"",
 		"INDUSTRY_CODE_INFO":	"",
@@ -37,7 +37,6 @@
 		"NODE_AID":	"",
 		"NETWORK_TYPE":	"",
 		"METER_YESNO":	"",
-		"DEVICE_DID":	"",
 		"NET_STORES_AID":	"",
 		"ASSESS_YESNO":	"",
 		"ENERGY_LOAD":	0,
@@ -63,11 +62,6 @@
 		"ACTUAL_AREA":	0,
 		"CHARGE_HOUSEHOLDS":	0,
 		"BUS_CATEG_TYPE":	""
-	},
-	"SETTLE_METER":	{
-		"METER_READ_CHAN_TYPE":	"",
-		"REMOTE_COPY_YESNO":	"",
-		"METER_READ_ORDER":	0
 	}
 }  
 ~~~  
@@ -87,7 +81,7 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
 | SETTLEMENT_NAME |  是  | String   | 128 | 0 | 结算户名称 |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证；2-审核中；3-已认证 |  
 | ADDRESS |  是  | String   | 128 | 0 | 详细地址 |  
 | CONTROL_TYPE |  是  | String   | 2 | 0 | 量控费控类型 |  
 | INDUSTRY_CODE_INFO |  是  | String   | 20 | 0 | 产业分类 |  
@@ -112,7 +106,6 @@
 | NODE_AID |  是  | String   | 16 | 0 | 管网节点ID |  
 | NETWORK_TYPE |  是  | String   | 2 | 0 | 管网类型 |  
 | METER_YESNO |  是  | String   | 2 | 0 | 是否有表 |  
-| DEVICE_DID |  否  | String   | 16 | 0 | 装置ID |  
 | NET_STORES_AID |  是  | String   | 16 | 0 | 管网公司营业网点ID |  
 | ASSESS_YESNO |  是  | String   | 2 | 0 | 是否考核 |  
 | ENERGY_LOAD |  否  | Number   | 14 | 2 | 用能负荷 |  
@@ -140,15 +133,6 @@
 | BUS_CATEG_TYPE |  是  | String   | 2 | 0 | 业务类别 |  
   
 说明：结算计量点  
-参数：SETTLE_METER，类型：object  
-  
-| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| METER_READ_CHAN_TYPE |  是  | String   | 2 | 0 | 抄表渠道 |  
-| REMOTE_COPY_YESNO |  是  | String   | 2 | 0 | 是否远抄 |  
-| METER_READ_ORDER |  否  | Number   | 4 | 0 | 抄表序号 |  
-  
-说明：结算计量仪表  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  

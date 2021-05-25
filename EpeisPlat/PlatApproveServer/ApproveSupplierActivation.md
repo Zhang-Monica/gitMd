@@ -15,7 +15,7 @@
 	},
 	"SUP_ACCOUNT":	[{
 			"SUPPLIER_DID":	"",
-			"ATTESTATION_TYPE":	"",
+			"SUP_ATTESTATION_TYPE":	"",
 			"CHAIN_TYPE":	"",
 			"TAX_TYPE":	"",
 			"VALID_START_DATE":	0,
@@ -38,7 +38,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | SUPPLIER_DID |  是  | String   | 16 | 0 | 商户ID |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证;2-审核中;3-已认证 |  
+| SUP_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证;2-审核中;3-已认证 |  
 | CHAIN_TYPE |  是  | String   | 2 | 0 | 管网业务类型:3-配送;4-销售 |  
 | TAX_TYPE |  是  | String   | 2 | 0 | 纳税类型：1-小规模纳税人;2-一般规模纳税人 |  
 | VALID_START_DATE |  是  | Number   | 8 | 0 | 起始日期 |  

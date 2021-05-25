@@ -1,6 +1,7 @@
   
 | 服务接口名称 | 版本号 | 说明文档链接 |  
 | :----------------- | :-----: | :---------------- |  
+| 业务办理申请 | v1 | [SupApplyBusiness.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer/SupApplyBusiness.md) |  
 | 修改用户信息 | v1 | [UpdateUserAccount.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer/UpdateUserAccount.md) |  
 | 添加用户账户 | v1 | [CreateUserAccount.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer/CreateUserAccount.md) |  
 | 修改结算户信息 | v1 | [UpdateSettleAccountInformation.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer/UpdateSettleAccountInformation.md) |  

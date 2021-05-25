@@ -61,7 +61,7 @@
 	"DATA":	{
 		"CUS_ACCOUNT":	[{
 				"CUSTOMER_DID":	"",
-				"ATTESTATION_TYPE":	"",
+				"CUS_ATTESTATION_TYPE":	"",
 				"CUSTOMER_NAME":	"",
 				"CUSTOMER_TYPE":	""
 			}]
@@ -84,7 +84,7 @@
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
 | CUSTOMER_DID |  是  | String   | 客户账户 |  
-| ATTESTATION_TYPE |  是  | String   | 客户认证类型：1-未认证；2-审核中；3-已认证 |  
+| CUS_ATTESTATION_TYPE |  是  | String   | 客户认证类型：1-未认证；2-审核中；3-已认证 |  
 | CUSTOMER_NAME |  是  | String   | 客户名称 |  
 | CUSTOMER_TYPE |  是  | String   | 客户类型：1-自然人；2-非自然人 |  
   

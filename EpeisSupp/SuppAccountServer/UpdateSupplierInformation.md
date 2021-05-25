@@ -61,7 +61,7 @@
 	"DATA":	{
 		"SUP_ACCOUNT":	[{
 				"SUPPLIER_DID":	"",
-				"ATTESTATION_TYPE":	"",
+				"SUP_ATTESTATION_TYPE":	"",
 				"SUPPLIER_NAME":	"",
 				"SUPPLIER_TYPE":	""
 			}]
@@ -84,7 +84,7 @@
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
 | SUPPLIER_DID |  是  | String   | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | xxxxx |  
+| SUP_ATTESTATION_TYPE |  是  | String   | xxxxx |  
 | SUPPLIER_NAME |  是  | String   | xxxxx |  
 | SUPPLIER_TYPE |  是  | String   | xxxxx |  
   

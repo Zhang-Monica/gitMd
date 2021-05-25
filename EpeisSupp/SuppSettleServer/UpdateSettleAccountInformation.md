@@ -19,7 +19,7 @@
 		"USER_ACCOUNT_AID":	"",
 		"SETTLEMENT_AID":	"",
 		"SETTLEMENT_NAME":	"",
-		"ATTESTATION_TYPE":	"",
+		"SETTLE_ATTESTATION_TYPE":	"",
 		"ADDRESS":	"",
 		"CONTROL_TYPE":	"",
 		"INDUSTRY_CODE_INFO":	"",
@@ -56,7 +56,7 @@
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | 用户账户ID |  
 | SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
 | SETTLEMENT_NAME |  是  | String   | 128 | 0 | 结算户名称 |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型：1-未认证；2-审核中；3-已认证 |  
 | ADDRESS |  是  | String   | 128 | 0 | 详细地址 |  
 | CONTROL_TYPE |  是  | String   | 2 | 0 | 量控费控类型 |  
 | INDUSTRY_CODE_INFO |  是  | String   | 20 | 0 | 产业分类 |  

@@ -18,7 +18,6 @@
 			"USER_CUS_DID":	"",
 			"USER_ACCOUNT_AID":	"",
 			"SETTLEMENT_NAME":	"",
-			"ATTESTATION_TYPE":	"",
 			"ADDRESS":	"",
 			"CONTROL_TYPE":	"",
 			"INDUSTRY_CODE_INFO":	"",
@@ -54,7 +53,6 @@
 | USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
 | SETTLEMENT_NAME |  是  | String   | 128 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
 | CONTROL_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | INDUSTRY_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  

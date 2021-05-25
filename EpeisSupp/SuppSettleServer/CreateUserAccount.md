@@ -23,7 +23,7 @@
 		"X":	0,
 		"Y":	0,
 		"RESIDENT_YESNO":	"",
-		"ATTESTATION_TYPE":	"",
+		"USER_ATTESTATION_TYPE":	"",
 		"RISK_BALANCE":	0,
 		"MARGIN_BALANCE":	0,
 		"ADVANCE_LIMIT":	0
@@ -33,7 +33,6 @@
 			"USER_CUS_DID":	"",
 			"USER_ACCOUNT_AID":	"",
 			"SETTLEMENT_NAME":	"",
-			"ATTESTATION_TYPE":	"",
 			"ADDRESS":	"",
 			"CONTROL_TYPE":	"",
 			"INDUSTRY_CODE_INFO":	"",
@@ -74,7 +73,7 @@
 | X |  否  | Number   | 16 | 8 | xxxxx |  
 | Y |  否  | Number   | 16 | 8 | xxxxx |  
 | RESIDENT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
+| USER_ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | RISK_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
 | MARGIN_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
 | ADVANCE_LIMIT |  否  | Number   | 16 | 2 | xxxxx |  
@@ -88,7 +87,6 @@
 | USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
 | USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
 | SETTLEMENT_NAME |  是  | String   | 128 | 0 | xxxxx |  
-| ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
 | CONTROL_TYPE |  是  | String   | 2 | 0 | xxxxx |  
 | INDUSTRY_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
