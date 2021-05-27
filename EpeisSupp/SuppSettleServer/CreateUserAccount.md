@@ -1,6 +1,6 @@
 ## 1、接口描述  
 服务接口：(CreateUserAccount)添加用户账户  
-接口描述：xxxxx  
+接口描述：添加用户账户  
 请求说明：POST https://api.epeis.com/Service/v1/CreateUserAccount/  
   
 ## 2、服务接口请求参数  
@@ -15,7 +15,6 @@
 	},
 	"USER_ACCOUNT":	{
 		"CUSTOMER_DID":	"",
-		"USER_CUS_DID":	"",
 		"USER_NAME":	"",
 		"ADMIN_CODE_INFO":	"",
 		"ADDRESS":	"",
@@ -27,27 +26,7 @@
 		"RISK_BALANCE":	0,
 		"MARGIN_BALANCE":	0,
 		"ADVANCE_LIMIT":	0
-	},
-	"SETTLE_ACCOUNT":	[{
-			"CUSTOMER_DID":	"",
-			"USER_CUS_DID":	"",
-			"USER_ACCOUNT_AID":	"",
-			"SETTLEMENT_NAME":	"",
-			"ADDRESS":	"",
-			"CONTROL_TYPE":	"",
-			"INDUSTRY_CODE_INFO":	"",
-			"INDUSTRY_TYPE":	"",
-			"RESIDENT_YESNO":	"",
-			"CITY_YESNO":	"",
-			"ARMY_YESNO":	"",
-			"TEMPORARY_YESNO":	"",
-			"PUBLIC_USE_YESNO":	"",
-			"CONNECT_MODE_TYPE":	"",
-			"SIGN_CONTRACT_YESNO":	"",
-			"CONTRACT_NUM":	"",
-			"CON_DEADLINE_DATE":	0,
-			"REMARK_INS":	""
-		}]
+	}
 }  
 ~~~  
 #### 2.2、请求参数说明  
@@ -64,45 +43,20 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
-| USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
-| USER_NAME |  是  | String   | 256 | 0 | xxxxx |  
-| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
-| MAP_NAME |  否  | String   | 128 | 0 | xxxxx |  
-| X |  否  | Number   | 16 | 8 | xxxxx |  
-| Y |  否  | Number   | 16 | 8 | xxxxx |  
-| RESIDENT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| USER_ATTESTATION_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| RISK_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
-| MARGIN_BALANCE |  否  | Number   | 16 | 2 | xxxxx |  
-| ADVANCE_LIMIT |  否  | Number   | 16 | 2 | xxxxx |  
+| CUSTOMER_DID |  是  | String   | 16 | 0 | 客户ID |  
+| USER_NAME |  是  | String   | 256 | 0 | 用户名 |  
+| ADMIN_CODE_INFO |  是  | String   | 20 | 0 | 行政区划 |  
+| ADDRESS |  是  | String   | 128 | 0 | 地址 |  
+| MAP_NAME |  否  | String   | 128 | 0 |  |  
+| X |  否  | Number   | 16 | 8 |  |  
+| Y |  否  | Number   | 16 | 8 |  |  
+| RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民 |  
+| USER_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型 |  
+| RISK_BALANCE |  否  | Number   | 16 | 2 |  |  
+| MARGIN_BALANCE |  否  | Number   | 16 | 2 |  |  
+| ADVANCE_LIMIT |  否  | Number   | 16 | 2 |  |  
   
-说明：xxxxx  
-参数：SETTLE_ACCOUNT，类型：Array  
-  
-| 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
-| :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16 | 0 | xxxxx |  
-| USER_CUS_DID |  是  | String   | 16 | 0 | xxxxx |  
-| USER_ACCOUNT_AID |  是  | String   | 16 | 0 | xxxxx |  
-| SETTLEMENT_NAME |  是  | String   | 128 | 0 | xxxxx |  
-| ADDRESS |  是  | String   | 128 | 0 | xxxxx |  
-| CONTROL_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| INDUSTRY_CODE_INFO |  是  | String   | 20 | 0 | xxxxx |  
-| INDUSTRY_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| RESIDENT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| CITY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| ARMY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| TEMPORARY_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| PUBLIC_USE_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| CONNECT_MODE_TYPE |  是  | String   | 2 | 0 | xxxxx |  
-| SIGN_CONTRACT_YESNO |  是  | String   | 2 | 0 | xxxxx |  
-| CONTRACT_NUM |  是  | String   | 30 | 0 | xxxxx |  
-| CON_DEADLINE_DATE |  是  | Number   | 8 | 0 | xxxxx |  
-| REMARK_INS |  否  | String   | 256 | 0 | xxxxx |  
-  
-说明：xxxxx  
+说明：用户信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
