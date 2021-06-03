@@ -20,7 +20,7 @@
 	"USER_ACCOUNT":	{
 		"ADDRESS":	"",
 		"RESIDENT_YESNO":	"",
-		"ATTESTATION_TYPE":	""
+		"USER_ATTESTATION_TYPE":	""
 	}
 }  
 ~~~  
@@ -47,7 +47,7 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | ADDRESS |  否  | String   | 128 | 0 | 用户地址 |  
 | RESIDENT_YESNO |  否  | String   | 2 | 0 | 1-否，2-是 |  
-| ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| USER_ATTESTATION_TYPE |  否  | String   | 2 | 0 | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：客户账户  
   
@@ -83,7 +83,7 @@
 				"BUSI_PROC_DID":	"",
 				"BUS_CATEG_TYPE":	"",
 				"OPERATION_DID":	"",
-				"ATTESTATION_TYPE":	""
+				"USER_ATTESTATION_TYPE":	""
 			}]
 	}
 }  
@@ -130,7 +130,7 @@
 | BUSI_PROC_DID |  是  | String   | 业务办理编码 |  
 | BUS_CATEG_TYPE |  是  | String   | 业务类别 |  
 | OPERATION_DID |  是  | String   | 操作ID |  
-| ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
+| USER_ATTESTATION_TYPE |  是  | String   | 用户认证类型：1-未认证；2-审核中；3-已认证 |  
   
 说明：用户信息  
 ## 4、服务接口说明  

@@ -14,10 +14,7 @@
 		"ACCOUNT_DID":	""
 	},
 	"CUS_ACCOUNT":	{
-		"CERTIFICATES_INFO":	"",
-		"MOBILE_PHONE_INFO":	"",
-		"ACC_CERT_INFO":	"",
-		"CUSTOMER_NAME":	"",
+		"CUSTOMER_DID":	"",
 		"ADDRESS":	""
 	},
 	"SETTLE_METERAGE":	{
@@ -44,10 +41,7 @@
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CERTIFICATES_INFO |  否  | String   | 20 | 0 | 证件号码 |  
-| MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | 手机号码 |  
-| ACC_CERT_INFO |  否  | String   | 20 | 0 | 账户证件号码 |  
-| CUSTOMER_NAME |  否  | String   | 256 | 0 | 客户名称 |  
+| CUSTOMER_DID |  否  | String   | 16 | 0 | 客户ID |  
 | ADDRESS |  否  | String   | 128 | 0 | 用户地址 |  
   
 说明：客户账户  

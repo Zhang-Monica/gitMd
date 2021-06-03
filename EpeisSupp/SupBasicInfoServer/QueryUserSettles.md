@@ -68,7 +68,7 @@
 				"SETTLEMENT_NAME":	"",
 				"NETWORK_TYPE":	"",
 				"OWE_BALANCE":	0,
-				"ATTESTATION_TYPE":	"",
+				"SETTLE_ATTESTATION_TYPE":	"",
 				"ADDRESS":	"",
 				"CONTROL_TYPE":	"",
 				"SALE_CO_DIMENSION":	"",
@@ -125,7 +125,7 @@
 | SETTLEMENT_NAME |  是  | String   | 结算户名称 |  
 | NETWORK_TYPE |  是  | String   | 服务类型 |  
 | OWE_BALANCE |  是  | Number   | 欠费余额 |  
-| ATTESTATION_TYPE |  是  | String   | 认证类型：1-未认证；2-审核中；3-已认证 |  
+| SETTLE_ATTESTATION_TYPE |  是  | String   | 认证类型：1-未认证；2-审核中；3-已认证 |  
 | ADDRESS |  是  | String   | 详细地址 |  
 | CONTROL_TYPE |  是  | String   | 量控费控类型 |  
 | SALE_CO_DIMENSION |  是  | String   | 销售公司统计维度 |  

@@ -15,6 +15,7 @@
 	},
 	"SETTLE_ACCOUNT":	{
 		"SETTLEMENT_AID":	"",
+		"CONNECT_MODE_TYPE":	"",
 		"BUS_CATEG_TYPE":	""
 	},
 	"SETTLE_METER":	[{
@@ -50,6 +51,7 @@
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | SETTLEMENT_AID |  是  | String   | 16 | 0 | 结算户ID |  
+| CONNECT_MODE_TYPE |  是  | String   | 2 | 0 | 接线类型 |  
 | BUS_CATEG_TYPE |  是  | String   | 2 | 0 | 业务类别:1-新装，2-变更，11-换表，12-销户，50-过户 |  
   
 说明：结算户信息  

@@ -10,7 +10,8 @@
 	"SYS_HEAD":	{
 		"CHANNEL_DID":	"",
 		"DYNAMIC_KEY":	"",
-		"REGISTER_DID":	""
+		"REGISTER_DID":	"",
+		"ACCOUNT_DID":	""
 	},
 	"SYS_PAGE":	{
 		"PAGE_NO":	1,
@@ -30,6 +31,7 @@
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
 | REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
+| ACCOUNT_DID       |  是  | String   | 16 | 0 | 16位账户ID，必须激活 |  
   
 参数：SYS_PAGE，类型：object  
   
