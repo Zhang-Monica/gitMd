@@ -5,6 +5,7 @@
 | 商户轧账结账应用服务 | v1 | [SuppRolSetAccServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppRolSetAccServer_README.md) |  
 | 商户差错处理应用服务 | v1 | [SuppAccErrHandlerServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppAccErrHandlerServer_README.md) |  
 | 商户退补及异常处理应用服务 | v1 | [SuppComRepairServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppComRepairServer_README.md) |  
+| 客户应用服务 | v1 | [SuppCusServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppCusServer_README.md) |  
 | 用户结算户应用服务 | v1 | [SuppSettleServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppSettleServer_README.md) |  
 | 计量点应用服务 | v1 | [SuppMeterPointServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppMeterPointServer_README.md) |  
 | 查缴订单应用服务 | v1 | [SuppBillOrderServer.md](https://github.com/Zhang-Monica/gitMd/blob/master/EpeisSupp/SuppBillOrderServer_README.md) |  
