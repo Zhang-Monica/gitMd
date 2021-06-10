@@ -1,7 +1,7 @@
 ## 1、接口描述  
-服务接口：(QueryUserInformation)查询用户账户  
-接口描述：查询用户账户  
-请求说明：POST https://api.epeis.com/Service/v1/QueryUserInformation/  
+服务接口：(QueryRegisteredInformation)查询注册信息  
+接口描述：查询注册信息  
+请求说明：POST https://api.epeis.com/Service/v1/QueryRegisteredInformation/  
   
 ## 2、服务接口请求参数  
 #### 2.1、请求参数报文示例  
@@ -9,20 +9,14 @@
 {
 	"SYS_HEAD":	{
 		"CHANNEL_DID":	"",
-		"DYNAMIC_KEY":	"",
-		"REGISTER_DID":	""
+		"DYNAMIC_KEY":	""
 	},
 	"SYS_PAGE":	{
 		"PAGE_NO":	1,
 		"PAGE_ROWS":	8
 	},
-	"CUS_ACCOUNT":	[{
-			"CUSTOMER_DID":	"",
-			"CERTIFICATES_INFO":	"",
-			"MOBILE_PHONE_INFO":	"",
-			"ACC_CERT_INFO":	"",
-			"CUSTOMER_NAME":	"",
-			"CUS_ATTESTATION_TYPE":	""
+	"SYS_REGISTER":	[{
+			"MOBILE_PHONE_INFO":	""
 		}]
 }  
 ~~~  
@@ -33,7 +27,6 @@
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
 | CHANNEL_DID | 是 | String | 16 | 0 | 16字符渠道号，请与平台运营服务中心联系 |  
 | DYNAMIC_KEY | 是 | String | 64 | 0 | 动态请求密钥，请与平台运营服务中心联系 |  
-| REGISTER_DID      |  是  | String   | 16 | 0 | 16位注册ID，必须实名 |  
   
 参数：SYS_PAGE，类型：object  
   
@@ -42,18 +35,13 @@
 | PAGE_NO       |  是  | Number   | 4 | 0 | 第几页，必须大于“0” |  
 | PAGE_ROWS     |  是  | Number   | 4 | 0 | 每页行数，必须大于“0” |  
   
-参数：CUS_ACCOUNT，类型：Array  
+参数：SYS_REGISTER，类型：Array  
   
 | 参数              | 必选 | 类型     | 长度 | 精度 | 描述             |  
 | :----------------- | :----: | :-------- | :----: | :----: | :---------------- |  
-| CUSTOMER_DID |  否  | String   | 16 | 0 | 16个字符，客户唯一的账号ID |  
-| CERTIFICATES_INFO |  否  | String   | 20 | 0 | 身份证号 |  
-| MOBILE_PHONE_INFO |  否  | String   | 20 | 0 | 手机号 |  
-| ACC_CERT_INFO |  否  | String   | 20 | 0 | 账户证件号码 |  
-| CUSTOMER_NAME |  否  | String   | 256 | 0 | 客户名 |  
-| CUS_ATTESTATION_TYPE |  否  | String   | 2 | 0 | 客户认证状态 |  
+| MOBILE_PHONE_INFO |  是  | String   | 20 | 0 | 手机号 |  
   
-说明：客户信息  
+说明：注册信息  
   
 ## 3、服务接口响应参数  
 #### 3.1、响应参数报文示例  
@@ -68,22 +56,21 @@
 			"NEXT_YESNO":	"2",
 			"TOTAL":	1000
 		},
-		"USER_ACCOUNT":	[{
-				"CUSTOMER_DID":	"",
-				"USER_CUS_DID":	"",
-				"USER_NAME":	"",
-				"USER_ACCOUNT_AID":	"",
-				"ADMIN_CODE_INFO":	"",
-				"ADDRESS":	"",
-				"REAL_ESTATE_AID":	"",
-				"RESIDENT_YESNO":	"",
-				"OWE_BALANCE":	0,
-				"RECEIVABLE_BALANCE":	0,
-				"AVAIL_BALANCE":	0,
-				"RISK_BALANCE":	0,
-				"MARGIN_BALANCE":	0,
-				"ADVANCE_LIMIT":	0,
-				"USER_ATTESTATION_TYPE":	""
+		"SYS_REGISTER":	[{
+				"REGISTER_DID":	"",
+				"MOBILE_PHONE_INFO":	"",
+				"EMAIL_INFO":	"",
+				"REGISTER_INFO":	"",
+				"REGISTER_TYPE":	"",
+				"OPERATION_NAME":	"",
+				"REGISTER_NAME":	"",
+				"ATTESTATION_TYPE":	"",
+				"CERTIFICATES_INFO":	"",
+				"CERTIFICATES_TYPE":	"",
+				"SEX_TYPE":	"",
+				"OPEN_ACC_DATE":	0,
+				"VALID_START_DATE":	0,
+				"VALID_END_DATE":	0
 			}]
 	}
 }  
@@ -107,27 +94,26 @@
 | NEXT_YESNO    |  是  | String   | 是否有下页，1-无，2-有 |  
 | TOTAL         |  是  | Number   | 总行数 |  
   
-参数：USER_ACCOUNT，类型：Array  
+参数：SYS_REGISTER，类型：Array  
   
 
 | 参数              | 必选 | 类型     | 描述             |  
 | :----------------- | :----: | :-------- | :---------------- |  
-| CUSTOMER_DID |  是  | String   | 16个字符，客户唯一的账号ID |  
-| USER_CUS_DID |  是  | String   | 16个字符，使用者唯一的账号ID |  
-| USER_NAME |  是  | String   | 用户名 |  
-| USER_ACCOUNT_AID |  是  | String   | 16个字符，用户账户唯一的账号ID |  
-| ADMIN_CODE_INFO |  是  | String   | 行政区划 |  
-| ADDRESS |  是  | String   | 地址 |  
-| REAL_ESTATE_AID |  是  | String   | 不动产ID |  
-| RESIDENT_YESNO |  是  | String   | 是否居民 |  
-| OWE_BALANCE |  是  | Number   | 应付余额 |  
-| RECEIVABLE_BALANCE |  是  | Number   | 应收余额 |  
-| AVAIL_BALANCE |  是  | Number   | 可用余额 |  
-| RISK_BALANCE |  是  | Number   | 风险金余额 |  
-| MARGIN_BALANCE |  是  | Number   | 保证金余额 |  
-| ADVANCE_LIMIT |  是  | Number   | 预付限额 |  
-| USER_ATTESTATION_TYPE |  是  | String   | 用户认证状态类型 |  
+| REGISTER_DID |  是  | String   | 注册号 |  
+| MOBILE_PHONE_INFO |  是  | String   | 手机号 |  
+| EMAIL_INFO |  是  | String   | eMail |  
+| REGISTER_INFO |  是  | String   | 注册代码 |  
+| REGISTER_TYPE |  是  | String   | 注册类型 |  
+| OPERATION_NAME |  是  | String   | 操作员名称 |  
+| REGISTER_NAME |  是  | String   | 注册名称 |  
+| ATTESTATION_TYPE |  是  | String   | 认证类型 |  
+| CERTIFICATES_INFO |  是  | String   | 证件号码 |  
+| CERTIFICATES_TYPE |  是  | String   | 证件类型 |  
+| SEX_TYPE |  是  | String   | 性别 |  
+| OPEN_ACC_DATE |  是  | Number   | 开户日期 |  
+| VALID_START_DATE |  是  | Number   | 证件有效起始日期 |  
+| VALID_END_DATE |  是  | Number   | 证件有效截止日期 |  
   
-说明：用户信息  
+说明：注册信息  
 ## 4、服务接口说明  
-说明：查询账户信息  
+说明：注册前查询注册信息  

@@ -22,7 +22,6 @@
 		"X":	0,
 		"Y":	0,
 		"RESIDENT_YESNO":	"",
-		"USER_ATTESTATION_TYPE":	"",
 		"RISK_BALANCE":	0,
 		"MARGIN_BALANCE":	0,
 		"ADVANCE_LIMIT":	0
@@ -51,7 +50,6 @@
 | X |  否  | Number   | 16 | 8 |  |  
 | Y |  否  | Number   | 16 | 8 |  |  
 | RESIDENT_YESNO |  是  | String   | 2 | 0 | 是否居民 |  
-| USER_ATTESTATION_TYPE |  是  | String   | 2 | 0 | 认证类型 |  
 | RISK_BALANCE |  否  | Number   | 16 | 2 |  |  
 | MARGIN_BALANCE |  否  | Number   | 16 | 2 |  |  
 | ADVANCE_LIMIT |  否  | Number   | 16 | 2 |  |  
